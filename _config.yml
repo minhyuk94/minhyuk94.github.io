@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "en-US" # ja-JP, ko-KR
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Yoo's Blog"
 title_separator          : "-"
@@ -77,7 +77,7 @@ algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
+  powered_by             : false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Minhyuk Yoo"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "Software Engineer in Japan 2020.04~"
   location         : "In Japan"
   email            :
   links:

@@ -1,15 +1,16 @@
 ---
-title: "Profile"
 layout: category
-permalink: /profile/
+title: Profile
+lang: ja
+permalink: /profile/ja/
 author_profile: true
 sidebar_main: true
 ---
 
 <div style="text-align: left;">
-  <button class="greedy-nav__toggle" onclick="location.href='/profile/en/'">🇬🇧 English</button>
   <button class="greedy-nav__toggle" onclick="location.href='/profile/ko/'">🇰🇷 한국어</button>
   <button class="greedy-nav__toggle" onclick="location.href='/profile/ja/'">🇯🇵 日本語</button>
+  <button class="greedy-nav__toggle" onclick="location.href='/profile/en/'">🇬🇧 English</button>
 </div>
 
 <table>
@@ -189,8 +190,4 @@ sidebar_main: true
     </td>
   </tr>
 </table>
-
-
-
-
 

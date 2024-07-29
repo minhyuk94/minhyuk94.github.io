@@ -1,15 +1,16 @@
 ---
-title: "Profile"
 layout: category
-permalink: /profile/
+title: Profile
+lang: en
+permalink: /profile/en/
 author_profile: true
 sidebar_main: true
 ---
 
 <div style="text-align: left;">
-  <button class="greedy-nav__toggle" onclick="location.href='/profile/en/'">🇬🇧 English</button>
   <button class="greedy-nav__toggle" onclick="location.href='/profile/ko/'">🇰🇷 한국어</button>
   <button class="greedy-nav__toggle" onclick="location.href='/profile/ja/'">🇯🇵 日本語</button>
+  <button class="greedy-nav__toggle" onclick="location.href='/profile/en/'">🇬🇧 English</button>
 </div>
 
 <table>
@@ -19,7 +20,7 @@ sidebar_main: true
     </td>
     <td>
       <h1>Minhyuk Yoo</h1>
-      <p><strong>Software Developer</strong></p>
+      <p><strong>Software Engineer</strong></p>
       <p><b>Nationality</b><br>Republic of Korea</p>
       <p><b>Date of Birth</b><br>1994.12.07</p>
       <p><b>Language</b><br>Korean : Native<br>Japanese : Business<br>English : Daily conversation</p>
@@ -189,8 +190,4 @@ sidebar_main: true
     </td>
   </tr>
 </table>
-
-
-
-
 

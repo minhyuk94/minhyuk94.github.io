@@ -7,9 +7,9 @@ sidebar_main: true
 ---
 
 <div style="text-align: left;">
-  <button class="greedy-nav__toggle" onclick="location.href='/profile/en/'">🇬🇧 English</button>
   <button class="greedy-nav__toggle" onclick="location.href='/profile/ko/'">🇰🇷 한국어</button>
   <button class="greedy-nav__toggle" onclick="location.href='/profile/ja/'">🇯🇵 日本語</button>
+  <button class="greedy-nav__toggle" onclick="location.href='/profile/en/'">🇬🇧 English</button>
 </div>
 
 <table>
@@ -19,7 +19,7 @@ sidebar_main: true
     </td>
     <td>
       <h1>Minhyuk Yoo</h1>
-      <p><strong>Software Developer</strong></p>
+      <p><strong>Software Engineer</strong></p>
       <p><b>Nationality</b><br>Republic of Korea</p>
       <p><b>Date of Birth</b><br>1994.12.07</p>
       <p><b>Language</b><br>Korean : Native<br>Japanese : Business<br>English : Daily conversation</p>
@@ -28,13 +28,30 @@ sidebar_main: true
 </table>
 
 ## Introduce
-<!-- <table>
+<table>
   <tr>
     <td>
-      <p></p>
+      <p>
+        Hello, I'm Minhyuk Yoo and I've been working as a software engineer in Japan since 2020.<br>
+        At the first company, Secure Inc, the start-up project enables the company to take advantage of the front, backend, infrastructure, and hardware areas,I was able to participate in the development and had a variety of experiences, from initial project production to release and server construction.<br>
+        Since then, I've been interested in server management, testing, automation, and other operations, so I've moved to a new job for greater growth,
+        I was able to enter Rakuten, the second company, and experience operations and automation, large-scale transaction processing, deployment systems, and operations, and learn more about service operations.<br>
+        I want to take advantage of this experience and improve more services.<br><br>
+        The three things I think most important in my work are as follows.<br>
+        <b>1. Documentation</b><br>
+        I think the development and operation of services in the project can be carried out in a speedy and stable manner only when it is based on organized documents that record all of them.<br>
+        In addition, I think the completion of document writing is to create documents that are easy to understand no matter who reads them, and to lead to subsequent update and management.<br>
+        That's why I'm always working, but I'm trying to work while taking measures for future management instead of just looking ahead.<br>
+        <b>2. Connectivity</b><br>
+        First of all, I think it's important to understand the connectivity associated with my work in the project.<br>
+        Since all tasks are interconnected within the project, I think it can be more understandable to carry out tasks while always understanding the surrounding tasks, and furthermore, it can help team members and collaborate and become responsible team members.<br>
+        <b>3. Improvement</b><br>
+        I think it's important to always have a willingness to improve the service.<br>
+        To improve the service, it is necessary to rethink the existing service, and I think this will not only improve the service, but also allow you to discover the problems of the existing service and give you more in-depth knowledge.
+      </p>
     </td>
   </tr>
-</table> -->
+</table>
 
 ## Employment History
 
@@ -44,27 +61,28 @@ sidebar_main: true
 <table>
   <tr>
     <td>
-      <b>Rakuten Energy, Electricity&Gas Services</b>
+      <b>Rakuten Energy, Electricity & Gas Services</b>
     </td>
     <td>
-      <p><strong>● Regular Billing Service Management with Batch System</strong><br>
-        - Batch Development and Maintenance Using Laravel Command<br>
-        - Managing Schedules with Crontab<br>
+      <p><strong>● Management BatchSystem</strong><br>
+        - Batch development and maintenance using Laravel Command<br>
+        - Batch schedule creation (crontab) and schedule table creation
       </p>
       <p><strong>● Development</strong><br>
-        - Development experience based on the cycle of design (basic, detailed), testing (unit, function, combination, performance) and release<br>
-        - Development of Salesforce API Linkage<br>
+        - Setting up local environment and writing manual<br>
+        - Development based on the stages of design (basic, detailed) → test (unit, function, combination, performance) → release<br>
+        - Development linked to external CRM (Salesforce) service
       </p>
-      <p><strong>● Opreation&Test</strong><br>
-        - Creating and executing SQL, SOQL manuals for operations<br>
-        - Improve operations (simplify and automate manuals)<br>
-        - API Connectivity Test<br>
-        - Bulk test data creation<br>
+      <p><strong>● Operation and Testing</strong><br>
+        - Creation and implementation of SQL, SOQL manuals for operations<br>
+        - Operation improvement (simplification and automation of manuals)<br>
+        - API communication testing (during the development stage and when there are updates)<br>
+        - Simplification of creating bulk test data through Selenium&Swagger API
       </p>
       <p><strong>● Monitoring</strong><br>
-        - Create Error Response Manual<br>
-        - Manage error notification by linking Jenkins with Slack and Teams to set up Notification<br>
-        - Monitoring Server Loads with Grapana & Kibana<br>
+        - Error check and handling manual creation<br>
+        - Error log notification and management by linking Jenkins and Slack<br>
+        - Server load monitoring using Grapana<br>
       </p>
     </td>
   </tr>
@@ -77,25 +95,37 @@ sidebar_main: true
 <table>
   <tr>
     <td>
-      <b>Facial Recognition Access Management Service</b>
+      <b>Facial authentication entry/exit management service</b>
     </td>
     <td>
-      <p><strong>● IoT Module Development</strong><br>
-        - Creating OS Images (Setting up Communication Environment and Security)<br>
-        - Establishing a communication environment between IoT modules andand the server and authentication terminals<br> 
-        - Real-time Monitoring on AWS for Anomalies and Errors (MQTT, CloudWatch)<br>
+      <p><strong>●  IoT module development and setting</strong><br>
+        - OS image creation (communication environment and security settings)<br>
+        - Establishing a communication environment between the IoT module, server, and authentication camera<br> 
+        - Establishing a real-time monitoring environment for errors (AWS MQTT & Cloud Watch)<br>
       </p>
-      <p><strong>● Development and Testing Environment Setup</strong><br>
-        - Establishing CI/CD Environment (AutoScaling, Load Balancing, Git Action)<br>
-        - Automating deployment using Git Action<br>
-        - Setting up network environments for communication with authentication terminals and cameras / Kitting IoT modules<br>
-        - Writing Test Cases<br>
+      <p><strong>● Establish development and test environments</strong><br>
+        - Establish separate development environments (develop, staging)<br>
+        - Establish CI/CD environment (Git Action)<br>
+        - Establish auto-scaling and load balancer for server stability<br>
+        - Write and execute test cases (Selenium)<br>
+        - Manage and renew SSL certificates
       </p>
-      <p><strong>● Responding to Client Requests</strong><br>
-        - User-related Handling (Overall Registration of Users Including Large Images)<br>
-        - Adding CRUD operations for a large number of users and log management<br>
-        - AutoHandling Cache-Clear Issues<br>
-        - Providing APIs (Swagger)<br>
+      <p><strong>● User request response</strong><br>
+        - API provided separately (Swagger API creation and provision)<br>
+        - Bulk image registration processing and user logic improvement<br>
+        - Cache Clear issue improvement (Laravel Mix introduction)<br>
+        - Development to save video logs before and after operation when camera sensor is detected
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+     <b>In-house supplies management service</b>
+    </td>
+    <td>
+      <p><strong>● Service development and construction</strong><br>
+        - Responsible for basic design and overall development (Development framework: Laravel, Server: Azure)<br>
+        - User response and maintenance<br> 
       </p>
     </td>
   </tr>
@@ -113,7 +143,7 @@ sidebar_main: true
       - Control and modification of equipment movement with PLC program<br>
       - Samsung Display Factory Field Service Engineer<br>
       - Manufacture and assembly of display attachment<br>
-      - Creating and translating touch panels(GPProEX)<br>
+      - Creating and translating touch panels<br>
       - Electrical wiring and IO testing<br>
       - Dismantling and Packaging of Equipment<br>
       </p>
@@ -170,8 +200,6 @@ sidebar_main: true
     <b>Cloud</b><br>
       ● AWS(EC2, S3, RDS, CloudWatch, AutoScaling&LoadBalancer, MQTT)<br>
       ● Azure(VM, Blob Storage, MySQL)<br>
-    <b>Monitoring</b><br>
-      ● Grapana, Kibana<br>
     <b>Environment</b><br>
       ● Windows, Mac, Linux<br>
     <b>Project Management</b><br>
@@ -189,7 +217,6 @@ sidebar_main: true
     </td>
   </tr>
 </table>
-
 
 
 

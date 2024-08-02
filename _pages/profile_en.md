@@ -38,7 +38,7 @@ sidebar_main: true
         Since then, I've been interested in server management, testing, automation, and other operations, so I've moved to a new job for greater growth,
         I was able to enter Rakuten, the second company, and experience operations and automation, large-scale transaction processing, deployment systems, and operations, and learn more about service operations.<br>
         I want to take advantage of this experience and improve more services.<br><br>
-        The three things I think most important in my work are as follows.<br>
+        <!-- The three things I think most important in my work are as follows.<br>
         <b>1. Documentation</b><br>
         I think the development and operation of services in the project can be carried out in a speedy and stable manner only when it is based on organized documents that record all of them.<br>
         In addition, I think the completion of document writing is to create documents that are easy to understand no matter who reads them, and to lead to subsequent update and management.<br>
@@ -48,7 +48,7 @@ sidebar_main: true
         Since all tasks are interconnected within the project, I think it can be more understandable to carry out tasks while always understanding the surrounding tasks, and furthermore, it can help team members and collaborate and become responsible team members.<br>
         <b>3. Improvement</b><br>
         I think it's important to always have a willingness to improve the service.<br>
-        To improve the service, it is necessary to rethink the existing service, and I think this will not only improve the service, but also allow you to discover the problems of the existing service and give you more in-depth knowledge.
+        To improve the service, it is necessary to rethink the existing service, and I think this will not only improve the service, but also allow you to discover the problems of the existing service and give you more in-depth knowledge. -->
       </p>
     </td>
   </tr>

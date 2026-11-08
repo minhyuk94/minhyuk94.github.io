@@ -411,9 +411,9 @@
         "en": "Browser-based tool to compile, run, judge and debug code"
       },
       "why": {
-        "ko": "C++·Java 등으로 코딩 테스트를 연습할 때마다 언어별 컴파일 명령과 빌드 스크립트를 챙기고, 디버그용 출력문을 넣었다 지웠다 하는 과정이 번거로웠습니다. 백준처럼 코드만 쓰면 바로 결과를 보고, 더 나아가 웹에서 한 줄씩 디버깅까지 할 수 있게 만들었습니다.",
-        "ja": "C++ や Java でコーディングテストを練習するたびに、言語ごとのコンパイルコマンドやビルドスクリプトを用意し、デバッグ用の出力文を入れては消す作業が手間でした。オンラインジャッジのようにコードを書くだけで結果を確認でき、さらにブラウザ上でステップ実行までできるようにつくりました。",
-        "en": "Practicing coding tests in C++ or Java meant juggling compile commands and build scripts for each language, and adding and removing debug prints. I built this so I can just write code and see the result, as on an online judge, and step through it in the browser."
+        "ko": "C++·Java 등으로 코딩 테스트를 연습할 때마다 언어별 컴파일 명령과 빌드 스크립트를 챙기고, 디버그용 출력문을 넣었다 지웠다 하는 과정이 번거로웠습니다. 코드만 쓰면 바로 결과를 보고, 더 나아가 웹에서 한 줄씩 디버깅까지 할 수 있게 만들었습니다.",
+        "ja": "C++ や Java でコーディングテストを練習するたびに、言語ごとのコンパイルコマンドやビルドスクリプトを用意し、デバッグ用の出力文を入れては消す作業が手間でした。コードを書くだけですぐ結果を確認でき、さらにブラウザ上でステップ実行までできるようにつくりました。",
+        "en": "Practicing coding tests in C++ or Java meant juggling compile commands and build scripts for each language, and adding and removing debug prints. I built this so I can just write code and see the result right away, and even step through it in the browser."
       },
       "features": {
         "ko": "C·C++·Java·Python·JavaScript·PHP·Go 7개 언어를 한 화면에서 컴파일·실행\n컴파일 오류는 줄 위치와 함께, 실행 오류(세그멘테이션 오류·예외·시간/메모리 초과)는 원인 설명과 함께 표시\n테스트 케이스 채점과 기대 출력·내 출력 줄 단위 비교\nC·C++·Python 단계별 디버거 (중단점, 한 줄씩 실행, 변수·호출 스택·조사식)\n사용자 코드는 권한 없는 계정·자원 제한·인터넷 차단 상태로 격리 실행",

@@ -50,7 +50,6 @@ const LABELS: Record<string, string> = {
   place: '국가·지역',
   start: '시작',
   end: '종료',
-  projects: '프로젝트',
   tags: '기술 태그',
   groups: '업무 묶음',
   items: '항목',

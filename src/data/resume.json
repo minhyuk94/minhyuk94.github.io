@@ -58,9 +58,9 @@
           "en": "Japanese"
         },
         "level": {
-          "ko": "비즈니스",
-          "ja": "ビジネス",
-          "en": "Business"
+          "ko": "비즈니스 (JLPT N1)",
+          "ja": "ビジネスレベル(JLPT N1)",
+          "en": "Business (JLPT N1)"
         }
       },
       {
@@ -70,18 +70,18 @@
           "en": "English"
         },
         "level": {
-          "ko": "일상 회화",
-          "ja": "日常会話",
-          "en": "Conversational"
+          "ko": "기술 문서 독해",
+          "ja": "技術文書の読解",
+          "en": "Technical reading"
         }
       }
     ]
   },
   "about": {
     "intro": {
-      "ko": "2020년부터 일본에서 소프트웨어 엔지니어로 일하고 있습니다.\n첫 회사인 SECURE에서는 스타트업 프로젝트에서 프론트엔드, 백엔드, 인프라, 하드웨어를 가리지 않고 개발에 참여해 초기 제작부터 릴리스와 서버 구축까지 경험했습니다.\n이후 서버 관리, 테스트, 자동화 같은 운용의 중요성에 흥미를 느껴 라쿠텐으로 옮겼고, 대규모 트랜잭션 처리, 배치 시스템, 오퍼레이션을 통해 더 깊이 있는 서비스 운용을 배웠습니다.\n이 경험을 살려 더 많은 서비스를 개선하고 싶습니다.",
-      "ja": "2020年から日本でソフトウェアエンジニアとして働いています。\n最初の会社 SECURE では、スタートアップのプロジェクトでフロントエンド・バックエンド・インフラ・ハードウェアの領域を問わず開発に携わり、サービスの初期制作からリリース、サーバー構築までを経験しました。\nその過程でさまざまなバグやサーバーダウン、性能問題に悩みながら改善してきました。\nその後、運用の重要性に関心を持ち楽天へ転職し、大規模サービスでのバッチシステム、モニタリング、オペレーションを深く経験しました。この経験を活かして、サービス全体の改善に貢献したいと考えています。",
-      "en": "I have been working as a software engineer in Japan since 2020.\nAt my first company, SECURE, I worked on a start-up project across frontend, backend, infrastructure and hardware, taking part in everything from the initial build to release and server setup.\nGrowing interested in operations such as server management, testing and automation, I moved to Rakuten, where I learned service operations in depth through large-scale transaction processing, batch systems and day-to-day operations.\nI want to use this experience to improve more services."
+      "ko": "결제·에너지처럼 멈추면 안 되는 서비스를 만들고 지켜 온 소프트웨어 엔지니어입니다.\n2020년부터 일본에서 일하고 있습니다. 스타트업 SECURE에서는 프론트엔드부터 인프라, IoT 하드웨어까지 서비스 전체를 맡아 초기 개발부터 릴리스, 서버 구축까지 경험했습니다.\n라쿠텐에서는 전기·가스 서비스의 배치 시스템, 모니터링, 오퍼레이션을 담당하며 대규모 서비스를 안정적으로 운용하고 자동화하는 방법을 깊이 배웠습니다.\n현재는 신메트리아에서 GMO 페이먼트 게이트웨이의 결제 시스템을 맡아, 메모리 부족(OOM)이 발생하던 배치를 개선하고 보안 대응을 강화하는 등 서비스의 품질과 안정성을 높이고 있습니다.",
+      "ja": "決済やエネルギーのように「止まってはいけない」サービスをつくり、守ってきたソフトウェアエンジニアです。\n2020年から日本で働いています。スタートアップの SECURE では、フロントエンドからインフラ、IoT ハードウェアまでサービス全体を担当し、初期開発からリリース、サーバー構築までを経験しました。\n楽天では電気・ガスサービスのバッチシステム、モニタリング、オペレーションを担当し、大規模サービスを安定して運用・自動化する方法を深く学びました。\n現在はシンメトリアにて GMO ペイメントゲートウェイの決済システムを担当し、メモリ不足(OOM)が発生していたバッチの改善やセキュリティ対応の強化など、サービスの品質と安定性の向上に取り組んでいます。",
+      "en": "A software engineer who builds and protects services that must not stop, from payments to energy.\nI have worked in Japan since 2020. At the start-up SECURE I owned the whole service, from frontend to infrastructure and IoT hardware, through initial development, release and server setup.\nAt Rakuten I ran batch systems, monitoring and operations for an electricity and gas service, learning in depth how to operate and automate a large-scale service reliably.\nToday, at Symmetria, I work on GMO Payment Gateway's payment platform, fixing a batch job that was running out of memory and strengthening security to raise quality and stability."
     },
     "values": [
       {
@@ -124,6 +124,81 @@
   },
   "experience": [
     {
+      "company": {
+        "ko": "신메트리아",
+        "ja": "株式会社シンメトリア",
+        "en": "Symmetria Inc."
+      },
+      "url": "",
+      "place": {
+        "ko": "일본",
+        "ja": "日本",
+        "en": "Japan"
+      },
+      "start": "2024-10",
+      "end": "",
+      "projects": [
+        {
+          "name": {
+            "ko": "GMO 페이먼트 게이트웨이 결제 시스템 (결제 수단 추가 개발·유지보수)",
+            "ja": "GMO ペイメントゲートウェイ 決済システム(決済手段の追加開発・保守)",
+            "en": "GMO Payment Gateway payment platform (payment methods: development & maintenance)"
+          },
+          "tags": "Java 11, Spring Boot, PHP 8.3, Symfony",
+          "groups": [
+            {
+              "title": {
+                "ko": "배치 성능 개선",
+                "ja": "バッチ性能改善",
+                "en": "Batch performance"
+              },
+              "items": {
+                "ko": "메모리 부족(OOM)이 발생하던 배치를 분석해 SQL 데이터 읽기 방식을 효율화\nOOM 발생을 없애고 배치 처리 시간도 단축",
+                "ja": "メモリ不足(OOM)が発生していたバッチを分析し、SQL によるデータ読み込みを効率化\nOOM を解消し、バッチ処理時間も短縮",
+                "en": "Analyzed a batch job that was running out of memory (OOM) and made its SQL data reads more efficient\nEliminated the OOM failures and shortened batch run time"
+              }
+            },
+            {
+              "title": {
+                "ko": "보안 대응",
+                "ja": "セキュリティ対応",
+                "en": "Security"
+              },
+              "items": {
+                "ko": "CSRF 대책 추가 등 결제 서비스의 각종 보안 대응",
+                "ja": "CSRF 対策の追加など、決済サービスの各種セキュリティ対応",
+                "en": "Added CSRF protection and handled other security fixes for the payment service"
+              }
+            },
+            {
+              "title": {
+                "ko": "화면 리뉴얼",
+                "ja": "画面リニューアル",
+                "en": "UI renewal"
+              },
+              "items": {
+                "ko": "기존 화면을 더 컴팩트하고 보기 쉽게 리뉴얼",
+                "ja": "既存画面をよりコンパクトで見やすくリニューアル",
+                "en": "Redesigned existing screens to be more compact and easier to read"
+              }
+            },
+            {
+              "title": {
+                "ko": "결제 수단 개발·유지보수",
+                "ja": "決済手段の開発・保守",
+                "en": "Payment method development"
+              },
+              "items": {
+                "ko": "결제 수단 관련 추가 처리 개발 및 유지보수 (Spring Boot·Java 11, Symfony·PHP 8.3)\n운영 중 발생하는 메모리·성능 문제 조사 및 대응",
+                "ja": "決済手段に関する追加処理の開発・保守(Spring Boot・Java 11、Symfony・PHP 8.3)\n運用中に発生するメモリ・性能問題の調査と対応",
+                "en": "Developed and maintained additional payment-method processing (Spring Boot / Java 11, Symfony / PHP 8.3)\nInvestigated and resolved memory and performance issues in production"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "company": "Rakuten",
       "url": "https://energy.rakuten.co.jp/",
       "place": {
@@ -144,38 +219,14 @@
           "groups": [
             {
               "title": {
-                "ko": "배치 시스템 관리",
-                "ja": "バッチシステム管理",
-                "en": "Batch system management"
+                "ko": "배치 시스템 운용",
+                "ja": "バッチシステム運用",
+                "en": "Batch systems"
               },
               "items": {
-                "ko": "Laravel Command를 사용한 배치 개발 및 유지보수\n배치 스케줄(crontab) 작성과 스케줄표 관리",
-                "ja": "Laravel Command を使ったバッチ開発・メンテナンス\nバッチスケジュール(crontab)とスケジュール表の作成",
-                "en": "Batch development and maintenance with Laravel Command\nBatch schedules (crontab) and schedule tables"
-              }
-            },
-            {
-              "title": {
-                "ko": "개발",
-                "ja": "開発",
-                "en": "Development"
-              },
-              "items": {
-                "ko": "로컬 환경 세팅 및 매뉴얼 작성\n설계(기본·상세) → 테스트(단위·기능·결합·성능) → 릴리스 단계 기반 개발\n외부 CRM(Salesforce) 연계 개발",
-                "ja": "ローカル環境の構築とマニュアル作成\n設計(基本・詳細)→ テスト(単体・機能・結合・性能)→ リリースの工程に沿った開発\n外部 CRM(Salesforce)連携開発",
-                "en": "Local environment setup and manuals\nDevelopment through design (basic, detailed) → testing (unit, functional, integration, performance) → release\nIntegration with an external CRM (Salesforce)"
-              }
-            },
-            {
-              "title": {
-                "ko": "오퍼레이션 및 테스트",
-                "ja": "オペレーション・テスト",
-                "en": "Operations & testing"
-              },
-              "items": {
-                "ko": "오퍼레이션용 SQL·SOQL 매뉴얼 작성 및 실시\n오퍼레이션 개선 (매뉴얼 간소화 및 자동화)\nAPI 통신 테스트 (개발 단계 및 업데이트 시)\nSelenium·Swagger API로 대량 테스트 데이터 작성 간소화",
-                "ja": "オペレーション用 SQL・SOQL マニュアルの作成と実施\nオペレーション改善(マニュアルの簡素化・自動化)\nAPI 通信テスト(開発段階・アップデート時)\nSelenium・Swagger API による大量テストデータ作成の効率化",
-                "en": "Wrote and ran SQL/SOQL manuals for operations\nImproved operations by simplifying and automating manuals\nAPI communication testing during development and updates\nSimplified bulk test-data creation with Selenium and Swagger API"
+                "ko": "Laravel Command 기반 배치 개발 및 유지보수\ncrontab 배치 스케줄 작성과 스케줄표 관리",
+                "ja": "Laravel Command によるバッチ開発・メンテナンス\ncrontab のバッチスケジュール作成とスケジュール表の管理",
+                "en": "Developed and maintained batch jobs with Laravel Command\nWrote crontab schedules and maintained the batch schedule table"
               }
             },
             {
@@ -185,9 +236,33 @@
                 "en": "Monitoring"
               },
               "items": {
-                "ko": "에러 체크 및 대응 매뉴얼 작성\nJenkins와 Slack 연동으로 에러 로그 통지·관리\nGrafana를 이용한 서버 부하 감시",
-                "ja": "エラーチェック・対応マニュアルの作成\nJenkins と Slack の連携によるエラーログ通知・管理\nGrafana によるサーバー負荷監視",
-                "en": "Error checking and handling manuals\nError-log notifications by integrating Jenkins with Slack\nServer load monitoring with Grafana"
+                "ko": "Jenkins와 Slack을 연동해 에러 로그를 자동 통지·관리\nGrafana로 서버 부하 감시\n에러 확인·대응 매뉴얼 작성",
+                "ja": "Jenkins と Slack を連携し、エラーログを自動通知・管理\nGrafana によるサーバー負荷監視\nエラー確認・対応マニュアルの作成",
+                "en": "Automated error-log notifications by integrating Jenkins with Slack\nMonitored server load with Grafana\nWrote error checking and handling manuals"
+              }
+            },
+            {
+              "title": {
+                "ko": "오퍼레이션 개선·자동화",
+                "ja": "オペレーション改善・自動化",
+                "en": "Operations & automation"
+              },
+              "items": {
+                "ko": "오퍼레이션용 SQL·SOQL 매뉴얼 작성 및 실시\n매뉴얼 간소화와 자동화로 오퍼레이션 개선\nSelenium·Swagger API로 대량 테스트 데이터 작성 효율화",
+                "ja": "オペレーション用 SQL・SOQL マニュアルの作成と実施\nマニュアルの簡素化・自動化によるオペレーション改善\nSelenium・Swagger API による大量テストデータ作成の効率化",
+                "en": "Wrote and ran SQL/SOQL operation manuals\nImproved operations by simplifying and automating manuals\nStreamlined bulk test-data creation with Selenium and Swagger API"
+              }
+            },
+            {
+              "title": {
+                "ko": "개발",
+                "ja": "開発",
+                "en": "Development"
+              },
+              "items": {
+                "ko": "설계(기본·상세) → 테스트(단위·기능·결합·성능) → 릴리스 공정에 따른 개발\n외부 CRM(Salesforce) 연계 개발 및 API 통신 테스트\n로컬 개발 환경 구축과 매뉴얼 정비",
+                "ja": "設計(基本・詳細)→ テスト(単体・機能・結合・性能)→ リリースの工程に沿った開発\n外部 CRM(Salesforce)連携開発と API 通信テスト\nローカル開発環境の構築とマニュアル整備",
+                "en": "Development through design (basic, detailed) → testing (unit, functional, integration, performance) → release\nIntegration with an external CRM (Salesforce) and API communication testing\nLocal development environment setup and manuals"
               }
             }
           ]
@@ -227,14 +302,14 @@
             },
             {
               "title": {
-                "ko": "개발·테스트 환경 구축",
-                "ja": "開発・テスト環境の構築",
-                "en": "Development & test environments"
+                "ko": "인프라·CI/CD 구축",
+                "ja": "インフラ・CI/CD 構築",
+                "en": "Infrastructure & CI/CD"
               },
               "items": {
-                "ko": "개발 환경 분리 구축 (develop, staging)\nCI/CD 환경 구축 (GitHub Actions)\n서버 안정성을 위한 오토스케일링·로드밸런서 구축\n테스트 케이스 작성 및 실시 (Selenium)\nSSL 인증서 관리 및 갱신",
-                "ja": "開発環境の分離構築(develop、staging)\nCI/CD 環境の構築(GitHub Actions)\nサーバー安定性のためのオートスケーリング・ロードバランサー構築\nテストケースの作成と実施(Selenium)\nSSL 証明書の管理・更新",
-                "en": "Separate environments (develop, staging)\nCI/CD with GitHub Actions\nAuto scaling and load balancing for server stability\nWrote and ran test cases (Selenium)\nManaged and renewed SSL certificates"
+                "ko": "개발 환경 분리 구축 (develop, staging)\nGitHub Actions로 CI/CD 환경 구축\n서버 안정성을 위한 오토스케일링·로드밸런서 구축\nSelenium 테스트 케이스 작성 및 실시\nSSL 인증서 관리 및 갱신",
+                "ja": "開発環境の分離構築(develop、staging)\nGitHub Actions による CI/CD 環境の構築\nサーバー安定性のためのオートスケーリング・ロードバランサー構築\nSelenium によるテストケースの作成と実施\nSSL 証明書の管理・更新",
+                "en": "Separate environments (develop, staging)\nCI/CD with GitHub Actions\nAuto scaling and load balancing for server stability\nWrote and ran Selenium test cases\nManaged and renewed SSL certificates"
               }
             },
             {
@@ -288,22 +363,22 @@
       "projects": [
         {
           "name": {
-            "ko": "디스플레이 생산 장비 제작 및 관리",
-            "ja": "ディスプレイ生産設備の製作・管理",
+            "ko": "디스플레이 생산 장비 제작·유지보수",
+            "ja": "ディスプレイ生産設備の製作・保守",
             "en": "Display manufacturing equipment"
           },
           "tags": "PLC, Samsung Display",
           "groups": [
             {
               "title": {
-                "ko": "제작 및 유지보수",
-                "ja": "製作・メンテナンス",
-                "en": "Manufacturing & maintenance"
+                "ko": "장비 제어·현장 대응",
+                "ja": "設備制御・現場対応",
+                "en": "Equipment control & field service"
               },
               "items": {
-                "ko": "PLC 프로그램을 이용한 장비 이동 제어 및 수정\n삼성디스플레이 공장 현장 서비스 엔지니어\n디스플레이 생산 장비 제작 및 조립\n터치 패널 제작 및 번역\n전기 배선 및 IO 테스트\n장비 해체 및 포장",
-                "ja": "PLC プログラムによる設備の移動制御・修正\nサムスンディスプレイ工場のフィールドサービスエンジニア\nディスプレイ生産設備の製作・組立\nタッチパネルの製作・翻訳\n電気配線・IO テスト\n設備の解体・梱包",
-                "en": "Equipment motion control and changes with PLC programs\nField service engineer at Samsung Display factories\nBuilt and assembled display production equipment\nBuilt and translated touch panels\nElectrical wiring and IO testing\nDismantled and packed equipment"
+                "ko": "PLC 프로그램으로 장비 이동 제어 로직 수정\n삼성디스플레이 공장 현장 서비스 엔지니어\n장비 제작·조립, 전기 배선 및 IO 테스트",
+                "ja": "PLC プログラムによる設備の移動制御ロジックの修正\nサムスンディスプレイ工場のフィールドサービスエンジニア\n設備の製作・組立、電気配線・IO テスト",
+                "en": "Modified equipment motion-control logic in PLC programs\nField service engineer at Samsung Display factories\nBuilt and assembled equipment; electrical wiring and IO testing"
               }
             }
           ]
@@ -318,7 +393,7 @@
         "ja": "プログラミング言語",
         "en": "Languages"
       },
-      "items": "PHP (Laravel, CakePHP, FuelPHP), Java (Spring), Python, JavaScript, C++"
+      "items": "Java 11 (Spring Boot), PHP 8.3 (Symfony, Laravel, CakePHP, FuelPHP), Python, JavaScript, C++"
     },
     {
       "category": {
@@ -359,6 +434,14 @@
         "en": "Monitoring & testing"
       },
       "items": "Grafana, CloudWatch, Selenium, Swagger"
+    },
+    {
+      "category": {
+        "ko": "AI · 개발 도구",
+        "ja": "AI・開発ツール",
+        "en": "AI & dev tools"
+      },
+      "items": "Claude, GitHub Copilot, IntelliJ IDEA, Eclipse, VS Code"
     },
     {
       "category": {
@@ -412,17 +495,9 @@
   "certificates": [
     {
       "name": {
-        "ko": "JLPT N2",
-        "ja": "日本語能力試験 N2",
-        "en": "JLPT N2"
-      },
-      "url": ""
-    },
-    {
-      "name": {
-        "ko": "정보처리산업기사",
-        "ja": "情報処理産業技師(韓国)",
-        "en": "Industrial Engineer Information Processing (Korea)"
+        "ko": "JLPT N1 (2025)",
+        "ja": "日本語能力試験 N1(2025年)",
+        "en": "JLPT N1 (2025)"
       },
       "url": ""
     },
@@ -439,6 +514,14 @@
         "ko": "AWS Certified Cloud Practitioner",
         "ja": "AWS 認定クラウドプラクティショナー",
         "en": "AWS Certified Cloud Practitioner"
+      },
+      "url": ""
+    },
+    {
+      "name": {
+        "ko": "정보처리산업기사",
+        "ja": "情報処理産業技師(韓国)",
+        "en": "Industrial Engineer Information Processing (Korea)"
       },
       "url": ""
     },

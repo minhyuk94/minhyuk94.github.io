@@ -26,7 +26,8 @@ export interface Resume {
     values: { title: L10n; body: L10n }[];
   };
   experience: {
-    company: string;
+    /** 회사 이름. 언어마다 다르게 쓰려면 {ko, ja, en} */
+    company: string | L10n;
     url: string;
     place: L10n;
     /** "2023-01" */
@@ -47,6 +48,11 @@ export interface Resume {
   skills: { category: L10n; items: string }[];
   education: { school: L10n; place: L10n; start: string; end: string; detail: L10n }[];
   certificates: { name: L10n; url: string }[];
+}
+
+/** 글자 하나 또는 언어별 글자 */
+export function text(v: string | L10n | undefined, lang: Lang): string {
+  return typeof v === 'string' ? v : tr(v, lang);
 }
 
 /** 해당 언어가 비어 있으면 다른 언어로 대신 보여준다 */

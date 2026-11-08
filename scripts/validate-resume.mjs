@@ -49,7 +49,8 @@ arr(data.about?.values, 'about.values', (v, path) => {
 });
 
 arr(data.experience, 'experience', (e, path) => {
-  str(e.company, `${path}.company`);
+  if (typeof e.company === 'string') str(e.company, `${path}.company`);
+  else l10n(e.company, `${path}.company`);
   str(e.url, `${path}.url`);
   l10n(e.place, `${path}.place`);
   ym(e.start, `${path}.start`, false);

@@ -9,6 +9,7 @@ import {
   months,
   sortedExperience,
   totalExperienceMonths,
+  text,
   tr,
   type Lang,
   type Resume,
@@ -27,7 +28,7 @@ const p = r.profile;
 const totalMonths = totalExperienceMonths(r);
 const stats = [
   { value: Math.floor(totalMonths / 12), label: t.stats.years },
-  { value: new Set(r.experience.map((e) => e.company)).size, label: t.stats.companies },
+  { value: new Set(r.experience.map((e) => text(e.company, 'en'))).size, label: t.stats.companies },
   { value: p.languages.length, label: t.stats.languages },
   { value: r.certificates.length, label: t.stats.certificates },
 ];
@@ -152,9 +153,9 @@ const birth = p.birthDate ? p.birthDate.replaceAll('-', '.') : '';
                 <header class="job-head">
                   <h3>
                     {e.url ? (
-                      <a href={e.url} target="_blank" rel="noopener noreferrer">{e.company}</a>
+                      <a href={e.url} target="_blank" rel="noopener noreferrer">{text(e.company, lang)}</a>
                     ) : (
-                      e.company
+                      text(e.company, lang)
                     )}
                   </h3>
                   <span class="job-place">{tr(e.place, lang)}</span>

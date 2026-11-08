@@ -1,11 +1,16 @@
 // 이력서 데이터를 모양에 맞춰 자동으로 입력 폼으로 그린다.
 // 새 항목을 resume.json에 추가해도 폼이 알아서 따라온다.
-import { useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 
 type Json = string | number | boolean | null | Json[] | { [k: string]: Json };
 type Obj = { [k: string]: Json };
 
 const LANG_KEYS = ['ko', 'ja', 'en'] as const;
+
+/** 사진을 저장소에 올리고 사이트에서 쓸 경로를 돌려주는 함수 (편집기가 제공) */
+export const ImageUploadContext = createContext<((file: File, kind: string) => Promise<string>) | null>(null);
+/** 이미지 경로로 받는 항목 */
+const IMAGE_KEYS = new Set(['photo', 'image']);
 const LANG_NAMES: Record<string, string> = { ko: '한국어', ja: '日本語', en: 'English' };
 
 /** 화면에 보일 항목 이름 */
@@ -16,6 +21,14 @@ const LABELS: Record<string, string> = {
   skills: '기술',
   education: '학력',
   certificates: '자격증',
+  projects: '프로젝트',
+  icon: '기호 (사진 없을 때)',
+  period: '시기',
+  image: '대표 화면',
+  link: '써 볼 수 있는 주소',
+  summary: '한 줄 소개',
+  why: '만든 이유',
+  features: '주요 기능',
   name: '이름',
   role: '직무',
   tagline: '한 줄 소개',
@@ -53,11 +66,16 @@ const HINTS: Record<string, string> = {
   tags: '쉼표로 구분 (예: Laravel, AWS)',
   items: '한 줄에 하나씩',
   intro: '줄바꿈마다 문단이 나뉘어요. 첫 문단은 크게 보여요',
-  photo: '아래 "사진 바꾸기"로 올리면 자동으로 채워져요',
+  photo: '"사진 올리기"를 누르면 자동으로 채워져요',
+  image: '"사진 올리기"로 화면 캡처를 올리세요 · 비우면 기호로 대신',
+  period: '예: 2026-11',
+  link: '공개된 데모가 있을 때만 (예: https://…)',
+  features: '한 줄에 하나씩',
+  icon: '이모지 하나 (예: 🛡️)',
 };
 
 /** 여러 줄 입력이 어울리는 항목 */
-const MULTILINE = new Set(['items', 'intro', 'body', 'tagline', 'detail']);
+const MULTILINE = new Set(['items', 'intro', 'body', 'tagline', 'detail', 'why', 'features']);
 
 export function isL10n(v: Json): v is Record<'ko' | 'ja' | 'en', string> {
   return !!v && typeof v === 'object' && !Array.isArray(v) && LANG_KEYS.every((k) => typeof (v as Obj)[k] === 'string');
@@ -66,6 +84,19 @@ export function isL10n(v: Json): v is Record<'ko' | 'ja' | 'en', string> {
 export function labelOf(key: string) {
   return LABELS[key] ?? key;
 }
+
+const E = { ko: '', ja: '', en: '' };
+/** 목록이 비었을 때 새 항목의 모양 (항목이 있으면 첫 항목 모양을 따른다) */
+const TEMPLATES: Record<string, Json> = {
+  projects: { name: '', icon: '', period: '', image: '', link: '', summary: E, why: E, features: E, tags: '' },
+  experience: { company: E, url: '', place: E, start: '', end: '', projects: [{ name: E, tags: '', groups: [{ title: E, items: E }] }] },
+  certificates: { name: E, url: '' },
+  skills: { category: E, items: '' },
+  education: { school: E, place: E, start: '', end: '', detail: E },
+  links: { label: '', url: '' },
+  values: { title: E, body: E },
+  languages: { name: E, level: E },
+};
 
 /** 배열에 새 항목을 넣을 때 첫 항목과 같은 모양의 빈 값 */
 export function blankLike(v: Json): Json {
@@ -122,6 +153,9 @@ export function Field({ name, value, onChange, depth = 0, bare = false }: FieldP
         <input type="checkbox" checked={value} onChange={(e) => onChange(e.target.checked)} /> {labelOf(name)}
       </label>
     );
+  }
+  if (IMAGE_KEYS.has(name) && typeof value === 'string') {
+    return <ImageField name={name} value={value} onChange={onChange} />;
   }
   const text = value == null ? '' : String(value);
   const multi = MULTILINE.has(name) || text.includes('\n');
@@ -190,7 +224,7 @@ function ArrayField({ name, value, onChange, depth }: { name: string; value: Jso
     });
 
   const add = (atStart: boolean) => {
-    const blank = value.length ? blankLike(value[0]) : '';
+    const blank = value.length ? blankLike(value[0]) : (TEMPLATES[name] ?? '');
     onChange(atStart ? [blank, ...value] : [...value, blank]);
     setOpen((o) => {
       const s = new Set<number>();
@@ -263,6 +297,67 @@ function ArrayField({ name, value, onChange, depth }: { name: string; value: Jso
       <button type="button" className="add" onClick={() => add(false)}>
         + {labelOf(name)} 추가
       </button>
+    </div>
+  );
+}
+
+function ImageField({ name, value, onChange }: { name: string; value: string; onChange: (v: Json) => void }) {
+  const upload = useContext(ImageUploadContext);
+  const [preview, setPreview] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function pick(file: File) {
+    if (!upload) return;
+    setBusy(true);
+    setError(null);
+    try {
+      const path = await upload(file, name);
+      setPreview(URL.createObjectURL(file));
+      onChange(path);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : String(e));
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  const shown = preview ?? (value || null);
+  return (
+    <div className="field">
+      <span className="field-label">
+        {labelOf(name)}
+        {HINTS[name] && <small>{HINTS[name]}</small>}
+      </span>
+      <div className="image-field">
+        {shown ? <img src={shown} alt="" className={name === 'photo' ? 'photo-preview' : 'shot-preview'} /> : <span className="no-image">없음</span>}
+        <div className="image-field-side">
+          <input value={value} onChange={(e) => onChange(e.target.value)} placeholder="/images/…" />
+          <span className="image-actions">
+            <label className={`mini file-btn ${busy ? 'is-busy' : ''}`}>
+              {busy ? '올리는 중…' : '사진 올리기'}
+              <input
+                type="file"
+                accept="image/*"
+                hidden
+                disabled={busy || !upload}
+                onChange={(e) => {
+                  const f = e.target.files?.[0];
+                  if (f) void pick(f);
+                  e.target.value = '';
+                }}
+              />
+            </label>
+            {value && (
+              <button type="button" className="mini danger" onClick={() => { setPreview(null); onChange(''); }}>
+                빼기
+              </button>
+            )}
+          </span>
+          {preview && <small className="muted">새 사진은 저장 후 사이트에 반영되면 보여요</small>}
+          {error && <span className="error">{error}</span>}
+        </div>
+      </div>
     </div>
   );
 }

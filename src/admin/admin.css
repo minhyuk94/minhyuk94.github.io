@@ -97,3 +97,10 @@ fieldset.depth-2, fieldset.depth-3 { border-left: 3px solid #ece8ff; padding-lef
 @media (max-width: 760px) {
   .l10n-grid { grid-template-columns: 1fr; }
 }
+
+.image-field { display: flex; gap: 0.9rem; align-items: flex-start; }
+.image-field-side { flex: 1; display: flex; flex-direction: column; gap: 0.4rem; }
+.image-actions { display: flex; gap: 0.4rem; }
+.shot-preview { width: 160px; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-radius: 8px; border: 1px solid #e3e7f0; }
+.no-image { width: 72px; height: 72px; display: grid; place-items: center; border: 1px dashed #c9cfdf; border-radius: 8px; color: #8a93ab; font-size: 0.8rem; }
+.file-btn.is-busy { opacity: 0.6; }

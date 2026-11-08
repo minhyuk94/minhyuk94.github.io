@@ -1,0 +1,22 @@
+name: Preview (temporary)
+on:
+  push:
+    branches: [projects-section]
+permissions:
+  contents: write
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: npm run build
+      - run: |
+          cd dist
+          git init -q -b preview-build
+          git add -A
+          git -c user.name=ci -c user.email=ci@example.com commit -qm preview
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" preview-build

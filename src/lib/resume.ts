@@ -45,6 +45,23 @@ export interface Resume {
       }[];
     }[];
   }[];
+  /** 사이드 프로젝트 (소스는 비공개, 무엇을 왜 만들었는지 소개) */
+  projects?: {
+    name: string;
+    /** 이미지가 없을 때 카드에 크게 보일 기호 */
+    icon: string;
+    /** "2026-11" */
+    period: string;
+    /** 대표 화면 이미지 경로. 비우면 기호로 대신 */
+    image: string;
+    /** 직접 써 볼 수 있는 주소 (있을 때만) */
+    link: string;
+    summary: L10n;
+    why: L10n;
+    /** 줄바꿈으로 항목 구분 */
+    features: L10n;
+    tags: string;
+  }[];
   skills: { category: L10n; items: string }[];
   education: { school: L10n; place: L10n; start: string; end: string; detail: L10n }[];
   certificates: { name: L10n; url: string }[];

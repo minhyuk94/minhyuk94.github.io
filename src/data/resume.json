@@ -398,6 +398,77 @@
       ]
     }
   ],
+  "projects": [
+    {
+      "name": "SecWatch",
+      "icon": "🛡️",
+      "period": "2026-11",
+      "image": "",
+      "link": "",
+      "summary": {
+        "ko": "보안 취약점·침해사고 모니터링 사이트",
+        "ja": "脆弱性・セキュリティインシデントの監視サイト",
+        "en": "Vulnerability and security-incident monitor"
+      },
+      "why": {
+        "ko": "PHP 보안 사고처럼 언어·기업별 보안 이슈가 계속 나오는데, 흩어진 정보를 매번 찾아보기 어려워 한곳에 모아 보기 위해 만들었습니다.",
+        "ja": "PHP のセキュリティ事故のように言語や企業ごとの問題が次々と起きる中、散らばった情報を毎回探すのは大変なため、一か所で確認できるようにつくりました。",
+        "en": "Security issues keep surfacing by language and vendor, as with recent PHP incidents, and the information is scattered. I built this to see it all in one place."
+      },
+      "features": {
+        "ko": "NVD·GitHub Advisory·CISA KEV·보안 뉴스를 주기적으로 자동 수집하고, 같은 CVE는 하나로 통합\n'실제 공격에 악용 중'인 취약점을 바로 구분해 표시\nPHP·Java·Spring 등 기술별, 기업·벤더별 통계와 30일 추이 대시보드\n한국어·영어·일본어 화면 지원",
+        "ja": "NVD・GitHub Advisory・CISA KEV・セキュリティニュースを定期的に自動収集し、同じ CVE を一つに統合\n「実際に悪用されている」脆弱性をひと目で区別して表示\nPHP・Java・Spring などの技術別、企業・ベンダー別の統計と 30 日間の推移ダッシュボード\n日本語・韓国語・英語の画面に対応",
+        "en": "Collects NVD, GitHub Advisory, CISA KEV and security news on a schedule and merges entries for the same CVE\nFlags vulnerabilities that are actively exploited in the wild\nDashboards by technology (PHP, Java, Spring…) and by vendor, with a 30-day trend\nUI in Korean, Japanese and English"
+      },
+      "tags": "React, TypeScript, Spring Boot, Java 21, PostgreSQL, Docker"
+    },
+    {
+      "name": "AutoMemo",
+      "icon": "✎",
+      "period": "2026-11",
+      "image": "",
+      "link": "",
+      "summary": {
+        "ko": "AI가 메모를 정리해 날짜별로 쌓아 주는 메모 앱",
+        "ja": "AI がメモを整理して日付ごとに残すメモアプリ",
+        "en": "Memo app where AI tidies notes and files them by date"
+      },
+      "why": {
+        "ko": "회사에서 급하게 적은 메모는 나중에 언제 무슨 내용이었는지 알기 어려워, 적기만 하면 AI가 정리하고 날짜별로 남겨 주도록 만들었습니다.",
+        "ja": "仕事中に急いで書いたメモは、後からいつ何の内容だったか分かりにくいため、書くだけで AI が整理して日付ごとに残してくれるようにしました。",
+        "en": "Notes scribbled in a hurry at work are hard to make sense of later, so I built an app where you just write and AI organizes them by date."
+      },
+      "features": {
+        "ko": "대충 적은 메모를 AI가 제목·요약·할 일 체크리스트·태그로 정리 (원문도 보관)\n손글씨·화이트보드 사진을 올리면 글자를 읽어 함께 정리\n날짜 지정 없이 자동으로 날짜별 타임라인과 달력에 기록\n클라우드 AI(Gemini)와 로컬 AI(Ollama)를 설정으로 전환해 사내 정보 보호",
+        "ja": "雑に書いたメモを AI がタイトル・要約・ToDo チェックリスト・タグに整理(原文も保存)\n手書きやホワイトボードの写真をアップすると文字を読み取って一緒に整理\n日付を指定しなくても自動で日付別タイムラインとカレンダーに記録\nクラウド AI(Gemini)とローカル AI(Ollama)を設定で切り替え、社内情報を保護",
+        "en": "AI turns rough notes into a title, summary, to-do checklist and tags, keeping the original\nUpload photos of handwriting or whiteboards and the text is read and organized too\nNotes land on a daily timeline and calendar automatically, no date picking\nSwitch between cloud AI (Gemini) and local AI (Ollama) to keep work data private"
+      },
+      "tags": "React, TypeScript, Spring Boot, PostgreSQL, Gemini API, Ollama, Docker"
+    },
+    {
+      "name": "EditFile",
+      "icon": "◧",
+      "period": "2026-11",
+      "image": "",
+      "link": "",
+      "summary": {
+        "ko": "업로드 없이 브라우저에서 처리하는 PDF·사진 편집 도구",
+        "ja": "アップロード不要、ブラウザで完結する PDF・画像編集ツール",
+        "en": "PDF and image editor that runs entirely in the browser"
+      },
+      "why": {
+        "ko": "기존 편집 사이트는 광고와 횟수 제한이 많고 파일을 서버에 올려야 해서, 회사 문서도 안심하고 쓸 수 있는 도구가 필요했습니다.",
+        "ja": "既存の編集サイトは広告や回数制限が多く、ファイルをサーバーにアップする必要があるため、社内文書も安心して使えるツールが欲しくてつくりました。",
+        "en": "Existing editing sites are full of ads and usage limits and require uploading files, so I wanted a tool I could trust with work documents."
+      },
+      "features": {
+        "ko": "PDF 합치기·나누기·페이지 정리·용량 줄이기, 사진↔PDF 변환\n휴대폰으로 찍은 문서의 그림자를 없애고 스캔본처럼 보정\nAI 배경 제거와 글자 추출(OCR)을 브라우저 안에서 실행 (WebAssembly)\n파일이 PC 밖으로 나가지 않아 서버 비용·횟수 제한 없음",
+        "ja": "PDF の結合・分割・ページ整理・容量削減、画像⇔PDF 変換\nスマホで撮った書類の影を取り除き、スキャンしたように補正\nAI 背景除去と文字抽出(OCR)をブラウザ内で実行(WebAssembly)\nファイルが PC の外に出ないため、サーバー費用も回数制限もなし",
+        "en": "Merge, split, reorganize and compress PDFs; convert between images and PDF\nClean up phone photos of documents so they look scanned\nAI background removal and OCR running in the browser (WebAssembly)\nFiles never leave the PC, so there are no server costs or usage limits"
+      },
+      "tags": "React, TypeScript, pdf-lib, pdf.js, ONNX Runtime, Tesseract.js"
+    }
+  ],
   "skills": [
     {
       "category": {

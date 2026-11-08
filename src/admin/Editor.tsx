@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useState, type FormEvent } from 'react';
-import { Field, labelOf, type Json, type Obj } from './fields';
+import { Field, ImageUploadContext, labelOf, type Json, type Obj } from './fields';
 import { GitHubError, REPO, RESUME_PATH, checkToken, readFile, writeFile } from './github';
 
 const TOKEN_KEY = 'resume-admin-token';
-const SECTIONS = ['profile', 'about', 'experience', 'skills', 'education', 'certificates'];
+const SECTIONS = ['profile', 'about', 'experience', 'projects', 'skills', 'education', 'certificates'];
+/** 데이터에 꼭 있어야 하는 항목 (projects는 없어도 됨) */
+const REQUIRED = SECTIONS.filter((s) => s !== 'projects');
 
 function loadToken(): { token: string; remember: boolean } {
   try {
@@ -39,8 +41,6 @@ export default function Editor() {
   const [rawMode, setRawMode] = useState(false);
   const [rawText, setRawText] = useState('');
   const [message, setMessage] = useState('이력서 갱신 (웹 편집)');
-  /** 방금 올린 사진 미리보기 (사이트에 반영되기 전이라 내 PC의 파일로 보여준다) */
-  const [photoPreview, setPhotoPreview] = useState<string | null>(null);
 
   const [busy, setBusy] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -112,7 +112,7 @@ export default function Editor() {
     try {
       const parsed = JSON.parse(rawText);
       if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) throw new Error('최상위는 { } 객체여야 합니다');
-      for (const s of SECTIONS) if (!(s in parsed)) throw new Error(`"${s}" 항목이 없습니다`);
+      for (const s of REQUIRED) if (!(s in parsed)) throw new Error(`"${s}" 항목이 없습니다`);
       setData(parsed);
       return parsed;
     } catch (e) {
@@ -137,17 +137,14 @@ export default function Editor() {
     });
   }
 
-  async function uploadPhoto(file: File) {
-    if (!data) return;
-    await run('사진 올리는 중…', async () => {
-      const bytes = await shrinkPhoto(file);
-      const path = `public/images/profile-${Date.now()}.jpg`;
-      await writeFile(token.trim(), path, bytes, '프로필 사진 변경 (웹 편집)', null);
-      const profile = { ...(data.profile as Obj), photo: path.replace(/^public/, '') };
-      setData({ ...data, profile });
-      setPhotoPreview(URL.createObjectURL(new Blob([bytes as BlobPart], { type: 'image/jpeg' })));
-      setNotice('사진을 올렸어요. 아래 "저장하기"를 눌러야 이력서에 적용돼요.');
-    });
+  /** 사진을 줄여서 저장소에 올리고 사이트 경로를 돌려준다. 이력서 저장은 따로 눌러야 적용 */
+  async function uploadImage(file: File, kind: string): Promise<string> {
+    const bytes = await shrinkPhoto(file, kind === 'photo' ? 800 : 1600);
+    const folder = kind === 'photo' ? 'public/images' : 'public/images/projects';
+    const path = `${folder}/${kind}-${Date.now()}.jpg`;
+    await writeFile(token.trim(), path, bytes, `${kind === 'photo' ? '프로필 사진' : '프로젝트 화면'} 올리기 (웹 편집)`, null);
+    setNotice('사진을 올렸어요. "저장하기"를 눌러야 이력서에 적용돼요.');
+    return path.replace(/^public/, '');
   }
 
   if (!authed || !data) {
@@ -200,7 +197,7 @@ export default function Editor() {
       </header>
 
       <nav className="tabs">
-        {SECTIONS.filter((s) => s in data).map((s) => (
+        {SECTIONS.filter((s) => s in data || s === 'projects').map((s) => (
           <button key={s} className={!rawMode && tab === s ? 'on' : ''} onClick={() => {
             if (rawMode && !applyRaw()) return;
             setRawMode(false);
@@ -228,28 +225,9 @@ export default function Editor() {
           </div>
         ) : (
           <>
-            {tab === 'profile' && (
-              <div className="photo-row">
-                {(photoPreview || (data.profile as Obj).photo) && (
-                  <img src={photoPreview ?? String((data.profile as Obj).photo)} alt="" className="photo-preview" />
-                )}
-                <label className="mini file-btn">
-                  사진 바꾸기
-                  <input
-                    type="file"
-                    accept="image/*"
-                    hidden
-                    onChange={(e) => {
-                      const f = e.target.files?.[0];
-                      if (f) void uploadPhoto(f);
-                      e.target.value = '';
-                    }}
-                  />
-                </label>
-                <small className="muted">새로 올린 사진은 저장 후 사이트에 반영되면 보여요.</small>
-              </div>
-            )}
-            <Field name={tab} value={data[tab] as Json} onChange={(v) => setData({ ...data, [tab]: v })} />
+            <ImageUploadContext.Provider value={uploadImage}>
+              <Field name={tab} value={(data[tab] ?? []) as Json} onChange={(v) => setData({ ...data, [tab]: v })} />
+            </ImageUploadContext.Provider>
           </>
         )}
       </main>
@@ -276,10 +254,10 @@ export default function Editor() {
   );
 }
 
-/** 프로필 사진을 긴 변 800px JPEG로 줄인다 (위치 정보 같은 EXIF도 빠짐) */
-async function shrinkPhoto(file: File): Promise<Uint8Array> {
+/** 사진을 긴 변 maxSide px JPEG로 줄인다 (위치 정보 같은 EXIF도 빠짐) */
+async function shrinkPhoto(file: File, maxSide: number): Promise<Uint8Array> {
   const bmp = await createImageBitmap(file, { imageOrientation: 'from-image' });
-  const scale = Math.min(1, 800 / Math.max(bmp.width, bmp.height));
+  const scale = Math.min(1, maxSide / Math.max(bmp.width, bmp.height));
   const canvas = document.createElement('canvas');
   canvas.width = Math.round(bmp.width * scale);
   canvas.height = Math.round(bmp.height * scale);

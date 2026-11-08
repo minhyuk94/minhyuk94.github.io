@@ -166,6 +166,36 @@ h1, h2, h3, .tagline, .intro p:first-child { text-wrap: balance; }
 .group li + li { margin-top: 0.3rem; }
 .group li::before { content: '–'; position: absolute; left: 0; color: #a3abc2; }
 
+/* 사이드 프로젝트 */
+.section-lead { color: var(--muted); margin: -1.75rem 0 2.25rem; font-size: 1.05rem; }
+.projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.4rem; }
+.project-card {
+  display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden; transition: transform 0.25s, box-shadow 0.25s;
+}
+.project-card:hover { transform: translateY(-4px); box-shadow: 0 24px 48px -28px rgba(26, 32, 51, 0.4); }
+.project-visual { aspect-ratio: 16 / 10; background: #eef1f8; border-bottom: 1px solid var(--line); overflow: hidden; }
+.project-visual img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.project-visual.no-image {
+  display: grid; place-items: center; background: var(--ink);
+  background-image: radial-gradient(240px 160px at 25% 30%, rgba(124, 92, 255, 0.45), transparent 70%),
+    radial-gradient(220px 160px at 80% 75%, rgba(34, 211, 238, 0.3), transparent 70%);
+}
+.project-icon { font-size: 3.4rem; color: #fff; filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35)); }
+.project-body { padding: 1.4rem 1.5rem 1.6rem; display: flex; flex-direction: column; gap: 0.7rem; flex: 1; }
+.project-head { display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem; }
+.project-head h3 { font-size: 1.4rem; font-weight: 850; }
+.project-period { font-size: 0.85rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.project-summary { font-weight: 650; color: #2c3654; }
+.project-why { font-size: 0.92rem; color: #4a5570; background: #f6f5ff; border-left: 3px solid var(--violet); padding: 0.6rem 0.8rem; border-radius: 0 8px 8px 0; }
+.project-why strong { color: var(--violet); margin-right: 0.3rem; }
+.project-features li { position: relative; padding-left: 1.1rem; font-size: 0.93rem; color: #46516b; }
+.project-features li + li { margin-top: 0.35rem; }
+.project-features li::before { content: ''; position: absolute; left: 0; top: 0.62em; width: 6px; height: 6px; border-radius: 2px; background: var(--grad); }
+.project-card .tags { margin-top: auto; padding-top: 0.4rem; }
+.project-link { align-self: flex-start; font-weight: 700; color: var(--violet); text-decoration: none; }
+.project-link:hover { text-decoration: underline; }
+
 /* 기술 */
 .skills { display: flex; flex-direction: column; }
 .skill-row { display: grid; grid-template-columns: 220px 1fr; gap: 2rem; padding: 1.3rem 0; border-bottom: 1px solid var(--line); align-items: center; }
@@ -281,6 +311,13 @@ h1, h2, h3, .tagline, .intro p:first-child { text-wrap: balance; }
   .skill-row { grid-template-columns: 150px 1fr !important; padding: 0.5rem 0; }
   .chips li { padding: 0.15rem 0.5rem; }
   .edu-grid { grid-template-columns: 1fr 1fr !important; gap: 1.5rem; }
+  .projects { grid-template-columns: repeat(3, 1fr) !important; gap: 0.6rem; }
+  .project-card { break-inside: avoid; }
+  .project-visual { aspect-ratio: 16 / 7; }
+  .project-icon { font-size: 2rem; }
+  .project-body { padding: 0.8rem; gap: 0.4rem; }
+  .project-head h3 { font-size: 1.1rem; }
+  .section-lead { margin: -0.6rem 0 0.8rem; }
   .section-title, .sub-title { break-after: avoid; }
   .intro p:first-child { font-size: 1.15rem; }
 }

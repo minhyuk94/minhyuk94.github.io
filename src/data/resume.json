@@ -400,6 +400,29 @@
   ],
   "projects": [
     {
+      "name": "추억의 오락실",
+      "icon": "🕹️",
+      "period": "2026-11",
+      "image": "",
+      "link": "",
+      "summary": {
+        "ko": "옛 웹 미니게임 감성의 게임들을 새로 만들어 모은 웹 오락실",
+        "ja": "昔のWebミニゲームの雰囲気を再現したゲームを新たに作って集めたWebゲームセンター",
+        "en": "A web arcade of newly made games in the spirit of classic browser mini-games"
+      },
+      "why": {
+        "ko": "학창 시절 즐기던 웹 미니게임들을 다시 한곳에서 하고 싶었습니다. 예전 게임을 가져오지 않고 규칙·그림·음악을 모두 직접 새로 만들고, 게임을 계속 추가할 수 있는 구조로 만들었습니다.",
+        "ja": "学生時代に楽しんだWebミニゲームを、もう一度一か所で遊びたいと思ったのがきっかけです。昔のゲームを持ってくるのではなく、ルール・グラフィック・音楽をすべて自分で新しく作り、ゲームを追加し続けられる構成にしました。",
+        "en": "I wanted to play the kind of browser mini-games I enjoyed as a student in one place again. Rather than bringing over old games, I created the rules, graphics and music myself, in a structure that makes it easy to keep adding games."
+      },
+      "features": {
+        "ko": "막대 결투: 졸라맨 1:1 격투 (콤보·막기·점프 공격·게이지 기술, 컴퓨터 3단계와 2인 대전)\n도토리 미로: 직접 설계한 미로에서 성격이 다른 추격자 넷을 피하는 미로 추격 게임\n음원 파일 없이 Web Audio로 작곡·합성하는 8비트 배경음악과 효과음\nPC 키보드와 휴대폰 터치 조작, 기록 저장\n게임 규칙을 화면과 분리해 테스트 (컴퓨터끼리 대전시켜 난이도 확인)",
+        "ja": "スティック・デュエル：棒人間の1対1格闘（コンボ・ガード・ジャンプ攻撃・ゲージ技、CPU 3段階と2人対戦）\nどんぐり迷路：自分で設計した迷路で、性格の違う追っ手4匹から逃げる迷路追跡ゲーム\n音源ファイルを使わず Web Audio で作曲・合成する 8 ビット風 BGM と効果音\nPC キーボードとスマホのタッチ操作、記録の保存\nゲームのルールを画面から分離してテスト（CPU 同士を対戦させて難易度を確認）",
+        "en": "Stick Duel: 1-on-1 stick-figure fighting (combos, blocking, jump attacks, meter special; 3 CPU levels and local 2-player)\nAcorn Maze: a maze chase on an original map, dodging four pursuers with different behaviors\n8-bit style music and sound effects composed and synthesized in code with Web Audio — no audio files\nKeyboard and mobile touch controls, saved records\nGame rules separated from rendering and tested (difficulty checked by CPU-vs-CPU matches)"
+      },
+      "tags": "React, TypeScript, Canvas 2D, Web Audio API, Game AI, Docker, GitHub Actions"
+    },
+    {
       "name": "Bake & Quest",
       "icon": "🧁",
       "period": "2026-11",

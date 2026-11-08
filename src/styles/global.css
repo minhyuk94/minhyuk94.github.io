@@ -97,7 +97,7 @@ h1, h2, h3, .tagline, .intro p:first-child { text-wrap: balance; }
   content: ''; position: absolute; inset: -10px; border-radius: 28px; background: var(--grad); opacity: 0.85; filter: blur(22px); z-index: 0;
 }
 .hero-photo img {
-  position: relative; z-index: 1; display: block; width: 100%; max-width: 300px; aspect-ratio: 3 / 4; object-fit: cover;
+  position: relative; z-index: 1; display: block; width: 100%; height: auto; max-width: 300px; aspect-ratio: 3 / 4; object-fit: cover;
   border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -253,7 +253,8 @@ h1, h2, h3, .tagline, .intro p:first-child { text-wrap: balance; }
   .name { color: var(--text); background: none; -webkit-text-fill-color: var(--text); font-size: 2.6rem; margin-top: 0.5rem; }
   .eyebrow { color: var(--muted); border-color: var(--line); }
   .tagline { color: #33405c; }
-  .hero-photo img { max-width: 110px; border: none; }
+  .hero-photo img { max-width: 110px; height: auto; aspect-ratio: 3 / 4; border: none; }
+  .hero-photo { break-inside: avoid; }
   .stats { background: none; border: 1px solid var(--line); margin-top: 1.2rem; }
   .stats li { background: #fff; padding: 0.6rem 0.9rem; }
   .stat-label { color: var(--muted); }

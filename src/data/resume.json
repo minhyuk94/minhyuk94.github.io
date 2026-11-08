@@ -416,11 +416,11 @@
         "en": "I wanted to replay a classic bakery-management game I used to enjoy, but it is no longer playable, so I made a new game that keeps what made it fun. The name, world and characters are all original, and I added real-time battles where you spend your earnings on gear and hunt for rare ingredients."
       },
       "features": {
-        "ko": "재료 2~4개를 섞어 요리 21종을 찾아내는 레시피 발견 시스템\n손님 취향·예산, 가격·품질·평판·가게 매력에 따라 달라지는 영업 시뮬레이션\n가구 배치와 벽지로 가게를 꾸미고, 같은 테마를 모으면 보너스\n캔버스로 만든 실시간 전투: 사냥터 4곳, 보스, 만든 요리를 도시락으로 먹으며 회복\n능력치 수련과 레벨업, 10·20·30일 요리 대회와 엔딩",
-        "ja": "食材を 2〜4 個組み合わせて 21 種類の料理を見つけるレシピ発見システム\nお客さんの好み・予算、価格・品質・評判・お店の魅力によって変わる営業シミュレーション\n家具の配置と壁紙でお店を飾り、同じテーマを揃えるとボーナス\nCanvas で作ったリアルタイムバトル：狩り場 4 か所とボス、作った料理をお弁当として食べて回復\n能力の修行とレベルアップ、10・20・30 日目の料理大会とエンディング",
-        "en": "Recipe discovery: combine 2–4 ingredients to find 21 dishes\nShop simulation driven by customer tastes and budgets, price, quality, reputation and shop charm\nDecorate the shop with furniture and wallpaper, with bonuses for matching themes\nReal-time Canvas combat: 4 hunting grounds and a boss, healing by eating your own dishes\nStat training and leveling, cooking contests on days 10, 20 and 30, and an ending"
+        "ko": "재료 2~4개를 섞어 요리 21종을 찾아내는 레시피 발견 시스템\n손님 취향·예산, 가격·품질·평판·가게 매력에 따라 달라지는 영업 시뮬레이션\n가구 배치와 벽지로 가게를 꾸미고, 같은 테마를 모으면 보너스\n캔버스로 만든 실시간 전투: 사냥터 4곳, 보스, 만든 요리를 도시락으로 먹으며 회복\n능력치 수련과 레벨업, 10·20·30일 요리 대회와 엔딩\n음원 파일 없이 Web Audio로 직접 작곡·합성하는 배경음악 (상황별 3곡)",
+        "ja": "食材を 2〜4 個組み合わせて 21 種類の料理を見つけるレシピ発見システム\nお客さんの好み・予算、価格・品質・評判・お店の魅力によって変わる営業シミュレーション\n家具の配置と壁紙でお店を飾り、同じテーマを揃えるとボーナス\nCanvas で作ったリアルタイムバトル：狩り場 4 か所とボス、作った料理をお弁当として食べて回復\n能力の修行とレベルアップ、10・20・30 日目の料理大会とエンディング\n音源ファイルを使わず Web Audio で作曲・合成する BGM（場面別に 3 曲）",
+        "en": "Recipe discovery: combine 2–4 ingredients to find 21 dishes\nShop simulation driven by customer tastes and budgets, price, quality, reputation and shop charm\nDecorate the shop with furniture and wallpaper, with bonuses for matching themes\nReal-time Canvas combat: 4 hunting grounds and a boss, healing by eating your own dishes\nStat training and leveling, cooking contests on days 10, 20 and 30, and an ending\nBackground music composed and synthesized in code with Web Audio — no audio files (3 tracks by scene)"
       },
-      "tags": "React, TypeScript, Canvas 2D, Game Design, Docker, GitHub Actions"
+      "tags": "React, TypeScript, Canvas 2D, Web Audio API, Game Design, Docker, GitHub Actions"
     },
     {
       "name": "WebCompiler",

@@ -79,21 +79,21 @@
   },
   "about": {
     "intro": {
-      "ko": "결제·에너지처럼 멈추면 안 되는 서비스를 만들고 지켜 온 소프트웨어 엔지니어입니다.\n2020년부터 일본에서 일하고 있습니다. 스타트업 SECURE에서는 프론트엔드부터 인프라, IoT 하드웨어까지 서비스 전체를 맡아 초기 개발부터 릴리스, 서버 구축까지 경험했습니다.\n라쿠텐에서는 전기·가스 서비스의 배치 시스템, 모니터링, 오퍼레이션을 담당하며 대규모 서비스를 안정적으로 운용하고 자동화하는 방법을 깊이 배웠습니다.\n현재는 신메트리아에서 GMO 페이먼트 게이트웨이의 결제 시스템을 맡아, 메모리 부족(OOM)이 발생하던 배치를 개선하고 보안 대응을 강화하는 등 서비스의 품질과 안정성을 높이고 있습니다.",
-      "ja": "決済やエネルギーのように「止まってはいけない」サービスをつくり、守ってきたソフトウェアエンジニアです。\n2020年から日本で働いています。スタートアップの SECURE では、フロントエンドからインフラ、IoT ハードウェアまでサービス全体を担当し、初期開発からリリース、サーバー構築までを経験しました。\n楽天では電気・ガスサービスのバッチシステム、モニタリング、オペレーションを担当し、大規模サービスを安定して運用・自動化する方法を深く学びました。\n現在はシンメトリアにて GMO ペイメントゲートウェイの決済システムを担当し、メモリ不足(OOM)が発生していたバッチの改善やセキュリティ対応の強化など、サービスの品質と安定性の向上に取り組んでいます。",
-      "en": "A software engineer who builds and protects services that must not stop, from payments to energy.\nI have worked in Japan since 2020. At the start-up SECURE I owned the whole service, from frontend to infrastructure and IoT hardware, through initial development, release and server setup.\nAt Rakuten I ran batch systems, monitoring and operations for an electricity and gas service, learning in depth how to operate and automate a large-scale service reliably.\nToday, at Symmetria, I work on GMO Payment Gateway's payment platform, fixing a batch job that was running out of memory and strengthening security to raise quality and stability."
+      "ko": "결제·에너지처럼 멈추면 안 되는 서비스를 만들고 지켜 온 소프트웨어 엔지니어입니다.\n2020년부터 일본에서 일하고 있습니다. 영업 중심으로 성장하다 자체 서비스 개발을 시작한 벤처기업 SECURE에서는 개발 초기 단계부터 참여해 프론트엔드, 인프라, IoT 하드웨어까지 서비스 전체를 맡으며 초기 개발부터 릴리스, 서버 구축까지 경험했습니다.\n라쿠텐에서는 전기·가스 서비스의 배치 시스템, 모니터링, 오퍼레이션을 담당하며 대규모 서비스를 안정적으로 운용하는 방법과 함께, 대기업의 체계적인 업무 플로우, 보고 체계, 운영 체계 속에서 일하는 방식을 익혔습니다.\n현재는 신메트리아에서 결제대행 서비스의 결제 시스템 개발과 유지보수를 맡고 있습니다.",
+      "ja": "決済やエネルギーのように「止まってはいけない」サービスをつくり、守ってきたソフトウェアエンジニアです。\n2020年から日本で働いています。営業中心に成長し、自社サービスの開発を始めたベンチャー企業 SECURE では、開発の立ち上げ段階から参加し、フロントエンド、インフラ、IoT ハードウェアまでサービス全体を担当して、初期開発からリリース、サーバー構築までを経験しました。\n楽天では電気・ガスサービスのバッチシステム、モニタリング、オペレーションを担当し、大規模サービスを安定して運用する方法とともに、大企業ならではの体系的な業務フロー・報告体制・運用体制の中での仕事の進め方を身につけました。\n現在はシンメトリアにて、決済代行サービスの決済システムの開発・保守を担当しています。",
+      "en": "A software engineer who builds and protects services that must not stop, from payments to energy.\nI have worked in Japan since 2020. At SECURE, a sales-driven venture company that had just started building its own service, I joined at the start of development and owned the whole service, from frontend to infrastructure and IoT hardware, through initial development, release and server setup.\nAt Rakuten I ran batch systems, monitoring and operations for an electricity and gas service. Beyond operating a large-scale service reliably, I learned how work gets done in a large company: structured workflows, reporting lines and operational processes.\nToday, at Symmetria, I develop and maintain the payment platform of a payment service provider."
     },
     "values": [
       {
         "title": {
-          "ko": "문서화",
-          "ja": "ドキュメント",
-          "en": "Documentation"
+          "ko": "커뮤니케이션",
+          "ja": "コミュニケーション",
+          "en": "Communication"
         },
         "body": {
-          "ko": "개발과 운영의 모든 것을 기록한 정리된 문서가 있어야 빠르고 안정적으로 나아갈 수 있습니다. 누가 봐도 이해하기 쉽게 쓰고, 이후 갱신과 관리까지 이어지게 하는 것이 문서 작성의 완성이라고 생각합니다.",
-          "ja": "開発と運用のすべてを記録した整理されたドキュメントがあってこそ、スピーディーで安定した進行ができます。誰が読んでも分かりやすく書き、その後の更新・管理まで続けられることがドキュメントの完成だと考えています。",
-          "en": "Fast, stable progress depends on well-organized documents that record how a service is built and run. A document is only finished when anyone can understand it and it stays updated and maintained."
+          "ko": "개발도 혼자 하는 일이 아닙니다. 기획·영업과 끊임없이 소통해야 하고, 그중에서도 기획이나 수정 요청이 왜 나왔는지, 그 의도와 목적을 정확히 파악하는 것이 가장 중요하다고 생각합니다. 요청받은 그대로가 아니라 목적에 맞는 것을 만들어야 정말 필요한 결과가 나옵니다.",
+          "ja": "開発も一人で進めるものではありません。企画や営業との継続的なコミュニケーションが欠かせず、中でも企画や修正依頼が「なぜ」出てきたのか、その意図と目的を正確に把握することが最も重要だと考えています。言われた通りではなく、目的に合ったものをつくってこそ、本当に必要な結果につながります。",
+          "en": "Development is never a solo job. It takes constant communication with planning and sales, and above all an accurate understanding of why a feature or change is being requested. Building what serves that purpose, rather than exactly what was asked, is what delivers the result that is actually needed."
         }
       },
       {
@@ -103,9 +103,9 @@
           "en": "Connectivity"
         },
         "body": {
-          "ko": "프로젝트의 모든 업무는 서로 연결되어 있습니다. 주변 업무를 파악한 상태에서 일하면 이해도 높은 작업이 가능하고, 팀원과의 협업에도 도움이 되는 책임감 있는 팀원이 될 수 있습니다.",
-          "ja": "プロジェクトのすべての業務はつながっています。周りの業務を把握したうえで進めることで理解度の高い作業ができ、チームメンバーとの協業にも役立つ、責任感のあるメンバーになれると考えています。",
-          "en": "Every task in a project is connected. Understanding the work around my own leads to better results and makes me a responsible teammate who helps others collaborate."
+          "ko": "내 담당 범위만 볼 것이 아니라, 연결된 주변 프로젝트와 서비스, 나아가 외부 서비스까지 함께 살펴봅니다. \"이 서비스는 우리와 이런 점이 다르구나\", \"최근 이런 보안 이슈가 있었는데 우리도 해당되지 않을까\"처럼, 연결된 것들에서 배우고 미리 대비하는 것을 중요하게 생각합니다.",
+          "ja": "自分の担当範囲だけでなく、つながっている周辺のプロジェクトやサービス、さらには外部のサービスまで視野に入れます。「このサービスは自分たちとここが違う」「最近こんなセキュリティ問題があったが、うちも該当しないか」のように、つながりから学び、先回りして備えることを大切にしています。",
+          "en": "I look beyond my own scope to the projects and services connected to it, and even to outside services. Noticing how another service differs from ours, or asking whether a recent security incident elsewhere could affect us too, is how I learn from those connections and prepare in advance."
         }
       },
       {
@@ -115,9 +115,9 @@
           "en": "Improvement"
         },
         "body": {
-          "ko": "기존 서비스를 다시 생각해 보면 개선점뿐 아니라 숨은 문제도 발견하게 되고, 스스로도 더 깊은 지식을 얻게 됩니다. 항상 서비스를 더 낫게 만들려는 의지를 중요하게 생각합니다.",
-          "ja": "既存のサービスを見直すことで、改善点だけでなく隠れた問題も見つかり、自分自身もより深い知識を得られます。常にサービスをより良くしようとする意欲を大切にしています。",
-          "en": "Rethinking an existing service reveals not only improvements but hidden problems, and deepens my own knowledge. I always keep the will to make a service better."
+          "ko": "제가 말하는 발전은 새 기능을 더하는 것이 아니라, 기존 서비스를 고쳐서 실제로 나아진 결과를 만드는 것입니다. 개선으로 수익을 올리거나, UI·UX를 다듬어 사용자가 더 편해지거나, 업무 플로우를 자동화해 일의 효율을 높이는 것. 이런 결과로 이어지는 개선을 늘 고민합니다.",
+          "ja": "私の考える「発展」とは、新しい機能を足すことではなく、既存のサービスを改善して実際に良くなった結果を生み出すことです。改善によって収益を上げる、UI・UX を整えてユーザーが使いやすくなる、業務フローを自動化して仕事の効率を高める。こうした結果につながる改善を常に考えています。",
+          "en": "To me, progress is not adding new features but improving what already exists until the results are better: raising revenue, refining the UI and UX so users have an easier time, or automating workflows so the team works more efficiently. I always look for improvements that lead to outcomes like these."
         }
       }
     ]
@@ -263,6 +263,18 @@
                 "ko": "설계(기본·상세) → 테스트(단위·기능·결합·성능) → 릴리스 공정에 따른 개발\n외부 CRM(Salesforce) 연계 개발 및 API 통신 테스트\n로컬 개발 환경 구축과 매뉴얼 정비",
                 "ja": "設計(基本・詳細)→ テスト(単体・機能・結合・性能)→ リリースの工程に沿った開発\n外部 CRM(Salesforce)連携開発と API 通信テスト\nローカル開発環境の構築とマニュアル整備",
                 "en": "Development through design (basic, detailed) → testing (unit, functional, integration, performance) → release\nIntegration with an external CRM (Salesforce) and API communication testing\nLocal development environment setup and manuals"
+              }
+            },
+            {
+              "title": {
+                "ko": "대기업 업무 방식",
+                "ja": "大企業での業務の進め方",
+                "en": "Ways of working"
+              },
+              "items": {
+                "ko": "설계 → 리뷰 → 테스트 → 릴리스로 이어지는 단계별 업무 플로우를 문서 기반으로 진행\n정해진 보고 체계에 따라 진척·이슈·장애를 공유하고 에스컬레이션\n여러 팀이 함께 움직이는 운영 체계 속에서 역할 분담과 일정 조율",
+                "ja": "設計 → レビュー → テスト → リリースの工程に沿った業務フローを、ドキュメントベースで推進\n定められた報告体制に沿って進捗・課題・障害を共有し、エスカレーション\n複数チームが連携する運用体制の中での役割分担とスケジュール調整",
+                "en": "Followed a staged, document-driven workflow from design through review, testing and release\nShared progress, issues and incidents and escalated them through defined reporting lines\nCoordinated roles and schedules within an operating model spanning several teams"
               }
             }
           ]

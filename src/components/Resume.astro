@@ -1,0 +1,328 @@
+---
+import data from '../data/resume.json';
+import {
+  LANGS,
+  formatDuration,
+  formatPeriod,
+  lines,
+  list,
+  months,
+  sortedExperience,
+  totalExperienceMonths,
+  tr,
+  type Lang,
+  type Resume,
+} from '../lib/resume';
+import { LANG_LABEL, ui } from '../lib/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const r = data as Resume;
+const t = ui[lang];
+const p = r.profile;
+
+const totalMonths = totalExperienceMonths(r);
+const stats = [
+  { value: Math.floor(totalMonths / 12), label: t.stats.years },
+  { value: new Set(r.experience.map((e) => e.company)).size, label: t.stats.companies },
+  { value: p.languages.length, label: t.stats.languages },
+  { value: r.certificates.length, label: t.stats.certificates },
+];
+const experience = sortedExperience(r);
+const initials = (p.name.en || 'M')
+  .split(/\s+/)
+  .map((w) => w[0])
+  .join('')
+  .slice(0, 2)
+  .toUpperCase();
+const birth = p.birthDate ? p.birthDate.replaceAll('-', '.') : '';
+---
+
+<header class="topnav" id="top">
+  <a href="#top" class="logo" aria-label={tr(p.name, lang)}>
+    <span class="logo-mark">{initials}</span>
+  </a>
+  <nav class="sections" aria-label="sections">
+    <a href="#about">{t.nav.about}</a>
+    <a href="#experience">{t.nav.experience}</a>
+    <a href="#skills">{t.nav.skills}</a>
+    <a href="#education">{t.nav.education}</a>
+    <a href="#contact">{t.nav.contact}</a>
+  </nav>
+  <div class="langs" role="group" aria-label="Language">
+    {
+      LANGS.map((l) => (
+        <a href={`/${l}/`} class:list={['lang', { on: l === lang }]} hreflang={l} lang={l} data-lang={l} aria-current={l === lang ? 'page' : undefined}>
+          {LANG_LABEL[l]}
+        </a>
+      ))
+    }
+  </div>
+</header>
+
+<main>
+  <!-- ───────── 첫 화면 ───────── -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-text reveal">
+        <p class="eyebrow">{tr(p.role, lang)} · {tr(p.location, lang)}</p>
+        <h1 class="name">{tr(p.name, lang)}</h1>
+        <p class="tagline">{tr(p.tagline, lang)}</p>
+        <div class="hero-actions">
+          {p.email && <a class="btn primary" href={`mailto:${p.email}`}>{t.emailMe}</a>}
+          {p.links.map((l) => <a class="btn ghost" href={l.url} target="_blank" rel="noopener noreferrer">{l.label}</a>)}
+          <button class="btn ghost print-btn" type="button" data-print>{t.download}</button>
+        </div>
+      </div>
+      {
+        p.photo && (
+          <div class="hero-photo reveal">
+            <img src={p.photo} alt={tr(p.name, lang)} width="320" height="427" loading="eager" />
+          </div>
+        )
+      }
+    </div>
+    <div class="wrap">
+      <ul class="stats reveal">
+        {
+          stats.map((s) => (
+            <li>
+              <span class="stat-value" data-count={s.value}>{s.value}</span>
+              <span class="stat-label">{s.label}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- ───────── 소개 ───────── -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <h2 class="section-title reveal"><span>01</span>{t.about}</h2>
+      <div class="about-grid">
+        <div class="intro reveal">
+          {lines(r.about.intro, lang).map((para) => <p>{para}</p>)}
+        </div>
+        <dl class="facts reveal">
+          <div><dt>{t.nationality}</dt><dd>{tr(p.nationality, lang)}</dd></div>
+          {birth && <div><dt>{t.born}</dt><dd>{birth}</dd></div>}
+          {
+            p.languages.map((l) => (
+              <div>
+                <dt>{tr(l.name, lang)}</dt>
+                <dd>{tr(l.level, lang)}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+      <h3 class="sub-title reveal">{t.values}</h3>
+      <div class="values">
+        {
+          r.about.values.map((v, i) => (
+            <article class="value-card reveal">
+              <span class="value-no">{String(i + 1).padStart(2, '0')}</span>
+              <h4>{tr(v.title, lang)}</h4>
+              <p>{tr(v.body, lang)}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── 경력 ───────── -->
+  <section id="experience" class="section alt">
+    <div class="wrap">
+      <h2 class="section-title reveal"><span>02</span>{t.experience}</h2>
+      <ol class="timeline">
+        {
+          experience.map((e) => (
+            <li class="job reveal">
+              <div class="job-side">
+                <span class="job-period">{formatPeriod(e.start, e.end, lang)}</span>
+                <span class="job-duration">{formatDuration(months(e.start, e.end), lang)}</span>
+              </div>
+              <div class="job-card">
+                <header class="job-head">
+                  <h3>
+                    {e.url ? (
+                      <a href={e.url} target="_blank" rel="noopener noreferrer">{e.company}</a>
+                    ) : (
+                      e.company
+                    )}
+                  </h3>
+                  <span class="job-place">{tr(e.place, lang)}</span>
+                </header>
+                {e.projects.map((pr) => (
+                  <div class="project">
+                    <h4>{tr(pr.name, lang)}</h4>
+                    {list(pr.tags).length > 0 && (
+                      <ul class="tags">
+                        {list(pr.tags).map((tag) => <li>{tag}</li>)}
+                      </ul>
+                    )}
+                    <div class="groups">
+                      {pr.groups.map((g) => (
+                        <div class="group">
+                          <h5>{tr(g.title, lang)}</h5>
+                          <ul>
+                            {lines(g.items, lang).map((it) => <li>{it}</li>)}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- ───────── 기술 ───────── -->
+  <section id="skills" class="section">
+    <div class="wrap">
+      <h2 class="section-title reveal"><span>03</span>{t.skills}</h2>
+      <div class="skills">
+        {
+          r.skills.map((s) => (
+            <div class="skill-row reveal">
+              <h3>{tr(s.category, lang)}</h3>
+              <ul class="chips">
+                {list(s.items).map((it) => <li>{it}</li>)}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── 학력·자격증 ───────── -->
+  <section id="education" class="section alt">
+    <div class="wrap">
+      <h2 class="section-title reveal"><span>04</span>{t.nav.education}</h2>
+      <div class="edu-grid">
+        <div class="reveal">
+          <h3 class="sub-title">{t.education}</h3>
+          <ul class="edu-list">
+            {
+              r.education.map((ed) => (
+                <li>
+                  <span class="edu-period">{formatPeriod(ed.start, ed.end, lang)}</span>
+                  <strong>{tr(ed.school, lang)}</strong>
+                  <span class="muted">{tr(ed.place, lang)}</span>
+                  {tr(ed.detail, lang) && <p>{tr(ed.detail, lang)}</p>}
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div class="reveal">
+          <h3 class="sub-title">{t.certificates}</h3>
+          <ul class="cert-list">
+            {
+              r.certificates.map((c) => (
+                <li>
+                  <span class="cert-dot" aria-hidden="true" />
+                  {c.url ? (
+                    <a href={c.url} target="_blank" rel="noopener noreferrer">{tr(c.name, lang)} ↗</a>
+                  ) : (
+                    tr(c.name, lang)
+                  )}
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── 연락 ───────── -->
+  <section id="contact" class="contact">
+    <div class="wrap reveal">
+      <h2>{t.contact}</h2>
+      <p>{t.contactBody}</p>
+      {p.email && <a class="btn primary big" href={`mailto:${p.email}`}>{p.email}</a>}
+      <div class="contact-links">
+        {p.links.map((l) => <a href={l.url} target="_blank" rel="noopener noreferrer">{l.label} ↗</a>)}
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">© {new Date().getFullYear()} {p.name.en} · {t.updated} {new Date().toISOString().slice(0, 10)}</div>
+</footer>
+
+<script>
+  // 고른 언어 기억 (첫 화면 자동 선택이 이 값을 우선한다)
+  document.querySelectorAll<HTMLAnchorElement>('[data-lang]').forEach((a) =>
+    a.addEventListener('click', () => {
+      try {
+        localStorage.setItem('lang', a.dataset.lang ?? '');
+      } catch {
+        /* 저장소를 못 써도 이동은 된다 */
+      }
+    }),
+  );
+
+  document.querySelector('[data-print]')?.addEventListener('click', () => window.print());
+
+  // 스크롤하면 부드럽게 나타나기 (움직임 줄이기 설정이면 생략)
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const items = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    items.forEach((el) => el.classList.add('shown'));
+  } else {
+    const io = new IntersectionObserver(
+      (entries) =>
+        entries.forEach((en) => {
+          if (en.isIntersecting) {
+            en.target.classList.add('shown');
+            io.unobserve(en.target);
+          }
+        }),
+      { threshold: 0.12 },
+    );
+    items.forEach((el) => io.observe(el));
+  }
+
+  // 숫자가 0부터 올라가는 효과
+  if (!reduce) {
+    document.querySelectorAll<HTMLElement>('[data-count]').forEach((el) => {
+      const target = Number(el.dataset.count);
+      if (!target) return;
+      const start = performance.now();
+      const step = (now: number) => {
+        const k = Math.min(1, (now - start) / 900);
+        el.textContent = String(Math.round(target * (1 - Math.pow(1 - k, 3))));
+        if (k < 1) requestAnimationFrame(step);
+      };
+      el.textContent = '0';
+      requestAnimationFrame(step);
+    });
+  }
+
+  // 지금 보고 있는 구역을 메뉴에 표시
+  const links = document.querySelectorAll<HTMLAnchorElement>('.sections a');
+  const sections = [...links].map((a) => document.querySelector(a.getAttribute('href') ?? ''));
+  const spy = new IntersectionObserver(
+    (entries) =>
+      entries.forEach((en) => {
+        if (!en.isIntersecting) return;
+        links.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === `#${en.target.id}`));
+      }),
+    { rootMargin: '-45% 0px -50% 0px' },
+  );
+  sections.forEach((s) => s && spy.observe(s));
+</script>

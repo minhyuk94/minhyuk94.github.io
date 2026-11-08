@@ -1,0 +1,53 @@
+name: Build & Deploy
+
+# master에 올라가면(웹 편집 페이지에서 저장한 것 포함) 빌드해서 GitHub Pages에 배포한다.
+# 다른 브랜치·PR에서는 빌드 검사만 한다.
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      # 이력서 데이터가 깨지지 않았는지 먼저 확인 (웹 편집으로 잘못 저장해도 사이트가 망가지지 않게)
+      - run: node scripts/validate-resume.mjs
+      - run: npm run build
+      # master가 아닌 브랜치는 결과물을 내려받아 미리 볼 수 있게 남겨 둔다
+      - if: github.ref != 'refs/heads/master'
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-preview
+          path: dist
+          retention-days: 7
+      - if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

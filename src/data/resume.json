@@ -1,0 +1,454 @@
+{
+  "profile": {
+    "name": {
+      "ko": "유민혁",
+      "ja": "ユ・ミンヒョク",
+      "en": "Minhyuk Yoo"
+    },
+    "role": {
+      "ko": "소프트웨어 엔지니어",
+      "ja": "ソフトウェアエンジニア",
+      "en": "Software Engineer"
+    },
+    "tagline": {
+      "ko": "만들고 끝나는 서비스가 아니라, 오래 안정적으로 돌아가는 서비스를 만듭니다.",
+      "ja": "作って終わりではなく、長く安定して動き続けるサービスをつくります。",
+      "en": "I build services that keep running reliably long after release."
+    },
+    "location": {
+      "ko": "일본 도쿄",
+      "ja": "東京",
+      "en": "Tokyo, Japan"
+    },
+    "nationality": {
+      "ko": "대한민국",
+      "ja": "韓国",
+      "en": "Republic of Korea"
+    },
+    "birthDate": "1994-12-07",
+    "photo": "/images/profile.jpg",
+    "email": "kmd3568@gmail.com",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/minhyuk-yoo-b075331a5/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/minhyuk94"
+      }
+    ],
+    "languages": [
+      {
+        "name": {
+          "ko": "한국어",
+          "ja": "韓国語",
+          "en": "Korean"
+        },
+        "level": {
+          "ko": "모국어",
+          "ja": "ネイティブ",
+          "en": "Native"
+        }
+      },
+      {
+        "name": {
+          "ko": "일본어",
+          "ja": "日本語",
+          "en": "Japanese"
+        },
+        "level": {
+          "ko": "비즈니스",
+          "ja": "ビジネス",
+          "en": "Business"
+        }
+      },
+      {
+        "name": {
+          "ko": "영어",
+          "ja": "英語",
+          "en": "English"
+        },
+        "level": {
+          "ko": "일상 회화",
+          "ja": "日常会話",
+          "en": "Conversational"
+        }
+      }
+    ]
+  },
+  "about": {
+    "intro": {
+      "ko": "2020년부터 일본에서 소프트웨어 엔지니어로 일하고 있습니다.\n첫 회사인 SECURE에서는 스타트업 프로젝트에서 프론트엔드, 백엔드, 인프라, 하드웨어를 가리지 않고 개발에 참여해 초기 제작부터 릴리스와 서버 구축까지 경험했습니다.\n이후 서버 관리, 테스트, 자동화 같은 운용의 중요성에 흥미를 느껴 라쿠텐으로 옮겼고, 대규모 트랜잭션 처리, 배치 시스템, 오퍼레이션을 통해 더 깊이 있는 서비스 운용을 배웠습니다.\n이 경험을 살려 더 많은 서비스를 개선하고 싶습니다.",
+      "ja": "2020年から日本でソフトウェアエンジニアとして働いています。\n最初の会社 SECURE では、スタートアップのプロジェクトでフロントエンド・バックエンド・インフラ・ハードウェアの領域を問わず開発に携わり、サービスの初期制作からリリース、サーバー構築までを経験しました。\nその過程でさまざまなバグやサーバーダウン、性能問題に悩みながら改善してきました。\nその後、運用の重要性に関心を持ち楽天へ転職し、大規模サービスでのバッチシステム、モニタリング、オペレーションを深く経験しました。この経験を活かして、サービス全体の改善に貢献したいと考えています。",
+      "en": "I have been working as a software engineer in Japan since 2020.\nAt my first company, SECURE, I worked on a start-up project across frontend, backend, infrastructure and hardware, taking part in everything from the initial build to release and server setup.\nGrowing interested in operations such as server management, testing and automation, I moved to Rakuten, where I learned service operations in depth through large-scale transaction processing, batch systems and day-to-day operations.\nI want to use this experience to improve more services."
+    },
+    "values": [
+      {
+        "title": {
+          "ko": "문서화",
+          "ja": "ドキュメント",
+          "en": "Documentation"
+        },
+        "body": {
+          "ko": "개발과 운영의 모든 것을 기록한 정리된 문서가 있어야 빠르고 안정적으로 나아갈 수 있습니다. 누가 봐도 이해하기 쉽게 쓰고, 이후 갱신과 관리까지 이어지게 하는 것이 문서 작성의 완성이라고 생각합니다.",
+          "ja": "開発と運用のすべてを記録した整理されたドキュメントがあってこそ、スピーディーで安定した進行ができます。誰が読んでも分かりやすく書き、その後の更新・管理まで続けられることがドキュメントの完成だと考えています。",
+          "en": "Fast, stable progress depends on well-organized documents that record how a service is built and run. A document is only finished when anyone can understand it and it stays updated and maintained."
+        }
+      },
+      {
+        "title": {
+          "ko": "연결성",
+          "ja": "つながり",
+          "en": "Connectivity"
+        },
+        "body": {
+          "ko": "프로젝트의 모든 업무는 서로 연결되어 있습니다. 주변 업무를 파악한 상태에서 일하면 이해도 높은 작업이 가능하고, 팀원과의 협업에도 도움이 되는 책임감 있는 팀원이 될 수 있습니다.",
+          "ja": "プロジェクトのすべての業務はつながっています。周りの業務を把握したうえで進めることで理解度の高い作業ができ、チームメンバーとの協業にも役立つ、責任感のあるメンバーになれると考えています。",
+          "en": "Every task in a project is connected. Understanding the work around my own leads to better results and makes me a responsible teammate who helps others collaborate."
+        }
+      },
+      {
+        "title": {
+          "ko": "개선 의지",
+          "ja": "改善への意欲",
+          "en": "Improvement"
+        },
+        "body": {
+          "ko": "기존 서비스를 다시 생각해 보면 개선점뿐 아니라 숨은 문제도 발견하게 되고, 스스로도 더 깊은 지식을 얻게 됩니다. 항상 서비스를 더 낫게 만들려는 의지를 중요하게 생각합니다.",
+          "ja": "既存のサービスを見直すことで、改善点だけでなく隠れた問題も見つかり、自分自身もより深い知識を得られます。常にサービスをより良くしようとする意欲を大切にしています。",
+          "en": "Rethinking an existing service reveals not only improvements but hidden problems, and deepens my own knowledge. I always keep the will to make a service better."
+        }
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Rakuten",
+      "url": "https://energy.rakuten.co.jp/",
+      "place": {
+        "ko": "일본",
+        "ja": "日本",
+        "en": "Japan"
+      },
+      "start": "2023-01",
+      "end": "2024-05",
+      "projects": [
+        {
+          "name": {
+            "ko": "라쿠텐 에너지 (전기·가스 서비스)",
+            "ja": "楽天エナジー(電気・ガスサービス)",
+            "en": "Rakuten Energy (electricity & gas services)"
+          },
+          "tags": "Laravel, Salesforce, Jenkins, Grafana, Selenium",
+          "groups": [
+            {
+              "title": {
+                "ko": "배치 시스템 관리",
+                "ja": "バッチシステム管理",
+                "en": "Batch system management"
+              },
+              "items": {
+                "ko": "Laravel Command를 사용한 배치 개발 및 유지보수\n배치 스케줄(crontab) 작성과 스케줄표 관리",
+                "ja": "Laravel Command を使ったバッチ開発・メンテナンス\nバッチスケジュール(crontab)とスケジュール表の作成",
+                "en": "Batch development and maintenance with Laravel Command\nBatch schedules (crontab) and schedule tables"
+              }
+            },
+            {
+              "title": {
+                "ko": "개발",
+                "ja": "開発",
+                "en": "Development"
+              },
+              "items": {
+                "ko": "로컬 환경 세팅 및 매뉴얼 작성\n설계(기본·상세) → 테스트(단위·기능·결합·성능) → 릴리스 단계 기반 개발\n외부 CRM(Salesforce) 연계 개발",
+                "ja": "ローカル環境の構築とマニュアル作成\n設計(基本・詳細)→ テスト(単体・機能・結合・性能)→ リリースの工程に沿った開発\n外部 CRM(Salesforce)連携開発",
+                "en": "Local environment setup and manuals\nDevelopment through design (basic, detailed) → testing (unit, functional, integration, performance) → release\nIntegration with an external CRM (Salesforce)"
+              }
+            },
+            {
+              "title": {
+                "ko": "오퍼레이션 및 테스트",
+                "ja": "オペレーション・テスト",
+                "en": "Operations & testing"
+              },
+              "items": {
+                "ko": "오퍼레이션용 SQL·SOQL 매뉴얼 작성 및 실시\n오퍼레이션 개선 (매뉴얼 간소화 및 자동화)\nAPI 통신 테스트 (개발 단계 및 업데이트 시)\nSelenium·Swagger API로 대량 테스트 데이터 작성 간소화",
+                "ja": "オペレーション用 SQL・SOQL マニュアルの作成と実施\nオペレーション改善(マニュアルの簡素化・自動化)\nAPI 通信テスト(開発段階・アップデート時)\nSelenium・Swagger API による大量テストデータ作成の効率化",
+                "en": "Wrote and ran SQL/SOQL manuals for operations\nImproved operations by simplifying and automating manuals\nAPI communication testing during development and updates\nSimplified bulk test-data creation with Selenium and Swagger API"
+              }
+            },
+            {
+              "title": {
+                "ko": "모니터링",
+                "ja": "モニタリング",
+                "en": "Monitoring"
+              },
+              "items": {
+                "ko": "에러 체크 및 대응 매뉴얼 작성\nJenkins와 Slack 연동으로 에러 로그 통지·관리\nGrafana를 이용한 서버 부하 감시",
+                "ja": "エラーチェック・対応マニュアルの作成\nJenkins と Slack の連携によるエラーログ通知・管理\nGrafana によるサーバー負荷監視",
+                "en": "Error checking and handling manuals\nError-log notifications by integrating Jenkins with Slack\nServer load monitoring with Grafana"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": "SECURE Inc.",
+      "url": "https://secureinc.co.jp/",
+      "place": {
+        "ko": "일본",
+        "ja": "日本",
+        "en": "Japan"
+      },
+      "start": "2020-04",
+      "end": "2022-04",
+      "projects": [
+        {
+          "name": {
+            "ko": "얼굴 인증 입퇴실 관리 서비스",
+            "ja": "顔認証入退室管理サービス",
+            "en": "Face-recognition entry/exit management service"
+          },
+          "tags": "Laravel, AWS, IoT, MQTT, GitHub Actions, Selenium",
+          "groups": [
+            {
+              "title": {
+                "ko": "IoT 모듈 개발 및 세팅",
+                "ja": "IoT モジュールの開発・設定",
+                "en": "IoT module development & setup"
+              },
+              "items": {
+                "ko": "OS 이미지 작성 (통신 환경 및 보안 설정)\nIoT 모듈·서버·인증 카메라 간 통신 환경 구축\n에러 실시간 모니터링 환경 구축 (AWS MQTT & CloudWatch)",
+                "ja": "OS イメージの作成(通信環境・セキュリティ設定)\nIoT モジュール・サーバー・認証カメラ間の通信環境構築\nエラーのリアルタイム監視環境の構築(AWS MQTT & CloudWatch)",
+                "en": "Built OS images (network and security settings)\nCommunication between IoT modules, servers and authentication cameras\nReal-time error monitoring (AWS MQTT & CloudWatch)"
+              }
+            },
+            {
+              "title": {
+                "ko": "개발·테스트 환경 구축",
+                "ja": "開発・テスト環境の構築",
+                "en": "Development & test environments"
+              },
+              "items": {
+                "ko": "개발 환경 분리 구축 (develop, staging)\nCI/CD 환경 구축 (GitHub Actions)\n서버 안정성을 위한 오토스케일링·로드밸런서 구축\n테스트 케이스 작성 및 실시 (Selenium)\nSSL 인증서 관리 및 갱신",
+                "ja": "開発環境の分離構築(develop、staging)\nCI/CD 環境の構築(GitHub Actions)\nサーバー安定性のためのオートスケーリング・ロードバランサー構築\nテストケースの作成と実施(Selenium)\nSSL 証明書の管理・更新",
+                "en": "Separate environments (develop, staging)\nCI/CD with GitHub Actions\nAuto scaling and load balancing for server stability\nWrote and ran test cases (Selenium)\nManaged and renewed SSL certificates"
+              }
+            },
+            {
+              "title": {
+                "ko": "사용자 요청 대응",
+                "ja": "ユーザー要望への対応",
+                "en": "User requests"
+              },
+              "items": {
+                "ko": "API 별도 제공 (Swagger API 작성 및 제공)\n대량 이미지 등록 처리 및 사용자 로직 개선\n캐시 문제 개선 (Laravel Mix 도입)\n카메라 센서 감지 시 동작 전후 영상 로그 저장 개발",
+                "ja": "API の個別提供(Swagger API の作成・提供)\n大量画像登録処理とユーザーロジックの改善\nキャッシュ問題の改善(Laravel Mix 導入)\nカメラセンサー検知時に動作前後の映像ログを保存する機能の開発",
+                "en": "Provided a separate API (Swagger documentation)\nBulk image registration and improved user logic\nFixed cache issues by introducing Laravel Mix\nSaved video logs before and after camera-sensor detection"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "ko": "사내 비품 관리 서비스",
+            "ja": "社内備品管理サービス",
+            "en": "In-house equipment management service"
+          },
+          "tags": "Laravel, Azure",
+          "groups": [
+            {
+              "title": {
+                "ko": "서비스 개발 및 구축",
+                "ja": "サービスの開発・構築",
+                "en": "Service development"
+              },
+              "items": {
+                "ko": "기본 설계와 개발 전체 담당 (Laravel, Azure)\n사용자 대응 및 유지보수",
+                "ja": "基本設計と開発全般を担当(Laravel、Azure)\nユーザー対応・メンテナンス",
+                "en": "Owned basic design and all development (Laravel, Azure)\nUser support and maintenance"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": "YMK",
+      "url": "http://ymk.co.kr/main/main.php",
+      "place": {
+        "ko": "한국",
+        "ja": "韓国",
+        "en": "Korea"
+      },
+      "start": "2016-12",
+      "end": "2018-07",
+      "projects": [
+        {
+          "name": {
+            "ko": "디스플레이 생산 장비 제작 및 관리",
+            "ja": "ディスプレイ生産設備の製作・管理",
+            "en": "Display manufacturing equipment"
+          },
+          "tags": "PLC, Samsung Display",
+          "groups": [
+            {
+              "title": {
+                "ko": "제작 및 유지보수",
+                "ja": "製作・メンテナンス",
+                "en": "Manufacturing & maintenance"
+              },
+              "items": {
+                "ko": "PLC 프로그램을 이용한 장비 이동 제어 및 수정\n삼성디스플레이 공장 현장 서비스 엔지니어\n디스플레이 생산 장비 제작 및 조립\n터치 패널 제작 및 번역\n전기 배선 및 IO 테스트\n장비 해체 및 포장",
+                "ja": "PLC プログラムによる設備の移動制御・修正\nサムスンディスプレイ工場のフィールドサービスエンジニア\nディスプレイ生産設備の製作・組立\nタッチパネルの製作・翻訳\n電気配線・IO テスト\n設備の解体・梱包",
+                "en": "Equipment motion control and changes with PLC programs\nField service engineer at Samsung Display factories\nBuilt and assembled display production equipment\nBuilt and translated touch panels\nElectrical wiring and IO testing\nDismantled and packed equipment"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": {
+        "ko": "프로그래밍 언어",
+        "ja": "プログラミング言語",
+        "en": "Languages"
+      },
+      "items": "PHP (Laravel, CakePHP, FuelPHP), Java (Spring), Python, JavaScript, C++"
+    },
+    {
+      "category": {
+        "ko": "데이터베이스",
+        "ja": "データベース",
+        "en": "Databases"
+      },
+      "items": "MySQL, PostgreSQL, Oracle, SOQL (Salesforce)"
+    },
+    {
+      "category": {
+        "ko": "클라우드 · AWS",
+        "ja": "クラウド・AWS",
+        "en": "Cloud · AWS"
+      },
+      "items": "EC2, S3, RDS, CloudWatch, Auto Scaling, ELB, IoT Core (MQTT)"
+    },
+    {
+      "category": {
+        "ko": "클라우드 · Azure",
+        "ja": "クラウド・Azure",
+        "en": "Cloud · Azure"
+      },
+      "items": "Virtual Machines, Blob Storage, Azure Database for MySQL"
+    },
+    {
+      "category": {
+        "ko": "CI/CD · 서버",
+        "ja": "CI/CD・サーバー",
+        "en": "CI/CD & servers"
+      },
+      "items": "Docker, Jenkins, GitHub Actions, Apache, Nginx"
+    },
+    {
+      "category": {
+        "ko": "모니터링 · 테스트",
+        "ja": "監視・テスト",
+        "en": "Monitoring & testing"
+      },
+      "items": "Grafana, CloudWatch, Selenium, Swagger"
+    },
+    {
+      "category": {
+        "ko": "협업 도구",
+        "ja": "コラボレーション",
+        "en": "Collaboration"
+      },
+      "items": "Jira, Confluence, Backlog, Notion, Slack, Microsoft Teams, GitHub, Bitbucket"
+    }
+  ],
+  "education": [
+    {
+      "school": {
+        "ko": "Smart Cloud IT Master",
+        "ja": "Smart Cloud IT Master",
+        "en": "Smart Cloud IT Master"
+      },
+      "place": {
+        "ko": "한국",
+        "ja": "韓国",
+        "en": "Korea"
+      },
+      "start": "2019-03",
+      "end": "2019-12",
+      "detail": {
+        "ko": "프로그래밍 & 비즈니스 일본어 교육 이수",
+        "ja": "プログラミング&ビジネス日本語教育を修了",
+        "en": "Completed programming and business Japanese training"
+      }
+    },
+    {
+      "school": {
+        "ko": "동양미래대학교 정보전자공학과",
+        "ja": "東洋未来大学 情報電子工学科",
+        "en": "Dongyang Mirae University, Information & Electronic Engineering"
+      },
+      "place": {
+        "ko": "한국",
+        "ja": "韓国",
+        "en": "Korea"
+      },
+      "start": "2013-03",
+      "end": "2017-02",
+      "detail": {
+        "ko": "졸업 · GPA 3.75/4.5 (2014–2015 군 복무)",
+        "ja": "卒業・GPA 3.75/4.5(2014–2015 兵役)",
+        "en": "Associate degree · GPA 3.75/4.5 (military service 2014–2015)"
+      }
+    }
+  ],
+  "certificates": [
+    {
+      "name": {
+        "ko": "JLPT N2",
+        "ja": "日本語能力試験 N2",
+        "en": "JLPT N2"
+      },
+      "url": ""
+    },
+    {
+      "name": {
+        "ko": "정보처리산업기사",
+        "ja": "情報処理産業技師(韓国)",
+        "en": "Industrial Engineer Information Processing (Korea)"
+      },
+      "url": ""
+    },
+    {
+      "name": {
+        "ko": "Microsoft Azure Fundamentals (AZ-900)",
+        "ja": "Microsoft Azure Fundamentals(AZ-900)",
+        "en": "Microsoft Azure Fundamentals (AZ-900)"
+      },
+      "url": "https://www.credly.com/badges/64d98cd3-4b5e-4ffd-a4ba-73762eb244c7"
+    },
+    {
+      "name": {
+        "ko": "AWS Certified Cloud Practitioner",
+        "ja": "AWS 認定クラウドプラクティショナー",
+        "en": "AWS Certified Cloud Practitioner"
+      },
+      "url": ""
+    },
+    {
+      "name": {
+        "ko": "TOEIC 620점",
+        "ja": "TOEIC 620点",
+        "en": "TOEIC 620"
+      },
+      "url": ""
+    }
+  ]
+}

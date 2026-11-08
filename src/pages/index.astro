@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import data from '../data/resume.json';
+import { LANGS, tr, type Resume } from '../lib/resume';
+import { LANG_LABEL } from '../lib/ui';
+
+const r = data as Resume;
+---
+
+<Base
+  title={`${r.profile.name.en} | ${r.profile.role.en}`}
+  description={r.profile.tagline.en}
+  lang="en"
+  image={r.profile.photo}
+  alternates={LANGS.map((l) => ({ lang: l, href: `/${l}/` }))}
+>
+  <!-- 방문자 언어로 바로 이동. 고른 적이 있으면 그 언어, 아니면 브라우저 언어, 그 밖은 영어 -->
+  <script is:inline>
+    (function () {
+      var langs = ['ko', 'ja', 'en'];
+      var pick = null;
+      try {
+        pick = localStorage.getItem('lang');
+      } catch (e) {}
+      if (langs.indexOf(pick) < 0) {
+        var prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
+        for (var i = 0; i < prefs.length && !pick; i++) {
+          var base = String(prefs[i]).toLowerCase().split('-')[0];
+          if (langs.indexOf(base) >= 0) pick = base;
+        }
+      }
+      location.replace('/' + (pick || 'en') + '/' + location.hash);
+    })();
+  </script>
+  <main class="chooser">
+    <h1>{r.profile.name.en}</h1>
+    <p>{tr(r.profile.role, 'en')}</p>
+    <div class="chooser-links">
+      {LANGS.map((l) => <a href={`/${l}/`} lang={l}>{LANG_LABEL[l]}</a>)}
+    </div>
+  </main>
+</Base>

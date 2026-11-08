@@ -1,0 +1,10 @@
+---
+import Base from '../../layouts/Base.astro';
+import Editor from '../../admin/Editor';
+import '../../admin/admin.css';
+---
+
+<Base title="이력서 편집" description="이력서 편집 페이지" lang="ko" noindex>
+  <Editor client:only="react" />
+  <noscript>이 페이지는 JavaScript가 필요합니다.</noscript>
+</Base>

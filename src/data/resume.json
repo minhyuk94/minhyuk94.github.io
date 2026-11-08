@@ -400,6 +400,29 @@
   ],
   "projects": [
     {
+      "name": "WebCompiler",
+      "icon": "🧪",
+      "period": "2026-11",
+      "image": "",
+      "link": "",
+      "summary": {
+        "ko": "웹에서 바로 컴파일·실행·채점·디버깅하는 코딩 도구",
+        "ja": "ブラウザでコンパイル・実行・採点・デバッグができるコーディングツール",
+        "en": "Browser-based tool to compile, run, judge and debug code"
+      },
+      "why": {
+        "ko": "C++·Java 등으로 코딩 테스트를 연습할 때마다 언어별 컴파일 명령과 빌드 스크립트를 챙기고, 디버그용 출력문을 넣었다 지웠다 하는 과정이 번거로웠습니다. 백준처럼 코드만 쓰면 바로 결과를 보고, 더 나아가 웹에서 한 줄씩 디버깅까지 할 수 있게 만들었습니다.",
+        "ja": "C++ や Java でコーディングテストを練習するたびに、言語ごとのコンパイルコマンドやビルドスクリプトを用意し、デバッグ用の出力文を入れては消す作業が手間でした。オンラインジャッジのようにコードを書くだけで結果を確認でき、さらにブラウザ上でステップ実行までできるようにつくりました。",
+        "en": "Practicing coding tests in C++ or Java meant juggling compile commands and build scripts for each language, and adding and removing debug prints. I built this so I can just write code and see the result, as on an online judge, and step through it in the browser."
+      },
+      "features": {
+        "ko": "C·C++·Java·Python·JavaScript·PHP·Go 7개 언어를 한 화면에서 컴파일·실행\n컴파일 오류는 줄 위치와 함께, 실행 오류(세그멘테이션 오류·예외·시간/메모리 초과)는 원인 설명과 함께 표시\n테스트 케이스 채점과 기대 출력·내 출력 줄 단위 비교\nC·C++·Python 단계별 디버거 (중단점, 한 줄씩 실행, 변수·호출 스택·조사식)\n사용자 코드는 권한 없는 계정·자원 제한·인터넷 차단 상태로 격리 실행",
+        "ja": "C・C++・Java・Python・JavaScript・PHP・Go の 7 言語を一つの画面でコンパイル・実行\nコンパイルエラーは行番号付きで、実行時エラー（セグメンテーション違反・例外・時間／メモリ超過）は原因の説明付きで表示\nテストケースの一括採点と、期待出力・実際の出力の行単位比較\nC・C++・Python のステップ実行デバッガ（ブレークポイント、1 行ずつ実行、変数・コールスタック・ウォッチ式）\nユーザーのコードは権限のないアカウント・リソース制限・ネットワーク遮断の環境で隔離して実行",
+        "en": "Compile and run 7 languages (C, C++, Java, Python, JavaScript, PHP, Go) from one screen\nCompile errors with line positions; runtime errors (segfaults, exceptions, time/memory limits) with an explanation of the likely cause\nBatch judging of test cases with a line-by-line diff of expected vs. actual output\nStep debugger for C, C++ and Python (breakpoints, stepping, variables, call stack, watch expressions)\nUser code runs isolated: unprivileged account, resource limits, no network access"
+      },
+      "tags": "React, TypeScript, Node.js, Monaco Editor, gdb, Linux (seccomp), Docker, GitHub Actions"
+    },
+    {
       "name": "SecWatch",
       "icon": "🛡️",
       "period": "2026-11",

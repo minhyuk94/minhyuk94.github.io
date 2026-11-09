@@ -5,9 +5,15 @@
 ## 구조
 
 - 내용은 전부 `src/data/resume.json` 하나 (ko / ja / en). 화면은 `src/components/Resume.astro`.
-- 이력서 주소는 **`https://minhyuk94.github.io/resume/`** (`astro.config.mjs`의 `base: '/resume'`, 결과는 `dist/resume/`). 루트와 예전 주소(`/`, `/ko/`, `/profile/…`)는 `scripts/root-pages.mjs`가 `/resume/…`로 보낸다. 사이트 안 주소·이미지 경로(`/images/…`)는 화면에서 꼭 `url()`(`src/lib/resume.ts`)로 감싼다. 데이터에는 `/images/…` 그대로 적는다.
+- 이력서 주소는 **`https://minhyuk94.github.io/resume/`** (`astro.config.mjs`의 `base: '/resume'`, 결과는 `dist/resume/`). 루트에서 이력서로 자동으로 보내지 않는다(사용자 요청). 사이트 안 주소·이미지 경로(`/images/…`)는 화면에서 꼭 `url()`(`src/lib/resume.ts`)로 감싼다. 데이터에는 `/images/…` 그대로 적는다.
 - 기본 브랜치는 **`master`**. master에 푸시하면 GitHub Actions가 `scripts/validate-resume.mjs`로 데이터 검사 → `astro check` → 빌드 → GitHub Pages 배포.
 - `/admin` 웹 편집 페이지는 GitHub Contents API로 master의 `src/data/resume.json`에 직접 커밋한다. 데이터 구조를 바꾸면 `src/admin/fields.tsx`의 라벨·힌트·템플릿, `scripts/validate-resume.mjs`도 같이 고친다.
+
+## 사이트 맨 앞: 오늘의 운세
+
+- `https://minhyuk94.github.io/`는 **오늘의 운세** 페이지 (`fortune/index.html` + `fortune/fortune.js`, 빌드 없는 정적 파일). `scripts/root-pages.mjs`가 빌드 후 `dist/`에 복사한다.
+- 날짜(+생년월일)로 정해지는 재미용 운세. 같은 날·같은 사람이면 늘 같은 결과. 문구는 새로 쓴 것만. 규칙을 바꾸면 `fortune/fortune.test.mjs`(CI에서 실행)를 맞춘다.
+- 생년월일은 방문자 브라우저(localStorage)에만 저장하고 어디로도 보내지 않는다.
 
 ## 개인정보 (절대 규칙)
 

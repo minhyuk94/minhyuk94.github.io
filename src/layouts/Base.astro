@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { url } from '../lib/resume';
 
 interface Props {
   title: string;
@@ -13,7 +14,7 @@ interface Props {
 
 const { title, description, lang, alternates = [], noindex = false, image } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const ogImage = image ? new URL(image, Astro.site).toString() : undefined;
+const ogImage = image ? new URL(url(image), Astro.site).toString() : undefined;
 ---
 
 <!doctype html>
@@ -33,7 +34,7 @@ const ogImage = image ? new URL(image, Astro.site).toString() : undefined;
     {ogImage && <meta property="og:image" content={ogImage} />}
     <meta name="twitter:card" content="summary" />
     <meta name="theme-color" content="#0b0f1a" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link
       rel="stylesheet"

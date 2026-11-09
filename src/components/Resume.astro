@@ -11,6 +11,7 @@ import {
   totalExperienceMonths,
   text,
   tr,
+  url,
   type Lang,
   type Resume,
 } from '../lib/resume';
@@ -64,7 +65,7 @@ const birth = p.birthDate ? p.birthDate.replaceAll('-', '.') : '';
   <div class="langs" role="group" aria-label="Language">
     {
       LANGS.map((l) => (
-        <a href={`/${l}/`} class:list={['lang', { on: l === lang }]} hreflang={l} lang={l} data-lang={l} aria-current={l === lang ? 'page' : undefined}>
+        <a href={url(`/${l}/`)} class:list={['lang', { on: l === lang }]} hreflang={l} lang={l} data-lang={l} aria-current={l === lang ? 'page' : undefined}>
           {LANG_LABEL[l]}
         </a>
       ))
@@ -90,7 +91,7 @@ const birth = p.birthDate ? p.birthDate.replaceAll('-', '.') : '';
       {
         p.photo && (
           <div class="hero-photo reveal">
-            <img src={p.photo} alt={tr(p.name, lang)} width="320" height="427" loading="eager" />
+            <img src={url(p.photo)} alt={tr(p.name, lang)} width="320" height="427" loading="eager" />
           </div>
         )
       }
@@ -220,7 +221,7 @@ const birth = p.birthDate ? p.birthDate.replaceAll('-', '.') : '';
         <div class="wrap">
           <h2 class="section-title reveal"><span>{String(projects.length > 0 ? 4 : 3).padStart(2, '0')}</span>{t.games}</h2>
           <p class="section-lead reveal">
-            {t.gamesLead} <a class="gallery-link" href={`/${lang}/games/`}>{t.gallery} →</a>
+            {t.gamesLead} <a class="gallery-link" href={url(`/${lang}/games/`)}>{t.gallery} →</a>
           </p>
           <div class="projects">
             {games.map((pj) => (

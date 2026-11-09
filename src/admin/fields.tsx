@@ -1,6 +1,7 @@
 // 이력서 데이터를 모양에 맞춰 자동으로 입력 폼으로 그린다.
 // 새 항목을 resume.json에 추가해도 폼이 알아서 따라온다.
 import { createContext, useContext, useState } from 'react';
+import { url } from '../lib/resume';
 
 type Json = string | number | boolean | null | Json[] | { [k: string]: Json };
 type Obj = { [k: string]: Json };
@@ -91,7 +92,7 @@ const E = { ko: '', ja: '', en: '' };
 /** 목록이 비었을 때 새 항목의 모양 (항목이 있으면 첫 항목 모양을 따른다) */
 const TEMPLATES: Record<string, Json> = {
   projects: { name: '', icon: '', period: '', image: '', link: '', summary: E, why: E, features: E, tags: '' },
-  games: { name: '', icon: '', period: '', image: '', link: '', summary: E, why: E, features: E, tags: '', gallery: [{ image: '', caption: E }] },
+  games: { name: E, icon: '', period: '', image: '', link: '', summary: E, why: E, features: E, tags: '', gallery: [{ image: '', caption: E }] },
   gallery: { image: '', caption: E },
   experience: { company: E, url: '', place: E, start: '', end: '', projects: [{ name: E, tags: '', groups: [{ title: E, items: E }] }] },
   certificates: { name: E, url: '' },
@@ -326,7 +327,7 @@ function ImageField({ name, value, onChange }: { name: string; value: string; on
     }
   }
 
-  const shown = preview ?? (value || null);
+  const shown = preview ?? (value ? url(value) : null);
   return (
     <div className="field">
       <span className="field-label">

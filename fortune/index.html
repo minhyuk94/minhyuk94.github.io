@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>오늘의 운세</title>
+<meta name="description" content="생년월일로 보는 오늘의 운세와 띠별 운세. 날마다 바뀌어요." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="오늘의 운세" />
+<meta property="og:description" content="생년월일로 보는 오늘의 운세와 띠별 운세. 날마다 바뀌어요." />
+<meta property="og:url" content="https://minhyuk94.github.io/" />
+<meta name="theme-color" content="#14122b" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2314122b'/%3E%3Cpath d='M40 14a20 20 0 1 0 10 30A16 16 0 1 1 40 14z' fill='%23f4d27a'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<style>
+  :root {
+    --night: #14122b; --night2: #221d45; --paper: #fbf6ea; --ink: #2b2620; --muted: #7b7163;
+    --gold: #e9c46a; --red: #c8553d; --line: #e6dcc6;
+    --serif: 'Gowun Batang', 'Nanum Myeongjo', 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', serif; --sans: 'Pretendard Variable', Pretendard, system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { font-family: var(--sans); color: var(--ink); background: radial-gradient(1200px 600px at 70% -10%, #3a2f6b 0%, transparent 60%), linear-gradient(180deg, var(--night) 0%, var(--night2) 55%, #2d2450 100%); min-height: 100vh; }
+  .sky { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+  .wrap { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 40px 20px 60px; }
+  header { text-align: center; color: #f3ecdc; margin-bottom: 26px; }
+  .langs { position: absolute; top: 14px; right: 16px; display: flex; gap: 4px; background: rgba(255, 255, 255, 0.08); border-radius: 999px; padding: 4px; z-index: 2; }
+  .langs button { border: 0; background: transparent; color: #cfc6ea; font: inherit; font-size: 13px; padding: 5px 10px; border-radius: 999px; cursor: pointer; }
+  .langs button.on { background: #f3ecdc; color: var(--night); font-weight: 700; }
+  .moon { width: 64px; height: 64px; margin: 0 auto 10px; display: block; filter: drop-shadow(0 0 18px rgba(244, 210, 122, 0.55)); }
+  h1 { font-family: var(--serif); font-size: clamp(34px, 6vw, 48px); margin: 0; letter-spacing: 0.06em; }
+  .date { margin-top: 14px; display: inline-flex; align-items: center; gap: 10px; }
+  .date strong { font-family: var(--serif); font-size: 18px; min-width: 190px; }
+  .date button { border: 1px solid rgba(243, 236, 220, 0.35); background: transparent; color: #f3ecdc; border-radius: 999px; padding: 6px 12px; font: inherit; font-size: 13px; cursor: pointer; }
+  .date button:hover { background: rgba(255, 255, 255, 0.08); }
+  .date button.today { border-color: var(--gold); color: var(--gold); }
+
+  .card { background: var(--paper); border-radius: 18px; box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35); padding: 28px; position: relative; overflow: hidden; }
+  .card::before { content: ''; position: absolute; inset: 10px; border: 1px solid var(--line); border-radius: 12px; pointer-events: none; }
+  .card h2 { font-family: var(--serif); font-size: 22px; margin: 0 0 4px; }
+  .sub { color: var(--muted); font-size: 14px; margin: 0 0 18px; }
+
+  form.birth { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  form.birth label { font-weight: 600; }
+  form.birth input { font: inherit; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: #fff; min-width: 170px; }
+  .btn { font: inherit; font-weight: 700; border: 0; border-radius: 10px; padding: 11px 18px; cursor: pointer; background: var(--ink); color: #fff; }
+  .btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); font-weight: 600; }
+  .note { font-size: 12px; color: var(--muted); margin: 10px 0 0; }
+
+  .result { display: none; margin-top: 22px; }
+  .result.on { display: block; animation: rise 0.5s ease both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .who { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+  .chip { background: #f1e8d3; border-radius: 999px; padding: 6px 12px; font-size: 14px; }
+  .top { display: grid; grid-template-columns: 150px 1fr; gap: 22px; align-items: center; }
+  .ring { width: 150px; height: 150px; position: relative; }
+  .ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+  .ring .num { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; font-family: var(--serif); }
+  .ring .num b { font-size: 40px; line-height: 1; }
+  .ring .num span { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .stars { color: var(--red); letter-spacing: 3px; font-size: 18px; }
+  .total { font-family: var(--serif); font-size: 19px; line-height: 1.6; margin: 6px 0 0; }
+  .parts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 24px; }
+  .part { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .part .head { display: flex; justify-content: space-between; align-items: baseline; font-weight: 700; }
+  .bar { height: 6px; background: #efe6d2; border-radius: 99px; margin: 8px 0 10px; overflow: hidden; }
+  .bar i { display: block; height: 100%; border-radius: 99px; background: linear-gradient(90deg, var(--gold), var(--red)); }
+  .part p { margin: 0; font-size: 14px; line-height: 1.55; }
+  .lucky { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 20px; }
+  .lucky div { text-align: center; background: #f6efde; border-radius: 12px; padding: 12px 6px; }
+  .lucky small { display: block; color: var(--muted); font-size: 12px; margin-bottom: 6px; }
+  .lucky b { font-size: 15px; }
+  .swatch { display: inline-block; width: 14px; height: 14px; border-radius: 50%; vertical-align: -2px; margin-right: 5px; border: 1px solid rgba(0, 0, 0, 0.15); }
+  .word { margin: 22px 0 0; text-align: center; font-family: var(--serif); font-size: 20px; padding: 18px; border-top: 1px dashed var(--line); }
+  .word::before { content: '“'; color: var(--red); } .word::after { content: '”'; color: var(--red); }
+  .actions { display: flex; gap: 10px; justify-content: center; margin-top: 6px; }
+
+  .animals { margin-top: 28px; }
+  .animals h2 { color: #f3ecdc; font-family: var(--serif); text-align: center; margin: 0 0 6px; }
+  .animals .sub { color: #c9c0e6; text-align: center; }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .a { background: rgba(251, 246, 234, 0.96); border-radius: 14px; padding: 14px; text-align: center; border: 2px solid transparent; }
+  .a.mine { border-color: var(--gold); box-shadow: 0 0 0 4px rgba(233, 196, 106, 0.25); }
+  .a .e { font-size: 30px; }
+  .a .n { font-weight: 700; margin-top: 2px; }
+  .a .s { color: var(--red); font-size: 13px; letter-spacing: 1px; }
+  .a p { margin: 6px 0 0; font-size: 13px; line-height: 1.45; }
+  .a small { display: block; color: var(--muted); font-size: 12px; margin-top: 6px; }
+  footer { text-align: center; color: #b9b0d8; font-size: 13px; margin-top: 34px; line-height: 1.8; }
+  footer a { color: #f3ecdc; }
+  .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: #111; color: #fff; padding: 10px 16px; border-radius: 10px; font-size: 14px; opacity: 0; transition: opacity 0.2s; z-index: 5; }
+  .toast.on { opacity: 0.95; }
+  @media (max-width: 640px) {
+    .langs { position: relative; top: 0; right: 0; margin: 14px auto 0; width: fit-content; }
+    .wrap { padding-top: 16px; }
+    .card { padding: 22px 18px; }
+    .top { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+    .parts { grid-template-columns: 1fr; }
+    .lucky { grid-template-columns: repeat(2, 1fr); }
+    .lucky div:last-child { grid-column: span 2; }
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    .date strong { min-width: 0; font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<canvas class="sky" id="sky"></canvas>
+<div class="langs" role="group" aria-label="Language"><button data-lang="ko" lang="ko">한국어</button><button data-lang="ja" lang="ja">日本語</button><button data-lang="en" lang="en">English</button></div>
+<div class="wrap">
+  <header>
+    <svg class="moon" viewBox="0 0 64 64" aria-hidden="true"><defs><radialGradient id="mg" cx="40%" cy="35%"><stop offset="0" stop-color="#fff3c4" /><stop offset="1" stop-color="#e9c46a" /></radialGradient></defs><path d="M40 6a26 26 0 1 0 18 40A21 21 0 1 1 40 6z" fill="url(#mg)" /></svg>
+    <h1 data-i="title">오늘의 운세</h1>
+    <div class="date">
+      <button id="prev" data-i="prev">‹ 어제</button>
+      <strong id="dateLabel"></strong>
+      <button id="next" data-i="next">내일 ›</button>
+    </div>
+    <div style="margin-top: 8px"><button class="date-today" id="today" hidden style="border:1px solid #e9c46a;color:#e9c46a;background:transparent;border-radius:999px;padding:4px 12px;font:inherit;font-size:12px;cursor:pointer" data-i="today">오늘로</button></div>
+  </header>
+
+  <section class="card">
+    <h2 data-i="mine">내 운세 보기</h2>
+    <p class="sub" data-i="mineSub">생년월일을 넣으면 띠와 별자리, 오늘의 운세를 알려 드려요. 이 브라우저에만 저장돼요.</p>
+    <form class="birth" id="form">
+      <label for="birth" data-i="birth">생년월일</label>
+      <input id="birth" type="date" min="1900-01-01" max="2100-12-31" required />
+      <button class="btn" type="submit" data-i="show">운세 보기</button>
+      <button class="btn ghost" type="button" id="forget" hidden data-i="forget">지우기</button>
+    </form>
+    <div class="result" id="result">
+      <div class="who" id="who"></div>
+      <div class="top">
+        <div class="ring">
+          <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" fill="none" stroke="#efe6d2" stroke-width="10" /><circle id="arc" cx="60" cy="60" r="52" fill="none" stroke="url(#rg)" stroke-width="10" stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="326.7" style="transition: stroke-dashoffset 0.9s ease" /><defs><linearGradient id="rg"><stop offset="0" stop-color="#e9c46a" /><stop offset="1" stop-color="#c8553d" /></linearGradient></defs></svg>
+          <div class="num"><b id="score">0</b><span data-i="totalLabel">총운</span></div>
+        </div>
+        <div>
+          <div class="stars" id="stars"></div>
+          <p class="total" id="total"></p>
+        </div>
+      </div>
+      <div class="parts" id="parts"></div>
+      <div class="lucky" id="lucky"></div>
+      <p class="word" id="word"></p>
+      <div class="actions"><button class="btn ghost" id="share" type="button" data-i="share">결과 공유하기</button></div>
+    </div>
+  </section>
+
+  <section class="animals">
+    <h2 data-i="animals">띠별 오늘의 운세</h2>
+    <p class="sub" data-i="animalsSub">태어난 해의 띠를 찾아보세요</p>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <footer>
+    <span data-i="foot1">재미로 보는 운세예요. 좋은 말만 챙겨 가세요 🙂</span><br />
+    <span data-i="foot2">띠는 양력 해로 셈해요. 1~2월 설 전에 태어났다면 앞 해의 띠일 수 있어요.</span><br />
+    <span data-i="madeBy">만든 사람:</span> <a id="resume" href="/resume/ko/">유민혁 이력서 →</a>
+  </footer>
+</div>
+<div class="toast" id="toast"></div>
+
+<script type="module">
+  import { fortune, animalsToday, animalOf, animalLabel, signOf, validBirth, ymd, pickLang, LANGS } from './fortune.js';
+
+  // 화면 글자
+  const UI = {
+    ko: {
+      title: '오늘의 운세', desc: '생년월일로 보는 오늘의 운세와 띠별 운세. 날마다 바뀌어요.', prev: '‹ 어제', next: '내일 ›', today: '오늘로',
+      mine: '내 운세 보기', mineSub: '생년월일을 넣으면 띠와 별자리, 오늘의 운세를 알려 드려요. 이 브라우저에만 저장돼요.',
+      birth: '생년월일', show: '운세 보기', forget: '지우기', totalLabel: '총운', share: '결과 공유하기',
+      animals: '띠별 오늘의 운세', animalsSub: '태어난 해의 띠를 찾아보세요',
+      foot1: '재미로 보는 운세예요. 좋은 말만 챙겨 가세요 🙂', foot2: '띠는 양력 해로 셈해요. 1~2월 설 전에 태어났다면 앞 해의 띠일 수 있어요.',
+      madeBy: '만든 사람:', resume: '유민혁 이력서 →',
+      lucky: ['행운의 색', '행운의 숫자', '행운의 물건', '좋은 방향', '좋은 때'], animalLucky: (c, n) => `행운의 색 ${c} · 숫자 ${n}`,
+      born: (y, m, d) => `${y}년 ${m}월 ${d}일생`, date: (d) => `${d.getFullYear()}년 ${d.getMonth() + 1}월 ${d.getDate()}일 (${'일월화수목금토'[d.getDay()]})`,
+      shareText: (date, an, f) => `${date} ${an} 오늘의 운세 ${f.total}점`, luckyShort: (f) => `행운의 색 ${f.color.name} · 숫자 ${f.numbers.join(', ')}`,
+      badBirth: '생년월일을 다시 확인해 주세요', forgot: '저장한 생년월일을 지웠어요', copied: '결과를 복사했어요',
+    },
+    ja: {
+      title: '今日の運勢', desc: '生年月日で占う今日の運勢と干支別の運勢。毎日変わります。', prev: '‹ 昨日', next: '明日 ›', today: '今日へ',
+      mine: 'わたしの運勢', mineSub: '生年月日を入れると、干支と星座、今日の運勢がわかります。このブラウザにだけ保存されます。',
+      birth: '生年月日', show: '占う', forget: '消す', totalLabel: '総合運', share: '結果をシェア',
+      animals: '干支別・今日の運勢', animalsSub: '生まれ年の干支を探してみてください',
+      foot1: '占いはお楽しみです。いい言葉だけ持ち帰ってくださいね 🙂', foot2: '干支は生まれた年（西暦）で数えています。',
+      madeBy: '作った人:', resume: 'ユ・ミンヒョクの履歴書 →',
+      lucky: ['ラッキーカラー', 'ラッキーナンバー', 'ラッキーアイテム', '吉方位', 'いい時間帯'], animalLucky: (c, n) => `ラッキーカラー ${c} ・ 数字 ${n}`,
+      born: (y, m, d) => `${y}年${m}月${d}日生まれ`, date: (d) => `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日（${'日月火水木金土'[d.getDay()]}）`,
+      shareText: (date, an, f) => `${date} ${an}の今日の運勢 ${f.total}点`, luckyShort: (f) => `ラッキーカラー ${f.color.name} ・ 数字 ${f.numbers.join(', ')}`,
+      badBirth: '生年月日をもう一度確認してください', forgot: '保存した生年月日を消しました', copied: '結果をコピーしました',
+    },
+    en: {
+      title: "Today's Fortune", desc: 'Your daily fortune by birthday, plus the twelve zodiac animals. New every day.', prev: '‹ Yesterday', next: 'Tomorrow ›', today: 'Back to today',
+      mine: 'My fortune', mineSub: 'Enter your birthday to see your zodiac animal, star sign and today\'s fortune. Saved only in this browser.',
+      birth: 'Birthday', show: 'Read my fortune', forget: 'Clear', totalLabel: 'Overall', share: 'Share result',
+      animals: "Today's fortune by zodiac animal", animalsSub: 'Find the animal of your birth year',
+      foot1: 'Just for fun. Keep the good parts 🙂', foot2: "Your animal is counted by calendar year. If you were born in January or February before Lunar New Year, yours may be the previous year's.",
+      madeBy: 'Made by', resume: 'Minhyuk Yoo — résumé →',
+      lucky: ['Lucky color', 'Lucky numbers', 'Lucky item', 'Good direction', 'Best time'], animalLucky: (c, n) => `Lucky color ${c} · number ${n}`,
+      born: (y, m, d) => `Born ${new Date(y, m - 1, d).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}`,
+      date: (d) => d.toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' }),
+      shareText: (date, an, f) => `${date} — ${an}: today's fortune ${f.total}/100`, luckyShort: (f) => `Lucky color ${f.color.name} · numbers ${f.numbers.join(', ')}`,
+      badBirth: 'Please check your birthday', forgot: 'Your saved birthday was cleared', copied: 'Copied the result',
+    },
+  };
+
+  const $ = (id) => document.getElementById(id);
+  const KEY = 'fortune_birth', LKEY = 'fortune_lang';
+  const store = { get: (k) => { try { return localStorage.getItem(k) || ''; } catch { return ''; } }, set: (k, v) => { try { v ? localStorage.setItem(k, v) : localStorage.removeItem(k); } catch {} } };
+  // 언어: 주소의 ?lang= → 고른 적 있는 언어 → 브라우저 언어 → 영어
+  const q = new URLSearchParams(location.search).get('lang');
+  let lang = LANGS.includes(q) ? q : LANGS.includes(store.get(LKEY)) ? store.get(LKEY) : pickLang(navigator.languages?.length ? navigator.languages : [navigator.language]);
+  let offset = 0; // 오늘에서 며칠 떨어졌나 (어제 -1, 내일 +1)
+
+  function day() { const d = new Date(); d.setDate(d.getDate() + offset); return d; }
+  function stars(n) { return '★'.repeat(n) + '☆'.repeat(5 - n); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]); }
+
+  function applyLang() {
+    const t = UI[lang];
+    document.documentElement.lang = lang;
+    document.title = t.title;
+    document.querySelector('meta[name=description]').content = t.desc;
+    document.querySelectorAll('[data-i]').forEach((el) => { const v = t[el.dataset.i]; if (typeof v === 'string') el.textContent = v; });
+    $('resume').textContent = t.resume;
+    $('resume').href = `/resume/${lang}/`;
+    document.querySelectorAll('.langs button').forEach((b) => b.classList.toggle('on', b.dataset.lang === lang));
+  }
+
+  function render() {
+    const t = UI[lang];
+    const d = day(), date = ymd(d);
+    $('dateLabel').textContent = t.date(d);
+    $('prev').disabled = offset <= -1; $('next').disabled = offset >= 1;
+    $('prev').style.opacity = offset <= -1 ? 0.35 : 1; $('next').style.opacity = offset >= 1 ? 0.35 : 1;
+    $('today').hidden = offset === 0;
+    const birth = store.get(KEY);
+    const mine = validBirth(birth) ? animalOf(+birth.slice(0, 4)).id : '';
+    $('grid').innerHTML = animalsToday(date, lang).map((a) => `
+      <div class="a ${a.id === mine ? 'mine' : ''}">
+        <div class="e">${a.emoji}</div><div class="n">${esc(a.name)}</div>
+        <div class="s">${stars(a.stars)}</div><p>${esc(a.text)}</p>
+        <small>${esc(t.animalLucky(a.color, a.number))}</small>
+      </div>`).join('');
+    if (!validBirth(birth)) { $('result').classList.remove('on'); $('forget').hidden = true; return; }
+    $('birth').value = birth; $('forget').hidden = false;
+    const f = fortune(birth, date, lang);
+    const y = +birth.slice(0, 4), m = +birth.slice(5, 7), dd = +birth.slice(8, 10);
+    const an = animalLabel(animalOf(y), lang), [sign, sym] = signOf(m, dd, lang);
+    $('who').innerHTML = `<span class="chip">${an.emoji} ${esc(an.name)}</span><span class="chip">${sym} ${esc(sign)}</span><span class="chip">${esc(t.born(y, m, dd))}</span>`;
+    $('score').textContent = f.total;
+    $('arc').style.strokeDashoffset = String(326.7 * (1 - f.total / 100));
+    $('stars').textContent = stars(f.stars);
+    $('total').textContent = f.text;
+    $('parts').innerHTML = f.parts.map((p) => `
+      <div class="part"><div class="head"><span>${p.icon} ${esc(p.label)}</span><span>${p.score}</span></div>
+      <div class="bar"><i style="width:${p.score}%"></i></div><p>${esc(p.text)}</p></div>`).join('');
+    const v = [`<span class="swatch" style="background:${f.color.hex}"></span>${esc(f.color.name)}`, f.numbers.join(', '), esc(f.item), esc(f.dir), esc(f.time)];
+    $('lucky').innerHTML = t.lucky.map((l, i) => `<div><small>${l}</small><b>${v[i]}</b></div>`).join('');
+    $('word').textContent = f.word;
+    $('result').classList.add('on');
+  }
+
+  document.querySelectorAll('.langs button').forEach((b) => b.addEventListener('click', () => {
+    lang = b.dataset.lang; store.set(LKEY, lang);
+    const u = new URL(location.href); u.searchParams.set('lang', lang); history.replaceState(null, '', u);
+    applyLang(); render();
+  }));
+  $('form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const v = $('birth').value;
+    if (!validBirth(v)) { toast(UI[lang].badBirth); return; }
+    store.set(KEY, v); render();
+    $('result').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+  $('forget').addEventListener('click', () => { store.set(KEY, ''); $('birth').value = ''; render(); toast(UI[lang].forgot); });
+  $('prev').addEventListener('click', () => { offset = Math.max(-1, offset - 1); render(); });
+  $('next').addEventListener('click', () => { offset = Math.min(1, offset + 1); render(); });
+  $('today').addEventListener('click', () => { offset = 0; render(); });
+  $('share').addEventListener('click', async () => {
+    const birth = store.get(KEY); if (!validBirth(birth)) return;
+    const t = UI[lang], f = fortune(birth, ymd(day()), lang);
+    const an = animalLabel(animalOf(+birth.slice(0, 4)), lang).name;
+    const msg = `${t.shareText(t.date(day()), an, f)} ${stars(f.stars)}\n${f.text}\n${t.luckyShort(f)}\n“${f.word}”\n${location.origin}/?lang=${lang}`;
+    try {
+      if (navigator.share) await navigator.share({ title: t.title, text: msg });
+      else { await navigator.clipboard.writeText(msg); toast(t.copied); }
+    } catch {}
+  });
+  let tt = 0;
+  function toast(s) { const el = $('toast'); el.textContent = s; el.classList.add('on'); clearTimeout(tt); tt = setTimeout(() => el.classList.remove('on'), 1800); }
+
+  // 자정이 지나면 새 운세로
+  let shown = ymd(new Date());
+  setInterval(() => { const now = ymd(new Date()); if (now !== shown) { shown = now; offset = 0; render(); } }, 30000);
+
+  // 반짝이는 밤하늘
+  const cv = $('sky'), g = cv.getContext('2d');
+  let starsArr = [];
+  function size() {
+    cv.width = innerWidth * devicePixelRatio; cv.height = innerHeight * devicePixelRatio;
+    starsArr = Array.from({ length: Math.round((innerWidth * innerHeight) / 9000) }, () => ({ x: Math.random(), y: Math.random() * 0.8, r: Math.random() * 1.3 + 0.3, p: Math.random() * 6.28 }));
+  }
+  function sky(t) {
+    g.clearRect(0, 0, cv.width, cv.height);
+    for (const s of starsArr) {
+      const a = 0.35 + 0.65 * (0.5 + 0.5 * Math.sin(t / 900 + s.p));
+      g.fillStyle = `rgba(255,248,225,${a})`;
+      g.beginPath(); g.arc(s.x * cv.width, s.y * cv.height, s.r * devicePixelRatio, 0, 6.29); g.fill();
+    }
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) requestAnimationFrame(sky);
+  }
+  addEventListener('resize', size); size(); requestAnimationFrame(sky);
+
+  applyLang();
+  render();
+</script>
+</body>
+</html>

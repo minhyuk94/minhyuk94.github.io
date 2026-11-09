@@ -500,9 +500,9 @@
       "image": "",
       "link": "https://minhyuk94.github.io/youtujam/",
       "summary": {
-        "ko": "떨어지는 노트를 박자에 맞춰 치는 웹 건반 리듬 게임. 자체곡은 브라우저에서 실시간으로 합성하고, 유튜브 영상 음악으로도 할 수 있음",
-        "ja": "落ちてくるノーツをリズムに合わせて叩くWebの鍵盤リズムゲーム。オリジナル曲はブラウザでリアルタイムに合成し、YouTube動画の音楽でも遊べる",
-        "en": "A browser keyboard rhythm game where you hit falling notes to the beat. Original songs are synthesized live in the browser, and YouTube music can be played too"
+        "ko": "떨어지는 노트를 박자에 맞춰 치는 웹 건반 리듬 게임. 자체곡은 브라우저에서 실시간으로 합성하고, 유튜브 영상 음악으로도 할 수 있음. PC와 휴대폰 모두 지원",
+        "ja": "落ちてくるノーツをリズムに合わせて叩くWebの鍵盤リズムゲーム。オリジナル曲はブラウザでリアルタイムに合成し、YouTube動画の音楽でも遊べる。PCとスマートフォンの両方に対応",
+        "en": "A browser keyboard rhythm game where you hit falling notes to the beat. Original songs are synthesized live in the browser, YouTube music can be played too, and it works on both PC and phones"
       },
       "why": {
         "ko": "예전 온라인 리듬 게임의 손맛을, 유튜브에 있는 좋아하는 음악으로도 즐기고 싶어서 만들었습니다. 유튜브 소리는 분석할 수 없어서, 박자를 맞춰 채보를 만들거나 직접 쳐서 녹음하는 방식으로 풀었습니다.",
@@ -510,9 +510,9 @@
         "en": "I wanted the feel of the online rhythm games I used to play, with music I like from YouTube. Since YouTube audio cannot be analyzed, charts are generated from the tempo and first beat, or recorded by playing along."
       },
       "features": {
-        "ko": "4·5·6·7건반과 쉬움·보통·어려움, 곡마다 노트 수로 계산한 난이도 숫자(Lv)\n자체곡 3곡을 Web Audio로 실시간 합성하고, 노트를 곡의 소리에서 만들어 친 순간 그 음이 나는 키음 방식\n스피커 출력 시각에 맞춘 시계와 키 입력 시각 그대로의 판정, 길게 누르기·체력·잼 게이지·등급, 박자에 맞춰 눌러 판정을 자동으로 맞추는 기능\n유튜브 영상은 BPM 두드려 재기·첫 박 맞추기로 채보를 만들거나 직접 쳐서 녹음. 채보·판정·점수 규칙은 화면과 분리해 테스트하고 GitHub Actions로 빌드·배포",
-        "ja": "4・5・6・7鍵とかんたん・ふつう・むずかしい、曲ごとにノーツ数から算出する難易度（Lv）\nオリジナル3曲をWeb Audioでリアルタイム合成し、ノーツを曲の音から作って叩いた瞬間にその音が鳴るキー音方式\nスピーカー出力時刻に合わせた時計とキー入力時刻そのままの判定、ロングノーツ・ライフ・ジャムゲージ・ランク、リズムに合わせて押すだけで判定を自動調整する機能\nYouTube動画はBPMのタップ計測と1拍目合わせで譜面を作るか、自分で叩いて録音。譜面・判定・スコアのルールは画面から分離してテストし、GitHub Actionsでビルド・デプロイ",
-        "en": "4-, 5-, 6- and 7-key modes with easy, normal and hard charts, and a level number per song calculated from note density\nThree original songs synthesized live with Web Audio; notes are built from the song's own sounds, so each hit plays its note\nA clock tied to the speaker's output time and judgments taken from the exact key-press time, plus hold notes, life, a jam gauge, ranks and automatic timing calibration by tapping to a beat\nCharts for YouTube videos from tap-tempo BPM and first-beat alignment, or recorded by playing along; chart, judgment and scoring rules separated from the UI and tested, with builds and deploys on GitHub Actions"
+        "ko": "4·5·6·7건반과 쉬움·보통·어려움, 곡마다 노트 수로 계산한 난이도 숫자(Lv)\n자체곡 4곡을 Web Audio로 실시간 합성하고, 노트를 곡의 소리에서 만들어 친 순간 그 음이 나는 키음 방식\n스피커 출력 시각에 맞춘 시계와 키 입력 시각 그대로의 판정, 길게 누르기·체력·잼 게이지·등급, FAST/SLOW와 판정 오차 막대, 박자에 맞춰 눌러 판정을 자동으로 맞추는 기능\n유튜브 영상은 키 하나로 박자만 치면 건반 수·난이도에 맞춰 칸을 자동으로 짜는 리듬 채보로. 불러온 영상과 채보는 브라우저에 모아 두고 백업 파일로 옮길 수 있음\n휴대폰에서는 큰 건반·진동·전체 화면. 채보·판정·점수·저장 규칙은 화면과 분리해 테스트하고 GitHub Actions로 빌드·배포",
+        "ja": "4・5・6・7鍵とかんたん・ふつう・むずかしい、曲ごとにノーツ数から算出する難易度（Lv）\nオリジナル4曲をWeb Audioでリアルタイム合成し、ノーツを曲の音から作って叩いた瞬間にその音が鳴るキー音方式\nスピーカー出力時刻に合わせた時計とキー入力時刻そのままの判定、ロングノーツ・ライフ・ジャムゲージ・ランク、FAST/SLOWと判定誤差バー、リズムに合わせて押すだけで判定を自動調整する機能\nYouTube動画は、キー1つでリズムだけを叩くと鍵数・難易度に合わせてレーンを自動配置するリズム譜面で遊べる。読み込んだ動画と譜面はブラウザに保存し、バックアップファイルで移行可能\nスマートフォンでは大きな鍵盤・振動・全画面に対応。譜面・判定・スコア・保存のルールは画面から分離してテストし、GitHub Actionsでビルド・デプロイ",
+        "en": "4-, 5-, 6- and 7-key modes with easy, normal and hard charts, and a level number per song calculated from note density\nFour original songs synthesized live with Web Audio; notes are built from the song's own sounds, so each hit plays its note\nA clock tied to the speaker's output time and judgments taken from the exact key-press time, plus hold notes, life, a jam gauge, ranks, FAST/SLOW and a timing error bar, and automatic timing calibration by tapping to a beat\nYouTube videos are played with rhythm charts: tap the rhythm with a single key and lanes are laid out automatically for any key count and difficulty; loaded videos and charts are kept in the browser and can be moved with a backup file\nOn phones: larger keys, vibration and fullscreen. Chart, judgment, scoring and storage rules are separated from the UI and tested, with builds and deploys on GitHub Actions"
       },
       "tags": "TypeScript, Canvas 2D, Web Audio API, YouTube IFrame API, esbuild, GitHub Actions",
       "gallery": [

@@ -494,6 +494,71 @@
   ],
   "games": [
     {
+      "name": "해솔국 이야기",
+      "icon": "🏯",
+      "period": "2026-11",
+      "image": "",
+      "link": "https://minhyuk94.github.io/haesol/",
+      "summary": {
+        "ko": "2000년대 초 국산 온라인 RPG 감성으로 새로 만든 2D RPG. 게임 엔진 Godot로 만들고, 그림·소리·지도를 모두 코드로 생성",
+        "ja": "2000年代初めの韓国製オンラインRPGの雰囲気で新たに作った2D RPG。ゲームエンジン Godot で制作し、グラフィック・サウンド・マップをすべてコードで生成",
+        "en": "A new 2D RPG in the spirit of early-2000s Korean online RPGs, built with the Godot engine, with all graphics, sound and maps generated from code"
+      },
+      "why": {
+        "ko": "어릴 때 즐기던 국산 온라인 RPG의 분위기를 직접 만들어 보고 싶었습니다. 지금은 혼자 하는 게임이지만, 규칙을 화면과 분리해 두어 나중에 서버를 붙여 여럿이 함께 할 수 있도록 설계했습니다.",
+        "ja": "子どもの頃に楽しんだ韓国製オンラインRPGの雰囲気を、自分の手で作ってみたいと思ったのがきっかけです。今は一人で遊ぶゲームですが、ルールを画面から分離し、後からサーバーを付けて複数人で遊べるよう設計しました。",
+        "en": "I wanted to recreate the atmosphere of the Korean online RPGs I played growing up. It is single-player for now, but the game rules are separated from the presentation so a server can be added later for multiplayer."
+      },
+      "features": {
+        "ko": "640×480 고정 화면과 아래 고정 패널(글창·체력·기력·경험치·지명 좌표), 한 칸씩 움직이는 이동과 앞 칸 공격, 단축칸 기술·물건\n캐릭터 만들기(성별·머리 모양·색)와 몸·옷·머리·무기 층을 겹쳐 그리는 캐릭터, 레벨 5에 고르는 직업 넷(검사·자객·술사·도인)과 기술 12개\n가방·장비·능력치·기술·퀘스트 창, 상점 사고팔기, 얼굴 그림이 있는 대화와 8개 퀘스트로 이어지는 1막 이야기, 지도 6개와 몬스터 10종·대왕 둘\n능력치·피해·경험치·가방·상점·퀘스트 규칙을 데이터(JSON)와 분리해 테스트하고, 모든 지도에서 사람·출구·대왕에 걸어서 닿는지까지 자동 확인. 배경음·효과음은 신스 합성으로 코드에서 생성",
+        "ja": "640×480の固定画面と下部の固定パネル（チャット欄・体力・気力・経験値・地名と座標）、1マスずつ動く移動と正面への攻撃、ショートカットの技・アイテム\nキャラクター作成（性別・髪型・髪色）と、体・服・髪・武器のレイヤーを重ねて描くキャラクター、レベル5で選ぶ4つの職業（剣士・刺客・術士・道人）と12の技\nかばん・装備・ステータス・技・クエストのウィンドウ、ショップの売買、顔グラフィック付きの会話と8つのクエストで進む第1幕のストーリー、6マップとモンスター10種・ボス2体\n能力値・ダメージ・経験値・かばん・ショップ・クエストのルールをデータ（JSON）から分離してテストし、すべてのマップで人物・出口・ボスに歩いて到達できるかまで自動確認。BGM・効果音はシンセ合成でコードから生成",
+        "en": "A fixed 640×480 screen with a bottom panel (chat log, HP, MP, EXP, map name and coordinates), tile-by-tile movement and front-tile attacks, and hotkey skills and items\nCharacter creation (gender, hairstyle, hair color) with characters drawn from layered body, clothing, hair and weapon sprites; four jobs chosen at level 5 (swordsman, assassin, mage, monk) with 12 skills\nInventory, equipment, stats, skills and quest windows, shop buying and selling, portrait dialogue, a first act told through eight quests, six maps, ten monster types and two bosses\nStats, damage, EXP, inventory, shop and quest rules separated from JSON data and tested, including automatic checks that every NPC, exit and boss can be reached on foot on every map; music and sound effects synthesized in code"
+      },
+      "tags": "Godot 4, GDScript, Python, Procedural Art, Sound Synthesis, GitHub Actions",
+      "gallery": [
+        {
+          "image": "/images/games/haesol-title.jpg",
+          "caption": {
+            "ko": "처음 화면",
+            "ja": "タイトル画面",
+            "en": "Title screen"
+          }
+        },
+        {
+          "image": "/images/games/haesol-town.jpg",
+          "caption": {
+            "ko": "해솔성 마당과 장터",
+            "ja": "ヘソル城の広場と市場",
+            "en": "Haesol Castle square and market"
+          }
+        },
+        {
+          "image": "/images/games/haesol-battle.jpg",
+          "caption": {
+            "ko": "솔내들에서 술사의 불꽃",
+            "ja": "ソルネ野で術士の炎",
+            "en": "A mage's fire spell in the Solnae fields"
+          }
+        },
+        {
+          "image": "/images/games/haesol-shop.jpg",
+          "caption": {
+            "ko": "주막 상점 창",
+            "ja": "酒幕のショップ画面",
+            "en": "The tavern shop window"
+          }
+        },
+        {
+          "image": "/images/games/haesol-talk.jpg",
+          "caption": {
+            "ko": "성문장 강도윤",
+            "ja": "城門長カン・ドユン",
+            "en": "Gate captain Kang Doyun"
+          }
+        }
+      ]
+    },
+    {
       "name": "달마루 모험기",
       "icon": "🌕",
       "period": "2026-11",

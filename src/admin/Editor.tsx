@@ -3,9 +3,9 @@ import { Field, ImageUploadContext, labelOf, type Json, type Obj } from './field
 import { GitHubError, REPO, RESUME_PATH, checkToken, readFile, writeFile } from './github';
 
 const TOKEN_KEY = 'resume-admin-token';
-const SECTIONS = ['profile', 'about', 'experience', 'projects', 'skills', 'education', 'certificates'];
+const SECTIONS = ['profile', 'about', 'experience', 'projects', 'games', 'skills', 'education', 'certificates'];
 /** 데이터에 꼭 있어야 하는 항목 (projects는 없어도 됨) */
-const REQUIRED = SECTIONS.filter((s) => s !== 'projects');
+const REQUIRED = SECTIONS.filter((s) => s !== 'projects' && s !== 'games');
 
 function loadToken(): { token: string; remember: boolean } {
   try {
@@ -197,7 +197,7 @@ export default function Editor() {
       </header>
 
       <nav className="tabs">
-        {SECTIONS.filter((s) => s in data || s === 'projects').map((s) => (
+        {SECTIONS.filter((s) => s in data || s === 'projects' || s === 'games').map((s) => (
           <button key={s} className={!rawMode && tab === s ? 'on' : ''} onClick={() => {
             if (rawMode && !applyRaw()) return;
             setRawMode(false);

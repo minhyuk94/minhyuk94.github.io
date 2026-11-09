@@ -15,6 +15,7 @@ import {
   type Resume,
 } from '../lib/resume';
 import { LANG_LABEL, ui } from '../lib/ui';
+import ProjectCard from './ProjectCard.astro';
 
 interface Props {
   lang: Lang;
@@ -34,8 +35,10 @@ const stats = [
 ];
 const experience = sortedExperience(r);
 const projects = r.projects ?? [];
-// 프로젝트가 있으면 뒤 구역 번호를 하나씩 민다
-const no = (n: number) => String(projects.length > 0 && n >= 3 ? n + 1 : n).padStart(2, '0');
+const games = r.games ?? [];
+// 프로젝트·게임 구역이 있으면 뒤 구역 번호를 그만큼 민다
+const extra = (projects.length > 0 ? 1 : 0) + (games.length > 0 ? 1 : 0);
+const no = (n: number) => String(n >= 3 ? n + extra : n).padStart(2, '0');
 const initials = (p.name.en || 'M')
   .split(/\s+/)
   .map((w) => w[0])
@@ -53,6 +56,7 @@ const birth = p.birthDate ? p.birthDate.replaceAll('-', '.') : '';
     <a href="#about">{t.nav.about}</a>
     <a href="#experience">{t.nav.experience}</a>
     {projects.length > 0 && <a href="#projects">{t.nav.projects}</a>}
+    {games.length > 0 && <a href="#games">{t.nav.games}</a>}
     <a href="#skills">{t.nav.skills}</a>
     <a href="#education">{t.nav.education}</a>
     <a href="#contact">{t.nav.contact}</a>
@@ -201,36 +205,26 @@ const birth = p.birthDate ? p.birthDate.replaceAll('-', '.') : '';
           <p class="section-lead reveal">{t.projectsLead}</p>
           <div class="projects">
             {projects.map((pj) => (
-              <article class="project-card reveal">
-                <div class:list={['project-visual', { 'no-image': !pj.image }]}>
-                  {pj.image ? (
-                    <img src={pj.image} alt={`${pj.name} ${tr(pj.summary, lang)}`} loading="lazy" />
-                  ) : (
-                    <span class="project-icon" aria-hidden="true">{pj.icon || pj.name.slice(0, 1)}</span>
-                  )}
-                </div>
-                <div class="project-body">
-                  <div class="project-head">
-                    <h3>{pj.name}</h3>
-                    {pj.period && <span class="project-period">{pj.period.replace('-', '.')}</span>}
-                  </div>
-                  <p class="project-summary">{tr(pj.summary, lang)}</p>
-                  {tr(pj.why, lang) && (
-                    <p class="project-why">
-                      <strong>{t.why}</strong> {tr(pj.why, lang)}
-                    </p>
-                  )}
-                  <ul class="project-features">
-                    {lines(pj.features, lang).map((f) => <li>{f}</li>)}
-                  </ul>
-                  <ul class="tags">
-                    {list(pj.tags).map((tag) => <li>{tag}</li>)}
-                  </ul>
-                  {pj.link && (
-                    <a class="project-link" href={pj.link} target="_blank" rel="noopener noreferrer">{t.tryIt} ↗</a>
-                  )}
-                </div>
-              </article>
+              <ProjectCard pj={pj} lang={lang} />
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <!-- ───────── 게임 프로젝트 ───────── -->
+  {
+    games.length > 0 && (
+      <section id="games" class="section alt">
+        <div class="wrap">
+          <h2 class="section-title reveal"><span>{String(projects.length > 0 ? 4 : 3).padStart(2, '0')}</span>{t.games}</h2>
+          <p class="section-lead reveal">
+            {t.gamesLead} <a class="gallery-link" href={`/${lang}/games/`}>{t.gallery} →</a>
+          </p>
+          <div class="projects">
+            {games.map((pj) => (
+              <ProjectCard pj={pj} lang={lang} />
             ))}
           </div>
         </div>
@@ -239,7 +233,7 @@ const birth = p.birthDate ? p.birthDate.replaceAll('-', '.') : '';
   }
 
   <!-- ───────── 기술 ───────── -->
-  <section id="skills" class:list={['section', { alt: projects.length > 0 }]}>
+  <section id="skills" class:list={['section', { alt: extra % 2 === 1 }]}>
     <div class="wrap">
       <h2 class="section-title reveal"><span>{no(3)}</span>{t.skills}</h2>
       <div class="skills">
@@ -258,7 +252,7 @@ const birth = p.birthDate ? p.birthDate.replaceAll('-', '.') : '';
   </section>
 
   <!-- ───────── 학력·자격증 ───────── -->
-  <section id="education" class:list={['section', { alt: projects.length === 0 }]}>
+  <section id="education" class:list={['section', { alt: extra % 2 === 0 }]}>
     <div class="wrap">
       <h2 class="section-title reveal"><span>{no(4)}</span>{t.nav.education}</h2>
       <div class="edu-grid">

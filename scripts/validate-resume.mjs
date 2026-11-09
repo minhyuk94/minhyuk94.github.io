@@ -65,12 +65,18 @@ arr(data.experience, 'experience', (e, path) => {
   });
 });
 
-if (data.projects !== undefined) {
-  arr(data.projects, 'projects', (pj, path) => {
+for (const key of ['projects', 'games']) {
+  if (data[key] === undefined) continue;
+  arr(data[key], key, (pj, path) => {
     for (const k of ['name', 'icon', 'image', 'link', 'tags']) str(pj[k], `${path}.${k}`);
     for (const k of ['summary', 'why', 'features']) l10n(pj[k], `${path}.${k}`);
     if (pj.period) ym(pj.period, `${path}.period`, true);
     if (pj.link && !/^https?:\/\//.test(pj.link)) errors.push(`${path}.link: http(s)://로 시작해야 합니다`);
+    if (pj.gallery !== undefined)
+      arr(pj.gallery, `${path}.gallery`, (g, gp) => {
+        str(g.image, `${gp}.image`);
+        l10n(g.caption, `${gp}.caption`);
+      });
   });
 }
 

@@ -400,52 +400,6 @@
   ],
   "projects": [
     {
-      "name": "추억의 오락실",
-      "icon": "🕹️",
-      "period": "2026-11",
-      "image": "",
-      "link": "",
-      "summary": {
-        "ko": "옛 웹 미니게임 감성의 게임들을 새로 만들어 모은 웹 오락실",
-        "ja": "昔のWebミニゲームの雰囲気を再現したゲームを新たに作って集めたWebゲームセンター",
-        "en": "A web arcade of newly made games in the spirit of classic browser mini-games"
-      },
-      "why": {
-        "ko": "학창 시절 즐기던 웹 미니게임들을 다시 한곳에서 하고 싶었습니다. 예전 게임을 가져오지 않고 규칙·그림·음악을 모두 직접 새로 만들고, 게임을 계속 추가할 수 있는 구조로 만들었습니다.",
-        "ja": "学生時代に楽しんだWebミニゲームを、もう一度一か所で遊びたいと思ったのがきっかけです。昔のゲームを持ってくるのではなく、ルール・グラフィック・音楽をすべて自分で新しく作り、ゲームを追加し続けられる構成にしました。",
-        "en": "I wanted to play the kind of browser mini-games I enjoyed as a student in one place again. Rather than bringing over old games, I created the rules, graphics and music myself, in a structure that makes it easy to keep adding games."
-      },
-      "features": {
-        "ko": "깨비 도감: 깨비 195종(3단 진화, 18속성 상성, 기술 142개)을 잡고 키워 체육관 8곳과 리그에 도전하는 수집 RPG. 밤낮, 비전 기술로 여는 길, 숨은 전설 깨비, 자전거·낚싯대, 트레이너와의 유대(위기에 감싸 주기·숨은 유대 진화). 64계열과 숨은 깨비를 하나하나 디자인해 진화하면 모습·자세가 바뀌는 만화풍 도트로 그리고, 도트 글꼴·전투 배속·만남·전투 전환·진화 연출을 직접 구현\n주먹밥 용사전: 도트 그림으로 마을·필드를 탐험하고 칸 위에서 움직이며 싸우는 전략 전투 RPG. 기술이 달린 장비, 방어, 기술별 이펙트. 8장 이야기 중 제1장 (인물·몬스터 도트는 부품을 조합해 외곽선·명암을 자동으로 넣어 생성)\n햄스터 다이노 파이트: 햄스터 8마리가 약·강 펀치/킥 이어 치기와 방향키 순서 입력 기술로 싸우고, 기를 모아 게이지가 차면 공룡 특징이 돋아나며 변신하는 격투 게임. 스토리 모드와 숨겨진 보스\n도토리 미로: 직접 설계한 미로에서 성격이 다른 추격자 넷을 피하는 미로 추격 게임\n음원 파일 없이 Web Audio로 작곡·합성하는 8비트 배경음악과 효과음\nPC 키보드와 휴대폰 터치 조작, 기록 저장\n게임 규칙을 화면과 분리해 테스트 (커맨드 해석, 컴퓨터끼리 대전시켜 캐릭터 밸런스 확인)",
-        "ja": "ケビ図鑑：195種のケビ（3段階進化・18タイプ相性・142技）を捕まえて育て、8つのジムとリーグに挑む収集RPG。昼夜、秘伝技で開く道、隠れた伝説のケビ、自転車・釣り竿、トレーナーとの絆（ピンチでかばう・隠し絆進化）。64系統と隠れたケビを一体ずつデザインし、進化すると姿やポーズが変わるコミック調ドット絵で描き、ドットフォント・バトル倍速・エンカウント・バトル遷移・進化の演出も実装\nおにぎり勇者伝：ドット絵の村やフィールドを探索し、マス目の上を動いて戦うタクティカルバトルRPG。技付きの装備、防御、技ごとのエフェクト。全8章のうち第1章（人物・モンスターのドット絵はパーツを組み合わせ、輪郭線と陰影を自動生成）\nハムスター・ダイノ・ファイト：8匹のハムスターが弱・強パンチ／キックの連続技と方向キーの順番入力による必殺技で戦い、気を溜めてゲージが満タンになると恐竜の特徴が現れて変身する格闘ゲーム。ストーリーモードと隠しボス\nどんぐり迷路：自分で設計した迷路で、性格の違う追っ手4匹から逃げる迷路追跡ゲーム\n音源ファイルを使わず Web Audio で作曲・合成する 8 ビット風 BGM と効果音\nPC キーボードとスマホのタッチ操作、記録の保存\nゲームのルールを画面から分離してテスト（コマンド判定、CPU 同士の対戦でキャラバランスを確認）",
-        "en": "Kkaebi Dex: a creature-collecting RPG with 195 species (three-stage evolutions, 18-type matchups, 142 moves), eight gyms and a league, day/night, field-move gating, hidden legendaries, a bike and fishing rod, and a trainer bond system (shielding a fatal hit, hidden bond evolution); all 64 families plus hidden legendaries individually designed as cartoon-style pixel art whose shape and pose change with evolution, a pixel font, battle speed-up, and encounter, battle-transition and evolution effects\nRice Ball Hero: a pixel-art RPG with town/field exploration and grid-based tactical battles, equipment that grants skills, guarding, and per-skill effects; chapter 1 of an 8-chapter story (sprites are assembled from parts with automatic outlines and shading)\nHamster Dino Fight: eight hamsters fight with light/heavy punch-and-kick chain combos and sequential-input special moves, charge energy, and transform—sprouting dinosaur features—when the gauge fills; story mode with a hidden boss\nAcorn Maze: a maze chase on an original map, dodging four pursuers with different behaviors\n8-bit style music and sound effects composed and synthesized in code with Web Audio — no audio files\nKeyboard and mobile touch controls, saved records\nGame rules separated from rendering and tested (command parsing; character balance checked via CPU-vs-CPU matches)"
-      },
-      "tags": "React, TypeScript, Canvas 2D, Web Audio API, Game AI, Docker, GitHub Actions"
-    },
-    {
-      "name": "Bake & Quest",
-      "icon": "🧁",
-      "period": "2026-11",
-      "image": "",
-      "link": "",
-      "summary": {
-        "ko": "제과점 경영·육성에 실시간 사냥을 더한 브라우저 게임",
-        "ja": "パン屋の経営・育成にリアルタイムの狩りを加えたブラウザゲーム",
-        "en": "Browser game mixing bakery management and character growth with real-time hunting"
-      },
-      "why": {
-        "ko": "예전에 즐기던 고전 제과점 경영 게임을 다시 해 보고 싶었는데 지금은 할 수 없어서, 그 재미를 살린 새 게임을 직접 만들었습니다. 이름·세계관·캐릭터는 모두 새로 만들었고, 모은 돈으로 사냥터에 나가 희귀 재료를 구해 오는 실시간 전투를 더했습니다.",
-        "ja": "以前楽しんでいた昔のパン屋経営ゲームをもう一度遊びたいと思ったものの今では遊べないため、その面白さを活かした新しいゲームを自分でつくりました。名前・世界観・キャラクターはすべて新しく作り、稼いだお金で狩り場に出て希少な食材を集めるリアルタイムバトルを加えました。",
-        "en": "I wanted to replay a classic bakery-management game I used to enjoy, but it is no longer playable, so I made a new game that keeps what made it fun. The name, world and characters are all original, and I added real-time battles where you spend your earnings on gear and hunt for rare ingredients."
-      },
-      "features": {
-        "ko": "재료 2~4개를 섞어 요리 21종을 찾아내는 레시피 발견 시스템\n손님 취향·예산, 가격·품질·평판·가게 매력에 따라 달라지는 영업 시뮬레이션\n가구 배치와 벽지로 가게를 꾸미고, 같은 테마를 모으면 보너스\n캔버스로 만든 실시간 전투: 사냥터 4곳, 보스, 만든 요리를 도시락으로 먹으며 회복\n능력치 수련과 레벨업, 10·20·30일 요리 대회와 엔딩\n음원 파일 없이 Web Audio로 직접 작곡·합성하는 배경음악 (상황별 3곡)",
-        "ja": "食材を 2〜4 個組み合わせて 21 種類の料理を見つけるレシピ発見システム\nお客さんの好み・予算、価格・品質・評判・お店の魅力によって変わる営業シミュレーション\n家具の配置と壁紙でお店を飾り、同じテーマを揃えるとボーナス\nCanvas で作ったリアルタイムバトル：狩り場 4 か所とボス、作った料理をお弁当として食べて回復\n能力の修行とレベルアップ、10・20・30 日目の料理大会とエンディング\n音源ファイルを使わず Web Audio で作曲・合成する BGM（場面別に 3 曲）",
-        "en": "Recipe discovery: combine 2–4 ingredients to find 21 dishes\nShop simulation driven by customer tastes and budgets, price, quality, reputation and shop charm\nDecorate the shop with furniture and wallpaper, with bonuses for matching themes\nReal-time Canvas combat: 4 hunting grounds and a boss, healing by eating your own dishes\nStat training and leveling, cooking contests on days 10, 20 and 30, and an ending\nBackground music composed and synthesized in code with Web Audio — no audio files (3 tracks by scene)"
-      },
-      "tags": "React, TypeScript, Canvas 2D, Web Audio API, Game Design, Docker, GitHub Actions"
-    },
-    {
       "name": "WebCompiler",
       "icon": "🧪",
       "period": "2026-11",
@@ -536,6 +490,97 @@
         "en": "Merge, split, reorganize and compress PDFs; convert between images and PDF\nClean up phone photos of documents so they look scanned\nAI background removal and OCR running in the browser (WebAssembly)\nFiles never leave the PC, so there are no server costs or usage limits"
       },
       "tags": "React, TypeScript, pdf-lib, pdf.js, ONNX Runtime, Tesseract.js"
+    }
+  ],
+  "games": [
+    {
+      "name": "추억의 오락실",
+      "icon": "🕹️",
+      "period": "2026-11",
+      "image": "",
+      "link": "",
+      "summary": {
+        "ko": "옛 웹 미니게임 감성의 게임들을 새로 만들어 모은 웹 오락실",
+        "ja": "昔のWebミニゲームの雰囲気を再現したゲームを新たに作って集めたWebゲームセンター",
+        "en": "A web arcade of newly made games in the spirit of classic browser mini-games"
+      },
+      "why": {
+        "ko": "학창 시절 즐기던 웹 미니게임들을 다시 한곳에서 하고 싶었습니다. 예전 게임을 가져오지 않고 규칙·그림·음악을 모두 직접 새로 만들고, 게임을 계속 추가할 수 있는 구조로 만들었습니다.",
+        "ja": "学生時代に楽しんだWebミニゲームを、もう一度一か所で遊びたいと思ったのがきっかけです。昔のゲームを持ってくるのではなく、ルール・グラフィック・音楽をすべて自分で新しく作り、ゲームを追加し続けられる構成にしました。",
+        "en": "I wanted to play the kind of browser mini-games I enjoyed as a student in one place again. Rather than bringing over old games, I created the rules, graphics and music myself, in a structure that makes it easy to keep adding games."
+      },
+      "features": {
+        "ko": "깨비 도감: 깨비 195종(3단 진화, 18속성 상성, 기술 142개)을 잡고 키워 체육관 8곳과 리그에 도전하는 수집 RPG. 밤낮, 비전 기술로 여는 길, 숨은 전설 깨비, 자전거·낚싯대, 트레이너와의 유대(위기에 감싸 주기·숨은 유대 진화). 64계열과 숨은 깨비를 하나하나 디자인해 진화하면 모습·자세가 바뀌는 만화풍 도트로 그리고, 도트 글꼴·전투 배속·만남·전투 전환·진화 연출을 직접 구현\n주먹밥 용사전: 도트 그림으로 마을·필드를 탐험하고 칸 위에서 움직이며 싸우는 전략 전투 RPG. 기술이 달린 장비, 방어, 기술별 이펙트. 8장 이야기 중 제1장 (인물·몬스터 도트는 부품을 조합해 외곽선·명암을 자동으로 넣어 생성)\n햄스터 다이노 파이트: 햄스터 8마리가 약·강 펀치/킥 이어 치기와 방향키 순서 입력 기술로 싸우고, 기를 모아 게이지가 차면 공룡 특징이 돋아나며 변신하는 격투 게임. 스토리 모드와 숨겨진 보스\n도토리 미로: 직접 설계한 미로에서 성격이 다른 추격자 넷을 피하는 미로 추격 게임\n음원 파일 없이 Web Audio로 작곡·합성하는 8비트 배경음악과 효과음\nPC 키보드와 휴대폰 터치 조작, 기록 저장\n게임 규칙을 화면과 분리해 테스트 (커맨드 해석, 컴퓨터끼리 대전시켜 캐릭터 밸런스 확인)",
+        "ja": "ケビ図鑑：195種のケビ（3段階進化・18タイプ相性・142技）を捕まえて育て、8つのジムとリーグに挑む収集RPG。昼夜、秘伝技で開く道、隠れた伝説のケビ、自転車・釣り竿、トレーナーとの絆（ピンチでかばう・隠し絆進化）。64系統と隠れたケビを一体ずつデザインし、進化すると姿やポーズが変わるコミック調ドット絵で描き、ドットフォント・バトル倍速・エンカウント・バトル遷移・進化の演出も実装\nおにぎり勇者伝：ドット絵の村やフィールドを探索し、マス目の上を動いて戦うタクティカルバトルRPG。技付きの装備、防御、技ごとのエフェクト。全8章のうち第1章（人物・モンスターのドット絵はパーツを組み合わせ、輪郭線と陰影を自動生成）\nハムスター・ダイノ・ファイト：8匹のハムスターが弱・強パンチ／キックの連続技と方向キーの順番入力による必殺技で戦い、気を溜めてゲージが満タンになると恐竜の特徴が現れて変身する格闘ゲーム。ストーリーモードと隠しボス\nどんぐり迷路：自分で設計した迷路で、性格の違う追っ手4匹から逃げる迷路追跡ゲーム\n音源ファイルを使わず Web Audio で作曲・合成する 8 ビット風 BGM と効果音\nPC キーボードとスマホのタッチ操作、記録の保存\nゲームのルールを画面から分離してテスト（コマンド判定、CPU 同士の対戦でキャラバランスを確認）",
+        "en": "Kkaebi Dex: a creature-collecting RPG with 195 species (three-stage evolutions, 18-type matchups, 142 moves), eight gyms and a league, day/night, field-move gating, hidden legendaries, a bike and fishing rod, and a trainer bond system (shielding a fatal hit, hidden bond evolution); all 64 families plus hidden legendaries individually designed as cartoon-style pixel art whose shape and pose change with evolution, a pixel font, battle speed-up, and encounter, battle-transition and evolution effects\nRice Ball Hero: a pixel-art RPG with town/field exploration and grid-based tactical battles, equipment that grants skills, guarding, and per-skill effects; chapter 1 of an 8-chapter story (sprites are assembled from parts with automatic outlines and shading)\nHamster Dino Fight: eight hamsters fight with light/heavy punch-and-kick chain combos and sequential-input special moves, charge energy, and transform—sprouting dinosaur features—when the gauge fills; story mode with a hidden boss\nAcorn Maze: a maze chase on an original map, dodging four pursuers with different behaviors\n8-bit style music and sound effects composed and synthesized in code with Web Audio — no audio files\nKeyboard and mobile touch controls, saved records\nGame rules separated from rendering and tested (command parsing; character balance checked via CPU-vs-CPU matches)"
+      },
+      "tags": "React, TypeScript, Canvas 2D, Web Audio API, Game AI, Docker, GitHub Actions",
+      "gallery": [
+        {
+          "image": "/images/games/kkaebi-title.jpg",
+          "caption": {
+            "ko": "깨비 도감 타이틀 화면",
+            "ja": "ケビ図鑑のタイトル画面",
+            "en": "Kkaebi Dex title screen"
+          }
+        },
+        {
+          "image": "/images/games/kkaebi-battle.jpg",
+          "caption": {
+            "ko": "전투 화면 (도트 글꼴, ×3 배속 표시)",
+            "ja": "バトル画面（ドットフォント、3倍速表示）",
+            "en": "Battle screen (pixel font, ×3 speed indicator)"
+          }
+        },
+        {
+          "image": "/images/games/kkaebi-encounter.jpg",
+          "caption": {
+            "ko": "풀숲에서 만났을 때: 느낌표 → 화면 전환 → 전투",
+            "ja": "草むらでの遭遇：ビックリマーク → 画面転換 → バトル",
+            "en": "Grass encounter: alert mark → screen wipe → battle"
+          }
+        },
+        {
+          "image": "/images/games/kkaebi-evolution.jpg",
+          "caption": {
+            "ko": "진화 연출",
+            "ja": "進化の演出",
+            "en": "Evolution sequence"
+          }
+        },
+        {
+          "image": "/images/games/kkaebi-dex.jpg",
+          "caption": {
+            "ko": "깨비 도감 일부 (계열마다 따로 디자인한 도트)",
+            "ja": "ケビ図鑑の一部（系統ごとにデザインしたドット絵）",
+            "en": "Part of the dex (pixel art designed per family)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bake & Quest",
+      "icon": "🧁",
+      "period": "2026-11",
+      "image": "",
+      "link": "",
+      "summary": {
+        "ko": "제과점 경영·육성에 실시간 사냥을 더한 브라우저 게임",
+        "ja": "パン屋の経営・育成にリアルタイムの狩りを加えたブラウザゲーム",
+        "en": "Browser game mixing bakery management and character growth with real-time hunting"
+      },
+      "why": {
+        "ko": "예전에 즐기던 고전 제과점 경영 게임을 다시 해 보고 싶었는데 지금은 할 수 없어서, 그 재미를 살린 새 게임을 직접 만들었습니다. 이름·세계관·캐릭터는 모두 새로 만들었고, 모은 돈으로 사냥터에 나가 희귀 재료를 구해 오는 실시간 전투를 더했습니다.",
+        "ja": "以前楽しんでいた昔のパン屋経営ゲームをもう一度遊びたいと思ったものの今では遊べないため、その面白さを活かした新しいゲームを自分でつくりました。名前・世界観・キャラクターはすべて新しく作り、稼いだお金で狩り場に出て希少な食材を集めるリアルタイムバトルを加えました。",
+        "en": "I wanted to replay a classic bakery-management game I used to enjoy, but it is no longer playable, so I made a new game that keeps what made it fun. The name, world and characters are all original, and I added real-time battles where you spend your earnings on gear and hunt for rare ingredients."
+      },
+      "features": {
+        "ko": "재료 2~4개를 섞어 요리 21종을 찾아내는 레시피 발견 시스템\n손님 취향·예산, 가격·품질·평판·가게 매력에 따라 달라지는 영업 시뮬레이션\n가구 배치와 벽지로 가게를 꾸미고, 같은 테마를 모으면 보너스\n캔버스로 만든 실시간 전투: 사냥터 4곳, 보스, 만든 요리를 도시락으로 먹으며 회복\n능력치 수련과 레벨업, 10·20·30일 요리 대회와 엔딩\n음원 파일 없이 Web Audio로 직접 작곡·합성하는 배경음악 (상황별 3곡)",
+        "ja": "食材を 2〜4 個組み合わせて 21 種類の料理を見つけるレシピ発見システム\nお客さんの好み・予算、価格・品質・評判・お店の魅力によって変わる営業シミュレーション\n家具の配置と壁紙でお店を飾り、同じテーマを揃えるとボーナス\nCanvas で作ったリアルタイムバトル：狩り場 4 か所とボス、作った料理をお弁当として食べて回復\n能力の修行とレベルアップ、10・20・30 日目の料理大会とエンディング\n音源ファイルを使わず Web Audio で作曲・合成する BGM（場面別に 3 曲）",
+        "en": "Recipe discovery: combine 2–4 ingredients to find 21 dishes\nShop simulation driven by customer tastes and budgets, price, quality, reputation and shop charm\nDecorate the shop with furniture and wallpaper, with bonuses for matching themes\nReal-time Canvas combat: 4 hunting grounds and a boss, healing by eating your own dishes\nStat training and leveling, cooking contests on days 10, 20 and 30, and an ending\nBackground music composed and synthesized in code with Web Audio — no audio files (3 tracks by scene)"
+      },
+      "tags": "React, TypeScript, Canvas 2D, Web Audio API, Game Design, Docker, GitHub Actions",
+      "gallery": []
     }
   ],
   "skills": [

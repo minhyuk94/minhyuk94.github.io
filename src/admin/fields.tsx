@@ -22,6 +22,9 @@ const LABELS: Record<string, string> = {
   education: '학력',
   certificates: '자격증',
   projects: '프로젝트',
+  games: '게임 프로젝트',
+  gallery: '게임 화면 모음',
+  caption: '화면 설명',
   icon: '기호 (사진 없을 때)',
   period: '시기',
   image: '대표 화면',
@@ -88,6 +91,8 @@ const E = { ko: '', ja: '', en: '' };
 /** 목록이 비었을 때 새 항목의 모양 (항목이 있으면 첫 항목 모양을 따른다) */
 const TEMPLATES: Record<string, Json> = {
   projects: { name: '', icon: '', period: '', image: '', link: '', summary: E, why: E, features: E, tags: '' },
+  games: { name: '', icon: '', period: '', image: '', link: '', summary: E, why: E, features: E, tags: '', gallery: [{ image: '', caption: E }] },
+  gallery: { image: '', caption: E },
   experience: { company: E, url: '', place: E, start: '', end: '', projects: [{ name: E, tags: '', groups: [{ title: E, items: E }] }] },
   certificates: { name: E, url: '' },
   skills: { category: E, items: '' },

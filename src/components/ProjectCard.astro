@@ -1,0 +1,42 @@
+---
+import { lines, list, tr, type Lang, type Project } from '../lib/resume';
+import { ui } from '../lib/ui';
+
+interface Props {
+  pj: Project;
+  lang: Lang;
+}
+const { pj, lang } = Astro.props;
+const t = ui[lang];
+---
+
+<article class="project-card reveal">
+  <div class:list={['project-visual', { 'no-image': !pj.image }]}>
+    {pj.image ? (
+      <img src={pj.image} alt={`${pj.name} ${tr(pj.summary, lang)}`} loading="lazy" />
+    ) : (
+      <span class="project-icon" aria-hidden="true">{pj.icon || pj.name.slice(0, 1)}</span>
+    )}
+  </div>
+  <div class="project-body">
+    <div class="project-head">
+      <h3>{pj.name}</h3>
+      {pj.period && <span class="project-period">{pj.period.replace('-', '.')}</span>}
+    </div>
+    <p class="project-summary">{tr(pj.summary, lang)}</p>
+    {tr(pj.why, lang) && (
+      <p class="project-why">
+        <strong>{t.why}</strong> {tr(pj.why, lang)}
+      </p>
+    )}
+    <ul class="project-features">
+      {lines(pj.features, lang).map((f) => <li>{f}</li>)}
+    </ul>
+    <ul class="tags">
+      {list(pj.tags).map((tag) => <li>{tag}</li>)}
+    </ul>
+    {pj.link && (
+      <a class="project-link" href={pj.link} target="_blank" rel="noopener noreferrer">{t.tryIt} ↗</a>
+    )}
+  </div>
+</article>

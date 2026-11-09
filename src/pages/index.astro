@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import data from '../data/resume.json';
-import { LANGS, tr, type Resume } from '../lib/resume';
+import { LANGS, tr, url, type Resume } from '../lib/resume';
 import { LANG_LABEL } from '../lib/ui';
 
 const r = data as Resume;
@@ -12,10 +12,10 @@ const r = data as Resume;
   description={r.profile.tagline.en}
   lang="en"
   image={r.profile.photo}
-  alternates={LANGS.map((l) => ({ lang: l, href: `/${l}/` }))}
+  alternates={LANGS.map((l) => ({ lang: l, href: url(`/${l}/`) }))}
 >
   <!-- 방문자 언어로 바로 이동. 고른 적이 있으면 그 언어, 아니면 브라우저 언어, 그 밖은 영어 -->
-  <script is:inline>
+  <script is:inline define:vars={{ root: url('/') }}>
     (function () {
       var langs = ['ko', 'ja', 'en'];
       var pick = null;
@@ -29,14 +29,14 @@ const r = data as Resume;
           if (langs.indexOf(base) >= 0) pick = base;
         }
       }
-      location.replace('/' + (pick || 'en') + '/' + location.hash);
+      location.replace(root + (pick || 'en') + '/' + location.hash);
     })();
   </script>
   <main class="chooser">
     <h1>{r.profile.name.en}</h1>
     <p>{tr(r.profile.role, 'en')}</p>
     <div class="chooser-links">
-      {LANGS.map((l) => <a href={`/${l}/`} lang={l}>{LANG_LABEL[l]}</a>)}
+      {LANGS.map((l) => <a href={url(`/${l}/`)} lang={l}>{LANG_LABEL[l]}</a>)}
     </div>
   </main>
 </Base>

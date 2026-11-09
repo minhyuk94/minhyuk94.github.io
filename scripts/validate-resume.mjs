@@ -68,7 +68,11 @@ arr(data.experience, 'experience', (e, path) => {
 for (const key of ['projects', 'games']) {
   if (data[key] === undefined) continue;
   arr(data[key], key, (pj, path) => {
-    for (const k of ['name', 'icon', 'image', 'link', 'tags']) str(pj[k], `${path}.${k}`);
+    // 게임 이름은 언어별, 프로그램 이름은 하나 (둘 다 받음)
+    if (pj.name && typeof pj.name === 'object') l10n(pj.name, `${path}.name`);
+    else str(pj.name, `${path}.name`);
+    if (key === 'games' && typeof pj.name !== 'object') errors.push(`${path}.name: 게임 이름은 ko/ja/en 언어별로 적어 주세요`);
+    for (const k of ['icon', 'image', 'link', 'tags']) str(pj[k], `${path}.${k}`);
     for (const k of ['summary', 'why', 'features']) l10n(pj[k], `${path}.${k}`);
     if (pj.period) ym(pj.period, `${path}.period`, true);
     if (pj.link && !/^https?:\/\//.test(pj.link)) errors.push(`${path}.link: http(s)://로 시작해야 합니다`);

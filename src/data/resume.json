@@ -494,7 +494,11 @@
   ],
   "games": [
     {
-      "name": "유튜잼",
+      "name": {
+        "ko": "유튜잼",
+        "ja": "ユーチュージャム",
+        "en": "YouTuJam"
+      },
       "icon": "🎹",
       "period": "2026-11",
       "image": "",
@@ -567,7 +571,11 @@
       ]
     },
     {
-      "name": "해솔국 이야기",
+      "name": {
+        "ko": "해솔국 이야기",
+        "ja": "ヘソル国物語",
+        "en": "Tales of Haesol"
+      },
       "icon": "🏯",
       "period": "2026-11",
       "image": "",
@@ -632,7 +640,11 @@
       ]
     },
     {
-      "name": "달마루 모험기",
+      "name": {
+        "ko": "달마루 모험기",
+        "ja": "タルマル冒険記",
+        "en": "Dalmaru Adventure"
+      },
       "icon": "🌕",
       "period": "2026-11",
       "image": "",
@@ -721,7 +733,11 @@
       ]
     },
     {
-      "name": "추억의 오락실",
+      "name": {
+        "ko": "추억의 오락실",
+        "ja": "思い出のゲームセンター",
+        "en": "Retro Arcade"
+      },
       "icon": "🕹️",
       "period": "2026-11",
       "image": "",
@@ -784,30 +800,6 @@
           }
         }
       ]
-    },
-    {
-      "name": "Bake & Quest",
-      "icon": "🧁",
-      "period": "2026-11",
-      "image": "",
-      "link": "",
-      "summary": {
-        "ko": "제과점 경영·육성에 실시간 사냥을 더한 브라우저 게임",
-        "ja": "パン屋の経営・育成にリアルタイムの狩りを加えたブラウザゲーム",
-        "en": "Browser game mixing bakery management and character growth with real-time hunting"
-      },
-      "why": {
-        "ko": "예전에 즐기던 고전 제과점 경영 게임을 다시 해 보고 싶었는데 지금은 할 수 없어서, 그 재미를 살린 새 게임을 직접 만들었습니다. 이름·세계관·캐릭터는 모두 새로 만들었고, 모은 돈으로 사냥터에 나가 희귀 재료를 구해 오는 실시간 전투를 더했습니다.",
-        "ja": "以前楽しんでいた昔のパン屋経営ゲームをもう一度遊びたいと思ったものの今では遊べないため、その面白さを活かした新しいゲームを自分でつくりました。名前・世界観・キャラクターはすべて新しく作り、稼いだお金で狩り場に出て希少な食材を集めるリアルタイムバトルを加えました。",
-        "en": "I wanted to replay a classic bakery-management game I used to enjoy, but it is no longer playable, so I made a new game that keeps what made it fun. The name, world and characters are all original, and I added real-time battles where you spend your earnings on gear and hunt for rare ingredients."
-      },
-      "features": {
-        "ko": "재료 2~4개를 섞어 요리 21종을 찾아내는 레시피 발견 시스템\n손님 취향·예산, 가격·품질·평판·가게 매력에 따라 달라지는 영업 시뮬레이션\n가구 배치와 벽지로 가게를 꾸미고, 같은 테마를 모으면 보너스\n캔버스로 만든 실시간 전투: 사냥터 4곳, 보스, 만든 요리를 도시락으로 먹으며 회복\n능력치 수련과 레벨업, 10·20·30일 요리 대회와 엔딩\n음원 파일 없이 Web Audio로 직접 작곡·합성하는 배경음악 (상황별 3곡)",
-        "ja": "食材を 2〜4 個組み合わせて 21 種類の料理を見つけるレシピ発見システム\nお客さんの好み・予算、価格・品質・評判・お店の魅力によって変わる営業シミュレーション\n家具の配置と壁紙でお店を飾り、同じテーマを揃えるとボーナス\nCanvas で作ったリアルタイムバトル：狩り場 4 か所とボス、作った料理をお弁当として食べて回復\n能力の修行とレベルアップ、10・20・30 日目の料理大会とエンディング\n音源ファイルを使わず Web Audio で作曲・合成する BGM（場面別に 3 曲）",
-        "en": "Recipe discovery: combine 2–4 ingredients to find 21 dishes\nShop simulation driven by customer tastes and budgets, price, quality, reputation and shop charm\nDecorate the shop with furniture and wallpaper, with bonuses for matching themes\nReal-time Canvas combat: 4 hunting grounds and a boss, healing by eating your own dishes\nStat training and leveling, cooking contests on days 10, 20 and 30, and an ending\nBackground music composed and synthesized in code with Web Audio — no audio files (3 tracks by scene)"
-      },
-      "tags": "React, TypeScript, Canvas 2D, Web Audio API, Game Design, Docker, GitHub Actions",
-      "gallery": []
     }
   ],
   "skills": [

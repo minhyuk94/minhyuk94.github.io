@@ -1,5 +1,5 @@
 ---
-import { lines, list, tr, type Lang, type Project } from '../lib/resume';
+import { lines, list, text, tr, url, type Lang, type Project } from '../lib/resume';
 import { ui } from '../lib/ui';
 
 interface Props {
@@ -8,20 +8,20 @@ interface Props {
 }
 const { pj, lang } = Astro.props;
 const t = ui[lang];
+const name = text(pj.name, lang);
 ---
 
 <article class="project-card reveal">
   <div class:list={['project-visual', { 'no-image': !pj.image }]}>
     {pj.image ? (
-      <img src={pj.image} alt={`${pj.name} ${tr(pj.summary, lang)}`} loading="lazy" />
+      <img src={url(pj.image)} alt={`${name} ${tr(pj.summary, lang)}`} loading="lazy" />
     ) : (
-      <span class="project-icon" aria-hidden="true">{pj.icon || pj.name.slice(0, 1)}</span>
+      <span class="project-icon" aria-hidden="true">{pj.icon || name.slice(0, 1)}</span>
     )}
   </div>
   <div class="project-body">
     <div class="project-head">
-      <h3>{pj.name}</h3>
-      {pj.period && <span class="project-period">{pj.period.replace('-', '.')}</span>}
+      <h3>{name}</h3>
     </div>
     <p class="project-summary">{tr(pj.summary, lang)}</p>
     {tr(pj.why, lang) && (

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, type FormEvent } from 'react';
 import { Field, ImageUploadContext, labelOf, type Json, type Obj } from './fields';
 import { GitHubError, REPO, RESUME_PATH, checkToken, readFile, writeFile } from './github';
+import { url } from '../lib/resume';
 
 const TOKEN_KEY = 'resume-admin-token';
 const SECTIONS = ['profile', 'about', 'experience', 'projects', 'games', 'skills', 'education', 'certificates'];
@@ -191,7 +192,7 @@ export default function Editor() {
         <strong>이력서 편집</strong>
         <span className={`state ${dirty ? 'dirty' : ''}`}>{dirty ? '● 저장 안 됨' : '저장됨'}</span>
         <span className="spacer" />
-        <a href="/" target="_blank" rel="noopener noreferrer" className="mini">사이트 보기 ↗</a>
+        <a href={url('/')} target="_blank" rel="noopener noreferrer" className="mini">사이트 보기 ↗</a>
         <a href={`https://github.com/${REPO.owner}/${REPO.name}/actions`} target="_blank" rel="noopener noreferrer" className="mini">반영 상황 ↗</a>
         <button className="mini" onClick={logout}>로그아웃</button>
       </header>

@@ -1,7 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import data from '../../../data/resume.json';
-import { LANGS, list, tr, type Lang, type Resume } from '../../../lib/resume';
+import { LANGS, list, text, tr, url, type Lang, type Resume } from '../../../lib/resume';
 import { LANG_LABEL, ui } from '../../../lib/ui';
 
 export function getStaticPaths() {
@@ -19,12 +19,12 @@ const games = r.games ?? [];
   description={t.galleryLead}
   lang={lang}
   image={games.find((g) => g.gallery?.length)?.gallery?.[0].image ?? r.profile.photo}
-  alternates={LANGS.map((l) => ({ lang: l, href: `/${l}/games/` }))}
+  alternates={LANGS.map((l) => ({ lang: l, href: url(`/${l}/games/`) }))}
 >
   <header class="gal-top">
-    <a class="gal-back" href={`/${lang}/#games`}>← {t.back}</a>
+    <a class="gal-back" href={url(`/${lang}/#games`)}>← {t.back}</a>
     <div class="gal-langs">
-      {LANGS.map((l) => <a href={`/${l}/games/`} class:list={{ on: l === lang }} lang={l}>{LANG_LABEL[l]}</a>)}
+      {LANGS.map((l) => <a href={url(`/${l}/games/`)} class:list={{ on: l === lang }} lang={l}>{LANG_LABEL[l]}</a>)}
     </div>
   </header>
   <main class="gal">
@@ -34,15 +34,15 @@ const games = r.games ?? [];
       games.map((g) => (
         <section class="gal-game">
           <h2>
-            <span aria-hidden="true">{g.icon}</span> {g.name}
+            <span aria-hidden="true">{g.icon}</span> {text(g.name, lang)}
           </h2>
           <p class="gal-sum">{tr(g.summary, lang)}</p>
           {g.gallery?.length ? (
             <div class="gal-grid">
               {g.gallery.map((s) => (
                 <figure>
-                  <a href={s.image} target="_blank" rel="noopener">
-                    <img src={s.image} alt={tr(s.caption, lang)} loading="lazy" />
+                  <a href={url(s.image)} target="_blank" rel="noopener">
+                    <img src={url(s.image)} alt={tr(s.caption, lang)} loading="lazy" />
                   </a>
                   <figcaption>{tr(s.caption, lang)}</figcaption>
                 </figure>

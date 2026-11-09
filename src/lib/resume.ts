@@ -1,6 +1,12 @@
 // 이력서 데이터 형식과 표시용 도우미. 데이터는 src/data/resume.json (편집 페이지 /admin에서 수정)
 
 export const LANGS = ['ko', 'ja', 'en'] as const;
+
+/** 사이트 안 주소(/로 시작)에 앞머리(/resume)를 붙인다. 바깥 주소는 그대로 */
+const BASE = String(import.meta.env.BASE_URL ?? '/').replace(/\/$/, '');
+export function url(p: string): string {
+  return p && p.startsWith('/') && !p.startsWith('//') ? BASE + p : p;
+}
 export type Lang = (typeof LANGS)[number];
 
 /** 언어별 글자 */
@@ -56,7 +62,8 @@ export interface Resume {
 
 /** 프로젝트 카드 */
 export interface Project {
-  name: string;
+  /** 게임은 언어별 이름, 프로그램은 하나의 이름 */
+  name: string | L10n;
   /** 이미지가 없을 때 카드에 크게 보일 기호 */
   icon: string;
   /** "2026-11" */

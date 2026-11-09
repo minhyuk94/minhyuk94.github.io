@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Resume from '../../components/Resume.astro';
 import data from '../../data/resume.json';
-import { LANGS, tr, type Lang, type Resume as ResumeData } from '../../lib/resume';
+import { LANGS, tr, url, type Lang, type Resume as ResumeData } from '../../lib/resume';
 
 export function getStaticPaths() {
   return LANGS.map((lang) => ({ params: { lang } }));
@@ -19,7 +19,7 @@ const description = tr(r.profile.tagline, lang);
   description={description}
   lang={lang}
   image={r.profile.photo}
-  alternates={[...LANGS.map((l) => ({ lang: l, href: `/${l}/` })), { lang: 'x-default', href: '/' }]}
+  alternates={[...LANGS.map((l) => ({ lang: l, href: url(`/${l}/`) })), { lang: 'x-default', href: url('/') }]}
 >
   <Resume lang={lang} />
 </Base>

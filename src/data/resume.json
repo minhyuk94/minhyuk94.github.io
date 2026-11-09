@@ -494,6 +494,71 @@
   ],
   "games": [
     {
+      "name": "달마루 모험기",
+      "icon": "🌕",
+      "period": "2026-11",
+      "image": "",
+      "link": "https://minhyuk94.github.io/dalmaru/",
+      "summary": {
+        "ko": "게임 엔진 Godot로 만든 탑다운 액션 RPG. 그림·소리·지도를 모두 코드로 생성",
+        "ja": "ゲームエンジン Godot で作ったトップダウン型アクションRPG。グラフィック・サウンド・マップをすべてコードで生成",
+        "en": "A top-down action RPG built with the Godot engine, with all graphics, sound and maps generated from code"
+      },
+      "why": {
+        "ko": "웹 미니게임을 만들다 보니 PC·스팀 게임처럼 게임 엔진으로 제대로 된 게임을 만들어 보고 싶어졌습니다. 이번에는 퀄리티를 목표로, 노을 진 한옥 마을에서 시작하는 새 이야기와 손맛 있는 전투를 만들었습니다.",
+        "ja": "Webミニゲームを作るうちに、PC・Steamのゲームのようにゲームエンジンで本格的なゲームを作ってみたくなりました。今回はクオリティを目標に、夕焼けの韓屋の村から始まる新しい物語と、手応えのあるバトルを作りました。",
+        "en": "After building browser mini-games, I wanted to make a proper game with a game engine, like PC and Steam titles. This time I aimed for quality: a new story that begins in a hanok village at dusk, with combat that feels good to play."
+      },
+      "features": {
+        "ko": "Godot 4(GDScript)로 개발해 웹으로 내보내고, GitHub Actions가 테스트·실행 확인·웹 빌드·배포까지 자동으로 진행\n8방향 이동, 2연타·구르기(무적)·넉백, 맞을 때 번쩍임·멈칫(히트스톱)·화면 흔들림으로 타격감 표현\n적 3종과 대왕멧돼지 보스전(돌진·내리찍기 충격파·부하 부르기), 진행에 따라 바뀌는 마을 사람 대사, 대장간 강화·상점, 자동 저장\n도트 그림(팔레트·글자 그림·절차적 그리기, 모서리 4칸으로 고르는 바닥 타일), 5음계 배경음과 효과음, 지도를 모두 코드로 생성",
+        "ja": "Godot 4（GDScript）で開発してWeb向けに書き出し、GitHub Actions でテスト・起動確認・Webビルド・デプロイまで自動化\n8方向移動、2連撃・回避（無敵）・ノックバック、被弾時のフラッシュ・ヒットストップ・画面揺れで手応えを表現\n敵3種と大猪のボス戦（突進・叩きつけの衝撃波・手下の召喚）、進行に応じて変わる村人のセリフ、鍛冶屋での強化・ショップ、オートセーブ\nドット絵（パレット・文字で描くスプライト・手続き的描画、四隅で選ぶ地面タイル）、五音音階のBGMと効果音、マップをすべてコードで生成",
+        "en": "Developed in Godot 4 (GDScript) and exported to the web; GitHub Actions runs tests, a launch check, the web build and deployment\n8-direction movement, a two-hit combo, an invincible dodge roll and knockback, with hit flashes, hit-stop and screen shake for impact\nThree enemy types and a giant boar boss (charges, a ground-slam shockwave, summoned minions), villager dialogue that changes with progress, a blacksmith upgrade and shop, and auto-save\nPixel art (palettes, text-drawn sprites, procedural drawing, corner-based ground tiles), pentatonic music and sound effects, and maps all generated from code"
+      },
+      "tags": "Godot 4, GDScript, Python, Procedural Art, Sound Synthesis, GitHub Actions",
+      "gallery": [
+        {
+          "image": "/images/games/dalmaru-title.jpg",
+          "caption": {
+            "ko": "처음 화면",
+            "ja": "タイトル画面",
+            "en": "Title screen"
+          }
+        },
+        {
+          "image": "/images/games/dalmaru-village.jpg",
+          "caption": {
+            "ko": "노을 진 달마루 마을 (석등·창문 불빛)",
+            "ja": "夕焼けのタルマル村（石灯籠・窓の明かり）",
+            "en": "Dalmaru village at dusk (stone lanterns, window light)"
+          }
+        },
+        {
+          "image": "/images/games/dalmaru-battle.jpg",
+          "caption": {
+            "ko": "들판 전투 (목검 2연타, 피해 숫자)",
+            "ja": "野原でのバトル（木剣の2連撃、ダメージ表示）",
+            "en": "Field combat (wooden-sword combo, damage numbers)"
+          }
+        },
+        {
+          "image": "/images/games/dalmaru-boss.jpg",
+          "caption": {
+            "ko": "숲지기 대왕멧돼지 보스전",
+            "ja": "森の守り神・大猪とのボス戦",
+            "en": "Boss fight with the giant forest-guardian boar"
+          }
+        },
+        {
+          "image": "/images/games/dalmaru-spring.jpg",
+          "caption": {
+            "ko": "다시 차오른 달샘",
+            "ja": "再び満ちた月の泉",
+            "en": "The moon spring, filled again"
+          }
+        }
+      ]
+    },
+    {
       "name": "추억의 오락실",
       "icon": "🕹️",
       "period": "2026-11",

@@ -494,6 +494,79 @@
   ],
   "games": [
     {
+      "name": "유튜잼",
+      "icon": "🎹",
+      "period": "2026-11",
+      "image": "",
+      "link": "https://minhyuk94.github.io/youtujam/",
+      "summary": {
+        "ko": "떨어지는 노트를 박자에 맞춰 치는 웹 건반 리듬 게임. 자체곡은 브라우저에서 실시간으로 합성하고, 유튜브 영상 음악으로도 할 수 있음",
+        "ja": "落ちてくるノーツをリズムに合わせて叩くWebの鍵盤リズムゲーム。オリジナル曲はブラウザでリアルタイムに合成し、YouTube動画の音楽でも遊べる",
+        "en": "A browser keyboard rhythm game where you hit falling notes to the beat. Original songs are synthesized live in the browser, and YouTube music can be played too"
+      },
+      "why": {
+        "ko": "예전 온라인 리듬 게임의 손맛을, 유튜브에 있는 좋아하는 음악으로도 즐기고 싶어서 만들었습니다. 유튜브 소리는 분석할 수 없어서, 박자를 맞춰 채보를 만들거나 직접 쳐서 녹음하는 방식으로 풀었습니다.",
+        "ja": "昔のオンラインリズムゲームの手応えを、YouTubeにある好きな音楽でも楽しみたいと思って作りました。YouTubeの音声は解析できないため、テンポを合わせて譜面を作るか、自分で叩いて録音する方式で解決しました。",
+        "en": "I wanted the feel of the online rhythm games I used to play, with music I like from YouTube. Since YouTube audio cannot be analyzed, charts are generated from the tempo and first beat, or recorded by playing along."
+      },
+      "features": {
+        "ko": "4·5·6·7건반과 쉬움·보통·어려움, 곡마다 노트 수로 계산한 난이도 숫자(Lv)\n자체곡 3곡을 Web Audio로 실시간 합성하고, 노트를 곡의 소리에서 만들어 친 순간 그 음이 나는 키음 방식\n스피커 출력 시각에 맞춘 시계와 키 입력 시각 그대로의 판정, 길게 누르기·체력·잼 게이지·등급, 박자에 맞춰 눌러 판정을 자동으로 맞추는 기능\n유튜브 영상은 BPM 두드려 재기·첫 박 맞추기로 채보를 만들거나 직접 쳐서 녹음. 채보·판정·점수 규칙은 화면과 분리해 테스트하고 GitHub Actions로 빌드·배포",
+        "ja": "4・5・6・7鍵とかんたん・ふつう・むずかしい、曲ごとにノーツ数から算出する難易度（Lv）\nオリジナル3曲をWeb Audioでリアルタイム合成し、ノーツを曲の音から作って叩いた瞬間にその音が鳴るキー音方式\nスピーカー出力時刻に合わせた時計とキー入力時刻そのままの判定、ロングノーツ・ライフ・ジャムゲージ・ランク、リズムに合わせて押すだけで判定を自動調整する機能\nYouTube動画はBPMのタップ計測と1拍目合わせで譜面を作るか、自分で叩いて録音。譜面・判定・スコアのルールは画面から分離してテストし、GitHub Actionsでビルド・デプロイ",
+        "en": "4-, 5-, 6- and 7-key modes with easy, normal and hard charts, and a level number per song calculated from note density\nThree original songs synthesized live with Web Audio; notes are built from the song's own sounds, so each hit plays its note\nA clock tied to the speaker's output time and judgments taken from the exact key-press time, plus hold notes, life, a jam gauge, ranks and automatic timing calibration by tapping to a beat\nCharts for YouTube videos from tap-tempo BPM and first-beat alignment, or recorded by playing along; chart, judgment and scoring rules separated from the UI and tested, with builds and deploys on GitHub Actions"
+      },
+      "tags": "TypeScript, Canvas 2D, Web Audio API, YouTube IFrame API, esbuild, GitHub Actions",
+      "gallery": [
+        {
+          "image": "/images/games/youtujam-title.jpg",
+          "caption": {
+            "ko": "처음 화면",
+            "ja": "タイトル画面",
+            "en": "Title screen"
+          }
+        },
+        {
+          "image": "/images/games/youtujam-play7.jpg",
+          "caption": {
+            "ko": "7건반 어려움, 잼 콤보 중",
+            "ja": "7鍵むずかしい、ジャムコンボ中",
+            "en": "7-key hard during a jam combo"
+          }
+        },
+        {
+          "image": "/images/games/youtujam-play4.jpg",
+          "caption": {
+            "ko": "4건반 보통",
+            "ja": "4鍵ふつう",
+            "en": "4-key normal"
+          }
+        },
+        {
+          "image": "/images/games/youtujam-select.jpg",
+          "caption": {
+            "ko": "곡 고르기와 난이도 숫자",
+            "ja": "選曲画面と難易度",
+            "en": "Song select with level numbers"
+          }
+        },
+        {
+          "image": "/images/games/youtujam-result.jpg",
+          "caption": {
+            "ko": "결과 화면",
+            "ja": "リザルト画面",
+            "en": "Results screen"
+          }
+        },
+        {
+          "image": "/images/games/youtujam-youtube.jpg",
+          "caption": {
+            "ko": "유튜브 음악으로 채보 만들기",
+            "ja": "YouTubeの音楽で譜面作り",
+            "en": "Making a chart from YouTube music"
+          }
+        }
+      ]
+    },
+    {
       "name": "해솔국 이야기",
       "icon": "🏯",
       "period": "2026-11",

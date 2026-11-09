@@ -15,7 +15,7 @@ const r = data as Resume;
   alternates={LANGS.map((l) => ({ lang: l, href: url(`/${l}/`) }))}
 >
   <!-- 방문자 언어로 바로 이동. 고른 적이 있으면 그 언어, 아니면 브라우저 언어, 그 밖은 영어 -->
-  <script is:inline define:vars={{ base: url('/') }}>
+  <script is:inline define:vars={{ root: url('/') }}>
     (function () {
       var langs = ['ko', 'ja', 'en'];
       var pick = null;
@@ -29,7 +29,7 @@ const r = data as Resume;
           if (langs.indexOf(base) >= 0) pick = base;
         }
       }
-      location.replace(base + (pick || 'en') + '/' + location.hash);
+      location.replace(root + (pick || 'en') + '/' + location.hash);
     })();
   </script>
   <main class="chooser">

@@ -5,6 +5,7 @@
 ## 구조
 
 - 내용은 전부 `src/data/resume.json` 하나 (ko / ja / en). 화면은 `src/components/Resume.astro`.
+- 이력서 주소는 **`https://minhyuk94.github.io/resume/`** (`astro.config.mjs`의 `base: '/resume'`, 결과는 `dist/resume/`). 루트와 예전 주소(`/`, `/ko/`, `/profile/…`)는 `scripts/root-pages.mjs`가 `/resume/…`로 보낸다. 사이트 안 주소·이미지 경로(`/images/…`)는 화면에서 꼭 `url()`(`src/lib/resume.ts`)로 감싼다. 데이터에는 `/images/…` 그대로 적는다.
 - 기본 브랜치는 **`master`**. master에 푸시하면 GitHub Actions가 `scripts/validate-resume.mjs`로 데이터 검사 → `astro check` → 빌드 → GitHub Pages 배포.
 - `/admin` 웹 편집 페이지는 GitHub Contents API로 master의 `src/data/resume.json`에 직접 커밋한다. 데이터 구조를 바꾸면 `src/admin/fields.tsx`의 라벨·힌트·템플릿, `scripts/validate-resume.mjs`도 같이 고친다.
 
@@ -25,7 +26,7 @@
 1. 새 저장소에는 **자동 빌드 검사(GitHub Actions)** 를 처음부터 넣는다.
 2. 프로젝트가 완성되면 이 이력서의 `projects`에 카드를 추가한다. **게임은 `games`에** 따로 둔다 (같은 필드 + `gallery`: 화면 모음 `{ image, caption }`, `/[lang]/games/` 게임 화면 페이지에 보인다. 화면 이미지는 `public/images/games/`).
    - **소스 코드는 공개하지 않는다.** 저장소 링크를 넣지 않는다. 프로그램이 무엇이고 왜 만들었는지만 소개한다.
-   - 필드: `name`, `icon`(이모지), `period`("YYYY-MM"), `image`(대표 화면, 사용자가 /admin에서 올림), `link`(공개 데모가 있을 때만), `summary`, `why`(만든 이유 — 사용자가 말한 동기를 살림), `features`(4줄 안팎), `tags`.
+   - 필드: `name`(게임은 `{ko, ja, en}` 언어별 이름, 프로그램은 글자 하나), `icon`(이모지), `period`("YYYY-MM", 순서용이고 화면에는 안 보임), `image`(대표 화면, 사용자가 /admin에서 올림), `link`(공개 데모가 있을 때만), `summary`, `why`(만든 이유 — 사용자가 말한 동기를 살림), `features`(4줄 안팎), `tags`.
    - 최신 프로젝트를 앞에 둔다.
 3. 대표 화면 캡처는 사용자가 로컬 Docker에서 찍어 /admin "사진 올리기"로 올린다. 개인 메모·회사 정보가 찍히지 않게 안내한다.
 

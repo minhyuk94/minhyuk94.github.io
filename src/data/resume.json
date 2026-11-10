@@ -495,6 +495,91 @@
   "games": [
     {
       "name": {
+        "ko": "홀로 남은 강아지",
+        "ja": "ひとりぼっちの子犬",
+        "en": "Left Alone Puppy"
+      },
+      "icon": "🐶",
+      "period": "2026-11",
+      "image": "",
+      "link": "https://minhyuk94.github.io/LeftAlonePuppy/",
+      "summary": {
+        "ko": "이삿날 농장에 홀로 남은 아기 강아지가 주인을 찾아 도시까지 떠나는 웹 횡스크롤 모험. 8개 스테이지마다 다른 기믹과 보스가 있고, 사이에 지도로 길을 이어 감. PC와 휴대폰 모두 지원",
+        "ja": "引っ越しの日に農場へ取り残された子犬が、飼い主を探して街まで旅するWebの横スクロールアクション。8つのステージごとに異なるギミックとボスがあり、ステージの間はマップで旅路をたどる。PCとスマートフォンの両方に対応",
+        "en": "A browser side-scrolling adventure in which a puppy left behind on a farm on moving day travels all the way to the city to find its owner. Each of the eight stages has its own gimmick and boss, linked by a world map. Works on both PC and phones"
+      },
+      "why": {
+        "ko": "어릴 때 하던 강아지가 주인을 찾아가는 횡스크롤 게임의 따뜻한 느낌을, 새 이야기와 캐릭터로 브라우저에서 다시 만들어 보고 싶어서 만들었습니다.",
+        "ja": "子どもの頃に遊んだ、子犬が飼い主を探しに行く横スクロールゲームの温かい雰囲気を、新しい物語とキャラクターでブラウザに作り直したいと思って作りました。",
+        "en": "I wanted to recreate, with a new story and characters, the warm feel of a side-scroller I played as a child about a puppy searching for its owner, so it can be played in the browser."
+      },
+      "features": {
+        "ko": "농장·밀밭·숲·개울·동굴·눈 고개·마을·비 오는 도시의 8개 스테이지: 스프링, 무너지는 발판, 물, 어둠과 반딧불, 얼음과 맞바람, 비 같은 기믹과 보스 8마리\n적을 밟거나 짖어서 멈추게 하는 조작, 스테이지마다 숨겨진 추억 모으기, 이야기 장면·지도·엔딩, 진행 상황은 브라우저에 저장\n주인공 강아지·적·보스는 코드로 그린 도트, 배경 소품은 Kenney Tiny Farm(CC0). 배경음악과 효과음은 Web Audio로 합성한 새 곡\n맵은 조각을 이어 만들고, 시작부터 보스까지 갈 수 있는지와 모을 것에 닿는지를 길 찾기 테스트로, 보스 8마리를 이길 수 있는지를 자동 플레이 봇으로 확인. GitHub Actions로 테스트·빌드·배포. 휴대폰 터치 버튼·진동·전체 화면",
+        "ja": "農場・麦畑・森・小川・洞窟・雪の峠・町・雨の街の8ステージ。バネ、崩れる足場、水、暗闇とホタル、氷と向かい風、雨などのギミックとボス8体\n敵を踏むか、吠えて止める操作、ステージごとに隠された思い出の収集、ストーリー場面・マップ・エンディング、進行状況はブラウザに保存\n主人公の子犬・敵・ボスはコードで描いたドット絵、背景の小物はKenney Tiny Farm（CC0）。BGMと効果音はWeb Audioで合成したオリジナル曲\nマップはパーツをつなげて作り、スタートからボスまで行けるか、収集物に届くかを経路探索テストで、ボス8体に勝てるかを自動プレイのボットで確認。GitHub Actionsでテスト・ビルド・デプロイ。スマートフォンのタッチボタン・振動・全画面に対応",
+        "en": "Eight stages (farm, wheat field, forest, creek, cave, snowy pass, town and rainy city) with gimmicks such as springs, crumbling platforms, water, darkness with fireflies, ice with headwinds and rain, plus eight bosses\nStomp enemies or bark to stop them, collect a hidden keepsake in each stage, with story scenes, a world map and an ending; progress is saved in the browser\nThe puppy, enemies and bosses are pixel art drawn in code, with props from Kenney Tiny Farm (CC0); music and sound effects are original pieces synthesized with Web Audio\nMaps are assembled from chunks; path-finding tests check that every stage can be crossed to the boss and its collectibles reached, and an auto-play bot checks that all eight bosses can be beaten. Tests, builds and deploys run on GitHub Actions; touch buttons, vibration and fullscreen on phones"
+      },
+      "tags": "TypeScript, Canvas 2D, Web Audio API, esbuild, GitHub Actions",
+      "gallery": [
+        {
+          "image": "/images/games/puppy-title.jpg",
+          "caption": {
+            "ko": "처음 화면",
+            "ja": "タイトル画面",
+            "en": "Title screen"
+          }
+        },
+        {
+          "image": "/images/games/puppy-story.jpg",
+          "caption": {
+            "ko": "이삿날 아침, 하나와 콩이",
+            "ja": "引っ越しの朝、ハナとコンイ",
+            "en": "Moving-day morning with Hana and Kongi"
+          }
+        },
+        {
+          "image": "/images/games/puppy-map.jpg",
+          "caption": {
+            "ko": "스테이지를 잇는 지도",
+            "ja": "ステージをつなぐマップ",
+            "en": "World map linking the stages"
+          }
+        },
+        {
+          "image": "/images/games/puppy-farm.jpg",
+          "caption": {
+            "ko": "1. 햇살 농장",
+            "ja": "1. ひだまり農場",
+            "en": "1. Sunny Farm"
+          }
+        },
+        {
+          "image": "/images/games/puppy-cave.jpg",
+          "caption": {
+            "ko": "5. 반딧불 동굴 보스",
+            "ja": "5. ホタルの洞窟のボス",
+            "en": "5. Firefly Cave boss"
+          }
+        },
+        {
+          "image": "/images/games/puppy-city.jpg",
+          "caption": {
+            "ko": "8. 비 오는 도시 보스",
+            "ja": "8. 雨の街のボス",
+            "en": "8. Rainy City boss"
+          }
+        },
+        {
+          "image": "/images/games/puppy-ending.jpg",
+          "caption": {
+            "ko": "다시 만난 하나와 콩이",
+            "ja": "再会したハナとコンイ",
+            "en": "Hana and Kongi reunited"
+          }
+        }
+      ]
+    },
+    {
+      "name": {
         "ko": "유튜잼",
         "ja": "ユーチュージャム",
         "en": "YouTuJam"

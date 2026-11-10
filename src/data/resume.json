@@ -504,9 +504,9 @@
       "image": "",
       "link": "https://mhyoo-games.github.io/toy_racing/",
       "summary": {
-        "ko": "숲속 트랙을 장난감 카트로 달리는 3D 웹 레이싱 게임. 드리프트로 게이지를 모아 부스터를 쓰고, 순간부스터·인코스 공략·끌기·톡톡이·커팅 같은 드리프트 기술로 컴퓨터 7명과 겨룸. 모은 코인으로 카트를 사고, 한 화면을 나눠 둘이서 하거나 6자리 방 코드로 친구와 온라인으로도 달릴 수 있음. 게임 엔진 Godot로 제작",
-        "ja": "森のコースをおもちゃのカートで走る3DのWebレースゲーム。ドリフトでゲージをためてブースターを使い、瞬間ブースター・インコース攻略・ドラッグ・小刻みドリフト・カッティングなどのドリフトテクニックでCPU 7台と競う。集めたコインでカートを買え、画面分割の2人プレイや、6桁のルームコードでつなぐ友だちとのオンライン対戦もできる。ゲームエンジン Godot で制作",
-        "en": "A 3D browser racing game with toy karts on forest tracks. Drift to fill a gauge for boosts, and use drift techniques such as quick boosts, inside lines, dragging, tapping and cutting to beat seven CPU drivers. Buy new karts with the coins you earn, and race a friend in split screen or online with a six-character room code. Built with the Godot engine"
+        "ko": "숲속 트랙을 장난감 카트로 달리는 3D 웹 레이싱 게임. 드리프트로 게이지를 모아 부스터를 쓰고, 순간부스터·인코스 공략·끌기·톡톡이·커팅 같은 드리프트 기술로 컴퓨터 7명과 스피드전·아이템전을 겨룸. 높은 다리·S자·U자 머리핀 등 트랙 6개. 모은 코인으로 카트를 사고, 한 화면을 나눠 둘이서 하거나 6자리 방 코드로 친구와 온라인으로도 달릴 수 있음. 게임 엔진 Godot로 제작",
+        "ja": "森のコースをおもちゃのカートで走る3DのWebレースゲーム。ドリフトでゲージをためてブースターを使い、瞬間ブースター・インコース攻略・ドラッグ・小刻みドリフト・カッティングなどのドリフトテクニックでCPU 7台とスピード戦・アイテム戦を競う。高い橋・S字・U字ヘアピンなど6コース。集めたコインでカートを買え、画面分割の2人プレイや、6桁のルームコードでつなぐ友だちとのオンライン対戦もできる。ゲームエンジン Godot で制作",
+        "en": "A 3D browser racing game with toy karts on forest tracks. Drift to fill a gauge for boosts, and use drift techniques such as quick boosts, inside lines, dragging, tapping and cutting to beat seven CPU drivers in speed or item races, across six tracks with high bridges, S-bends and hairpins. Buy new karts with the coins you earn, and race a friend in split screen or online with a six-character room code. Built with the Godot engine"
       },
       "why": {
         "ko": "드리프트·순간부스터·인코스와 아웃코스·커팅처럼 기술을 쓰며 달리는 카트 레이싱을, 카트를 모아 사는 재미와 함께 브라우저에서 즐길 수 있게 직접 만들어 보고 싶어서 만들었습니다.",

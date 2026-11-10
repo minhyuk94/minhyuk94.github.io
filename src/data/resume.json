@@ -495,6 +495,91 @@
   "games": [
     {
       "name": {
+        "ko": "토이 레이싱",
+        "ja": "トイレーシング",
+        "en": "Toy Racing"
+      },
+      "icon": "🏎️",
+      "period": "2026-11",
+      "image": "",
+      "link": "https://mhyoo-games.github.io/toy_racing/",
+      "summary": {
+        "ko": "숲속 트랙을 장난감 카트로 달리는 3D 웹 레이싱 게임. 드리프트로 게이지를 모아 부스터를 쓰고, 순간부스터·인코스 공략·잔디 커팅 같은 기술로 컴퓨터 7명과 겨룸. 모은 코인으로 카트를 사고, 한 화면을 나눠 둘이서도 할 수 있음. 게임 엔진 Godot로 제작",
+        "ja": "森のコースをおもちゃのカートで走る3DのWebレースゲーム。ドリフトでゲージをためてブースターを使い、瞬間ブースター・インコース攻略・芝生のショートカットなどのテクニックでCPU 7台と競う。集めたコインでカートを買え、画面を分けて2人でも遊べる。ゲームエンジン Godot で制作",
+        "en": "A 3D browser racing game with toy karts on forest tracks. Drift to fill a gauge for boosts, and use quick boosts, inside lines and boosted shortcuts across the grass to beat seven CPU drivers. Buy new karts with the coins you earn, or race a friend in split screen. Built with the Godot engine"
+      },
+      "why": {
+        "ko": "드리프트·순간부스터·인코스와 아웃코스·커팅처럼 기술을 쓰며 달리는 카트 레이싱을, 카트를 모아 사는 재미와 함께 브라우저에서 즐길 수 있게 직접 만들어 보고 싶어서 만들었습니다.",
+        "ja": "ドリフト・瞬間ブースター・インコースとアウトコース・ショートカットなど、テクニックを駆使して走るカートレースを、カートを集めて買う楽しさと一緒にブラウザで遊べるよう、自分で作ってみたいと思って作りました。",
+        "en": "I wanted to build my own kart racer for the browser, one where you race with techniques such as drifting, quick boosts, inside and outside lines and shortcuts, with the fun of collecting and buying karts."
+      },
+      "features": {
+        "ko": "트랙 3개(도토리 숲길·버섯 고개·다람쥐 계곡)에서 3바퀴 경주·혼자 연습(기록 도전)·둘이서 위아래 화면 나누기. 컴퓨터 7명은 레이싱 라인을 따라 굽이 안쪽을 노리며 드리프트와 부스터를 씀\n드리프트(미끄러짐 각을 유지하며 돌고, 반대로 꺾으면 펴짐)로 게이지를 모아 부스터를 두 개까지, 드리프트가 끝나는 순간의 순간부스터, 출발 부스터, 잔디는 느리지만 부스터를 쓰면 덜 느려지는 커팅\n능력치(최고 속도·가속·핸들링·드리프트·부스터·무게)가 다른 카트 6종을 순위 보상과 길 위의 코인으로 사는 차고, 진행 상황은 브라우저에 저장. 키보드·게임패드·휴대폰 화면 버튼\n도로·연석·울타리·카트는 코드로 만들고 숲 소품과 운전수는 Kenney Mini Forest(CC0), 효과음과 곡은 코드로 합성한 새 곡. 주행 규칙을 화면과 분리해 테스트(컴퓨터가 모든 트랙을 3바퀴 완주)하고, GitHub Actions로 테스트·웹 빌드·배포",
+        "ja": "3つのコース（どんぐりの森の道・きのこ峠・リス渓谷）で、3周のレース・ひとり練習（タイムアタック）・上下分割画面の2人対戦。CPU 7台はレーシングラインに沿ってコーナーのインを狙い、ドリフトとブースターを使う\nドリフト（スリップ角を保って曲がり、逆ハンドルで立て直す）でゲージをためてブースターを最大2つ、ドリフトが終わる瞬間の瞬間ブースター、スタートブースター、芝生は遅いがブースター中は減速が小さいショートカット\n性能（最高速度・加速・ハンドリング・ドリフト・ブースター・重さ）が異なるカート6種を、順位報酬とコース上のコインで買えるガレージ。進行状況はブラウザに保存。キーボード・ゲームパッド・スマートフォンの画面ボタンに対応\n道路・縁石・柵・カートはコードで作り、森の小物とドライバーはKenney Mini Forest（CC0）、効果音と曲はコードで合成したオリジナル。走行ルールを画面と分けてテスト（CPUが全コースを3周完走）し、GitHub Actionsでテスト・Webビルド・デプロイ",
+        "en": "Three tracks (Acorn Forest Road, Mushroom Pass and Squirrel Valley) with three-lap races, solo time trials and two-player top-and-bottom split screen; the seven CPU drivers follow a racing line, aim for the inside of corners and use drifts and boosts\nDrifting holds a slip angle through the corner and straightens with counter-steer, filling a gauge for up to two boosts, plus a quick boost at the moment a drift ends, a start boost, and shortcuts where grass slows you down less while boosting\nA garage of six karts with different stats (top speed, acceleration, handling, drift, boost and weight) bought with race rewards and coins picked up on the track; progress is saved in the browser. Keyboard, gamepad and on-screen touch buttons on phones\nRoads, curbs, fences and karts are built in code, with forest props and the driver from Kenney Mini Forest (CC0); sound effects and music are original pieces synthesized in code. The driving rules are kept apart from the rendering and tested, including CPU drivers finishing three laps on every track; tests, web builds and deploys run on GitHub Actions"
+      },
+      "tags": "Godot 4, GDScript, 3D, Python, Sound Synthesis, GitHub Actions",
+      "gallery": [
+        {
+          "image": "/images/games/toyracing-title.jpg",
+          "caption": {
+            "ko": "처음 화면",
+            "ja": "タイトル画面",
+            "en": "Title screen"
+          }
+        },
+        {
+          "image": "/images/games/toyracing-drift.jpg",
+          "caption": {
+            "ko": "드리프트 뒤 순간부스터",
+            "ja": "ドリフト後の瞬間ブースター",
+            "en": "Quick boost right after a drift"
+          }
+        },
+        {
+          "image": "/images/games/toyracing-boost.jpg",
+          "caption": {
+            "ko": "부스터로 굽이 빠져나가기 (버섯 고개)",
+            "ja": "ブースターでコーナーを抜ける（きのこ峠）",
+            "en": "Boosting out of a corner on Mushroom Pass"
+          }
+        },
+        {
+          "image": "/images/games/toyracing-duo.jpg",
+          "caption": {
+            "ko": "둘이서 위아래 화면 나누기",
+            "ja": "上下分割画面の2人対戦",
+            "en": "Two-player split screen"
+          }
+        },
+        {
+          "image": "/images/games/toyracing-garage.jpg",
+          "caption": {
+            "ko": "차고: 코인으로 카트 사기",
+            "ja": "ガレージ：コインでカートを購入",
+            "en": "Garage: buying karts with coins"
+          }
+        },
+        {
+          "image": "/images/games/toyracing-tracks.jpg",
+          "caption": {
+            "ko": "트랙 고르기",
+            "ja": "コース選択",
+            "en": "Track select"
+          }
+        },
+        {
+          "image": "/images/games/toyracing-result.jpg",
+          "caption": {
+            "ko": "결과와 보상",
+            "ja": "結果と報酬",
+            "en": "Results and rewards"
+          }
+        }
+      ]
+    },
+    {
+      "name": {
         "ko": "홀로 남은 강아지",
         "ja": "ひとりぼっちの子犬",
         "en": "Left Alone Puppy"

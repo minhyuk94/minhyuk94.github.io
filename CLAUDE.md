@@ -9,6 +9,11 @@
 - 기본 브랜치는 **`master`**. master에 푸시하면 GitHub Actions가 `scripts/validate-resume.mjs`로 데이터 검사 → `astro check` → 빌드 → GitHub Pages 배포.
 - `/admin` 웹 편집 페이지는 GitHub Contents API로 master의 `src/data/resume.json`에 직접 커밋한다. 데이터 구조를 바꾸면 `src/admin/fields.tsx`의 라벨·힌트·템플릿, `scripts/validate-resume.mjs`도 같이 고친다.
 
+## 옮긴 게임 (조직 mhyoo-games)
+
+- 게임들은 조직 `mhyoo-games`로 옮겼다 → `https://mhyoo-games.github.io/<게임>/`. 이력서 `games`의 `link`도 새 주소.
+- 예전 주소 `minhyuk94.github.io/<게임>/`에는 `scripts/root-pages.mjs`가 `moved/games.mjs`로 안내 페이지를 만든다. `moved/moved.js`가 그 게임의 저장(localStorage 앞글자, Godot는 IndexedDB `/userfs`의 저장 파일)을 챙겨 `#carry=`로 새 주소에 보낸다(각 게임의 `carry.js`가 받음). 게임을 더 옮기면 `MOVED`에 더하고 `moved/moved.test.mjs`를 맞춘다.
+
 ## 사이트 맨 앞: 오늘의 운세
 
 - `https://minhyuk94.github.io/`는 **오늘의 운세** 페이지 (`fortune/index.html` + `fortune/fortune.js`, 빌드 없는 정적 파일). `scripts/root-pages.mjs`가 빌드 후 `dist/`에 복사한다.

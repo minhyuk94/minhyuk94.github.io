@@ -29,7 +29,7 @@ jobs:
       # 이력서 데이터가 깨지지 않았는지 먼저 확인 (웹 편집으로 잘못 저장해도 사이트가 망가지지 않게)
       - run: node scripts/validate-resume.mjs
       # 루트의 오늘의 운세 규칙 테스트
-      - run: node --test fortune/fortune.test.mjs
+      - run: node --test fortune/fortune.test.mjs moved/moved.test.mjs
       - run: npm run build
       # master가 아닌 브랜치는 결과물을 내려받아 미리 볼 수 있게 남겨 둔다
       - if: github.ref != 'refs/heads/master'

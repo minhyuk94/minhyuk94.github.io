@@ -2,7 +2,7 @@
 // ls: 그 게임의 localStorage 앞글자, idb: Godot 저장 파일 이름
 export const NEW_HOST = 'https://mhyoo-games.github.io';
 export const MOVED = [
-  { path: 'youtujam', name: '유튜잼', ls: ['yj_'], idb: [] },
+  { path: 'youtujam', name: '키잼', ls: ['yj_'], idb: [] },
   { path: 'LeftAlonePuppy', name: '홀로 남은 강아지', ls: ['lap_'], idb: [] },
   { path: 'leftalonepuppy', to: 'LeftAlonePuppy', name: '홀로 남은 강아지', ls: ['lap_'], idb: [] },
   { path: 'dalmaru', name: '달마루 모험기', ls: [], idb: ['dalmaru_save'] },

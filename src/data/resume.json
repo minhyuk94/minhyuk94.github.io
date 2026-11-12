@@ -504,9 +504,9 @@
       "image": "",
       "link": "https://mhyoo-games.github.io/meditation_web/",
       "summary": {
-        "ko": "단풍이 물든 작은 마을을 동물 친구와 천천히 걸으며 쉬어 가는 3D 힐링 웹사이트. 절에 가면 목탁 소리와 반야심경 독경, 교회에 가면 오르간 찬송가와 크리스마스 캐럴, 성당에 가면 성가대 노래가 들리고, 가까이 갈수록 그곳 음악이 서서히 커짐. 동물 11종 중 하나를 골라 걷고, 나머지는 주민이 되어 방석에 앉아 명상하거나 광장·연못을 거님. 그 자리에 앉아 호흡 안내를 따라 하는 명상 모드도 있음. 모든 소리는 녹음 파일 없이 브라우저에서 합성",
-        "ja": "紅葉に染まった小さな村を動物の友だちとゆっくり歩いて一息つく、3Dのヒーリングサイト。お寺では木魚の音と般若心経の読経、教会ではオルガンの讃美歌とクリスマスキャロル、聖堂では聖歌隊の歌が聞こえ、近づくほどその場所の音楽が少しずつ大きくなる。11種類の動物から一匹を選んで歩き、ほかの動物は村人として座布団で瞑想したり、広場や池のまわりを散歩したりする。その場に座って呼吸ガイドに合わせる瞑想モードもある。音はすべて録音ファイルを使わずブラウザで合成",
-        "en": "A 3D healing website where you take a slow walk through a small village in autumn colors with an animal friend. The temple has the wooden moktak and a chanted Heart Sutra, the church plays organ hymns and Christmas carols, and the cathedral has a singing choir, each fading in as you get closer. Pick one of 11 animals to walk with while the others live in the village, meditating on cushions or strolling around the square and pond, and sit down anywhere for a guided breathing meditation. Every sound is synthesized in the browser with no recordings"
+        "ko": "단풍이 물든 작은 마을을 동물 친구와 천천히 걸으며 쉬어 가는 3D 힐링 웹사이트. 산기슭 절에서는 목탁 소리와 반야심경 독경 속에 불상 앞 방석에서 절하고 향을 피우고, 교회에서는 오르간 찬송가·캐럴을 들으며 신자석에 앉아 기도하고, 고딕 성당에서는 성가대 노래 속에 기도하고 촛불을 켬. 건물 안에 들어가면 지붕이 사라져 안이 보이고, 가까이 갈수록 그곳 음악이 서서히 커짐. 동물 11종 중 하나를 골라 걷고, 나머지는 주민이 되어 함께 절하고 기도하며 마을을 거님. 모든 소리는 녹음 파일 없이 브라우저에서 합성",
+        "ja": "紅葉に染まった小さな村を動物の友だちとゆっくり歩いて一息つく、3Dのヒーリングサイト。山すそのお寺では木魚の音と般若心経の読経の中で仏像の前の座布団に座って礼拝し、お香をたき、教会ではオルガンの讃美歌やキャロルを聴きながら会衆席で祈り、ゴシックの聖堂では聖歌隊の歌の中で祈ってろうそくをともす。建物に入ると屋根が消えて中が見え、近づくほどその場所の音楽が少しずつ大きくなる。11種類の動物から一匹を選んで歩き、ほかの動物は村人として一緒に礼拝や祈りをしたり村を散歩したりする。音はすべて録音ファイルを使わずブラウザで合成",
+        "en": "A 3D healing website where you take a slow walk through a small village in autumn colors with an animal friend. At the hillside temple you bow on a cushion before the Buddha and light incense to the sound of the moktak and a chanted Heart Sutra, at the church you pray in the pews to organ hymns and carols, and in the Gothic cathedral you pray and light a candle while the choir sings. Roofs disappear when you step inside so you can see the interior, and each place's music fades in as you get closer. Pick one of 11 animals to walk with while the others live in the village, bowing, praying and strolling alongside you. Every sound is synthesized in the browser with no recordings"
       },
       "why": {
         "ko": "직접 만든 동물 캐릭터들과 함께, 음악이 흐르는 아늑한 가을 마을을 평온하게 돌아다니며 절·교회·성당에 들러 마음을 쉬어 갈 수 있는 곳을 만들고 싶어서 만들었습니다.",
@@ -514,11 +514,11 @@
         "en": "I wanted a calm place where my own animal characters could wander a cozy autumn village filled with music, stopping by a temple, a church and a cathedral to rest the mind."
       },
       "features": {
-        "ko": "마을: 단풍·은행나무 숲, 오두막 11채, 연못과 연꽃, 큰 단풍나무 광장, 떨어지는 낙엽. 단풍사(돌마당 위 대웅전·삼층석탑·범종각·석등·연등·일주문), 은행나무 교회(종탑·리스·크리스마스트리), 별빛 성당(쌍탑·장미창·색유리 창·성모상과 촛대)\n소리: 목탁에 맞춰 한글 반야심경을 한 글자씩 읽는 독경(글자의 모음에 맞춰 목소리를 합성하고 자막에 읽는 글자를 표시, 원하면 기기 음성도 함께), 맥놀이가 있는 범종과 풍경, 오르간 찬송가·캐럴 4곡, 성가대 3곡(반주 화음 자동), 오르골 즉흥 음악과 바람·새·낙엽 소리. 곡은 모두 퍼블릭 도메인 선율이거나 새로 지은 선율\n걷기: 키보드나 땅 누르기로 이동, 가 보기 메뉴로 절·교회·성당·광장·연못·집까지 자동으로 걷기, 지붕에 가리면 카메라가 앞으로 옴. 주민 동물은 명상 방석, 교회·성당 앞, 광장, 연못, 집을 오가고, 명상 모드는 앉아서 4초 들이쉬고 6초 내쉬는 호흡 안내\n동물 머리·마을은 파이썬으로 직접 만들고(새 동물 6종: 곰·판다·여우·너구리·다람쥐·사슴), 몸체와 걷기·앉기 동작은 무료 공개(CC0) 에셋을 씀. three.js와 Web Audio, GitHub Actions로 배포",
-        "ja": "村：紅葉とイチョウの森、11軒の小屋、蓮の咲く池、大きなもみじの広場、舞い落ちる落ち葉。紅葉寺（石の庭の上の大雄殿・三重石塔・梵鐘楼・石灯籠・提灯・一柱門）、イチョウの教会（鐘楼・リース・クリスマスツリー）、星の聖堂（双塔・バラ窓・ステンドグラス・マリア像とろうそく）\n音：木魚に合わせてハングルの般若心経を一字ずつ読む読経（字の母音に合わせて声を合成し、字幕で読んでいる字を表示、希望すれば端末の音声も一緒に）、うなりのある梵鐘と風鈴、オルガンの讃美歌・キャロル4曲、聖歌隊3曲（伴奏の和音は自動）、オルゴールの即興演奏と風・鳥・落ち葉の音。曲はすべてパブリックドメインの旋律か新しく作った旋律\n歩く：キーボードか地面をタップして移動、「行ってみる」メニューでお寺・教会・聖堂・広場・池・家まで自動で歩く、屋根に隠れるとカメラが前に寄る。村人の動物は瞑想の座布団、教会・聖堂の前、広場、池、家を行き来し、瞑想モードは座って4秒吸って6秒吐く呼吸ガイド\n動物の頭と村はPythonで自作（新しい動物6種：クマ・パンダ・キツネ・タヌキ・リス・シカ）、体と歩く・座る動作は無料公開（CC0）のアセットを使用。three.jsとWeb Audio、GitHub Actionsで公開",
-        "en": "Village: maple and ginkgo woods, 11 cottages, a lotus pond, a square around a big maple and falling leaves. A temple with a main hall on a stone courtyard, a three-story stone pagoda, a bell pavilion, stone lanterns, lotus lanterns and a gate; a white wooden church with a bell tower, wreath and Christmas tree; and a Gothic cathedral with twin spires, a rose window, stained glass and a statue with candles\nSound: the Korean Heart Sutra chanted one syllable per moktak beat, with the voice shaped by each syllable's vowel and the current syllable highlighted in a caption (optionally read along by the device voice), a temple bell with a slow beating hum and wind chimes, four organ hymns and carols, three choir pieces with automatic accompaniment chords, and a music-box improvisation with wind, birds and rustling leaves. All melodies are public domain or newly written\nWalking: move with the keyboard or by tapping the ground, auto-walk to the temple, church, cathedral, square, pond or home from a menu, and the camera moves in when a roof gets in the way. Villager animals visit the meditation cushions, the church and cathedral, the square, the pond and their homes, and meditation mode sits you down with a 4-second in, 6-second out breathing guide\nThe animal heads and the village were built in Python (six new animals: bear, panda, fox, raccoon, squirrel and deer), with free CC0 assets for the bodies and walking and sitting motions. Built with three.js and Web Audio, deployed with GitHub Actions"
+        "ko": "장소: 주홍 인왕문과 돌계단·삼층탑·향로·큰 본당(금빛 불상·연꽃 대좌·광배·방석 12자리)과 단풍 골짜기 위 기둥 격자에 걸친 나무 무대가 있는 산기슭 절, 신자석 14줄·제단·십자가·파이프오르간·크리스마스트리가 있는 하얀 목조 교회, 평평한 쌍탑·장미창·세 아치 문·날개 버팀벽·첨탑과 기둥 두 줄·성모상·봉헌 촛대가 있는 고딕 성당. 건물 안에 들어가면 지붕이 사라지고 카메라가 옆에서 내려다봄\n하는 일: 절하기(앉아서 합장하고 천천히 큰절), 향 피우기(향로에서 연기), 앉아서 기도하기, 촛불 켜기(촛대에 초가 하나씩 켜짐), 그 자리에 앉아 호흡 안내를 따라 하는 명상. 절하기·기도 동작은 공개 동작에 합장한 팔과 허리 숙이기를 더해 새로 만듦\n소리: 목탁에 맞춰 한글 반야심경을 한 글자씩 읽는 독경(모음에 맞춰 목소리 합성, 자막에 읽는 글자 표시), 범종과 풍경, 오르간 찬송가·캐럴 4곡, 성가대 3곡, 오르골 즉흥 음악과 바람·새·낙엽 소리. 곡은 모두 퍼블릭 도메인 선율이거나 새로 지은 선율\n걷기: 키보드·땅 누르기·가 보기 메뉴, 격자 길찾기로 막힌 길을 돌아서 감. 주민 동물 10마리도 길을 찾아 절·교회·성당에서 절하고 기도함. 동물 머리·마을은 파이썬으로 직접 만들고(새 동물 6종), 몸체·동작·하늘·받침은 무료 공개(CC0) 에셋. three.js와 Web Audio, GitHub Actions로 배포",
+        "ja": "場所：朱色の仁王門と石段・三重塔・香炉・大きな本堂（金色の仏像・蓮の台座・光背・座布団12席）と、紅葉の谷の上に柱を組んで張り出した木の舞台がある山すそのお寺、会衆席14列・祭壇・十字架・パイプオルガン・クリスマスツリーのある白い木造の教会、平らな屋根の双塔・バラ窓・三つのアーチの扉・フライングバットレス・尖塔と二列の柱・マリア像・献灯台のあるゴシックの聖堂。建物に入ると屋根が消え、カメラが横から見下ろす\nできること：礼拝（座って合掌し、ゆっくり深くお辞儀）、お香をたく（香炉から煙）、座って祈る、ろうそくをともす（献灯台に一本ずつ火がつく）、その場に座って呼吸ガイドに合わせる瞑想。礼拝・祈りの動作は公開の動作に合掌した腕と前かがみを加えて新しく作成\n音：木魚に合わせてハングルの般若心経を一字ずつ読む読経（母音に合わせて声を合成し、字幕に読んでいる字を表示）、梵鐘と風鈴、オルガンの讃美歌・キャロル4曲、聖歌隊3曲、オルゴールの即興演奏と風・鳥・落ち葉の音。曲はすべてパブリックドメインの旋律か新しく作った旋律\n歩く：キーボード・地面のタップ・「行ってみる」メニュー、グリッド経路探索でふさがった道を回り込む。村人の動物10匹も道を探してお寺・教会・聖堂で礼拝や祈りをする。動物の頭と村はPythonで自作（新しい動物6種）、体・動作・空・台座は無料公開（CC0）のアセット。three.jsとWeb Audio、GitHub Actionsで公開",
+        "en": "Places: a hillside temple with a vermilion gate and stone steps, a three-story pagoda, an incense burner and a large main hall (a golden Buddha on a lotus pedestal with a halo and 12 cushions) with a wooden stage on a lattice of pillars over a maple valley; a white wooden church with 14 rows of pews, an altar, a cross, a pipe organ and a Christmas tree; and a Gothic cathedral with flat-topped twin towers, a rose window, three arched doors, flying buttresses, a spire, two rows of columns, a statue of Mary and a votive candle stand. Roofs disappear when you step inside and the camera looks down from the side\nThings to do: bow (kneel with joined hands and bow slowly), light incense (smoke rises from the burner), sit and pray, light a candle (one more flame on the stand each time), or sit anywhere for a guided breathing meditation. The bowing and praying motions were made by adding joined hands and a forward bend to free motions\nSound: the Korean Heart Sutra chanted one syllable per moktak beat with the voice shaped by each vowel and the current syllable shown in a caption, a temple bell and wind chimes, four organ hymns and carols, three choir pieces, and a music-box improvisation with wind, birds and rustling leaves. All melodies are public domain or newly written\nWalking: keyboard, tap the ground or pick a place from the menu, with grid pathfinding that walks around obstacles. The ten villager animals also find their way to bow and pray at the temple, church and cathedral. The animal heads and village were built in Python (six new animals), with free CC0 assets for the bodies, motions, sky and display bases. Built with three.js and Web Audio, deployed with GitHub Actions"
       },
-      "tags": "three.js, JavaScript, Web Audio, Sound Synthesis, 3D, Python, GitHub Actions",
+      "tags": "three.js, JavaScript, Web Audio, Sound Synthesis, 3D, Pathfinding, Python, GitHub Actions",
       "gallery": [
         {
           "image": "/images/games/meditation-intro.jpg",
@@ -537,27 +537,35 @@
           }
         },
         {
+          "image": "/images/games/meditation-gate.jpg",
+          "caption": {
+            "ko": "절로 오르는 돌계단과 인왕문",
+            "ja": "お寺へ上る石段と仁王門",
+            "en": "Stone steps and the gate up to the temple"
+          }
+        },
+        {
           "image": "/images/games/meditation-temple.jpg",
           "caption": {
-            "ko": "단풍사: 목탁에 맞춰 반야심경 독경",
-            "ja": "紅葉寺：木魚に合わせた般若心経の読経",
-            "en": "The temple: the Heart Sutra chanted to the moktak"
+            "ko": "본당 안 불상 앞에서 다 함께 절하기",
+            "ja": "本堂の仏像の前でみんなで礼拝",
+            "en": "Bowing together before the Buddha in the main hall"
           }
         },
         {
           "image": "/images/games/meditation-church.jpg",
           "caption": {
-            "ko": "은행나무 교회: 오르간 캐럴",
-            "ja": "イチョウの教会：オルガンのキャロル",
-            "en": "The church: organ carols"
+            "ko": "교회 신자석에 앉아 기도하기",
+            "ja": "教会の会衆席で祈る",
+            "en": "Praying in the church pews"
           }
         },
         {
           "image": "/images/games/meditation-cathedral.jpg",
           "caption": {
-            "ko": "별빛 성당 앞 명상 모드",
-            "ja": "星の聖堂の前で瞑想モード",
-            "en": "Meditation mode at the cathedral"
+            "ko": "성당에서 촛불 켜기",
+            "ja": "聖堂でろうそくをともす",
+            "en": "Lighting a candle in the cathedral"
           }
         }
       ]

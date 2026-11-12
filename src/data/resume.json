@@ -495,6 +495,75 @@
   "games": [
     {
       "name": {
+        "ko": "단풍마을 산책",
+        "ja": "紅葉の村さんぽ",
+        "en": "Maple Village Walk"
+      },
+      "icon": "🍁",
+      "period": "2026-11",
+      "image": "",
+      "link": "https://mhyoo-games.github.io/meditation_web/",
+      "summary": {
+        "ko": "단풍이 물든 작은 마을을 동물 친구와 천천히 걸으며 쉬어 가는 3D 힐링 웹사이트. 절에 가면 목탁 소리와 반야심경 독경, 교회에 가면 오르간 찬송가와 크리스마스 캐럴, 성당에 가면 성가대 노래가 들리고, 가까이 갈수록 그곳 음악이 서서히 커짐. 동물 11종 중 하나를 골라 걷고, 나머지는 주민이 되어 방석에 앉아 명상하거나 광장·연못을 거님. 그 자리에 앉아 호흡 안내를 따라 하는 명상 모드도 있음. 모든 소리는 녹음 파일 없이 브라우저에서 합성",
+        "ja": "紅葉に染まった小さな村を動物の友だちとゆっくり歩いて一息つく、3Dのヒーリングサイト。お寺では木魚の音と般若心経の読経、教会ではオルガンの讃美歌とクリスマスキャロル、聖堂では聖歌隊の歌が聞こえ、近づくほどその場所の音楽が少しずつ大きくなる。11種類の動物から一匹を選んで歩き、ほかの動物は村人として座布団で瞑想したり、広場や池のまわりを散歩したりする。その場に座って呼吸ガイドに合わせる瞑想モードもある。音はすべて録音ファイルを使わずブラウザで合成",
+        "en": "A 3D healing website where you take a slow walk through a small village in autumn colors with an animal friend. The temple has the wooden moktak and a chanted Heart Sutra, the church plays organ hymns and Christmas carols, and the cathedral has a singing choir, each fading in as you get closer. Pick one of 11 animals to walk with while the others live in the village, meditating on cushions or strolling around the square and pond, and sit down anywhere for a guided breathing meditation. Every sound is synthesized in the browser with no recordings"
+      },
+      "why": {
+        "ko": "직접 만든 동물 캐릭터들과 함께, 음악이 흐르는 아늑한 가을 마을을 평온하게 돌아다니며 절·교회·성당에 들러 마음을 쉬어 갈 수 있는 곳을 만들고 싶어서 만들었습니다.",
+        "ja": "自分で作った動物のキャラクターたちと一緒に、音楽が流れる居心地のいい秋の村をのんびり歩き、お寺や教会、聖堂に立ち寄って心を休められる場所を作りたいと思って作りました。",
+        "en": "I wanted a calm place where my own animal characters could wander a cozy autumn village filled with music, stopping by a temple, a church and a cathedral to rest the mind."
+      },
+      "features": {
+        "ko": "마을: 단풍·은행나무 숲, 오두막 11채, 연못과 연꽃, 큰 단풍나무 광장, 떨어지는 낙엽. 단풍사(돌마당 위 대웅전·삼층석탑·범종각·석등·연등·일주문), 은행나무 교회(종탑·리스·크리스마스트리), 별빛 성당(쌍탑·장미창·색유리 창·성모상과 촛대)\n소리: 목탁에 맞춰 한글 반야심경을 한 글자씩 읽는 독경(글자의 모음에 맞춰 목소리를 합성하고 자막에 읽는 글자를 표시, 원하면 기기 음성도 함께), 맥놀이가 있는 범종과 풍경, 오르간 찬송가·캐럴 4곡, 성가대 3곡(반주 화음 자동), 오르골 즉흥 음악과 바람·새·낙엽 소리. 곡은 모두 퍼블릭 도메인 선율이거나 새로 지은 선율\n걷기: 키보드나 땅 누르기로 이동, 가 보기 메뉴로 절·교회·성당·광장·연못·집까지 자동으로 걷기, 지붕에 가리면 카메라가 앞으로 옴. 주민 동물은 명상 방석, 교회·성당 앞, 광장, 연못, 집을 오가고, 명상 모드는 앉아서 4초 들이쉬고 6초 내쉬는 호흡 안내\n동물 머리·마을은 파이썬으로 직접 만들고(새 동물 6종: 곰·판다·여우·너구리·다람쥐·사슴), 몸체와 걷기·앉기 동작은 무료 공개(CC0) 에셋을 씀. three.js와 Web Audio, GitHub Actions로 배포",
+        "ja": "村：紅葉とイチョウの森、11軒の小屋、蓮の咲く池、大きなもみじの広場、舞い落ちる落ち葉。紅葉寺（石の庭の上の大雄殿・三重石塔・梵鐘楼・石灯籠・提灯・一柱門）、イチョウの教会（鐘楼・リース・クリスマスツリー）、星の聖堂（双塔・バラ窓・ステンドグラス・マリア像とろうそく）\n音：木魚に合わせてハングルの般若心経を一字ずつ読む読経（字の母音に合わせて声を合成し、字幕で読んでいる字を表示、希望すれば端末の音声も一緒に）、うなりのある梵鐘と風鈴、オルガンの讃美歌・キャロル4曲、聖歌隊3曲（伴奏の和音は自動）、オルゴールの即興演奏と風・鳥・落ち葉の音。曲はすべてパブリックドメインの旋律か新しく作った旋律\n歩く：キーボードか地面をタップして移動、「行ってみる」メニューでお寺・教会・聖堂・広場・池・家まで自動で歩く、屋根に隠れるとカメラが前に寄る。村人の動物は瞑想の座布団、教会・聖堂の前、広場、池、家を行き来し、瞑想モードは座って4秒吸って6秒吐く呼吸ガイド\n動物の頭と村はPythonで自作（新しい動物6種：クマ・パンダ・キツネ・タヌキ・リス・シカ）、体と歩く・座る動作は無料公開（CC0）のアセットを使用。three.jsとWeb Audio、GitHub Actionsで公開",
+        "en": "Village: maple and ginkgo woods, 11 cottages, a lotus pond, a square around a big maple and falling leaves. A temple with a main hall on a stone courtyard, a three-story stone pagoda, a bell pavilion, stone lanterns, lotus lanterns and a gate; a white wooden church with a bell tower, wreath and Christmas tree; and a Gothic cathedral with twin spires, a rose window, stained glass and a statue with candles\nSound: the Korean Heart Sutra chanted one syllable per moktak beat, with the voice shaped by each syllable's vowel and the current syllable highlighted in a caption (optionally read along by the device voice), a temple bell with a slow beating hum and wind chimes, four organ hymns and carols, three choir pieces with automatic accompaniment chords, and a music-box improvisation with wind, birds and rustling leaves. All melodies are public domain or newly written\nWalking: move with the keyboard or by tapping the ground, auto-walk to the temple, church, cathedral, square, pond or home from a menu, and the camera moves in when a roof gets in the way. Villager animals visit the meditation cushions, the church and cathedral, the square, the pond and their homes, and meditation mode sits you down with a 4-second in, 6-second out breathing guide\nThe animal heads and the village were built in Python (six new animals: bear, panda, fox, raccoon, squirrel and deer), with free CC0 assets for the bodies and walking and sitting motions. Built with three.js and Web Audio, deployed with GitHub Actions"
+      },
+      "tags": "three.js, JavaScript, Web Audio, Sound Synthesis, 3D, Python, GitHub Actions",
+      "gallery": [
+        {
+          "image": "/images/games/meditation-intro.jpg",
+          "caption": {
+            "ko": "처음 화면: 함께 걸을 동물 고르기",
+            "ja": "最初の画面：一緒に歩く動物を選ぶ",
+            "en": "Start screen: pick an animal to walk with"
+          }
+        },
+        {
+          "image": "/images/games/meditation-village.jpg",
+          "caption": {
+            "ko": "단풍마을 전체",
+            "ja": "紅葉の村の全景",
+            "en": "The whole village"
+          }
+        },
+        {
+          "image": "/images/games/meditation-temple.jpg",
+          "caption": {
+            "ko": "단풍사: 목탁에 맞춰 반야심경 독경",
+            "ja": "紅葉寺：木魚に合わせた般若心経の読経",
+            "en": "The temple: the Heart Sutra chanted to the moktak"
+          }
+        },
+        {
+          "image": "/images/games/meditation-church.jpg",
+          "caption": {
+            "ko": "은행나무 교회: 오르간 캐럴",
+            "ja": "イチョウの教会：オルガンのキャロル",
+            "en": "The church: organ carols"
+          }
+        },
+        {
+          "image": "/images/games/meditation-cathedral.jpg",
+          "caption": {
+            "ko": "별빛 성당 앞 명상 모드",
+            "ja": "星の聖堂の前で瞑想モード",
+            "en": "Meditation mode at the cathedral"
+          }
+        }
+      ]
+    },
+    {
+      "name": {
         "ko": "바람보드 레이싱",
         "ja": "ウィンドボード・レーシング",
         "en": "Windboard Racing"

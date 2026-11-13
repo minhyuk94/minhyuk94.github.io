@@ -495,6 +495,67 @@
   "games": [
     {
       "name": {
+        "ko": "getFish 바다 낚시",
+        "ja": "getFish 海釣り",
+        "en": "getFish: Sea Fishing"
+      },
+      "icon": "🎣",
+      "period": "2026-11",
+      "image": "/images/games/getfish-fight.jpg",
+      "link": "https://mhyoo-games.github.io/getfish/",
+      "summary": {
+        "ko": "물고기가 동그라미 위를 지나가는 순간 타이밍 맞춰 눌러 체력을 깎아 낚는 2D 웹 낚시 게임. 바다 네 곳(햇살 선착장·산호초 바다·안개 협만·심해 해구)마다 보스가 있고, 물고기 52종을 크기에 따라 C·B·A·S·SS 등급으로 잡아 도감을 채우며, 낚싯대·줄·찌·미끼와 아바타 꾸미기 장비를 상점에서 사거나 드랍으로 모아 점점 더 큰 물고기에 도전함",
+        "ja": "魚が丸の上を通る瞬間にタイミングよく押して体力を削り、釣り上げる2Dウェブ釣りゲーム。4つの海（陽だまりの桟橋・サンゴ礁の海・霧のフィヨルド・深海の海溝）それぞれにボスがいて、52種の魚を大きさでC・B・A・S・SSの等級に分けて図鑑を埋め、竿・糸・ウキ・エサやアバターの着せ替え装備をショップで買ったりドロップで集めたりして、より大きな魚に挑戦する",
+        "en": "A 2D web fishing game where you tap with good timing as the fish passes over a circle to drain its stamina and reel it in. Each of the four seas (Sunny Pier, Coral Reef, Misty Fjord and Deep Trench) has a boss; you fill an encyclopedia of 52 species graded C, B, A, S or SS by size, and collect rods, lines, floats, bait and avatar outfits from the shop or as drops to take on ever bigger fish"
+      },
+      "why": {
+        "ko": "어릴 때 즐기던 옛 모바일 낚시 게임의 초창기 버전 손맛 — 타이밍 맞춰 눌러 물고기를 낚고, 좋은 장비를 파밍하고, 도감을 채우는 재미 — 를 다시 느끼고 싶어서 직접 만들어 봄. 처음 버전이라 물고기·장비 수는 적당히 두고 계속 더해 갈 계획",
+        "ja": "昔遊んだモバイル釣りゲームの初期バージョンの手応え――タイミングよく押して魚を釣り、良い装備を集め、図鑑を埋める楽しさ――をもう一度味わいたくて、自分で作ってみた。最初のバージョンなので魚や装備の数はほどほどにして、これから少しずつ増やしていく予定",
+        "en": "I wanted to feel again what the early version of an old mobile fishing game I used to play was like: timing your taps to land fish, farming better gear and filling the encyclopedia. So I built my own. This first version keeps the number of fish and items modest, and I plan to keep adding more"
+      },
+      "features": {
+        "ko": "낚시 흐름: 던지기 → 찌가 쑥 들어가면 챔질 → 줄 위를 왔다 갔다 하는 물고기가 동그라미(과녁) 위에 올 때 누르기. 가운데일수록 1.5배(PERFECT), 금빛 과녁은 2배, 빈 곳을 누르면 하트(줄 버팀)가 줄고, 하트가 다 닳거나 시간이 끝나면 도망. 체력이 30% 아래면 화가 나서 빨라짐\n바다 4곳·물고기 52종: 바다마다 흔함·보통·드묾·아주 드묾·보스. 보스는 황금 미끼로 불러내고, 잡으면 다음 바다가 열림. 같은 물고기 안에서의 크기로 C~SS 등급(SS 약 3%), 등급이 높을수록 체력·빠르기·값이 올라감\n장비 파밍: 낚싯대(힘·금빛 과녁), 줄(하트·시간), 찌(물고기 느리게·과녁 넓게), 미끼(드문 물고기 확률). 상점 장비와 보스·바다에서만 나오는 드랍 전용 장비, 도감 세트 보상 전용 장비\n아바타: 동물 5종에 모자·옷·장신구를 입히면 배 위 뒷모습에도 보이고 효과(동전·시간·행운 등)가 능력치에 바로 들어감. 도감 세트 13개(바다별 단골·박사, 보스 넷, 모양별, SS 수집가)를 채우면 동전·미끼·한정 꾸미기 보상\n그림과 소리: 물고기 52종·바다·캐릭터를 모두 canvas로 직접 그리고 수채화 그림책 느낌(빛과 그늘·붓 자국·종이 결·가장자리 물감 고임)으로 한 번 더 칠함. 소리는 녹음 없이 브라우저에서 합성. 자동 낚시꾼 테스트로 장비별 승률을 확인해 난이도를 맞춤",
+        "ja": "釣りの流れ：投げる → ウキがぐっと沈んだらアワセ → 糸の上を行き来する魚が丸（的）に重なった時に押す。中心ほど1.5倍（PERFECT）、金色の的は2倍、何もない所を押すとハート（糸の耐久）が減り、ハートがなくなるか時間切れで逃げられる。体力が30%を切ると怒って速くなる\n4つの海・52種の魚：海ごとに普通・やや珍しい・珍しい・とても珍しい・ボス。ボスは金のエサで呼び出し、釣ると次の海が開く。同じ魚の中での大きさでC〜SSの等級（SSは約3%）、等級が高いほど体力・速さ・値段が上がる\n装備集め：竿（力・金色の的）、糸（ハート・時間）、ウキ（魚を遅く・的を広く）、エサ（珍しい魚の確率）。ショップの装備、ボスや海でしか出ないドロップ専用装備、図鑑セット報酬専用装備\nアバター：動物5種に帽子・服・アクセサリーを着せると船の上の後ろ姿にも映り、効果（コイン・時間・運など）がすぐ能力値に入る。図鑑セット13個（海ごとの常連・博士、ボス4匹、形別、SSコレクター）を埋めるとコイン・エサ・限定の着せ替え報酬\n絵と音：52種の魚・海・キャラクターをすべてcanvasで描き、水彩の絵本風（光と影・筆跡・紙の質感・縁のにじみ）にもう一度塗っている。音は録音なしでブラウザ上で合成。自動で釣るテストで装備ごとの勝率を確かめて難易度を調整",
+        "en": "Fishing loop: cast, strike when the float dips, then tap whenever the fish moving back and forth along the line is over a circle (target). Dead centre does 1.5x (PERFECT), golden targets do 2x, tapping empty space costs a heart (line strength), and the fish escapes when hearts or time run out. Below 30% stamina it gets angry and speeds up\nFour seas, 52 fish: each sea has common, uncommon, rare, very rare and boss fish. Bosses are summoned with golden bait, and catching one opens the next sea. Size within a species sets a C–SS grade (SS about 3%); higher grades mean more stamina, speed and value\nGear farming: rods (power, golden targets), lines (hearts, time), floats (slower fish, wider targets) and bait (rare fish odds). Shop gear, drop-only gear from bosses and specific seas, and gear only available as encyclopedia set rewards\nAvatar: dress one of five animals in hats, outfits and accessories that show on the angler seen from behind on the boat and add their effects (coins, time, luck and more) straight to your stats. Thirteen encyclopedia sets (regulars and experts for each sea, the four bosses, shape sets, SS collector) give coins, bait and exclusive outfits\nArt and sound: all 52 fish, the seas and the characters are drawn in canvas code, then repainted in a watercolour picture-book style (light and shade, brush strokes, paper grain, pooled edges). Sound is synthesised in the browser with no recordings. An automated angler test checks win rates per gear set to tune the difficulty"
+      },
+      "tags": "JavaScript, Canvas 2D, Web Audio, Sound Synthesis, Game Design, Node.js Test, GitHub Actions",
+      "gallery": [
+        {
+          "image": "/images/games/getfish-fight.jpg",
+          "caption": {
+            "ko": "타이밍 싸움: 물고기가 동그라미 위에 올 때 누르기",
+            "ja": "タイミング勝負：魚が丸に重なった時に押す",
+            "en": "The timing battle: tap when the fish is over a circle"
+          }
+        },
+        {
+          "image": "/images/games/getfish-result.jpg",
+          "caption": {
+            "ko": "잡은 물고기와 크기 등급",
+            "ja": "釣れた魚とサイズ等級",
+            "en": "A catch and its size grade"
+          }
+        },
+        {
+          "image": "/images/games/getfish-dex.jpg",
+          "caption": {
+            "ko": "바다별 도감",
+            "ja": "海ごとの図鑑",
+            "en": "The encyclopedia for each sea"
+          }
+        },
+        {
+          "image": "/images/games/getfish-dress.jpg",
+          "caption": {
+            "ko": "아바타 꾸미기와 장비 효과",
+            "ja": "アバターの着せ替えと装備効果",
+            "en": "Avatar outfits and gear effects"
+          }
+        }
+      ]
+    },
+    {
+      "name": {
         "ko": "마음 산책",
         "ja": "こころの散歩",
         "en": "Mind Walk"

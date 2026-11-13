@@ -1172,6 +1172,14 @@
       "tags": "React, TypeScript, Canvas 2D, Web Audio API, Game AI, Docker, GitHub Actions",
       "gallery": [
         {
+          "image": "/images/games/flash-maze.jpg",
+          "caption": {
+            "ko": "도토리 미로: 고양이 넷을 피해 도토리를 모으는 다람쥐",
+            "ja": "どんぐり迷路：4匹のネコをよけてどんぐりを集めるリス",
+            "en": "Acorn Maze: a squirrel gathering acorns while dodging four cats"
+          }
+        },
+        {
           "image": "/images/games/kkaebi-title.jpg",
           "caption": {
             "ko": "깨비 도감 타이틀 화면",

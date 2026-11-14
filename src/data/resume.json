@@ -495,6 +495,75 @@
   "games": [
     {
       "name": {
+        "ko": "매지션 스토리",
+        "ja": "マジシャン・ストーリー",
+        "en": "Magician Story"
+      },
+      "icon": "🧙",
+      "period": "2026-11",
+      "image": "/images/games/magicianstory-dragon.jpg",
+      "link": "https://mhyoo-games.github.io/MagicianStory/",
+      "summary": {
+        "ko": "견습 마법사가 마탑의 시험을 치르며 초급·중급·상급·익스퍼트로 성장하는 픽셀 액션 RPG. 8장의 이야기와 장마다 중간보스·보스, 아홉 원소 스킬 200개, 장비 200개, 마지막엔 재앙의 용",
+        "ja": "見習い魔法使いが魔塔の試験を受けて初級・中級・上級・エキスパートへ成長するピクセルアクションRPG。全8章の物語と章ごとの中ボス・ボス、9属性のスキル200種、装備200種、最後は災厄の竜",
+        "en": "A pixel action RPG in which an apprentice mage passes the tower's exams to rise from novice to expert. An eight-chapter story with a mid-boss and boss in every chapter, 200 skills across nine elements, 200 pieces of gear, and a dragon at the end"
+      },
+      "why": {
+        "ko": "예전에 즐기던 모바일 액션 RPG처럼, 몬스터를 잡으며 키우고 전직하며 강해지는 마법 중심의 긴 모험을 직접 만들고 싶었습니다.",
+        "ja": "以前遊んだモバイルのアクションRPGのように、モンスターを倒して育て、転職して強くなる魔法中心の長い冒険を自分で作りたいと思いました。",
+        "en": "I wanted to build my own long, magic-centred adventure like the mobile action RPGs I used to play: hunt monsters, grow stronger and change class."
+      },
+      "features": {
+        "ko": "8장 이야기: 장마다 사냥·퀘스트 물건·중간보스·던전 보스, 마탑 시험(제한 시간)으로 네 번 전직\n아홉 원소 중 시험마다 하나씩 골라 가는 스킬 루트(200개, 레벨 1~5)와 화상·얼림·속박 등 상태 이상\n장비 200개(8단계·5등급)를 상점·드랍·보스 전설로 모으고, 장비에 따라 주인공 그림이 바뀜\n그림 파일 없이 코드로 그리는 픽셀 그림(Pepper&Carrot CC BY 4.0 바탕)과 시드 맵, 보스 무늬·분노, 휴대폰 조이스틱",
+        "ja": "全8章：章ごとに狩り・クエストアイテム・中ボス・ダンジョンのボス、魔塔の試験（制限時間）で4回転職\n試験ごとに9属性から1つずつ選ぶスキルルート（200種、レベル1〜5）と、火傷・凍結・拘束などの状態異常\n装備200種（8段階・5等級）をショップ・ドロップ・ボスの伝説装備で集め、装備によって主人公の見た目が変わる\n画像ファイルを使わずコードで描くピクセルアート（Pepper&Carrot CC BY 4.0がベース）とシード生成マップ、ボスの攻撃パターン・怒り、スマホ用ジョイスティック",
+        "en": "Eight chapters, each with hunting, quest items, a mid-boss and a dungeon boss; four class changes through timed exams at the mage tower\nA skill route that adds one of nine elements per exam (200 skills, levels 1–5) with burn, freeze, root and other status effects\n200 pieces of gear (8 tiers, 5 rarities) from shops, drops and legendary boss loot; the hero's look changes with the gear\nPixel art drawn entirely in code (based on Pepper&Carrot, CC BY 4.0), seeded maps, boss patterns and rage, and a touch joystick for phones"
+      },
+      "tags": "JavaScript, Canvas 2D, Pixel Art, Procedural Generation, Web Audio, Game Design, Node.js Test, GitHub Actions",
+      "gallery": [
+        {
+          "image": "/images/games/magicianstory-dragon.jpg",
+          "caption": {
+            "ko": "마지막 보스, 재앙의 용 아즈다하",
+            "ja": "最後のボス、災厄の竜アズダハ",
+            "en": "The final boss, the dragon Azdaha"
+          }
+        },
+        {
+          "image": "/images/games/magicianstory-battle.jpg",
+          "caption": {
+            "ko": "붉은 협곡에서 불 마법으로 오크와 싸우기",
+            "ja": "赤い峡谷で火の魔法を使いオークと戦う",
+            "en": "Fighting orcs with fire magic in the Red Canyon"
+          }
+        },
+        {
+          "image": "/images/games/magicianstory-exam.jpg",
+          "caption": {
+            "ko": "별빛 마탑의 상급 마법사 시험",
+            "ja": "星明かりの魔塔での上級魔法使い試験",
+            "en": "The senior mage exam at the Starlight Tower"
+          }
+        },
+        {
+          "image": "/images/games/magicianstory-skills.jpg",
+          "caption": {
+            "ko": "원소별 스킬 창 (계급에 따라 열림)",
+            "ja": "属性ごとのスキル画面（階級で解放）",
+            "en": "The skill window by element, unlocked by rank"
+          }
+        },
+        {
+          "image": "/images/games/magicianstory-village.jpg",
+          "caption": {
+            "ko": "마법사의 마을 루미나와 고양이들",
+            "ja": "魔法使いの村ルミナと猫たち",
+            "en": "Lumina, the mages' village, and its cats"
+          }
+        }
+      ]
+    },
+    {
+      "name": {
         "ko": "토이피쉬 바다 낚시",
         "ja": "トイフィッシュ 海釣り",
         "en": "Toy Fish: Sea Fishing"

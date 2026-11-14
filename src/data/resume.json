@@ -495,18 +495,18 @@
   "games": [
     {
       "name": {
-        "ko": "겟피쉬 바다 낚시",
-        "ja": "getFish 海釣り",
-        "en": "getFish: Sea Fishing"
+        "ko": "토이피쉬 바다 낚시",
+        "ja": "トイフィッシュ 海釣り",
+        "en": "Toy Fish: Sea Fishing"
       },
       "icon": "🎣",
       "period": "2026-11",
       "image": "/images/games/getfish-fight.jpg",
       "link": "https://mhyoo-games.github.io/getFish/",
       "summary": {
-        "ko": "물고기가 과녁 위를 지날 때 타이밍 맞춰 눌러 낚는 2D 웹 낚시 게임. 바다 8곳, 물고기 112종, 장비 파밍과 도감 모으기",
-        "ja": "魚が的の上を通る瞬間にタイミングよく押して釣る2Dウェブ釣りゲーム。8つの海、112種の魚、装備集めと図鑑",
-        "en": "A 2D web fishing game where you tap in time as the fish crosses a target. Eight seas, 112 species, gear farming and an encyclopedia"
+        "ko": "장난감 낚시꾼이 과녁 위를 지나는 장난감 물고기를 타이밍 맞춰 눌러 낚는 2D 웹 낚시 게임. 바다 8곳, 물고기 112종, 장비 파밍과 도감 모으기",
+        "ja": "おもちゃの釣り人が、的の上を通るおもちゃの魚をタイミングよく押して釣る2Dウェブ釣りゲーム。8つの海、112種の魚、装備集めと図鑑",
+        "en": "A 2D web fishing game where a toy angler taps in time as toy fish cross a target. Eight seas, 112 species, gear farming and an encyclopedia"
       },
       "why": {
         "ko": "어릴 때 즐기던 옛 모바일 낚시 게임 초창기의 손맛을 다시 느끼고 싶어서 만들었습니다.",
@@ -514,9 +514,9 @@
         "en": "I wanted to feel again what the early days of an old mobile fishing game I loved were like."
       },
       "features": {
-        "ko": "별이 가운데 올 때 멈추는 던지기 → 챔질 → 타이밍 싸움, 입질 전엔 거두기도 가능\n미끼별 확률로 우연히 나타나는 보스(등장 연출·포효·보스 음악), 미끼 전용 물고기, 장비·레벨·칭호·도감 세트\n남·여 3D 낚시꾼(Kenney 모델)과 장난감 블록 물고기를 2D 화면에 그리고, 소리는 브라우저에서 합성",
-        "ja": "星が真ん中に来た瞬間に止めて投げる → アワセ → タイミング勝負、アタリの前なら回収も可能\nエサごとの確率で偶然現れるボス（登場演出・咆哮・ボスBGM）、エサ専用の魚、装備・レベル・称号・図鑑セット\n男女の3D釣り人（Kenneyモデル）とおもちゃのブロック風の魚を2D画面に描き、音はブラウザで合成",
-        "en": "Stop the star in the centre to cast, strike, then win the timing battle; reel back in before a bite if you like\nBosses appear by chance at bait-specific rates (entrance scene, roars, boss music), bait-only fish, gear, levels, titles and sets\n3D male and female anglers (Kenney models) and toy-block fish drawn into a 2D scene; sound synthesised in the browser"
+        "ko": "별이 가운데 올 때 멈추는 던지기 → 챔질 → 타이밍 싸움, 입질 전엔 거두기도 가능\n미끼별 확률로 우연히 나타나는 보스(등장 연출·포효·보스 음악), 미끼 전용 물고기, 장비·레벨·칭호·도감 세트\n장난감 사람 낚시꾼(남·여, Kenney 3D 모델)과 장난감 블록 물고기를 2D 화면에 그리고, 소리는 브라우저에서 합성",
+        "ja": "星が真ん中に来た瞬間に止めて投げる → アワセ → タイミング勝負、アタリの前なら回収も可能\nエサごとの確率で偶然現れるボス（登場演出・咆哮・ボスBGM）、エサ専用の魚、装備・レベル・称号・図鑑セット\nおもちゃの人形のような釣り人（男女、Kenneyの3Dモデル）とおもちゃのブロック風の魚を2D画面に描き、音はブラウザで合成",
+        "en": "Stop the star in the centre to cast, strike, then win the timing battle; reel back in before a bite if you like\nBosses appear by chance at bait-specific rates (entrance scene, roars, boss music), bait-only fish, gear, levels, titles and sets\nToy-figure anglers (male and female, Kenney 3D models) and toy-block fish drawn into a 2D scene; sound synthesised in the browser"
       },
       "tags": "JavaScript, Canvas 2D, three.js, Web Audio, Sound Synthesis, Game Design, Node.js Test, GitHub Actions",
       "gallery": [

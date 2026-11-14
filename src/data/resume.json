@@ -504,19 +504,19 @@
       "image": "/images/games/getfish-fight.jpg",
       "link": "https://mhyoo-games.github.io/getFish/",
       "summary": {
-        "ko": "물고기가 동그라미 위를 지나가는 순간 타이밍 맞춰 눌러 체력을 깎아 낚는 2D 웹 낚시 게임. 바다 네 곳(햇살 선착장·산호초 바다·안개 협만·심해 해구)마다 보스가 있고, 물고기 52종을 크기에 따라 C·B·A·S·SS 등급으로 잡아 도감을 채우며, 낚싯대·줄·찌·미끼와 아바타 꾸미기 장비를 상점에서 사거나 드랍으로 모아 점점 더 큰 물고기에 도전함",
-        "ja": "魚が丸の上を通る瞬間にタイミングよく押して体力を削り、釣り上げる2Dウェブ釣りゲーム。4つの海（陽だまりの桟橋・サンゴ礁の海・霧のフィヨルド・深海の海溝）それぞれにボスがいて、52種の魚を大きさでC・B・A・S・SSの等級に分けて図鑑を埋め、竿・糸・ウキ・エサやアバターの着せ替え装備をショップで買ったりドロップで集めたりして、より大きな魚に挑戦する",
-        "en": "A 2D web fishing game where you tap with good timing as the fish passes over a circle to drain its stamina and reel it in. Each of the four seas (Sunny Pier, Coral Reef, Misty Fjord and Deep Trench) has a boss; you fill an encyclopedia of 52 species graded C, B, A, S or SS by size, and collect rods, lines, floats, bait and avatar outfits from the shop or as drops to take on ever bigger fish"
+        "ko": "물고기가 과녁 위를 지날 때 타이밍 맞춰 눌러 낚는 2D 웹 낚시 게임. 바다 4곳, 물고기 52종, 장비 파밍과 도감 모으기",
+        "ja": "魚が的の上を通る瞬間にタイミングよく押して釣る2Dウェブ釣りゲーム。4つの海、52種の魚、装備集めと図鑑",
+        "en": "A 2D web fishing game where you tap in time as the fish crosses a target. Four seas, 52 species, gear farming and an encyclopedia"
       },
       "why": {
-        "ko": "어릴 때 즐기던 옛 모바일 낚시 게임의 초창기 버전 손맛 — 타이밍 맞춰 눌러 물고기를 낚고, 좋은 장비를 파밍하고, 도감을 채우는 재미 — 를 다시 느끼고 싶어서 직접 만들어 봄. 처음 버전이라 물고기·장비 수는 적당히 두고 계속 더해 갈 계획",
-        "ja": "昔遊んだモバイル釣りゲームの初期バージョンの手応え――タイミングよく押して魚を釣り、良い装備を集め、図鑑を埋める楽しさ――をもう一度味わいたくて、自分で作ってみた。最初のバージョンなので魚や装備の数はほどほどにして、これから少しずつ増やしていく予定",
-        "en": "I wanted to feel again what the early version of an old mobile fishing game I used to play was like: timing your taps to land fish, farming better gear and filling the encyclopedia. So I built my own. This first version keeps the number of fish and items modest, and I plan to keep adding more"
+        "ko": "어릴 때 즐기던 옛 모바일 낚시 게임 초창기의 손맛을 다시 느끼고 싶어서 만들었습니다.",
+        "ja": "昔遊んだモバイル釣りゲームの初期の手応えをもう一度味わいたくて作りました。",
+        "en": "I wanted to feel again what the early days of an old mobile fishing game I loved were like."
       },
       "features": {
-        "ko": "낚시 흐름: 힘 게이지로 던지기(NICE 구간에서 멀리 던질수록 드문 물고기가 더 오고, 장비의 '멀리 던지기'가 구간을 넓힘) → 찌가 쑥 들어가면 챔질 → 줄 위를 왔다 갔다 하는 물고기가 동그라미(과녁) 위에 올 때 누르기. 가운데일수록 1.5배(PERFECT), 금빛 과녁은 2배, 빈 곳을 누르면 하트(줄 버팀)가 줄고, 하트가 다 닳거나 시간이 끝나면 도망. 체력이 30% 아래면 화가 나서 빨라짐\n바다 4곳·물고기 52종: 바다마다 흔함·보통·드묾·아주 드묾·보스. 보스는 황금 미끼로 불러내고, 잡으면 다음 바다가 열림. 같은 물고기 안에서의 크기로 C~SS 등급(SS 약 3%), 등급이 높을수록 체력·빠르기·값이 올라감\n장비 파밍: 낚싯대(힘·금빛 과녁), 줄(하트·시간), 찌(물고기 느리게·과녁 넓게), 미끼(드문 물고기 확률). 상점 장비와 보스·바다에서만 나오는 드랍 전용 장비, 도감 세트 보상 전용 장비\n레벨·칭호: 잡을 때마다 경험치, 레벨 50까지 오르며 동전·힘·하트가 붙고, 레벨·도감·보스·SS 등급·나이스 캐스팅 등 조건으로 칭호 21개를 얻어 하나를 달면 작은 효과가 들어감\n아바타: 동물 5종에 모자·옷·장신구를 입히면 배 위 뒷모습에도 보이고 효과(동전·시간·행운 등)가 능력치에 바로 들어감. 도감 세트 13개(바다별 단골·박사, 보스 넷, 모양별, SS 수집가)를 채우면 동전·미끼·한정 꾸미기 보상\n손맛과 연출: 누를 때마다 휴대폰 진동(맞힘·PERFECT·금빛·빗나감이 다름), 물결 고리와 줄 번쩍임, PERFECT·금빛에서 아주 잠깐 멈추는 손맛. 잡으면 물고기가 물보라와 함께 빙글 돌며 튀어 올라 화면 가운데로 오고, 빛과 함께 「낚았다!」와 크기 등급 도장, 드문 물고기면 꽃가루\n그림과 소리: 물고기 52종·바다·낚시꾼을 모두 canvas로 직접 그린 뒤, 수채화 그림책 느낌(물감 번짐·따뜻한 햇빛과 보랏빛 그늘·붓 자국·종이 결·가장자리 물감 고임·바다 반사광)으로 한 번 더 칠함. 배경음은 90년대 J-pop 느낌의 경쾌한 곡을 새로 작곡해 드럼·베이스·일렉 피아노·스트링·리드로 브라우저에서 합성. 자동 낚시꾼 테스트로 장비별 승률을 확인해 난이도를 맞춤",
-        "ja": "釣りの流れ：パワーゲージで投げる（NICEゾーンで遠くへ投げるほど珍しい魚が来やすく、装備の「遠投」がゾーンを広げる） → ウキがぐっと沈んだらアワセ → 糸の上を行き来する魚が丸（的）に重なった時に押す。中心ほど1.5倍（PERFECT）、金色の的は2倍、何もない所を押すとハート（糸の耐久）が減り、ハートがなくなるか時間切れで逃げられる。体力が30%を切ると怒って速くなる\n4つの海・52種の魚：海ごとに普通・やや珍しい・珍しい・とても珍しい・ボス。ボスは金のエサで呼び出し、釣ると次の海が開く。同じ魚の中での大きさでC〜SSの等級（SSは約3%）、等級が高いほど体力・速さ・値段が上がる\n装備集め：竿（力・金色の的）、糸（ハート・時間）、ウキ（魚を遅く・的を広く）、エサ（珍しい魚の確率）。ショップの装備、ボスや海でしか出ないドロップ専用装備、図鑑セット報酬専用装備\nレベル・称号：釣るたびに経験値、レベル50まで上がりコイン・力・ハートが増え、レベル・図鑑・ボス・SS等級・ナイスキャストなどの条件で称号21個を得て、1つ付けると小さな効果が付く\nアバター：動物5種に帽子・服・アクセサリーを着せると船の上の後ろ姿にも映り、効果（コイン・時間・運など）がすぐ能力値に入る。図鑑セット13個（海ごとの常連・博士、ボス4匹、形別、SSコレクター）を埋めるとコイン・エサ・限定の着せ替え報酬\n手応えと演出：押すたびにスマホが振動（ヒット・PERFECT・金色・ミスで異なる）、波紋のリングと糸の光、PERFECTや金色ではほんの一瞬止まる手応え。釣れると魚が水しぶきとともにくるりと回りながら跳ね上がって画面の中央へ来て、光とともに「釣れた！」とサイズ等級のスタンプ、珍しい魚なら紙吹雪\n絵と音：52種の魚・海・釣り人をすべてcanvasで描いたうえで、水彩の絵本風（絵の具のにじみ・暖かい日差しと紫がかった影・筆跡・紙の質感・縁のたまり・海からの照り返し）にもう一度塗っている。BGMは90年代J-POP風の軽快な曲を新しく作曲し、ドラム・ベース・エレピ・ストリングス・リードをブラウザ上で合成。自動で釣るテストで装備ごとの勝率を確かめて難易度を調整",
-        "en": "Fishing loop: cast with a power gauge (the farther you throw in the NICE zone, the more rare fish bite, and gear with a long-cast stat widens the zone), strike when the float dips, then tap whenever the fish moving back and forth along the line is over a circle (target). Dead centre does 1.5x (PERFECT), golden targets do 2x, tapping empty space costs a heart (line strength), and the fish escapes when hearts or time run out. Below 30% stamina it gets angry and speeds up\nFour seas, 52 fish: each sea has common, uncommon, rare, very rare and boss fish. Bosses are summoned with golden bait, and catching one opens the next sea. Size within a species sets a C–SS grade (SS about 3%); higher grades mean more stamina, speed and value\nGear farming: rods (power, golden targets), lines (hearts, time), floats (slower fish, wider targets) and bait (rare fish odds). Shop gear, drop-only gear from bosses and specific seas, and gear only available as encyclopedia set rewards\nLevels and titles: every catch gives experience, with levels up to 50 adding coins, power and hearts, and 21 titles earned through levels, the encyclopedia, bosses, SS grades and nice casts; the one you wear adds a small bonus\nAvatar: dress one of five animals in hats, outfits and accessories that show on the angler seen from behind on the boat and add their effects (coins, time, luck and more) straight to your stats. Thirteen encyclopedia sets (regulars and experts for each sea, the four bosses, shape sets, SS collector) give coins, bait and exclusive outfits\nFeel and effects: every tap vibrates the phone (different for hits, PERFECTs, golden targets and misses), with a ripple ring, a flash along the line and a split-second hit-stop on PERFECTs and golden targets. A catch bursts out of the water, spins up to the centre of the screen and lands with a glow, a \"Caught it!\" banner, a size-grade stamp and confetti for rare fish\nArt and sound: all 52 fish, the seas and the angler are drawn in canvas code, then repainted in a watercolour picture-book style (pigment blooms, warm sunlight and violet shadows, brush strokes, paper grain, pooled edges, light bouncing off the sea). The music is a newly composed upbeat track in a 90s J-pop style, with drums, bass, electric piano, strings and a lead all synthesised in the browser. An automated angler test checks win rates per gear set to tune the difficulty"
+        "ko": "힘 게이지 던지기 → 챔질 → 타이밍 싸움 (PERFECT·금빛 과녁·진동)\n크기 등급 C~SS, 바다별 보스, 상점·드랍 장비와 아바타, 레벨·칭호·도감 세트\n물고기·캐릭터를 코드로 그려 수채화풍으로 칠하고, 배경음까지 브라우저에서 합성",
+        "ja": "パワーゲージで投げる → アワセ → タイミング勝負（PERFECT・金色の的・振動）\nサイズ等級C〜SS、海ごとのボス、ショップ・ドロップ装備とアバター、レベル・称号・図鑑セット\n魚とキャラクターをコードで描いて水彩風に塗り、BGMまでブラウザで合成",
+        "en": "Cast with a power gauge, strike, then win the timing battle (PERFECT hits, golden targets, haptics)\nC–SS size grades, a boss per sea, shop and drop gear, avatars, levels, titles and encyclopedia sets\nFish and characters drawn in code and painted in a watercolour style; music synthesised in the browser"
       },
       "tags": "JavaScript, Canvas 2D, Web Audio, Sound Synthesis, Game Design, Node.js Test, GitHub Actions",
       "gallery": [
@@ -570,22 +570,22 @@
       },
       "icon": "🍁",
       "period": "2026-11",
-      "image": "",
+      "image": "/images/games/meditation-cover.jpg",
       "link": "https://mhyoo-games.github.io/meditation_web/",
       "summary": {
-        "ko": "맵을 골라 동물 친구와 천천히 걸으며 쉬어 가는 3D 힐링 웹사이트. 맵은 '단풍마을', '별빛 마법학교', '하늘 오름 숲' 세 곳. 단풍마을은 단풍이 물든 작은 마을. 낮·노을·밤을 바꿀 수 있고, 밤에는 길가 종이등과 석등, 연못에 뜬 연등, 절 안 연등이 따뜻하게 빛남. 산기슭 절에서는 목탁 소리와 반야심경 독경 속에 불상 앞 방석에서 절하고 향을 피우고, 교회에서는 오르간 찬송가·캐럴을 들으며 신자석에 앉아 기도하고, 고딕 성당에서는 성가대 노래 속에 기도하고 촛불을 켬. 건물 안에 들어가면 지붕이 사라져 안이 보이고 안에서도 시점을 마음대로 돌려 볼 수 있으며, 가까이 갈수록 그곳 음악이 서서히 커짐. 동물 11종 중 하나를 골라 걷고, 나머지는 주민이 되어 함께 절하고 기도하며 마을을 거님. 절에서는 목탁·시주·108배, 교회에서는 성가대, 성당에서는 세례명과 오늘의 운세도 즐길 수 있고, 머문 시간이 마음 기록과 업적으로 쌓임. 모든 소리는 녹음 파일 없이 브라우저에서 합성 별빛 마법학교는 큰 달이 뜬 밤의 성으로, 촛불이 떠 있는 대강당에서 식탁에 앉거나 촛불을 띄우고, 책이 떠다니는 도서관에서 책을 읽고, 안뜰 마법진에서 마법을 연습하고, 천문대에서 별을 봄. 주민은 그림책풍 견습 마법사 동물들. 하늘 오름 숲은 아주 큰 나무를 빙글빙글 돌아 꼭대기 하늘 정원까지 오르는 점프 맵으로, 점프와 2단 점프로 발판을 건너며 떨어져도 다시 한 칸씩 올라가고, 오른 높이와 시간이 기록됨",
-        "ja": "マップを選んで動物の友だちとゆっくり歩き、一息つく3Dのヒーリングサイト。マップは「紅葉の村」「星明かりの魔法学校」「空のぼりの森」の3つ。紅葉の村は紅葉に染まった小さな村。昼・夕焼け・夜を切り替えられ、夜には道ばたの紙灯籠や石灯籠、池に浮かぶ灯籠、お寺の中の提灯がやさしく灯る。山すそのお寺では木魚の音と般若心経の読経の中で仏像の前の座布団に座って礼拝し、お香をたき、教会ではオルガンの讃美歌やキャロルを聴きながら会衆席で祈り、ゴシックの聖堂では聖歌隊の歌の中で祈ってろうそくをともす。建物に入ると屋根が消えて中が見え、中でも視点を自由に回せて、近づくほどその場所の音楽が少しずつ大きくなる。11種類の動物から一匹を選んで歩き、ほかの動物は村人として一緒に礼拝や祈りをしたり村を散歩したりする。お寺の木魚・お布施・百八拝、教会の聖歌隊、聖堂での洗礼名と今日の運勢も楽しめ、過ごした時間が「心の記録」と実績としてたまる。音はすべて録音ファイルを使わずブラウザで合成。星明かりの魔法学校は大きな月が浮かぶ夜のお城で、ろうそくが浮かぶ大広間で食卓に座ったりろうそくを浮かべたりし、本が舞う図書館で本を読み、中庭の魔法陣で魔法を練習し、天文台で星を眺める。住人は絵本風の見習い魔法使いの動物たち。空のぼりの森は大きな木をぐるぐる回りながら、てっぺんの空の庭まで登るジャンプのマップで、ジャンプと二段ジャンプで足場を渡り、落ちてもまた一段ずつ登っていき、登った高さと時間が記録される",
-        "en": "A 3D healing website where you pick a map and take a slow walk with an animal friend. There are three maps: Maple Village, the Starlight Magic School and the Sky-Climb Forest. Maple Village is a small village in autumn colors. You can switch between day, sunset and night; at night paper lanterns along the paths, stone lanterns, lanterns floating on the pond and lanterns inside the temple glow warmly. At the hillside temple you bow on a cushion before the Buddha and light incense to the sound of the moktak and a chanted Heart Sutra, at the church you pray in the pews to organ hymns and carols, and in the Gothic cathedral you pray and light a candle while the choir sings. Roofs disappear when you step inside so you can see the interior and turn the view freely, and each place's music fades in as you get closer. Pick one of 11 animals to walk with while the others live in the village, bowing, praying and strolling alongside you. You can also strike the moktak, make an offering and do 108 bows at the temple, sing in the church choir, and get a baptismal name and today's fortune at the cathedral, while the time you spend builds up a personal record and achievements. Every sound is synthesized in the browser with no recordings. The Starlight Magic School is a castle at night under a big moon: sit at the tables or float a candle in the great hall lit by floating candles, read in a library where books drift through the air, practice magic on the courtyard's magic circle and look at the stars from the observatory. Its residents are picture-book apprentice witch animals. The Sky-Climb Forest is a jumping map: circle a giant tree up to the sky garden at the top, crossing platforms with jumps and double jumps; if you fall you just climb back one step at a time, and your height and time are recorded"
+        "ko": "동물 친구와 천천히 걸으며 쉬어 가는 3D 힐링 웹사이트. 단풍마을·별빛 마법학교·점프 맵 하늘 오름 숲",
+        "ja": "動物の仲間とゆっくり歩いてひと休みする3D癒やしサイト。紅葉の村・星明かりの魔法学校・ジャンプのマップ「空のぼりの森」",
+        "en": "A calming 3D website for slow walks with animal friends: Maple Village, the Starlight Magic School and the Sky-Climb Forest jumping map"
       },
       "why": {
-        "ko": "직접 만든 동물 캐릭터들과 함께, 음악이 흐르는 아늑한 가을 마을을 평온하게 돌아다니며 절·교회·성당에 들러 마음을 쉬어 갈 수 있는 곳을 만들고 싶어서 만들었고, 마법 모자를 쓴 동물들을 보고 몽환적인 마법학교 맵도 더했습니다.",
-        "ja": "自分で作った動物のキャラクターたちと一緒に、音楽が流れる居心地のいい秋の村をのんびり歩き、お寺や教会、聖堂に立ち寄って心を休められる場所を作りたいと思って作りました。魔法の帽子をかぶった動物たちを見て、幻想的な魔法学校のマップも加えました。",
-        "en": "I wanted a calm place where my own animal characters could wander a cozy autumn village filled with music, stopping by a temple, a church and a cathedral to rest the mind. Seeing the animals in witch hats, I added a dreamy magic school map as well."
+        "ko": "직접 만든 동물 캐릭터들과 음악이 흐르는 아늑한 곳을 거닐며 마음을 쉬어 갈 곳을 만들고 싶어서 만들었습니다.",
+        "ja": "自作の動物キャラクターたちと、音楽の流れる心地よい場所を歩いて心を休められる所を作りたくて作りました。",
+        "en": "I wanted a cosy, musical place to wander with the animal characters I made and let the mind rest."
       },
       "features": {
-        "ko": "하늘 오름 숲(점프 맵): 굵기 5m 큰 나무를 세 바퀴쯤 돌며 28m 꼭대기까지 오르는 발판 71개(그루터기·줄기에 붙은 선반 버섯·받침 가지 위 판자·넝쿨에 매달려 살랑이는 큰 잎), 2단 점프로만 건너는 넓은 틈 11곳, 쉼터 2곳(다시 오기 순간이동 가능, 쓰면 기록에 표시), 꼭대기 나무집과 하늘 정원. 발판은 아래에서 통과하고 위에서만 밟히며 걸어 나가면 떨어짐. 높이·시간·최고 기록과 업적, 휴대폰 조이스틱. 코스는 파이썬 생성기가 점프 거리로 건널 수 있게 만들고, 자동 테스트에서 발판마다 실제로 뛰어 확인\n지도와 안정성: 구석의 동그란 작은 지도(내 위치·바라보는 쪽·주민)와 누르면 펼쳐지는 큰 지도(장소를 눌러 걸어가기). 한 장면의 오류로 화면이 멈추지 않게 하고, 그래픽 메모리가 모자라 화면을 잃으면 기록을 저장한 뒤 다시 불러옴\n별빛 마법학교: 뾰족 지붕 대강당(긴 식탁·교수 단상·장미창·떠 있는 촛불 90개, 안에 들어가면 지붕이 사라져 밤하늘 아래 촛불이 떠 있음), 도서관(벽 책장·사다리·초록 등 책상·떠다니는 책), 둥근 탑 7개·성문·분수 안뜰·마법진·천문대·호수. 책 읽기(손에 책을 들고 지어낸 마법책 한 구절을 보여 줌)·책 고르기·마법 연습(지팡이와 빛 방울)·촛불 띄우기·별 보기(지어낸 별자리). 배경음악은 첼레스타·하프·현악·합창을 합성한 자작 곡 5곡과 부엉이·장작·시계·책장 소리\n장소: 주홍 인왕문과 돌계단·삼층탑·향로·큰 본당(금빛 불상·연꽃 대좌·광배·방석 12자리)과 단풍 골짜기 위 기둥 격자에 걸친 나무 무대가 있는 산기슭 절, 신자석 14줄·제단·십자가·파이프오르간·크리스마스트리가 있는 하얀 목조 교회, 평평한 쌍탑·장미창·세 아치 문·날개 버팀벽·첨탑과 기둥 두 줄·성모상·봉헌 촛대가 있는 고딕 성당. 건물 안에 들어가면 지붕이 사라지고, 안에서도 시점을 마음대로 돌려 볼 수 있음(가리는 벽·나무는 점무늬로 비쳐 보임)\n할 수 있는 일: 절에서는 목탁 치기·시주·108배, 교회에서는 성가대에 함께하면 주민들이 모여 같이 노래하고, 성당에서는 세례를 받으면 이름으로 세례명과 오늘의 운세를 알려 줌\n마음 기록: 명상·기도·노래한 시간과 연속 방문이 쌓여 9단계·업적 20개·단계 보상. 자유 채팅 대신 정해진 말과 이모티콘으로 인사하면 주민이 이모티콘으로 답함\n하는 일: 절하기(앉아서 합장하고 허리·가슴·머리가 차례로 부드럽게 숙여지며 두 손을 바닥 앞으로 내리는 큰절), 향 피우기(향로에서 연기), 앉아서 기도하기, 촛불 켜기(촛대에 초가 하나씩 켜짐), 그 자리에 앉아 호흡 안내를 따라 하는 명상. 절하기·기도 동작은 공개 동작에 합장한 팔과 허리 숙이기를 더해 새로 만듦\n소리: 목탁에 맞춰 한글 반야심경을 한 글자씩 읽는 독경(모음에 맞춰 목소리 합성, 자막에 읽는 글자 표시), 범종과 풍경, 오르간 찬송가·캐럴 4곡, 성가대 3곡, 오르골 즉흥 음악과 바람·새·낙엽 소리. 곡은 모두 퍼블릭 도메인 선율이거나 새로 지은 선율\n걷기: 키보드·땅 누르기·가 보기 메뉴, 폴짝 점프와 공중에서 한 번 더 누르면 앞으로 한 바퀴 구르며 빛 꼬리를 남기고 휙 날아가는 2단 점프, 격자 길찾기로 건물뿐 아니라 나무·바위·등불·벤치 같은 장애물도 돌아서 가고, 동물끼리 서로 비켜 감. 주민 동물 10마리(맵마다 이름이 달라 단풍마을에서는 밤톨·홍시·단풍이, 마법학교에서는 별똥·은하·책갈피처럼 그곳에 어울리는 이름)도 길을 찾아 절·교회·성당에서 절하고 기도함. 동물 머리·절·교회·성당은 파이썬으로 직접 만들고(새 동물 6종), 나무·바위·풀·집·우물 같은 소품과 땅 무늬, 몸체·동작·하늘은 무료 공개(CC0) 에셋. 소품 735개를 인스턴싱으로 그리고, 그림자·빛 번짐·바람에 흔들리는 나무. three.js와 Web Audio, GitHub Actions로 배포",
-        "ja": "空のぼりの森（ジャンプのマップ）：太さ5mの大きな木を3周ほど回りながら高さ28mのてっぺんまで登る足場71個（切り株・幹に付いたサルノコシカケ・支えの枝の上の板・つるに下がって揺れる大きな葉）、二段ジャンプでしか渡れない広いすき間11か所、休憩所2か所（瞬間移動で戻れるが、使うと記録に表示）、てっぺんのツリーハウスと空の庭。足場は下からは通り抜け、上からだけ乗れて、歩いて出ると落ちる。高さ・時間・ベスト記録と実績、スマホ用ジョイスティック。コースはPythonの生成プログラムがジャンプの距離で渡れるように作り、自動テストで足場ごとに実際に跳んで確認\n地図と安定性：隅の丸い小さな地図（自分の位置・向き・村人）と、押すと広がる大きな地図（場所を押すとそこへ歩く）。1コマのエラーで画面が止まらないようにし、グラフィックメモリが足りず画面が失われたら記録を保存して読み込み直す\n星明かりの魔法学校：とんがり屋根の大広間（長い食卓・教授席・バラ窓・浮かぶろうそく90本。中に入ると屋根が消え、夜空の下にろうそくが浮かぶ）、図書館（壁一面の本棚・はしご・緑のランプの机・宙を舞う本）、丸い塔7本・城門・噴水の中庭・魔法陣・天文台・湖。読書（本を手に持ち、架空の魔法書の一節を表示）・本選び・魔法の練習（杖と光の粒）・ろうそくを浮かべる・星を眺める（架空の星座）。BGMはチェレスタ・ハープ・弦・合唱を合成したオリジナル5曲と、フクロウ・薪・時計・ページをめくる音\n場所：朱色の仁王門と石段・三重塔・香炉・大きな本堂（金色の仏像・蓮の台座・光背・座布団12席）と、紅葉の谷の上に柱を組んで張り出した木の舞台がある山すそのお寺、会衆席14列・祭壇・十字架・パイプオルガン・クリスマスツリーのある白い木造の教会、平らな屋根の双塔・バラ窓・三つのアーチの扉・フライングバットレス・尖塔と二列の柱・マリア像・献灯台のあるゴシックの聖堂。建物に入ると屋根が消え、中でも視点を自由に回せる（さえぎる壁や木は点模様で透けて見える）\nできること：お寺では木魚・お布施・百八拝、教会では聖歌隊に加わると村人が集まって一緒に歌い、聖堂では洗礼を受けると名前から洗礼名と今日の運勢を教えてくれる\n心の記録：瞑想・祈り・歌の時間や連続訪問がたまって9段階・実績20個・段階ごとのごほうび。自由チャットの代わりに決まった言葉と絵文字であいさつすると村人が絵文字で返す\nできること：礼拝（座って合掌し、腰・胸・頭の順になめらかに前へかがんで両手を床の前に下ろす深いお辞儀）、お香をたく（香炉から煙）、座って祈る、ろうそくをともす（献灯台に一本ずつ火がつく）、その場に座って呼吸ガイドに合わせる瞑想。礼拝・祈りの動作は公開の動作に合掌した腕と前かがみを加えて新しく作成\n音：木魚に合わせてハングルの般若心経を一字ずつ読む読経（母音に合わせて声を合成し、字幕に読んでいる字を表示）、梵鐘と風鈴、オルガンの讃美歌・キャロル4曲、聖歌隊3曲、オルゴールの即興演奏と風・鳥・落ち葉の音。曲はすべてパブリックドメインの旋律か新しく作った旋律\n歩く：キーボード・地面のタップ・「行ってみる」メニュー、ぴょんとジャンプ、空中でもう一度押すと前へくるりと一回転しながら光の尾を引いてひゅっと飛ぶ二段ジャンプ、グリッド経路探索で建物だけでなく木・岩・灯籠・ベンチなどの障害物も回り込み、動物どうしもよけ合う。村人の動物10匹（マップごとに名前が変わり、紅葉村では栗・柿・もみじ、魔法学校では流れ星・銀河・しおりにちなんだ名前）も道を探してお寺・教会・聖堂で礼拝や祈りをする。動物の頭とお寺・教会・聖堂はPythonで自作（新しい動物6種）、木・岩・草・家・井戸などの小物と地面の模様、体・動作・空は無料公開（CC0）のアセット。小物735個をインスタンシングで描画し、影・光のにじみ・風に揺れる木を表現。three.jsとWeb Audio、GitHub Actionsで公開",
-        "en": "Sky-Climb Forest (jumping map): 71 platforms that circle a 5 m-thick giant tree about three times up to the top at 28 m (stumps, shelf fungi on the trunk, planks on supporting branches, big leaves swaying on vines), 11 wide gaps you can only cross with a double jump, two rest decks (you can teleport back, which is marked on your record), and a tree house and sky garden at the top. Platforms let you pass through from below and only hold you from above; walk off the edge and you fall. Height, time, best record and achievements, plus an on-screen joystick on phones. A Python generator builds the course so every gap fits the jump distance, and an automated test actually jumps across each platform\nMap and stability: a small round map in the corner (your position, facing and the villagers) and a large map that opens on tap (tap a place to walk there). A failed frame no longer freezes the screen, and if the browser drops the graphics context for lack of memory the game saves your record and reloads\nStarlight Magic School: a great hall with a pointed roof (long tables, a head table, a rose window and 90 floating candles; step inside and the roof disappears so the candles float under the night sky), a library (wall-to-wall shelves, ladders, desks with green lamps and drifting books), seven round towers, a castle gate, a fountain courtyard, a magic circle, an observatory and a lake. Read (holding a book, with a line from an invented spell book), browse the shelves, practice magic (wand and light motes), float a candle and stargaze (invented constellations). The music is five original pieces synthesized from celesta, harp, strings and choir, with owls, a crackling fire, a ticking clock and turning pages\nPlaces: a hillside temple with a vermilion gate and stone steps, a three-story pagoda, an incense burner and a large main hall (a golden Buddha on a lotus pedestal with a halo and 12 cushions) with a wooden stage on a lattice of pillars over a maple valley; a white wooden church with 14 rows of pews, an altar, a cross, a pipe organ and a Christmas tree; and a Gothic cathedral with flat-topped twin towers, a rose window, three arched doors, flying buttresses, a spire, two rows of columns, a statue of Mary and a votive candle stand. Roofs disappear when you step inside and you can still turn the view freely, with walls and trees in the way shown see-through in a dot pattern\nThings to do: at the temple, strike the moktak, make an offering and do 108 bows; join the church choir and villagers gather to sing with you; receive a blessing in the cathedral to get a baptismal name and today's fortune from your name\nPersonal record: time spent meditating, praying and singing plus visit streaks build up to 9 levels, 20 achievements and rewards per level. Instead of free chat you greet with set phrases and emoji, and villagers reply with emoji\nThings to do: bow (sit with joined hands, then bend smoothly from the waist, chest and head in turn and lower both hands to the floor), light incense (smoke rises from the burner), sit and pray, light a candle (one more flame on the stand each time), or sit anywhere for a guided breathing meditation. The bowing and praying motions were made by adding joined hands and a forward bend to free motions\nSound: the Korean Heart Sutra chanted one syllable per moktak beat with the voice shaped by each vowel and the current syllable shown in a caption, a temple bell and wind chimes, four organ hymns and carols, three choir pieces, and a music-box improvisation with wind, birds and rustling leaves. All melodies are public domain or newly written\nWalking: keyboard, tap the ground or pick a place from the menu; hop with a jump, and press again in mid-air for a double jump that somersaults forward with a trail of light; with grid pathfinding that walks around buildings as well as trees, rocks, lanterns and benches, and the animals step aside for each other. The ten villager animals (with names that change per map: chestnut, persimmon and maple in the village; shooting star, galaxy and bookmark at the school) also find their way to bow and pray at the temple, church and cathedral. The animal heads and the temple, church and cathedral were built in Python (six new animals), with free CC0 assets for props such as trees, rocks, grass, houses and a well, the ground textures, the bodies, motions and sky. 735 props are drawn with instancing, with shadows, bloom and trees swaying in the wind. Built with three.js and Web Audio, deployed with GitHub Actions"
+        "ko": "절·교회·성당·마법학교에서 절하기·기도·책 읽기·마법 연습, 마음 기록과 업적\n큰 나무를 돌아 오르는 점프 맵(2단 점프·쉼터·기록), 지도와 작은 지도\nthree.js와 직접 만든 동물 3D 모델, 브라우저에서 합성하는 음악",
+        "ja": "寺・教会・聖堂・魔法学校でのお辞儀・祈り・読書・魔法の練習、心の記録と実績\n大きな木を回って登るジャンプのマップ（二段ジャンプ・休憩所・記録）、地図とミニマップ\nthree.jsと自作の動物3Dモデル、ブラウザで合成する音楽",
+        "en": "Bow, pray, read and practise magic at a temple, church, cathedral and magic school, with a mindful log and achievements\nA jumping map that circles a giant tree (double jump, rest decks, records), plus a map and minimap\nthree.js with my own 3D animal models and music synthesised in the browser"
       },
       "tags": "three.js, JavaScript, WebGL, Web Audio, Sound Synthesis, 3D, Pathfinding, Python, GitHub Actions",
       "gallery": [
@@ -703,22 +703,22 @@
       },
       "icon": "🛹",
       "period": "2026-11",
-      "image": "",
+      "image": "/images/games/boardracing-arch.jpg",
       "link": "https://mhyoo-games.github.io/board_racing/",
       "summary": {
-        "ko": "하늘을 나는 보드를 타고 달리는 3D 웹 레이싱 게임. 점프대에서 A로 뛰어 S·D·F와 방향키 커맨드로 공중 묘기 13가지(그랩·360·720·앞뒤 구르기·1080 등)를 이어 부리고, 타이밍에 따라 GOOD·NICE·EXCELLENT 판정으로 게이지를 모아 부스터를 씀. 나무 계단·얼음길·하늘 섬 낭떠러지·8자 다리·큰 점프대와 스프링 발판·공중 고리가 있는 묘기 공원 등 트랙 6개에서 개인전·팀전(4 대 4)·타임어택·아이템전. 레벨을 올려 보드를 사고, 희귀 보드는 경주 뒤 행운 상자에서만 나옴. 6자리 방 코드로 친구들과 최대 8명 온라인. 게임 엔진 Godot로 제작",
-        "ja": "空飛ぶボードで走る3DのWebレースゲーム。ジャンプ台でAキーで跳び、S・D・Fと方向キーのコマンドで13種類の空中トリック（グラブ・360・720・前後の宙返り・1080など）をつなげて決め、タイミングに応じたGOOD・NICE・EXCELLENTの判定でゲージをためてブースターを使う。木の階段・氷の道・空の島の崖・8の字の橋、大ジャンプ台やスプリング台・空中リングのあるトリックパークなど6コースで、個人戦・チーム戦（4対4）・タイムアタック・アイテム戦。レベルを上げてボードを買い、レアボードはレース後のラッキーボックスからだけ出る。6桁のルームコードで最大8人のオンライン対戦もできる。ゲームエンジン Godot で制作",
-        "en": "A 3D browser racing game on flying hoverboards. Press A to launch off ramps and chain 13 mid-air tricks with S, D or F plus arrow-key commands (grabs, 360, 720, front and back flips, 1080 and more), earning GOOD, NICE or EXCELLENT ratings on your timing to fill the boost gauge. Race solo, in 4-on-4 teams, in time trials or item races across six tracks with wooden stairs, ice, sky-island gaps, a figure-eight bridge and a trick park full of big ramps, spring pads and floating rings. Level up to buy new boards, with rare boards only from the lucky box after a race, and race up to eight friends online with a six-character room code. Built with the Godot engine"
+        "ko": "하늘을 나는 보드로 달리며 점프대에서 공중 묘기를 부리는 3D 웹 레이싱 게임 (Godot)",
+        "ja": "空飛ぶボードで走り、ジャンプ台で空中トリックを決める3Dウェブレースゲーム（Godot）",
+        "en": "A 3D web racing game on flying boards with mid-air tricks off the ramps (Godot)"
       },
       "why": {
-        "ko": "어릴 때 갖고 싶은 보드를 사려고 열심히 달렸던 추억의 보드 레이싱 감성을, 점프 타이밍 판정과 공중 묘기, 보드를 모으는 재미까지 담아 브라우저에서 다시 즐길 수 있게 새로 만들어 보고 싶어서 만들었습니다.",
-        "ja": "子どもの頃、欲しいボードを買うために夢中で走ったボードレースの思い出を、ジャンプのタイミング判定や空中トリック、ボードを集める楽しさまで込めて、ブラウザでもう一度楽しめるよう新しく作ってみたいと思って作りました。",
-        "en": "I wanted to recreate the feel of the board racing I loved as a kid, when I raced hard to save up for the boards I wanted, as a new browser game with timed jumps, mid-air tricks and boards to collect."
+        "ko": "어릴 때 갖고 싶은 보드를 사려고 열심히 달렸던 보드 레이싱의 추억을 브라우저에서 다시 즐기고 싶어서 만들었습니다.",
+        "ja": "子どもの頃、欲しいボードのために走り込んだボードレースの思い出を、ブラウザでまた楽しみたくて作りました。",
+        "en": "I wanted to relive, in the browser, the board racing I played as a kid to earn the board I wanted."
       },
       "features": {
-        "ko": "점프와 묘기: 점프대 위에서 A를 누르는 자리(끝에 가까울수록 높이)로 판정하고, 공중에서 S 그랩·D 360·F 720, 방향키를 먼저 누르는 커맨드로 앞잡기·앞뒤 구르기·꽈배기·1080·회오리 등 13가지. 묘기 중에 다음 묘기를 눌러 두면 끊김 없이 이어지고 많이 이을수록 점수가 커짐. 땅에 닿기 전에 끝나야 성공이고 끝나자마자 닿을수록 EXCELLENT, 못 끝내면 비틀거림. 공중에 2초 가까이 떠 있어 여러 묘기를 이을 수 있음. 화면에 점프대 타이밍 줄과 착지까지 남은 시간을 보여 줌\n트랙 6개(작은·큰 점프대, 밟으면 튕겨 오르는 스프링 발판, 지나가면 게이지가 차는 공중 고리, 나무 계단은 점프로 넘기, 미끄러운 얼음길, 점프대로 건너는 하늘 섬 낭떠러지와 떨어지면 뒤에서 다시 출발, 부스터 발판, 위아래로 엇갈리는 8자 다리, 점프대가 가득한 묘기 공원)와 위에서 비스듬히 내려다보는 카메라. 컴퓨터 7명은 레이싱 라인을 따라 점프대에서 뛰고 남은 공중 시간에 맞춰 묘기를 고름\n개인전·팀전(4 대 4, 순위 점수 합)·타임어택(금·은·동 메달)·스피드전/아이템전(물풍선·끈끈이·먹구름 등), 친구들과 최대 8명 온라인(6자리 방 코드만 넣으면 연결. 게임 서버 없이 방장 브라우저가 가운데에서 WebRTC로 주고받고, 처음 연결 정보만 공개 메시지 중계로 교환)\n성장: 레벨·경험치, 능력치(최고 속도·가속·핸들링·점프·묘기·부스터)가 다른 보드 11종을 레벨에 맞춰 코인으로 사고, 희귀 보드 3종은 경주 뒤 행운 상자에서만 나옴. 캐릭터 5명과 이름 정하기, 진행 상황은 브라우저에 저장. 키보드·게임패드·휴대폰 화면 버튼\n보드·길·점프대·계단·아치·탑은 코드로 만들고 캐릭터·나무·동전 등은 Kenney Platformer Kit(CC0), 효과음과 곡 4개는 코드로 합성한 새 곡. 규칙을 화면과 분리해 테스트(컴퓨터가 모든 트랙을 점프·묘기하며 완주)하고, GitHub Actions로 테스트·웹 빌드·배포",
-        "ja": "ジャンプとトリック：ジャンプ台でAを押す位置（端に近いほど高く跳ぶ）で判定し、空中でSグラブ・D 360・F 720、先に方向キーを押すコマンドでノーズグラブ・前後の宙返り・ひねり・1080・竜巻など13種類。トリック中に次を押しておくと途切れずにつながり、たくさんつなぐほど点数が大きくなる。着地前に終われば成功で、終わってすぐ着地するほどEXCELLENT、終わらなければよろける。2秒近く滞空するので複数のトリックをつなげられる。画面にジャンプ台のタイミングバーと着地までの残り時間を表示\n6つのコース（小・大のジャンプ台、踏むと跳ね上がるスプリング台、くぐるとゲージがたまる空中リング、ジャンプで越える木の階段、滑る氷の道、ジャンプ台で渡る空の島の崖と落ちたら少し手前から再スタート、ブースターパネル、上下に交差する8の字の橋、ジャンプ台だらけのトリックパーク）と、斜め上から見下ろすカメラ。CPU 7台はレーシングラインに沿ってジャンプ台で跳び、残りの滞空時間に合わせてトリックを選ぶ\n個人戦・チーム戦（4対4、順位ポイントの合計）・タイムアタック（金・銀・銅メダル）・スピード戦／アイテム戦（水風船・ねばねば・雷雲など）、友だちと最大8人のオンライン対戦（6桁のルームコードを入れるだけで接続。ゲームサーバーなしでホストのブラウザが中心となってWebRTCで通信し、最初の接続情報だけを公開メッセージ中継で交換）\n成長要素：レベル・経験値、性能（最高速度・加速・ハンドリング・ジャンプ・トリック・ブースター）が異なるボード11種をレベルに応じてコインで買い、レアボード3種はレース後のラッキーボックスからだけ出る。キャラクター5人と名前の設定、進行状況はブラウザに保存。キーボード・ゲームパッド・スマートフォンの画面ボタンに対応\nボード・道・ジャンプ台・階段・アーチ・塔はコードで作り、キャラクター・木・コインなどはKenney Platformer Kit（CC0）、効果音と4曲はコードで合成したオリジナル。ルールを画面と分けてテスト（CPUが全コースをジャンプ・トリックしながら完走）し、GitHub Actionsでテスト・Webビルド・デプロイ",
-        "en": "Jumps and tricks: the rating depends on where you press A on the ramp (the closer to the lip, the higher you fly), then S for a grab, D for a 360 and F for a 720 in the air, with arrow-key commands for 13 tricks in all, including nose grabs, front and back flips, corkscrews, a 1080 and a twister. Pressing the next trick mid-trick queues it for a seamless chain, and longer chains score more. A trick only counts if it finishes before you land, and the closer it ends to touchdown the better, up to EXCELLENT, with a stumble if you land mid-trick; airtime of nearly two seconds leaves room for several tricks, and on-screen bars show the ramp timing and the time left before landing\nSix tracks (small and big ramps, spring pads that bounce you up, floating rings that fill the gauge, wooden stairs to jump over, slippery ice, sky-island gaps crossed by ramp jumps where a fall restarts you a little behind, boost pads, a figure-eight bridge that crosses over itself, and a trick park packed with ramps) seen from a high, angled camera; the seven CPU riders follow a racing line, jump at ramps and pick tricks that fit their remaining air time\nSolo races, 4-on-4 team races (place points added up), time trials with gold, silver and bronze medals, speed or item races (water balloons, sticky goo, storm clouds and more), and online races for up to eight friends (enter a six-character room code; with no game server, the host's browser sits in the middle and talks to each friend over WebRTC, using a public message relay only to exchange the initial connection details)\nProgression with levels and experience: eleven boards with different stats (top speed, acceleration, handling, jump, tricks and boost) unlock by level and are bought with coins, and three rare boards only come from the lucky box after a race; five characters to choose from and a custom name, with progress saved in the browser. Keyboard, gamepad and on-screen touch buttons on phones\nBoards, roads, ramps, stairs, arches and towers are built in code, with characters, trees and coins from Kenney Platformer Kit (CC0); sound effects and four music tracks are original pieces synthesized in code. The rules are kept apart from the rendering and tested, including CPU riders jumping and tricking through every track to the finish; tests, web builds and deploys run on GitHub Actions"
+        "ko": "점프 타이밍 판정과 커맨드로 이어 부르는 공중 묘기 13가지, 부스터\n트랙 6개, 개인전·팀전(4 대 4)·타임어택·아이템전\n레벨·보드 상점·행운 상자, 방 코드로 최대 8명 온라인",
+        "ja": "ジャンプのタイミング判定とコマンドでつなぐ空中トリック13種、ブースター\nコース6つ、個人戦・チーム戦（4対4）・タイムアタック・アイテム戦\nレベル・ボードショップ・ラッキーボックス、ルームコードで最大8人オンライン",
+        "en": "13 mid-air tricks chained with commands and timing judgements, plus boosts\nSix tracks with solo, 4v4 team, time attack and item modes\nLevels, a board shop and lucky boxes; up to 8 players online with a room code"
       },
       "tags": "Godot 4, GDScript, 3D, WebRTC, Python, Sound Synthesis, GitHub Actions",
       "gallery": [
@@ -828,22 +828,22 @@
       },
       "icon": "🏎️",
       "period": "2026-11",
-      "image": "",
+      "image": "/images/games/toyracing-drift.jpg",
       "link": "https://mhyoo-games.github.io/toy_racing/",
       "summary": {
-        "ko": "숲속 트랙을 장난감 카트로 달리는 3D 웹 레이싱 게임. 드리프트로 게이지를 모아 부스터를 쓰고, 순간부스터·인코스 공략·끌기·톡톡이·커팅 같은 드리프트 기술로 컴퓨터 7명과 스피드전·아이템전을 겨룸. 높은 다리·S자·U자 머리핀 등 트랙 6개. 모은 코인으로 카트를 사고, 한 화면을 나눠 둘이서 하거나 6자리 방 코드로 친구들과 최대 8명 온라인으로도 달릴 수 있음. 게임 엔진 Godot로 제작",
-        "ja": "森のコースをおもちゃのカートで走る3DのWebレースゲーム。ドリフトでゲージをためてブースターを使い、瞬間ブースター・インコース攻略・ドラッグ・小刻みドリフト・カッティングなどのドリフトテクニックでCPU 7台とスピード戦・アイテム戦を競う。高い橋・S字・U字ヘアピンなど6コース。集めたコインでカートを買え、画面分割の2人プレイや、6桁のルームコードでつなぐ最大8人のオンライン対戦もできる。ゲームエンジン Godot で制作",
-        "en": "A 3D browser racing game with toy karts on forest tracks. Drift to fill a gauge for boosts, and use drift techniques such as quick boosts, inside lines, dragging, tapping and cutting to beat seven CPU drivers in speed or item races, across six tracks with high bridges, S-bends and hairpins. Buy new karts with the coins you earn, and race a friend in split screen or online with up to eight players using a six-character room code. Built with the Godot engine"
+        "ko": "장난감 카트로 숲속 트랙을 달리는 3D 웹 레이싱 게임 (Godot)",
+        "ja": "おもちゃのカートで森のコースを走る3Dウェブレースゲーム（Godot）",
+        "en": "A 3D web racing game with toy karts on forest tracks (Godot)"
       },
       "why": {
-        "ko": "드리프트·순간부스터·인코스와 아웃코스·커팅처럼 기술을 쓰며 달리는 카트 레이싱을, 카트를 모아 사는 재미와 함께 브라우저에서 즐길 수 있게 직접 만들어 보고 싶어서 만들었습니다.",
-        "ja": "ドリフト・瞬間ブースター・インコースとアウトコース・ショートカットなど、テクニックを駆使して走るカートレースを、カートを集めて買う楽しさと一緒にブラウザで遊べるよう、自分で作ってみたいと思って作りました。",
-        "en": "I wanted to build my own kart racer for the browser, one where you race with techniques such as drifting, quick boosts, inside and outside lines and shortcuts, with the fun of collecting and buying karts."
+        "ko": "드리프트·순간부스터·커팅 같은 기술을 쓰며 달리는 카트 레이싱을 브라우저에서 즐기고 싶어서 만들었습니다.",
+        "ja": "ドリフト・瞬間ブースター・カットのような技を使って走るカートレースを、ブラウザで楽しみたくて作りました。",
+        "en": "I wanted a kart racer in the browser where drifting, instant boosts and corner cutting all matter."
       },
       "features": {
-        "ko": "트랙 6개(높은 다리로 올라가 서로 엇갈리는 고가 길, 좌우 S자가 이어지는 숲길, U자 머리핀 여섯 개 등)에서 스피드전·아이템전 경주·혼자 연습(기록 도전)·둘이서 위아래 화면 나누기, 친구들과 최대 8명 온라인(6자리 방 코드만 넣으면 여럿이 들어오고 빈자리는 컴퓨터가 채움. 게임 서버 없이 방장 브라우저가 가운데에서 친구들과 WebRTC로 바로 주고받고, 처음 연결 정보만 공개 메시지 중계로 교환). 컴퓨터 7명은 레이싱 라인을 따라 굽이 안쪽을 노리며 드리프트와 부스터를 씀\n부드럽게 들어가는 핸들과, 접지력만큼 미끄러지며 속도를 살리는 드리프트(손을 떼면 천천히, 반대로 꺾으면 빨리 펴짐, 미끄러질 때 끼익 소리). 드리프트 키를 누른 채 방향키로 각도를 조절하고 반대쪽 드리프트로 이어 가는 끌기, 드리프트 중 Shift를 다시 톡톡 쳐 게이지를 덤으로 모으는 톡톡이, 짧게 끊어 쳐 속도를 잃지 않고 방향만 꺾는 끊어 타기, 직선에서 좌우로 톡톡 쳐 앞으로 달리며 게이지를 모으는 커팅, 게이지로 모으는 부스터 두 개(부스터 중 드리프트하면 1.5배, 카트마다 드리프트 능력이 달라 처음 카트는 느리게·비싼 카트일수록 빠르게 참), 후진 드리프트, 순간부스터, 출발 부스터, 부스터로 잔디를 가로지르는 지름길\n능력치(최고 속도·가속·핸들링·드리프트·부스터·무게)가 다른 카트 6종을 순위 보상과 길 위의 코인으로 사는 차고, 진행 상황은 브라우저에 저장. 키보드·게임패드·휴대폰 화면 버튼\n도로·연석·울타리·카트는 코드로 만들고 숲 소품과 운전수는 Kenney Mini Forest(CC0), 효과음과 곡은 코드로 합성한 새 곡. 주행 규칙을 화면과 분리해 테스트(컴퓨터가 모든 트랙을 3바퀴 완주)하고, GitHub Actions로 테스트·웹 빌드·배포\n아이템전: 길 위 상자에서 얻는 숲 테마 아이템(부스터·솔방울 던지기·도토리 함정·바로 앞 카트를 쫓는 꿀벌 떼·잎사귀 방패·앞 카트를 모두 돌리는 회오리바람), 뒤에 있을수록 좋은 아이템이 나오고 컴퓨터도 상황을 보고 사용. 긴박한 마지막 바퀴 곡",
-        "ja": "6つのコース（高い橋を上って立体交差する高架コース、左右のS字が続く森の道、U字ヘアピンが6つ続くコースなど）で、スピード戦・アイテム戦のレース・ひとり練習（タイムアタック）・上下分割画面の2人対戦、友だちと最大8人のオンライン対戦（6桁のルームコードを入れるだけでみんなが参加でき、空き枠はCPUが埋める。ゲームサーバーなしでホストのブラウザが中心となって各参加者とWebRTCで直接通信し、最初の接続情報だけを公開メッセージ中継で交換）。CPU 7台はレーシングラインに沿ってコーナーのインを狙い、ドリフトとブースターを使う\nなめらかに切れるハンドルと、グリップに応じて滑りながら速度を保つドリフト（手を離すとゆっくり、逆ハンドルですばやく立て直し、滑るときはタイヤのスキール音）。ドリフトキーを押したまま方向キーで角度を調整し、反対側のドリフトへつなぐドラッグ、ドリフト中にドリフトキーを小刻みに押し直してゲージを上乗せする小刻みドリフト、短く区切って速度を落とさず向きだけ変える区切りドリフト、直線で左右に小刻みに入れて前へ進みながらゲージをためるカッティング、ゲージでためるブースター2つ（ブースター中のドリフトは1.5倍、カートごとにドリフト性能が異なり、最初のカートは遅く高価なカートほど速くたまる）、バックドリフト、瞬間ブースター、スタートブースター、ブースターで芝生を横切る近道\n性能（最高速度・加速・ハンドリング・ドリフト・ブースター・重さ）が異なるカート6種を、順位報酬とコース上のコインで買えるガレージ。進行状況はブラウザに保存。キーボード・ゲームパッド・スマートフォンの画面ボタンに対応\n道路・縁石・柵・カートはコードで作り、森の小物とドライバーはKenney Mini Forest（CC0）、効果音と曲はコードで合成したオリジナル。走行ルールを画面と分けてテスト（CPUが全コースを3周完走）し、GitHub Actionsでテスト・Webビルド・デプロイ\nアイテム戦：コース上のボックスから手に入る森テーマのアイテム（ブースター・松ぼっくり投げ・どんぐりのワナ・すぐ前のカートを追うハチの群れ・葉っぱのシールド・前のカートをすべて回転させるつむじ風）。順位が後ろほど良いアイテムが出て、CPUも状況を見て使う。最終ラップは緊迫感のある曲に切り替わる",
-        "en": "Six tracks (including an elevated course that climbs onto a high bridge and crosses over itself, a chain of left-right S-bends through the woods, and six U-shaped hairpins) with speed and item races, solo time trials and two-player top-and-bottom split screen, and online races for up to eight players (friends join with a six-character room code and CPU drivers fill any empty spots; with no game server, the host's browser sits in the middle and talks to each friend directly over WebRTC, using a public message relay only to exchange the initial connection details); the seven CPU drivers follow a racing line, aim for the inside of corners and use drifts and boosts\nSmooth steering and drifts that slide according to grip while keeping speed (letting go straightens slowly, counter-steering quickly, with tire squeal while sliding); dragging (steering freely while holding the drift key, even linking into a drift the other way), tapping (re-tapping the drift key mid-drift for extra gauge), clipped drifts that turn the kart without losing speed and cutting (tapping left and right on straights to fill the gauge while driving forward), plus up to two boosts from the drift gauge (1.5x while boosting, and each kart has its own drift stat, slow on the starter kart and faster on pricier ones), reverse drifting, a quick boost as a drift ends, a start boost, and boosted shortcuts across the grass\nA garage of six karts with different stats (top speed, acceleration, handling, drift, boost and weight) bought with race rewards and coins picked up on the track; progress is saved in the browser. Keyboard, gamepad and on-screen touch buttons on phones\nRoads, curbs, fences and karts are built in code, with forest props and the driver from Kenney Mini Forest (CC0); sound effects and music are original pieces synthesized in code. The driving rules are kept apart from the rendering and tested, including CPU drivers finishing three laps on every track; tests, web builds and deploys run on GitHub Actions\nItem races with forest-themed items from boxes on the track (boost, thrown pinecones, acorn traps, a bee swarm that chases the kart just ahead, a leaf shield, and a whirlwind that spins out everyone in front); racers further back get better items and CPU drivers use them situationally. The music switches to a tense track on the final lap"
+        "ko": "드리프트로 모으는 부스터와 순간부스터 등 드리프트 기술\n트랙 6개, 컴퓨터 7명과 스피드전·아이템전, 카트 상점\n화면을 나눠 둘이서, 방 코드로 최대 8명 온라인",
+        "ja": "ドリフトでためるブースターと瞬間ブースターなどのドリフト技\nコース6つ、CPU7人とのスピード戦・アイテム戦、カートショップ\n画面分割で2人プレイ、ルームコードで最大8人オンライン",
+        "en": "Drift to charge boosts, with instant boosts and other drift techniques\nSix tracks, speed and item races against seven CPU drivers, and a kart shop\nSplit-screen for two, or up to 8 players online with a room code"
       },
       "tags": "Godot 4, GDScript, 3D, WebRTC, Python, Sound Synthesis, GitHub Actions",
       "gallery": [
@@ -945,22 +945,22 @@
       },
       "icon": "🐶",
       "period": "2026-11",
-      "image": "",
+      "image": "/images/games/puppy-city.jpg",
       "link": "https://mhyoo-games.github.io/LeftAlonePuppy/",
       "summary": {
-        "ko": "이삿날 농장에 홀로 남은 아기 강아지가 주인을 찾아 도시까지 떠나는 웹 횡스크롤 모험. 8개 스테이지마다 다른 기믹과 보스가 있고, 사이에 지도로 길을 이어 감. PC와 휴대폰 모두 지원",
-        "ja": "引っ越しの日に農場へ取り残された子犬が、飼い主を探して街まで旅するWebの横スクロールアクション。8つのステージごとに異なるギミックとボスがあり、ステージの間はマップで旅路をたどる。PCとスマートフォンの両方に対応",
-        "en": "A browser side-scrolling adventure in which a puppy left behind on a farm on moving day travels all the way to the city to find its owner. Each of the eight stages has its own gimmick and boss, linked by a world map. Works on both PC and phones"
+        "ko": "이삿날 홀로 남은 아기 강아지가 주인을 찾아 도시까지 떠나는 웹 횡스크롤 모험",
+        "ja": "引っ越しの日に取り残された子犬が、飼い主を探して街まで旅するウェブ横スクロールアクション",
+        "en": "A side-scrolling web adventure: a puppy left behind on moving day travels to the city to find its owner"
       },
       "why": {
-        "ko": "어릴 때 하던 강아지가 주인을 찾아가는 횡스크롤 게임의 따뜻한 느낌을, 새 이야기와 캐릭터로 브라우저에서 다시 만들어 보고 싶어서 만들었습니다.",
-        "ja": "子どもの頃に遊んだ、子犬が飼い主を探しに行く横スクロールゲームの温かい雰囲気を、新しい物語とキャラクターでブラウザに作り直したいと思って作りました。",
-        "en": "I wanted to recreate, with a new story and characters, the warm feel of a side-scroller I played as a child about a puppy searching for its owner, so it can be played in the browser."
+        "ko": "어릴 때 하던 강아지 횡스크롤 게임의 따뜻한 느낌을 새 이야기로 다시 만들고 싶어서 만들었습니다.",
+        "ja": "子どもの頃に遊んだ子犬の横スクロールゲームの温かさを、新しい物語で作り直したくて作りました。",
+        "en": "I wanted to recreate the warmth of a puppy side-scroller I played as a kid, with a new story."
       },
       "features": {
-        "ko": "농장·밀밭·숲·개울·동굴·눈 고개·마을·비 오는 도시의 8개 스테이지: 스프링, 무너지는 발판, 물, 어둠과 반딧불, 얼음과 맞바람, 비 같은 기믹과 보스 8마리\n2단 점프와 짖기(적을 멈추고 던진 것을 튕겨 냄), 콩이를 보면 쫓아오고·덮치고·던지는 적, 스테이지마다 숨겨진 추억 모으기, 이야기 장면·지도·엔딩, 진행 상황은 브라우저에 저장\n주인공 강아지·적·보스는 코드로 그린 도트, 배경 소품은 Kenney Tiny Farm(CC0). 배경음악과 효과음은 Web Audio로 합성한 새 곡\n맵은 조각을 이어 만들고, 시작부터 보스까지 갈 수 있는지와 모을 것에 닿는지를 길 찾기 테스트로, 보스 8마리를 이길 수 있는지를 자동 플레이 봇으로 확인. GitHub Actions로 테스트·빌드·배포. 휴대폰 터치 버튼·진동·전체 화면",
-        "ja": "農場・麦畑・森・小川・洞窟・雪の峠・町・雨の街の8ステージ。バネ、崩れる足場、水、暗闇とホタル、氷と向かい風、雨などのギミックとボス8体\n二段ジャンプと「吠える」（敵を止め、投げられた物をはじく）、子犬に気づくと追いかけ・急降下し・物を投げる敵、ステージごとに隠された思い出の収集、ストーリー場面・マップ・エンディング、進行状況はブラウザに保存\n主人公の子犬・敵・ボスはコードで描いたドット絵、背景の小物はKenney Tiny Farm（CC0）。BGMと効果音はWeb Audioで合成したオリジナル曲\nマップはパーツをつなげて作り、スタートからボスまで行けるか、収集物に届くかを経路探索テストで、ボス8体に勝てるかを自動プレイのボットで確認。GitHub Actionsでテスト・ビルド・デプロイ。スマートフォンのタッチボタン・振動・全画面に対応",
-        "en": "Eight stages (farm, wheat field, forest, creek, cave, snowy pass, town and rainy city) with gimmicks such as springs, crumbling platforms, water, darkness with fireflies, ice with headwinds and rain, plus eight bosses\nA double jump and a bark that stops enemies and knocks back thrown objects, enemies that chase, swoop or throw when they spot the puppy, a hidden keepsake to collect in each stage, with story scenes, a world map and an ending; progress is saved in the browser\nThe puppy, enemies and bosses are pixel art drawn in code, with props from Kenney Tiny Farm (CC0); music and sound effects are original pieces synthesized with Web Audio\nMaps are assembled from chunks; path-finding tests check that every stage can be crossed to the boss and its collectibles reached, and an auto-play bot checks that all eight bosses can be beaten. Tests, builds and deploys run on GitHub Actions; touch buttons, vibration and fullscreen on phones"
+        "ko": "스테이지 8개, 스테이지마다 다른 기믹과 보스\n2단 점프와 짖기, 지도로 이어지는 여정\nPC·휴대폰 지원, 코드로 그린 도트 그림",
+        "ja": "ステージ8つ、ステージごとに違うギミックとボス\n二段ジャンプと吠える技、地図でつながる旅\nPC・スマホ対応、コードで描いたドット絵",
+        "en": "Eight stages, each with its own gimmicks and boss\nDouble jumps and barking, with a map linking the journey\nPC and mobile, with pixel art drawn in code"
       },
       "tags": "TypeScript, Canvas 2D, Web Audio API, esbuild, GitHub Actions",
       "gallery": [
@@ -1030,22 +1030,22 @@
       },
       "icon": "🎹",
       "period": "2026-11",
-      "image": "",
+      "image": "/images/games/keyjam-cover.jpg",
       "link": "https://mhyoo-games.github.io/youtujam/",
       "summary": {
-        "ko": "떨어지는 노트를 박자에 맞춰 치는 건반 방식에, 망치로 못을 박는 방식과 해와 달이 돌며 길을 따라가는 방식까지 세 가지로 즐기는 웹 리듬 게임. 자체곡은 브라우저에서 실시간으로 합성하고, 유튜브 영상 음악으로도 할 수 있음. PC와 휴대폰 모두 지원",
-        "ja": "落ちてくるノーツを鍵盤で叩くモードに加え、ハンマーで釘を打つモード、太陽と月が回りながら道をたどるモードの3種類で遊べるWebリズムゲーム。オリジナル曲はブラウザでリアルタイムに合成し、YouTube動画の音楽でも遊べる。PCとスマートフォンの両方に対応",
-        "en": "A browser rhythm game with three ways to play: hitting falling notes on a keyboard, hammering nails on a conveyor belt, and following a path as a sun and moon orbit each other. Original songs are synthesized live in the browser, YouTube music can be played too, and it works on both PC and phones"
+        "ko": "떨어지는 노트를 박자에 맞춰 치는 웹 리듬 게임. 건반·망치·해와 달 세 가지 방식, 유튜브 음악으로도 플레이",
+        "ja": "落ちてくるノーツをリズムに合わせて叩くウェブリズムゲーム。鍵盤・ハンマー・太陽と月の3つの遊び方、YouTubeの曲でも遊べる",
+        "en": "A web rhythm game of falling notes, with keys, hammer and sun-and-moon modes, playable with YouTube music too"
       },
       "why": {
-        "ko": "예전 온라인 리듬 게임의 손맛을, 유튜브에 있는 좋아하는 음악으로도 즐기고 싶어서 만들었습니다. 유튜브 소리는 분석할 수 없어서, 박자를 맞춰 채보를 만들거나 직접 쳐서 녹음하는 방식으로 풀었습니다.",
-        "ja": "昔のオンラインリズムゲームの手応えを、YouTubeにある好きな音楽でも楽しみたいと思って作りました。YouTubeの音声は解析できないため、テンポを合わせて譜面を作るか、自分で叩いて録音する方式で解決しました。",
-        "en": "I wanted the feel of the online rhythm games I used to play, with music I like from YouTube. Since YouTube audio cannot be analyzed, charts are generated from the tempo and first beat, or recorded by playing along."
+        "ko": "예전 온라인 리듬 게임의 손맛을 좋아하는 유튜브 음악으로도 즐기고 싶어서 만들었습니다.",
+        "ja": "昔のオンラインリズムゲームの手応えを、好きなYouTubeの曲でも楽しみたくて作りました。",
+        "en": "I wanted the feel of the online rhythm games I used to play, but with my favourite YouTube music."
       },
       "features": {
-        "ko": "건반(4·5·6·7건반)·망치(왼손 작은 못·오른손 큰 못)·궤도(박자에 따라 꺾이는 길을 한 키로) 세 방식을 같은 곡·같은 채보로. 쉬움·보통·어려움과 곡·방식마다 계산한 난이도 숫자(Lv)\n자체곡 4곡과 저작권이 끝난 클래식 9곡(쇼팽·베토벤·모차르트·라벨 등의 편곡)을 Web Audio로 실시간 합성하고, 노트를 곡의 소리에서 만들어 친 순간 그 음이 나는 키음 방식\n스피커 출력 시각에 맞춘 시계와 키 입력 시각 그대로의 판정, 길게 누르기·체력·잼 게이지·등급, FAST/SLOW와 판정 오차 막대, 박자에 맞춰 눌러 판정을 자동으로 맞추는 기능\n유튜브 영상은 키 하나로 박자만 치면 건반 수·난이도에 맞춰 칸을 자동으로 짜는 리듬 채보로. 불러온 영상과 채보는 브라우저에 모아 두고 백업 파일로 옮길 수 있음\n휴대폰에서는 화면을 꽉 채우는 큰 패드·진동·전체 화면(아이폰은 홈 화면 앱). 채보·판정·점수·저장 규칙은 화면과 분리해 테스트하고 GitHub Actions로 빌드·배포",
-        "ja": "鍵盤（4・5・6・7鍵）・ハンマー（左手で小さい釘、右手で大きい釘）・軌道（リズムに合わせて曲がる道をキー1つで）の3モードを同じ曲・同じ譜面で。かんたん・ふつう・むずかしいと、曲・モードごとに算出する難易度（Lv）\nオリジナル4曲と著作権の切れたクラシック9曲（ショパン・ベートーヴェン・モーツァルト・ラヴェルなどの編曲）をWeb Audioでリアルタイム合成し、ノーツを曲の音から作って叩いた瞬間にその音が鳴るキー音方式\nスピーカー出力時刻に合わせた時計とキー入力時刻そのままの判定、ロングノーツ・ライフ・ジャムゲージ・ランク、FAST/SLOWと判定誤差バー、リズムに合わせて押すだけで判定を自動調整する機能\nYouTube動画は、キー1つでリズムだけを叩くと鍵数・難易度に合わせてレーンを自動配置するリズム譜面で遊べる。読み込んだ動画と譜面はブラウザに保存し、バックアップファイルで移行可能\nスマートフォンでは画面いっぱいの大きなパッド・振動・全画面（iPhoneはホーム画面アプリ）に対応。譜面・判定・スコア・保存のルールは画面から分離してテストし、GitHub Actionsでビルド・デプロイ",
-        "en": "Three modes on the same songs and charts: keys (4 to 7 keys), hammer (small nails with the left hand, big nails with the right) and orbit (a path that bends with the rhythm, played with one key), with easy, normal and hard charts and a level number per song and mode\nFour original songs and nine public-domain classical arrangements (Chopin, Beethoven, Mozart, Ravel and more) synthesized live with Web Audio; notes are built from the song's own sounds, so each hit plays its note\nA clock tied to the speaker's output time and judgments taken from the exact key-press time, plus hold notes, life, a jam gauge, ranks, FAST/SLOW and a timing error bar, and automatic timing calibration by tapping to a beat\nYouTube videos are played with rhythm charts: tap the rhythm with a single key and lanes are laid out automatically for any key count and difficulty; loaded videos and charts are kept in the browser and can be moved with a backup file\nOn phones: full-width touch pads, vibration and fullscreen (a home-screen app on iPhone). Chart, judgment, scoring and storage rules are separated from the UI and tested, with builds and deploys on GitHub Actions"
+        "ko": "4~7건반, 망치로 못 박기, 해와 달이 길을 따라가는 방식\n자체곡은 브라우저에서 실시간 합성, 저작권이 끝난 클래식 곡\n유튜브 영상은 박자를 쳐서 채보를 만들고, 휴대폰은 큰 패드·진동",
+        "ja": "4〜7鍵、ハンマーで釘を打つモード、太陽と月が道をたどるモード\nオリジナル曲はブラウザでリアルタイム合成、著作権の切れたクラシック曲\nYouTube動画はリズムを叩いて譜面を作成、スマホは大きなパッドと振動",
+        "en": "4–7 key lanes, a hammer-and-nails mode and a sun-and-moon path mode\nOriginal songs synthesised live in the browser, plus public-domain classics\nTap along to a YouTube video to build its chart; big pads and haptics on phones"
       },
       "tags": "TypeScript, Canvas 2D, Web Audio API, YouTube IFrame API, esbuild, GitHub Actions",
       "gallery": [
@@ -1058,7 +1058,7 @@
           }
         },
         {
-          "image": "/images/games/youtujam-play7.jpg",
+          "image": "/images/games/keyjam-cover.jpg",
           "caption": {
             "ko": "7건반 어려움, 잼 콤보 중",
             "ja": "7鍵むずかしい、ジャムコンボ中",
@@ -1107,22 +1107,22 @@
       },
       "icon": "🏯",
       "period": "2026-11",
-      "image": "",
+      "image": "/images/games/haesol-battle.jpg",
       "link": "https://mhyoo-games.github.io/haesol/",
       "summary": {
-        "ko": "2000년대 초 국산 온라인 RPG 감성으로 새로 만든 2D RPG. 게임 엔진 Godot로 만들고, 그림·소리·지도를 모두 코드로 생성",
-        "ja": "2000年代初めの韓国製オンラインRPGの雰囲気で新たに作った2D RPG。ゲームエンジン Godot で制作し、グラフィック・サウンド・マップをすべてコードで生成",
-        "en": "A new 2D RPG in the spirit of early-2000s Korean online RPGs, built with the Godot engine, with all graphics, sound and maps generated from code"
+        "ko": "2000년대 초 국산 온라인 RPG 감성으로 새로 만든 2D RPG (Godot). 그림·소리·지도를 모두 코드로 생성",
+        "ja": "2000年代初めの韓国製オンラインRPGの雰囲気で新しく作った2D RPG（Godot）。絵・音・マップをすべてコードで生成",
+        "en": "A new 2D RPG in the spirit of early-2000s Korean online RPGs (Godot), with art, sound and maps all generated in code"
       },
       "why": {
-        "ko": "어릴 때 즐기던 국산 온라인 RPG의 분위기를 직접 만들어 보고 싶었습니다. 지금은 혼자 하는 게임이지만, 규칙을 화면과 분리해 두어 나중에 서버를 붙여 여럿이 함께 할 수 있도록 설계했습니다.",
-        "ja": "子どもの頃に楽しんだ韓国製オンラインRPGの雰囲気を、自分の手で作ってみたいと思ったのがきっかけです。今は一人で遊ぶゲームですが、ルールを画面から分離し、後からサーバーを付けて複数人で遊べるよう設計しました。",
-        "en": "I wanted to recreate the atmosphere of the Korean online RPGs I played growing up. It is single-player for now, but the game rules are separated from the presentation so a server can be added later for multiplayer."
+        "ko": "어릴 때 즐기던 국산 온라인 RPG의 분위기를 직접 만들어 보고 싶어서 만들었습니다.",
+        "ja": "子どもの頃に遊んだ韓国製オンラインRPGの雰囲気を、自分で作ってみたくて作りました。",
+        "en": "I wanted to recreate the atmosphere of the Korean online RPGs I played as a kid."
       },
       "features": {
-        "ko": "640×480 고정 화면과 아래 고정 패널(글창·체력·기력·경험치·지명 좌표), 한 칸씩 움직이는 이동과 앞 칸 공격, 단축칸 기술·물건\n캐릭터 만들기(성별·머리 모양·색)와 몸·옷·머리·무기 층을 겹쳐 그리는 캐릭터, 레벨 5에 고르는 직업 넷(검사·자객·술사·도인)과 기술 12개\n가방·장비·능력치·기술·퀘스트 창, 상점 사고팔기, 얼굴 그림이 있는 대화와 8개 퀘스트로 이어지는 1막 이야기, 지도 6개와 몬스터 10종·대왕 둘\n능력치·피해·경험치·가방·상점·퀘스트 규칙을 데이터(JSON)와 분리해 테스트하고, 모든 지도에서 사람·출구·대왕에 걸어서 닿는지까지 자동 확인. 배경음·효과음은 신스 합성으로 코드에서 생성",
-        "ja": "640×480の固定画面と下部の固定パネル（チャット欄・体力・気力・経験値・地名と座標）、1マスずつ動く移動と正面への攻撃、ショートカットの技・アイテム\nキャラクター作成（性別・髪型・髪色）と、体・服・髪・武器のレイヤーを重ねて描くキャラクター、レベル5で選ぶ4つの職業（剣士・刺客・術士・道人）と12の技\nかばん・装備・ステータス・技・クエストのウィンドウ、ショップの売買、顔グラフィック付きの会話と8つのクエストで進む第1幕のストーリー、6マップとモンスター10種・ボス2体\n能力値・ダメージ・経験値・かばん・ショップ・クエストのルールをデータ（JSON）から分離してテストし、すべてのマップで人物・出口・ボスに歩いて到達できるかまで自動確認。BGM・効果音はシンセ合成でコードから生成",
-        "en": "A fixed 640×480 screen with a bottom panel (chat log, HP, MP, EXP, map name and coordinates), tile-by-tile movement and front-tile attacks, and hotkey skills and items\nCharacter creation (gender, hairstyle, hair color) with characters drawn from layered body, clothing, hair and weapon sprites; four jobs chosen at level 5 (swordsman, assassin, mage, monk) with 12 skills\nInventory, equipment, stats, skills and quest windows, shop buying and selling, portrait dialogue, a first act told through eight quests, six maps, ten monster types and two bosses\nStats, damage, EXP, inventory, shop and quest rules separated from JSON data and tested, including automatic checks that every NPC, exit and boss can be reached on foot on every map; music and sound effects synthesized in code"
+        "ko": "640×480 화면과 아래 고정 패널, 캐릭터 만들기와 옷 갈아입기\n가방·장비·기술·퀘스트·상점\n규칙을 화면과 분리해 나중에 서버를 붙여 여럿이 할 수 있게 설계",
+        "ja": "640×480の画面と下部の固定パネル、キャラクター作成と着せ替え\nかばん・装備・スキル・クエスト・ショップ\nルールを画面から分け、後でサーバーをつないで複数人で遊べるよう設計",
+        "en": "A 640×480 screen with a fixed bottom panel, character creation and outfits\nInventory, equipment, skills, quests and shops\nRules kept separate from the screen so a server can be added later for multiplayer"
       },
       "tags": "Godot 4, GDScript, Python, Procedural Art, Sound Synthesis, GitHub Actions",
       "gallery": [
@@ -1176,22 +1176,22 @@
       },
       "icon": "🌕",
       "period": "2026-11",
-      "image": "",
+      "image": "/images/games/dalmaru-battle.jpg",
       "link": "https://mhyoo-games.github.io/dalmaru/",
       "summary": {
-        "ko": "게임 엔진 Godot로 만든 탑다운 액션 RPG. 주인공 셋 중 하나를 골라 4장 모험을 떠나며, 그림·소리·지도를 모두 코드로 생성",
-        "ja": "ゲームエンジン Godot で作ったトップダウン型アクションRPG。3人の主人公から1人を選んで全4章の冒険へ。グラフィック・サウンド・マップはすべてコードで生成",
-        "en": "A top-down action RPG built with the Godot engine: pick one of three heroes for a four-chapter adventure, with all graphics, sound and maps generated from code"
+        "ko": "주인공 셋 중 하나를 골라 4장 모험을 떠나는 탑다운 액션 RPG (Godot). 그림·소리·지도를 모두 코드로 생성",
+        "ja": "主人公3人から1人を選んで4章の冒険に出るトップダウンのアクションRPG（Godot）。絵・音・マップをすべてコードで生成",
+        "en": "A top-down action RPG with a four-chapter adventure for one of three heroes (Godot), with art, sound and maps all generated in code"
       },
       "why": {
-        "ko": "웹 미니게임을 만들다 보니 PC·스팀 게임처럼 게임 엔진으로 제대로 된 게임을 만들어 보고 싶어졌습니다. 이번에는 퀄리티를 목표로, 노을 진 한옥 마을에서 시작하는 새 이야기와 손맛 있는 전투를 만들었습니다.",
-        "ja": "Webミニゲームを作るうちに、PC・Steamのゲームのようにゲームエンジンで本格的なゲームを作ってみたくなりました。今回はクオリティを目標に、夕焼けの韓屋の村から始まる新しい物語と、手応えのあるバトルを作りました。",
-        "en": "After building browser mini-games, I wanted to make a proper game with a game engine, like PC and Steam titles. This time I aimed for quality: a new story that begins in a hanok village at dusk, with combat that feels good to play."
+        "ko": "게임 엔진으로 퀄리티 있는 게임을 만들어 보고 싶어서, 손맛 있는 전투와 새 이야기를 담아 만들었습니다.",
+        "ja": "ゲームエンジンで質の高いゲームを作ってみたくて、手応えのある戦闘と新しい物語を込めて作りました。",
+        "en": "I wanted to make a polished game with a real engine, with satisfying combat and a new story."
       },
       "features": {
-        "ko": "Godot 4(GDScript)로 개발해 웹으로 내보내고, GitHub Actions가 테스트·실행 확인·웹 빌드·배포까지 자동으로 진행\n무기가 다른 주인공 셋(목검 2연타, 꾹 눌러 꿰뚫는 활, 내려찍는 방망이), 구르기(무적)·넉백, 맞을 때 번쩍임·히트스톱·화면 흔들림으로 타격감 표현\n갈고리 밧줄로 말뚝까지 날아가 물을 건너고 적을 끌어와 어지럽게 만드는 조작, 물속 이무기는 밧줄로 끌어내야 공격 가능\n4장 9개 지도(늪·눈·밤으로 바뀌는 지역), 적 7종과 대왕 4(돌진·충격파·부채꼴 탄·순간이동), 진행에 따라 바뀌는 대사, 이정표 이동, 자동 저장\n도트 그림(팔레트·글자 그림·절차적 그리기·지역별 색 바꾸기), 5음계 배경음 7곡과 효과음, 지도를 모두 코드로 생성하고, 모든 물건·출구에 걸어서(밧줄 포함) 닿는지 자동 테스트",
-        "ja": "Godot 4（GDScript）で開発してWeb向けに書き出し、GitHub Actions でテスト・起動確認・Webビルド・デプロイまで自動化\n武器の異なる3人の主人公（木剣の2連撃、長押しで貫く弓、叩きつける棍棒）、回避（無敵）・ノックバック、被弾時のフラッシュ・ヒットストップ・画面揺れで手応えを表現\nフックロープで杭まで飛んで水を渡り、敵を引き寄せて目を回させる操作。水中の大蛇はロープで引きずり出さないと攻撃できない\n全4章・9マップ（沼・雪・夜に変わる地域）、敵7種とボス4体（突進・衝撃波・扇状の弾・瞬間移動）、進行に応じて変わるセリフ、道しるべでの移動、オートセーブ\nドット絵（パレット・文字で描くスプライト・手続き的描画・地域ごとの色替え）、五音音階のBGM7曲と効果音、マップをすべてコードで生成し、すべてのアイテム・出口に（ロープ移動も含めて）歩いて到達できるかを自動テスト",
-        "en": "Developed in Godot 4 (GDScript) and exported to the web; GitHub Actions runs tests, a launch check, the web build and deployment\nThree heroes with different weapons (a wooden-sword combo, a bow whose held shot pierces, a club with a ground slam), an invincible dodge roll and knockback, with hit flashes, hit-stop and screen shake for impact\nA grappling rope that flies you to posts across water and pulls enemies in to daze them; the underwater serpent boss must be dragged ashore with it before it can be hit\nFour chapters across nine maps (swamp, snow and night regions), seven enemy types and four bosses (charges, shockwaves, fan-shaped volleys, teleporting), dialogue that changes with progress, waystone travel and auto-save\nPixel art (palettes, text-drawn sprites, procedural drawing, per-region recoloring), seven pentatonic music tracks and sound effects, and maps all generated from code, with automated tests that every item and exit can be reached on foot (including rope moves)"
+        "ko": "무기가 다른 주인공 셋, 갈고리 밧줄로 물을 건너고 적을 끌어오기\n4장 9개 지도(늪·눈·밤으로 바뀌는 지역)와 보스\n도트 그림과 음악을 코드로 생성",
+        "ja": "武器の違う主人公3人、かぎ縄で水を渡り敵を引き寄せる\n4章9マップ（沼・雪・夜に変わる地域）とボス\nドット絵と音楽をコードで生成",
+        "en": "Three heroes with different weapons, and a grappling rope to cross water and pull enemies in\nFour chapters across nine maps (swamp, snow and night areas) with bosses\nPixel art and music generated in code"
       },
       "tags": "Godot 4, GDScript, Python, Procedural Art, Sound Synthesis, GitHub Actions",
       "gallery": [
@@ -1269,22 +1269,22 @@
       },
       "icon": "🕹️",
       "period": "2026-11",
-      "image": "",
+      "image": "/images/games/arcade-cover.jpg",
       "link": "https://mhyoo-games.github.io/flashgames/",
       "summary": {
         "ko": "옛 웹 미니게임 감성의 게임들을 새로 만들어 모은 웹 오락실",
-        "ja": "昔のWebミニゲームの雰囲気を再現したゲームを新たに作って集めたWebゲームセンター",
-        "en": "A web arcade of newly made games in the spirit of classic browser mini-games"
+        "ja": "昔のウェブミニゲームの雰囲気で新しく作ったゲームを集めたウェブゲームセンター",
+        "en": "A web arcade of newly made games in the spirit of old browser mini-games"
       },
       "why": {
-        "ko": "학창 시절 즐기던 웹 미니게임들을 다시 한곳에서 하고 싶었습니다. 예전 게임을 가져오지 않고 규칙·그림·음악을 모두 직접 새로 만들고, 게임을 계속 추가할 수 있는 구조로 만들었습니다.",
-        "ja": "学生時代に楽しんだWebミニゲームを、もう一度一か所で遊びたいと思ったのがきっかけです。昔のゲームを持ってくるのではなく、ルール・グラフィック・音楽をすべて自分で新しく作り、ゲームを追加し続けられる構成にしました。",
-        "en": "I wanted to play the kind of browser mini-games I enjoyed as a student in one place again. Rather than bringing over old games, I created the rules, graphics and music myself, in a structure that makes it easy to keep adding games."
+        "ko": "학창 시절 즐기던 웹 미니게임들을 한곳에서 다시 하고 싶어서, 규칙·그림·음악을 모두 새로 만들었습니다.",
+        "ja": "学生時代に遊んだウェブミニゲームを一か所でまた遊びたくて、ルール・絵・音楽をすべて新しく作りました。",
+        "en": "I wanted to play the browser mini-games of my school days in one place again, so I made the rules, art and music from scratch."
       },
       "features": {
-        "ko": "깨비 도감: 깨비 195종(3단 진화, 18속성 상성, 기술 142개)을 잡고 키워 체육관 8곳과 리그에 도전하는 수집 RPG. 밤낮, 비전 기술로 여는 길, 숨은 전설 깨비, 자전거·낚싯대, 트레이너와의 유대(위기에 감싸 주기·숨은 유대 진화). 64계열과 숨은 깨비를 하나하나 디자인해 진화하면 모습·자세가 바뀌는 만화풍 도트로 그리고, 도트 글꼴·전투 배속·만남·전투 전환·진화 연출을 직접 구현\n주먹밥 용사전: 도트 그림으로 마을·필드를 탐험하고 칸 위에서 움직이며 싸우는 전략 전투 RPG. 기술이 달린 장비, 방어, 기술별 이펙트. 8장 이야기 중 제1장 (인물·몬스터 도트는 부품을 조합해 외곽선·명암을 자동으로 넣어 생성)\n햄스터 다이노 파이트: 햄스터 8마리가 약·강 펀치/킥 이어 치기와 방향키 순서 입력 기술로 싸우고, 기를 모아 게이지가 차면 공룡 특징이 돋아나며 변신하는 격투 게임. 스토리 모드와 숨겨진 보스\n도토리 미로: 직접 설계한 미로에서 성격이 다른 추격자 넷을 피하는 미로 추격 게임\n음원 파일 없이 Web Audio로 작곡·합성하는 8비트 배경음악과 효과음\nPC 키보드와 휴대폰 터치 조작, 기록 저장\n게임 규칙을 화면과 분리해 테스트 (커맨드 해석, 컴퓨터끼리 대전시켜 캐릭터 밸런스 확인)",
-        "ja": "ケビ図鑑：195種のケビ（3段階進化・18タイプ相性・142技）を捕まえて育て、8つのジムとリーグに挑む収集RPG。昼夜、秘伝技で開く道、隠れた伝説のケビ、自転車・釣り竿、トレーナーとの絆（ピンチでかばう・隠し絆進化）。64系統と隠れたケビを一体ずつデザインし、進化すると姿やポーズが変わるコミック調ドット絵で描き、ドットフォント・バトル倍速・エンカウント・バトル遷移・進化の演出も実装\nおにぎり勇者伝：ドット絵の村やフィールドを探索し、マス目の上を動いて戦うタクティカルバトルRPG。技付きの装備、防御、技ごとのエフェクト。全8章のうち第1章（人物・モンスターのドット絵はパーツを組み合わせ、輪郭線と陰影を自動生成）\nハムスター・ダイノ・ファイト：8匹のハムスターが弱・強パンチ／キックの連続技と方向キーの順番入力による必殺技で戦い、気を溜めてゲージが満タンになると恐竜の特徴が現れて変身する格闘ゲーム。ストーリーモードと隠しボス\nどんぐり迷路：自分で設計した迷路で、性格の違う追っ手4匹から逃げる迷路追跡ゲーム\n音源ファイルを使わず Web Audio で作曲・合成する 8 ビット風 BGM と効果音\nPC キーボードとスマホのタッチ操作、記録の保存\nゲームのルールを画面から分離してテスト（コマンド判定、CPU 同士の対戦でキャラバランスを確認）",
-        "en": "Kkaebi Dex: a creature-collecting RPG with 195 species (three-stage evolutions, 18-type matchups, 142 moves), eight gyms and a league, day/night, field-move gating, hidden legendaries, a bike and fishing rod, and a trainer bond system (shielding a fatal hit, hidden bond evolution); all 64 families plus hidden legendaries individually designed as cartoon-style pixel art whose shape and pose change with evolution, a pixel font, battle speed-up, and encounter, battle-transition and evolution effects\nRice Ball Hero: a pixel-art RPG with town/field exploration and grid-based tactical battles, equipment that grants skills, guarding, and per-skill effects; chapter 1 of an 8-chapter story (sprites are assembled from parts with automatic outlines and shading)\nHamster Dino Fight: eight hamsters fight with light/heavy punch-and-kick chain combos and sequential-input special moves, charge energy, and transform—sprouting dinosaur features—when the gauge fills; story mode with a hidden boss\nAcorn Maze: a maze chase on an original map, dodging four pursuers with different behaviors\n8-bit style music and sound effects composed and synthesized in code with Web Audio — no audio files\nKeyboard and mobile touch controls, saved records\nGame rules separated from rendering and tested (command parsing; character balance checked via CPU-vs-CPU matches)"
+        "ko": "깨비 도감, 주먹밥 용사전, 햄스터 다이노 파이트, 도토리 미로\n음원 파일 없이 Web Audio로 작곡·합성한 8비트 음악\nPC 키보드·휴대폰 터치, 기록 저장",
+        "ja": "妖怪図鑑「ケビ図鑑」、おにぎり勇者伝、ハムスター・ダイノ・ファイト、どんぐり迷路\n音源ファイルなしでWeb Audioで作曲・合成した8ビット音楽\nPCキーボード・スマホのタッチ操作、記録の保存",
+        "en": "Kkaebi Dex, Rice Ball Hero, Hamster Dino Fight and Acorn Maze\n8-bit music composed and synthesised with Web Audio, no audio files\nKeyboard on PC, touch on phones, with saved records"
       },
       "tags": "React, TypeScript, Canvas 2D, Web Audio API, Game AI, Docker, GitHub Actions",
       "gallery": [

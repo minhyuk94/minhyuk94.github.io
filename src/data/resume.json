@@ -495,7 +495,7 @@
   "games": [
     {
       "name": {
-        "ko": "getFish 바다 낚시",
+        "ko": "겟피쉬 바다 낚시",
         "ja": "getFish 海釣り",
         "en": "getFish: Sea Fishing"
       },
@@ -504,9 +504,9 @@
       "image": "/images/games/getfish-fight.jpg",
       "link": "https://mhyoo-games.github.io/getFish/",
       "summary": {
-        "ko": "물고기가 과녁 위를 지날 때 타이밍 맞춰 눌러 낚는 2D 웹 낚시 게임. 바다 4곳, 물고기 52종, 장비 파밍과 도감 모으기",
-        "ja": "魚が的の上を通る瞬間にタイミングよく押して釣る2Dウェブ釣りゲーム。4つの海、52種の魚、装備集めと図鑑",
-        "en": "A 2D web fishing game where you tap in time as the fish crosses a target. Four seas, 52 species, gear farming and an encyclopedia"
+        "ko": "물고기가 과녁 위를 지날 때 타이밍 맞춰 눌러 낚는 2D 웹 낚시 게임. 바다 8곳, 물고기 112종, 장비 파밍과 도감 모으기",
+        "ja": "魚が的の上を通る瞬間にタイミングよく押して釣る2Dウェブ釣りゲーム。8つの海、112種の魚、装備集めと図鑑",
+        "en": "A 2D web fishing game where you tap in time as the fish crosses a target. Eight seas, 112 species, gear farming and an encyclopedia"
       },
       "why": {
         "ko": "어릴 때 즐기던 옛 모바일 낚시 게임 초창기의 손맛을 다시 느끼고 싶어서 만들었습니다.",
@@ -514,18 +514,42 @@
         "en": "I wanted to feel again what the early days of an old mobile fishing game I loved were like."
       },
       "features": {
-        "ko": "힘 게이지 던지기 → 챔질 → 타이밍 싸움 (PERFECT·금빛 과녁·진동)\n크기 등급 C~SS, 바다별 보스, 상점·드랍 장비와 아바타, 레벨·칭호·도감 세트\n물고기·캐릭터를 코드로 그려 수채화풍으로 칠하고, 배경음까지 브라우저에서 합성",
-        "ja": "パワーゲージで投げる → アワセ → タイミング勝負（PERFECT・金色の的・振動）\nサイズ等級C〜SS、海ごとのボス、ショップ・ドロップ装備とアバター、レベル・称号・図鑑セット\n魚とキャラクターをコードで描いて水彩風に塗り、BGMまでブラウザで合成",
-        "en": "Cast with a power gauge, strike, then win the timing battle (PERFECT hits, golden targets, haptics)\nC–SS size grades, a boss per sea, shop and drop gear, avatars, levels, titles and encyclopedia sets\nFish and characters drawn in code and painted in a watercolour style; music synthesised in the browser"
+        "ko": "별이 가운데 올 때 멈추는 던지기 → 챔질 → 타이밍 싸움, 입질 전엔 거두기도 가능\n미끼별 확률로 우연히 나타나는 보스(등장 연출·포효·보스 음악), 미끼 전용 물고기, 장비·레벨·칭호·도감 세트\n남·여 3D 낚시꾼(Kenney 모델)과 장난감 블록 물고기를 2D 화면에 그리고, 소리는 브라우저에서 합성",
+        "ja": "星が真ん中に来た瞬間に止めて投げる → アワセ → タイミング勝負、アタリの前なら回収も可能\nエサごとの確率で偶然現れるボス（登場演出・咆哮・ボスBGM）、エサ専用の魚、装備・レベル・称号・図鑑セット\n男女の3D釣り人（Kenneyモデル）とおもちゃのブロック風の魚を2D画面に描き、音はブラウザで合成",
+        "en": "Stop the star in the centre to cast, strike, then win the timing battle; reel back in before a bite if you like\nBosses appear by chance at bait-specific rates (entrance scene, roars, boss music), bait-only fish, gear, levels, titles and sets\n3D male and female anglers (Kenney models) and toy-block fish drawn into a 2D scene; sound synthesised in the browser"
       },
-      "tags": "JavaScript, Canvas 2D, Web Audio, Sound Synthesis, Game Design, Node.js Test, GitHub Actions",
+      "tags": "JavaScript, Canvas 2D, three.js, Web Audio, Sound Synthesis, Game Design, Node.js Test, GitHub Actions",
       "gallery": [
         {
           "image": "/images/games/getfish-fight.jpg",
           "caption": {
-            "ko": "타이밍 싸움: 물고기가 동그라미 위에 올 때 누르기",
-            "ja": "タイミング勝負：魚が丸に重なった時に押す",
-            "en": "The timing battle: tap when the fish is over a circle"
+            "ko": "보스와의 타이밍 싸움: 수면 아래로 거대한 그림자가 맴돌아요",
+            "ja": "ボスとのタイミング勝負：水面下に巨大な影が回る",
+            "en": "The timing battle with a boss, its huge shadow circling below"
+          }
+        },
+        {
+          "image": "/images/games/getfish-boss.jpg",
+          "caption": {
+            "ko": "보스 등장: 물이 솟구치고 이름판이 떠요",
+            "ja": "ボス登場：水しぶきとともに名前が表示される",
+            "en": "A boss appears with a splash and a name banner"
+          }
+        },
+        {
+          "image": "/images/games/getfish-cast.jpg",
+          "caption": {
+            "ko": "던지기: 별이 가운데 올 때 멈추기",
+            "ja": "キャスト：星が真ん中に来た時に止める",
+            "en": "Casting: stop the star in the centre"
+          }
+        },
+        {
+          "image": "/images/games/getfish-hit.jpg",
+          "caption": {
+            "ko": "금빛 과녁을 맞힌 PERFECT",
+            "ja": "金色の的を当てたPERFECT",
+            "en": "A PERFECT hit on a golden target"
           }
         },
         {
@@ -534,14 +558,6 @@
             "ko": "잡았을 때: 물고기가 튀어 올라 「낚았다!」",
             "ja": "釣れた瞬間：魚が跳ね上がって「釣れた！」",
             "en": "The catch: the fish leaps out with \"Caught it!\""
-          }
-        },
-        {
-          "image": "/images/games/getfish-result.jpg",
-          "caption": {
-            "ko": "잡은 물고기와 크기 등급",
-            "ja": "釣れた魚とサイズ等級",
-            "en": "A catch and its size grade"
           }
         },
         {
@@ -555,9 +571,9 @@
         {
           "image": "/images/games/getfish-dress.jpg",
           "caption": {
-            "ko": "아바타 꾸미기와 장비 효과",
-            "ja": "アバターの着せ替えと装備効果",
-            "en": "Avatar outfits and gear effects"
+            "ko": "남·여 낚시꾼 고르기와 꾸미기",
+            "ja": "男女の釣り人選びと着せ替え",
+            "en": "Choosing a male or female angler and dressing up"
           }
         }
       ]

@@ -504,9 +504,9 @@
       "image": "/images/games/laborer-office.jpg",
       "link": "https://mhyoo-games.github.io/city-of-laborer/",
       "summary": {
-        "ko": "새벽 네 시 반 인력사무소에서 시작하는 하루살이 게임. 일을 받으면 다섯 가지 현장(현장 정리·택배 상하차·공장 라인·배관·크레인 신호수)을 손으로 해내고, 일당 봉투를 받고, 포장마차에서 같이 일한 사람의 이야기를 듣는다. 청년·가장·어르신 세 사람의 꿈을 하루하루 모아 이룬다",
-        "ja": "朝4時半の職業紹介所から始まる日雇いの一日を生きるゲーム。仕事をもらえたら5つの現場（現場の片付け・宅配の積み下ろし・工場ライン・配管・クレーン合図）を自分の手でこなし、日当袋を受け取り、屋台で一緒に働いた人の話を聞く。青年・一家の主・年配の男性、3人の夢を一日ずつ貯めて叶える",
-        "en": "A day-by-day life game that begins at a day-labour office at 4:30 a.m. Get hired and work one of five sites by hand (site clean-up, parcel loading, a factory line, plumbing, crane signalling), take home the day's pay envelope, and hear your coworkers' stories at a street stall. Save up day by day to reach the dream of one of three people: a young jobseeker, a father, and an older worker"
+        "ko": "새벽 네 시 반 인력사무소에서 시작하는 하루살이 생존 게임. 일을 받으면 여덟 가지 현장(현장 정리·택배 상하차·공장 라인·배관·크레인 신호수·벽돌 쌓기·함바 주방·철근 나르기)을 손으로 해내고, 일당 봉투를 받고, 포장마차에서 같이 일한 사람의 이야기를 듣는다. 돈을 못 벌면 굶고, 방에서 나와 찜질방과 거리에서 자게 된다. 청년·가장·어르신 세 사람의 꿈을 하루하루 모아 이룬다",
+        "ja": "朝4時半の職業紹介所から始まる日雇いのサバイバルゲーム。仕事をもらえたら8つの現場（現場の片付け・宅配の積み下ろし・工場ライン・配管・クレーン合図・れんが積み・飯場の厨房・鉄筋運び）を自分の手でこなし、日当袋を受け取り、屋台で一緒に働いた人の話を聞く。稼げなければ食事を抜き、部屋を出てサウナや路上で眠ることになる。青年・一家の主・年配の男性、3人の夢を一日ずつ貯めて叶える",
+        "en": "A day-labour survival game that begins at a labour office at 4:30 a.m. Get hired and work one of eight sites by hand (site clean-up, parcel loading, a factory line, plumbing, crane signalling, bricklaying, a site canteen kitchen, carrying rebar), take home the day's pay envelope, and hear your coworkers' stories at a street stall. Fail to earn and you go hungry, lose your room and end up sleeping in a bathhouse or on the street. Save up day by day to reach the dream of one of three people: a young jobseeker, a father, and an older worker"
       },
       "why": {
         "ko": "산업단지에서 일하는 사람들과 건설 현장에서 일하는 사람들이 떠올라, 하는 사람이 최대한 공감할 수 있으면서도 계속 하고 싶어지는, 진짜 새벽 인력시장에서 일하는 사람이 된 것 같은 게임을 만들고 싶었습니다.",
@@ -514,9 +514,9 @@
         "en": "I found myself thinking about the people who work in industrial parks and on construction sites, and wanted to make a game that players can relate to and keep coming back to, one that feels like being a worker at an early-morning day-labour market."
       },
       "features": {
-        "ko": "하루 한 바퀴: 새벽 기상(늦잠·쉬기) → 인력사무소에서 지원(평판·숙련·나이·늦잠에 따라 뽑힐 가능성) → 오전 일 → 함바집 점심 → 오후 일 → 일당 봉투(숙련·날씨 수당·자격증·소개비 10%) → 저녁 → 일기\n다섯 가지 현장 게임: 지게차를 피해 줍고 버리기, 딱지 색에 맞춰 상자 밀기, 박자 맞춰 누르고 불량 빼기, 물이 오기 전에 관 돌려 잇기, 흔들림을 잡아 짐 내리기. 지치면 손이 둔해지고 서두르면 다친다\n비 오면 건설 현장은 공치고, 처음 보는 업체는 일당을 떼먹기도 해 노동청 진정으로 받아 낸다. 잘하면 다음 날 지명, 방값·생활비, 안전교육 이수증·자격증 학원과 작업용품\n같이 일하는 다섯 사람과 포장마차에서 듣는 이야기, 숙련 다섯 단계와 칭호, 도장 15개와 일기 수첩, 코드로 색을 바꾼 일꾼 도트와 새로 쓴 배경음악",
-        "ja": "一日の流れ：早朝の起床（寝坊・休み）→ 職業紹介所で応募（評判・熟練・年齢・寝坊で採用率が変わる）→ 午前の仕事 → 飯場の昼ごはん → 午後の仕事 → 日当袋（熟練・天候手当・資格・紹介料10%）→ 夕方 → 日記\n5つの現場ミニゲーム：フォークリフトを避けて拾って捨てる、ラベルの色に合わせて箱を押す、リズムに合わせてプレスし不良品を外す、水が来る前に管を回してつなぐ、揺れを抑えて荷を下ろす。疲れると手が鈍り、急ぐとけがをする\n雨の日は建設現場が休みになり、初めての業者は日当を払わないこともあり労働基準監督署への申告で取り戻す。うまくやれば翌日に指名、家賃・生活費、安全教育修了証・資格の学校と作業用品\n一緒に働く5人と屋台で聞く話、熟練5段階と称号、スタンプ15個と日記の手帳、コードで色を変えた作業員のドット絵と新しく作ったBGM",
-        "en": "A full day loop: wake at dawn (or snooze, or rest), apply at the labour office (hiring odds depend on reputation, skill, age and oversleeping), morning work, lunch at the site canteen, afternoon work, the pay envelope (skill, weather pay, licences, a 10% agency fee), evening, then the diary\nFive hands-on site minigames: pick up debris and dodge the forklift, push parcels by label colour, press in rhythm and pull out defects, turn pipes into a line before the water arrives, and steady a swinging load onto the flag. Tired hands get slower, and rushing gets you hurt\nRain cancels construction work, and unfamiliar contractors may withhold pay, which you can recover by filing a labour complaint. Good work earns a named call-back the next day; weekly rent and daily living costs; safety-training certificates, licence classes and work gear\nFive coworkers whose stories you hear at the street stall, five skill levels and ranks, 15 stamps and a diary notebook, worker pixel art recoloured in code, and newly composed background music"
+        "ko": "하루 한 바퀴: 새벽 기상(늦잠·쉬기) → 인력사무소에서 지원(평판·숙련·나이·늦잠·행색에 따라 뽑힐 가능성, 돈이 바닥나면 가불) → 오전 일 → 함바집 점심 → 오후 일 → 일당 봉투(숙련·날씨 수당·자격증·소개비 10%) → 저녁 → 일기\n여덟 가지 현장 게임과 일마다 난이도(쉬움·보통·빡셈 — 빡센 일은 더 주지만 어렵다): 지게차 피해 줍기, 딱지 색에 맞춰 상자 밀기, 박자 맞춰 누르기, 관 돌려 잇기, 흔들리는 짐 내리기, 벽돌을 딱 맞게 쌓기, 주문 화살표 순서대로 넣기, 기우는 철근 바로잡기\n살아남기: 생활비를 못 내면 굶고, 방값이 두 주 밀리면 고시원에서 나와 찜질방·거리에서 잔다(회복이 더디고 잘 안 뽑히고 몸살이 난다). 매주 꼭 나가는 돈(학자금·집 생활비·약값)과 청구서, 게임 난이도 보통·고된 삶, 오래 굶거나 거리에서 자면 쓰러진다\n같이 일하는 여섯 사람과 포장마차에서 듣는 이야기, 숙련 다섯 단계와 칭호, 도장 18개와 일기 수첩, 가난할수록 바뀌는 장면과 낡는 작업복, 코드로 색을 바꾼 일꾼 도트와 새로 쓴 배경음악",
+        "ja": "一日の流れ：早朝の起床（寝坊・休み）→ 職業紹介所で応募（評判・熟練・年齢・寝坊・身なりで採用率が変わり、お金が尽きたら前借り）→ 午前の仕事 → 飯場の昼ごはん → 午後の仕事 → 日当袋（熟練・天候手当・資格・紹介料10%）→ 夕方 → 日記\n8つの現場ミニゲームと仕事ごとの難易度（易しい・普通・きつい — きつい仕事は日当が高いが難しい）：フォークリフトを避けて拾う、ラベルの色で箱を押す、リズムに合わせてプレス、管を回してつなぐ、揺れる荷を下ろす、れんがをぴったり積む、注文の矢印を順に入れる、傾く鉄筋を立て直す\nサバイバル：生活費が払えなければ食事を抜き、家賃を2週間ためると簡易宿を出てサウナや路上で眠る（回復が遅く、採用されにくく、体調を崩す）。毎週必ず出ていくお金（奨学金・家への仕送り・薬代）と請求書、難易度は普通・厳しい暮らし、長く食べられなかったり路上で眠り続けると倒れる\n一緒に働く6人と屋台で聞く話、熟練5段階と称号、スタンプ18個と日記の手帳、貧しくなるほど変わる場面とくたびれる作業着、コードで色を変えた作業員のドット絵と新しく作ったBGM",
+        "en": "A full day loop: wake at dawn (or snooze, or rest), apply at the labour office (hiring odds depend on reputation, skill, age, oversleeping and how you look; when you're broke you can ask for an advance), morning work, lunch at the site canteen, afternoon work, the pay envelope (skill, weather pay, licences, a 10% agency fee), evening, then the diary\nEight hands-on site minigames, each job rated easy, normal or tough (tough jobs pay more but are harder): pick up debris and dodge the forklift, push parcels by label colour, press in rhythm, turn pipes into a line, lower a swinging load, stack bricks exactly, enter each order's arrows in sequence, and steady a tipping bundle of rebar\nSurvival: miss your living costs and you go hungry; fall two weeks behind on rent and you leave your room to sleep in a bathhouse or on the street (slower recovery, harder to get hired, catching colds). Weekly obligations (a student loan, money sent home, medicine), surprise bills, a normal or a hard-life mode, and you collapse if you go hungry or sleep rough for too long\nSix coworkers whose stories you hear at the street stall, five skill levels and ranks, 18 stamps and a diary notebook, scenes and work clothes that wear down as you grow poorer, worker pixel art recoloured in code, and newly composed background music"
       },
       "tags": "TypeScript, Canvas 2D, Pixel Art, Web Audio, Game Design, Node.js Test, Playwright, GitHub Actions",
       "gallery": [
@@ -582,6 +582,22 @@
             "ko": "오늘의 일기와 도장",
             "ja": "今日の日記とスタンプ",
             "en": "Today's diary and stamps"
+          }
+        },
+        {
+          "image": "/images/games/laborer-street.jpg",
+          "caption": {
+            "ko": "가난해지면: 방을 나와 거리에서 맞는 새벽",
+            "ja": "貧しくなると：部屋を出て路上で迎える夜明け",
+            "en": "When money runs out: dawn on the street after losing your room"
+          }
+        },
+        {
+          "image": "/images/games/laborer-rebar.jpg",
+          "caption": {
+            "ko": "철근 나르기: 기우는 철근을 바로잡으며 걸림돌 넘기",
+            "ja": "鉄筋運び：傾く鉄筋を立て直しながら障害物を越える",
+            "en": "Carrying rebar: steady the tipping load and hop the obstacles"
           }
         }
       ]

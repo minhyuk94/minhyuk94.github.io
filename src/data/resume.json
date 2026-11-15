@@ -495,6 +495,99 @@
   "games": [
     {
       "name": {
+        "ko": "노동자의 도시",
+        "ja": "労働者の街",
+        "en": "City of Laborer"
+      },
+      "icon": "👷",
+      "period": "2026-11",
+      "image": "/images/games/laborer-office.jpg",
+      "link": "https://mhyoo-games.github.io/city-of-laborer/",
+      "summary": {
+        "ko": "새벽 네 시 반 인력사무소에서 시작하는 하루살이 게임. 일을 받으면 다섯 가지 현장(현장 정리·택배 상하차·공장 라인·배관·크레인 신호수)을 손으로 해내고, 일당 봉투를 받고, 포장마차에서 같이 일한 사람의 이야기를 듣는다. 청년·가장·어르신 세 사람의 꿈을 하루하루 모아 이룬다",
+        "ja": "朝4時半の職業紹介所から始まる日雇いの一日を生きるゲーム。仕事をもらえたら5つの現場（現場の片付け・宅配の積み下ろし・工場ライン・配管・クレーン合図）を自分の手でこなし、日当袋を受け取り、屋台で一緒に働いた人の話を聞く。青年・一家の主・年配の男性、3人の夢を一日ずつ貯めて叶える",
+        "en": "A day-by-day life game that begins at a day-labour office at 4:30 a.m. Get hired and work one of five sites by hand (site clean-up, parcel loading, a factory line, plumbing, crane signalling), take home the day's pay envelope, and hear your coworkers' stories at a street stall. Save up day by day to reach the dream of one of three people: a young jobseeker, a father, and an older worker"
+      },
+      "why": {
+        "ko": "산업단지에서 일하는 사람들과 건설 현장에서 일하는 사람들이 떠올라, 하는 사람이 최대한 공감할 수 있으면서도 계속 하고 싶어지는, 진짜 새벽 인력시장에서 일하는 사람이 된 것 같은 게임을 만들고 싶었습니다.",
+        "ja": "工業団地や建設現場で働く人たちのことがふと思い浮かび、遊ぶ人ができるだけ共感できて、それでいて続けたくなる、本当に早朝の日雇い市場で働く人になったような気持ちになれるゲームを作りたいと思いました。",
+        "en": "I found myself thinking about the people who work in industrial parks and on construction sites, and wanted to make a game that players can relate to and keep coming back to, one that feels like being a worker at an early-morning day-labour market."
+      },
+      "features": {
+        "ko": "하루 한 바퀴: 새벽 기상(늦잠·쉬기) → 인력사무소에서 지원(평판·숙련·나이·늦잠에 따라 뽑힐 가능성) → 오전 일 → 함바집 점심 → 오후 일 → 일당 봉투(숙련·날씨 수당·자격증·소개비 10%) → 저녁 → 일기\n다섯 가지 현장 게임: 지게차를 피해 줍고 버리기, 딱지 색에 맞춰 상자 밀기, 박자 맞춰 누르고 불량 빼기, 물이 오기 전에 관 돌려 잇기, 흔들림을 잡아 짐 내리기. 지치면 손이 둔해지고 서두르면 다친다\n비 오면 건설 현장은 공치고, 처음 보는 업체는 일당을 떼먹기도 해 노동청 진정으로 받아 낸다. 잘하면 다음 날 지명, 방값·생활비, 안전교육 이수증·자격증 학원과 작업용품\n같이 일하는 다섯 사람과 포장마차에서 듣는 이야기, 숙련 다섯 단계와 칭호, 도장 15개와 일기 수첩, 코드로 색을 바꾼 일꾼 도트와 새로 쓴 배경음악",
+        "ja": "一日の流れ：早朝の起床（寝坊・休み）→ 職業紹介所で応募（評判・熟練・年齢・寝坊で採用率が変わる）→ 午前の仕事 → 飯場の昼ごはん → 午後の仕事 → 日当袋（熟練・天候手当・資格・紹介料10%）→ 夕方 → 日記\n5つの現場ミニゲーム：フォークリフトを避けて拾って捨てる、ラベルの色に合わせて箱を押す、リズムに合わせてプレスし不良品を外す、水が来る前に管を回してつなぐ、揺れを抑えて荷を下ろす。疲れると手が鈍り、急ぐとけがをする\n雨の日は建設現場が休みになり、初めての業者は日当を払わないこともあり労働基準監督署への申告で取り戻す。うまくやれば翌日に指名、家賃・生活費、安全教育修了証・資格の学校と作業用品\n一緒に働く5人と屋台で聞く話、熟練5段階と称号、スタンプ15個と日記の手帳、コードで色を変えた作業員のドット絵と新しく作ったBGM",
+        "en": "A full day loop: wake at dawn (or snooze, or rest), apply at the labour office (hiring odds depend on reputation, skill, age and oversleeping), morning work, lunch at the site canteen, afternoon work, the pay envelope (skill, weather pay, licences, a 10% agency fee), evening, then the diary\nFive hands-on site minigames: pick up debris and dodge the forklift, push parcels by label colour, press in rhythm and pull out defects, turn pipes into a line before the water arrives, and steady a swinging load onto the flag. Tired hands get slower, and rushing gets you hurt\nRain cancels construction work, and unfamiliar contractors may withhold pay, which you can recover by filing a labour complaint. Good work earns a named call-back the next day; weekly rent and daily living costs; safety-training certificates, licence classes and work gear\nFive coworkers whose stories you hear at the street stall, five skill levels and ranks, 15 stamps and a diary notebook, worker pixel art recoloured in code, and newly composed background music"
+      },
+      "tags": "TypeScript, Canvas 2D, Pixel Art, Web Audio, Game Design, Node.js Test, Playwright, GitHub Actions",
+      "gallery": [
+        {
+          "image": "/images/games/laborer-title.jpg",
+          "caption": {
+            "ko": "제목: 새벽 네 시 반의 도시",
+            "ja": "タイトル：朝4時半の街",
+            "en": "Title: the city at 4:30 a.m."
+          }
+        },
+        {
+          "image": "/images/games/laborer-office.jpg",
+          "caption": {
+            "ko": "새벽 인력사무소: 오늘 나온 일과 뽑힐 가능성",
+            "ja": "早朝の職業紹介所：今日の仕事と採用の見込み",
+            "en": "The dawn labour office: today's jobs and hiring odds"
+          }
+        },
+        {
+          "image": "/images/games/laborer-sort.jpg",
+          "caption": {
+            "ko": "택배 상하차: 딱지 색에 맞춰 상자 밀기",
+            "ja": "宅配の積み下ろし：ラベルの色に合わせて箱を押す",
+            "en": "Parcel loading: push each box by its label colour"
+          }
+        },
+        {
+          "image": "/images/games/laborer-pipe.jpg",
+          "caption": {
+            "ko": "배관 조공: 물이 오기 전에 관을 돌려 잇기",
+            "ja": "配管の手元：水が来る前に管を回してつなぐ",
+            "en": "Plumbing: turn the pipes into a line before the water comes"
+          }
+        },
+        {
+          "image": "/images/games/laborer-crane.jpg",
+          "caption": {
+            "ko": "크레인 신호수: 흔들림을 잡아 깃발 위에 내리기",
+            "ja": "クレーン合図：揺れを抑えて旗の上に下ろす",
+            "en": "Crane signalling: steady the load onto the flag"
+          }
+        },
+        {
+          "image": "/images/games/laborer-pay.jpg",
+          "caption": {
+            "ko": "일당 봉투: 숙련·수고비·소개비",
+            "ja": "日当袋：熟練・ねぎらい・紹介料",
+            "en": "The pay envelope: skill, a tip and the agency fee"
+          }
+        },
+        {
+          "image": "/images/games/laborer-pocha.jpg",
+          "caption": {
+            "ko": "포장마차: 같이 일한 사람의 이야기",
+            "ja": "屋台：一緒に働いた人の話",
+            "en": "The street stall: a coworker's story"
+          }
+        },
+        {
+          "image": "/images/games/laborer-night.jpg",
+          "caption": {
+            "ko": "오늘의 일기와 도장",
+            "ja": "今日の日記とスタンプ",
+            "en": "Today's diary and stamps"
+          }
+        }
+      ]
+    },
+    {
+      "name": {
         "ko": "매지션 스토리",
         "ja": "マジシャン・ストーリー",
         "en": "Magician Story"

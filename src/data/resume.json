@@ -400,6 +400,29 @@
   ],
   "projects": [
     {
+      "name": "Classic World",
+      "icon": "🎼",
+      "period": "2026-11",
+      "image": "",
+      "link": "https://minhyuk94.github.io/classic-world/",
+      "summary": {
+        "ko": "세상의 클래식·뉴에이지 곡을 모아 찾아보고, 무료 공개 음원과 유튜브로 이어 듣는 사이트",
+        "ja": "世界のクラシック・ニューエイジの曲を集めて探し、無料公開音源とYouTubeで続けて聴けるサイト",
+        "en": "A site that gathers classical and new age music to explore, with free recordings and YouTube played back to back"
+      },
+      "why": {
+        "ko": "클래식과 뉴에이지 곡을 한곳에 모아, 시대·작곡가·분위기로 찾아보고 바로 들을 수 있는 사이트를 만들고 싶었습니다. 녹음 저작권을 지키면서도 들을 수 있는 곡을 최대한 늘리도록, 공개 데이터와 자유 라이선스 음원만 쓰는 구조로 만들었습니다.",
+        "ja": "クラシックとニューエイジの曲を一か所に集め、時代・作曲家・気分から探してすぐ聴けるサイトをつくりたいと考えました。録音の著作権を守りつつ聴ける曲をできるだけ増やせるよう、公開データと自由ライセンスの音源だけを使う構成にしました。",
+        "en": "I wanted one place to explore classical and new age music by era, composer and mood, and listen right away. To respect recording copyrights while making as much music playable as possible, it uses only open data and freely licensed recordings."
+      },
+      "features": {
+        "ko": "GitHub Actions가 매일 위키데이터(CC0)에서 작곡가·곡 정보를 자동으로 모아 정적 사이트로 배포 (서버 없음)\n시대·편성·분위기를 규칙으로 분류하고, 제목·다른 이름·작품 번호(예: 월광, BWV 1007)로 찾기\n위키미디어 공용의 자유 라이선스 음원만 골라 저작자·라이선스와 함께 재생, 없으면 유튜브 영상으로\n무료 음원과 유튜브를 한 재생 목록으로 이어 듣는 플레이어, 한국어·일본어·영어 화면",
+        "ja": "GitHub Actions が毎日ウィキデータ(CC0)から作曲家・曲の情報を自動で集め、静的サイトとしてデプロイ(サーバーなし)\n時代・編成・気分を規則で分類し、曲名・別名・作品番号(例:月光、BWV 1007)で検索\nウィキメディア・コモンズの自由ライセンス音源だけを選び、作者・ライセンスを表示して再生。ない曲は YouTube 動画で\n無料音源と YouTube を一つの再生リストで続けて聴けるプレーヤー、日本語・韓国語・英語の画面",
+        "en": "GitHub Actions collects composer and work data from Wikidata (CC0) every day and deploys it as a static site (no server)\nRule-based classification by era, scoring and mood; search by title, alternative names or catalogue number (e.g. Moonlight, BWV 1007)\nPlays only freely licensed recordings from Wikimedia Commons with author and licence shown, falling back to YouTube videos\nA player that queues free recordings and YouTube together, with Korean, Japanese and English screens"
+      },
+      "tags": "React, TypeScript, esbuild, Wikidata SPARQL, Wikimedia API, YouTube IFrame API, GitHub Actions, GitHub Pages"
+    },
+    {
       "name": "WebCompiler",
       "icon": "🧪",
       "period": "2026-11",

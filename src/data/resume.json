@@ -535,9 +535,9 @@
         "en": "Existing editing sites are full of ads and usage limits and require uploading files, so I wanted a tool I could trust with work documents."
       },
       "features": {
-        "ko": "PDF 합치기·나누기·페이지 정리·용량 줄이기, 사진↔PDF 변환\n휴대폰으로 찍은 문서의 그림자를 없애고 스캔본처럼 보정\n사진·스캔 PDF의 글자 추출(OCR, 한국어·영어·일본어)을 브라우저 안에서 실행 (WebAssembly)\n파일이 PC 밖으로 나가지 않아 서버 비용·횟수 제한 없음",
-        "ja": "PDF の結合・分割・ページ整理・容量削減、画像⇔PDF 変換\nスマホで撮った書類の影を取り除き、スキャンしたように補正\n画像・スキャン PDF の文字抽出(OCR、韓国語・英語・日本語)をブラウザ内で実行(WebAssembly)\nファイルが PC の外に出ないため、サーバー費用も回数制限もなし",
-        "en": "Merge, split, reorganize and compress PDFs; convert between images and PDF\nClean up phone photos of documents so they look scanned\nOCR for photos and scanned PDFs (Korean, English, Japanese) running in the browser (WebAssembly)\nFiles never leave the PC, so there are no server costs or usage limits"
+        "ko": "PDF 합치기·나누기·페이지 정리·용량 줄이기, 사진↔PDF 변환\n휴대폰으로 찍은 문서의 그림자를 없애고 스캔본처럼 보정, 증명사진을 여권·이력서 규격 크기로 맞춰 인화용으로 배치(정수리·턱을 누르면 머리 크기·기울기 자동 맞춤)\n사진·스캔 PDF의 글자 추출(OCR, 한국어·영어·일본어)을 브라우저 안에서 실행 (WebAssembly)\n파일이 PC 밖으로 나가지 않아 서버 비용·횟수 제한 없음",
+        "ja": "PDF の結合・分割・ページ整理・容量削減、画像⇔PDF 変換\nスマホで撮った書類の影を取り除き、スキャンしたように補正。証明写真をパスポート・履歴書の規格サイズに合わせ、プリント用に並べて配置(頭頂とあごをタップすると顔の大きさ・傾きを自動調整)\n画像・スキャン PDF の文字抽出(OCR、韓国語・英語・日本語)をブラウザ内で実行(WebAssembly)\nファイルが PC の外に出ないため、サーバー費用も回数制限もなし",
+        "en": "Merge, split, reorganize and compress PDFs; convert between images and PDF\nClean up phone photos of documents so they look scanned; crop ID photos to passport and résumé sizes and lay them out for printing (tap the crown and chin to auto-fit head size and tilt)\nOCR for photos and scanned PDFs (Korean, English, Japanese) running in the browser (WebAssembly)\nFiles never leave the PC, so there are no server costs or usage limits"
       },
       "tags": "React, TypeScript, pdf-lib, pdf.js, Tesseract.js"
     }

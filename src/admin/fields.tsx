@@ -91,7 +91,7 @@ export function labelOf(key: string) {
 const E = { ko: '', ja: '', en: '' };
 /** 목록이 비었을 때 새 항목의 모양 (항목이 있으면 첫 항목 모양을 따른다) */
 const TEMPLATES: Record<string, Json> = {
-  projects: { name: '', icon: '', period: '', image: '', link: '', summary: E, why: E, features: E, tags: '' },
+  projects: { name: E, icon: '', period: '', image: '', link: '', summary: E, why: E, features: E, tags: '' },
   games: { name: E, icon: '', period: '', image: '', link: '', summary: E, why: E, features: E, tags: '', gallery: [{ image: '', caption: E }] },
   gallery: { image: '', caption: E },
   experience: { company: E, url: '', place: E, start: '', end: '', projects: [{ name: E, tags: '', groups: [{ title: E, items: E }] }] },

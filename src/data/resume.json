@@ -400,25 +400,29 @@
   ],
   "projects": [
     {
-      "name": "약 시간표",
+      "name": {
+        "ko": "약 시간표",
+        "ja": "おくすり時間表",
+        "en": "Medicine Timetable"
+      },
       "icon": "💊",
       "period": "2026-11",
       "image": "",
       "link": "https://minhyuk94.github.io/yak-sigan/",
       "summary": {
-        "ko": "먹는 약을 말·사진·이름으로 넣으면 아침·점심·저녁·자기 전 시간표로 정리하고, 약을 누르면 쓰임새·성분을 보여 주는 사이트",
-        "ja": "飲んでいる薬を声・写真・名前で入力すると朝・昼・夜・寝る前の服薬表にまとめ、薬をタップすると効能や成分を確認できるサイト",
-        "en": "Turns the medicines you take—entered by voice, photo or name—into a morning, noon, evening and bedtime schedule, and shows what each one is for and what it contains"
+        "ko": "먹는 약을 말·사진·이름으로 넣으면 아침·점심·저녁·자기 전 시간표로 정리하고, 약을 누르면 쓰임새·성분을 보여 주는 사이트 — 어르신 본인, 보호자, 약국의 약사 누구나 넣을 수 있음",
+        "ja": "飲んでいる薬を声・写真・名前で入力すると朝・昼・夜・寝る前の服薬表にまとめ、薬をタップすると効能や成分を確認できるサイト — 高齢の方ご本人、ご家族、薬局の薬剤師の誰でも入力できる",
+        "en": "Turns the medicines you take—entered by voice, photo or name—into a morning, noon, evening and bedtime schedule and shows what each one is for and contains; older people, their caregivers or the pharmacist can all enter them"
       },
       "why": {
-        "ko": "일상에서 누구나 겪는 불편함을 덜어 주는 서비스를 만들고 싶었고, 여러 약을 드시는 부모님이 언제 무엇을 드셔야 하는지 헷갈려 하시는 것이 떠올랐습니다. 연세 드신 분은 파일을 올리거나 글자를 입력하기 어려우므로, 말로 편하게 이야기하면 정리되도록 만들었습니다.",
-        "ja": "誰もが日常で感じる不便を減らすサービスをつくりたいと考え、たくさんの薬を飲む親が、いつ何を飲めばよいか迷っている様子が思い浮かびました。高齢の方にはファイルのアップロードや文字入力が難しいため、話すだけで整理されるようにしました。",
-        "en": "I wanted to build something that removes an everyday inconvenience, and thought of parents who take many medicines and get confused about what to take when. Since uploading files or typing is hard for older people, I made it so that simply talking is enough."
+        "ko": "일상에서 누구나 겪는 불편함을 덜어 주는 서비스를 만들고 싶었습니다. 여러 약을 드시는 어르신은 파일을 올리거나 글자를 입력하기 어려우므로, 말로 이야기하기만 하면 정리되게 했습니다. 또 어르신 본인뿐 아니라 보호자나 약을 받는 약국의 약사가 대신 넣어 드릴 수도 있도록 만들었습니다.",
+        "ja": "誰もが日常で感じる不便を減らすサービスをつくりたいと考えました。たくさんの薬を飲む高齢の方にはファイルのアップロードや文字入力が難しいため、話すだけで整理されるようにしました。また、ご本人だけでなく、ご家族や薬を受け取る薬局の薬剤師が代わりに入力することもできるようにしました。",
+        "en": "I wanted to build something that removes an everyday inconvenience. Uploading files or typing is hard for older people who take many medicines, so simply talking is enough. It is also designed so that a caregiver, or the pharmacist handing over the medicine, can enter it on their behalf."
       },
       "features": {
-        "ko": "말로 넣기: 브라우저 음성 인식이 천천히 말해도 기다리고, 30초마다 \"다 말씀하셨어요?\"라고 소리로 물어 \"네\"라고 하면 끝 — 쉼표 없이 이어 말한 문장도 때·양·약 이름 순서로 읽어 약마다 나누고, 잘못 들은 이름은 실제 약 목록과 맞춰 고침 (AI 없이 규칙으로 구현)\n약봉투·처방전 사진의 글자를 기기 안에서 읽어 정리 (사진·약 목록은 서버로 보내지 않음)\n식품의약품안전처 공공데이터(허가정보·e약은요·낱알식별) 약 3만 5천 개를 GitHub Actions가 매달 모아 정적 사이트로 배포 — 효능·성분·먹는 법·주의할 점, 모양·색으로 코드가 그린 약 그림\n큰 글자·큰 버튼, 가족별 시간표, 냉장고에 붙일 수 있는 인쇄 화면",
-        "ja": "音声入力:ゆっくり話しても待ち、30 秒ごとに「全部話しましたか?」と音声で尋ね、「はい」で終了 — 句読点なしで続けて話した文も、時間・量・薬名の順に読み取って薬ごとに分け、聞き間違えた名前は実在する薬の一覧と照合して修正(AI を使わずルールで実装)\nお薬袋・処方せんの写真の文字を端末内で読み取って整理(写真や薬の一覧はサーバーに送信しない)\n韓国食品医薬品安全処の公開データ(許可情報・e薬は・錠剤識別)約 3 万 5 千件を GitHub Actions が毎月収集し、静的サイトとしてデプロイ — 効能・成分・用法・注意事項、形と色からコードで描いた薬のイラスト\n大きな文字とボタン、家族ごとの服薬表、冷蔵庫に貼れる印刷画面",
-        "en": "Voice input: waits while you speak slowly, asks aloud \"Is that everything?\" every 30 seconds and finishes when you say \"yes\"; sentences spoken without pauses are split per medicine by reading time, dose and name in order, and misheard names are corrected against the real drug list (rule-based, no AI)\nReads the text on pharmacy bags and prescriptions on the device itself (photos and medicine lists never leave the device)\nGitHub Actions collects about 35,000 drugs from Korea's Ministry of Food and Drug Safety open data (approvals, easy drug info, pill identification) every month and deploys a static site, with uses, ingredients, dosage, warnings and pill illustrations drawn in code from shape and color\nLarge text and buttons, a schedule per family member, and a print layout to stick on the fridge"
+        "ko": "말로 넣기: 브라우저 음성 인식이 천천히 말해도 기다리고, 30초마다 \"다 말씀하셨어요?\"라고 소리로 물어 \"네\"라고 하면 끝 — 쉼표 없이 이어 말한 문장도 때·양·약 이름 순서로 읽어 약마다 나누고, 잘못 들은 이름은 실제 약 목록과 맞춰 고침 (AI 없이 규칙으로 구현)\n약봉투·처방전 사진의 글자를 기기 안에서 읽어 정리 (사진·약 목록은 서버로 보내지 않음)\n식품의약품안전처 공공데이터(허가정보·e약은요·낱알식별) 약 3만 5천 개를 GitHub Actions가 매달 모아 정적 사이트로 배포 — 효능·성분·먹는 법·주의할 점, 모양·색으로 코드가 그린 약 그림\n어르신·보호자·약사 누구나 쓰기 쉬운 큰 글자·큰 버튼, 가족별 시간표, 냉장고에 붙일 수 있는 인쇄 화면",
+        "ja": "音声入力:ゆっくり話しても待ち、30 秒ごとに「全部話しましたか?」と音声で尋ね、「はい」で終了 — 句読点なしで続けて話した文も、時間・量・薬名の順に読み取って薬ごとに分け、聞き間違えた名前は実在する薬の一覧と照合して修正(AI を使わずルールで実装)\nお薬袋・処方せんの写真の文字を端末内で読み取って整理(写真や薬の一覧はサーバーに送信しない)\n韓国食品医薬品安全処の公開データ(許可情報・e薬は・錠剤識別)約 3 万 5 千件を GitHub Actions が毎月収集し、静的サイトとしてデプロイ — 効能・成分・用法・注意事項、形と色からコードで描いた薬のイラスト\nご本人・ご家族・薬剤師の誰でも使いやすい大きな文字とボタン、家族ごとの服薬表、冷蔵庫に貼れる印刷画面",
+        "en": "Voice input: waits while you speak slowly, asks aloud \"Is that everything?\" every 30 seconds and finishes when you say \"yes\"; sentences spoken without pauses are split per medicine by reading time, dose and name in order, and misheard names are corrected against the real drug list (rule-based, no AI)\nReads the text on pharmacy bags and prescriptions on the device itself (photos and medicine lists never leave the device)\nGitHub Actions collects about 35,000 drugs from Korea's Ministry of Food and Drug Safety open data (approvals, easy drug info, pill identification) every month and deploys a static site, with uses, ingredients, dosage, warnings and pill illustrations drawn in code from shape and color\nLarge text and buttons that are easy for older people, caregivers and pharmacists alike, a schedule per family member, and a print layout to stick on the fridge"
       },
       "tags": "React, TypeScript, Web Speech API, Tesseract.js (OCR), SVG, data.go.kr Open API, GitHub Actions, GitHub Pages"
     },

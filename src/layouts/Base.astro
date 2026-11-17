@@ -13,6 +13,8 @@ interface Props {
 }
 
 const { title, description, lang, alternates = [], noindex = false, image } = Astro.props;
+// 방문 통계 (Google Analytics: 방문 수·화면만, 광고 기능 끔). 편집 페이지(noindex)·자동 시험 브라우저·로컬에서는 켜지 않음
+const GA = "(function(){var id='G-KK27YSJPEJ';if(navigator.webdriver||!/\\.github\\.io$/.test(location.hostname))return;window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',id,{allow_google_signals:false,allow_ad_personalization_signals:false});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+id;document.head.appendChild(s)})();";
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = image ? new URL(url(image), Astro.site).toString() : undefined;
 ---
@@ -40,6 +42,7 @@ const ogImage = image ? new URL(url(image), Astro.site).toString() : undefined;
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
     />
+    {!noindex && <script is:inline set:html={GA} />}
   </head>
   <body>
     <slot />

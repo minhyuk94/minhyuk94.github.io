@@ -8,6 +8,7 @@
 - 이력서 주소는 **`https://minhyuk94.github.io/resume/`** (`astro.config.mjs`의 `base: '/resume'`, 결과는 `dist/resume/`). 루트에서 이력서로 자동으로 보내지 않는다(사용자 요청). 사이트 안 주소·이미지 경로(`/images/…`)는 화면에서 꼭 `url()`(`src/lib/resume.ts`)로 감싼다. 데이터에는 `/images/…` 그대로 적는다.
 - 기본 브랜치는 **`master`**. master에 푸시하면 GitHub Actions가 `scripts/validate-resume.mjs`로 데이터 검사 → `astro check` → 빌드 → GitHub Pages 배포.
 - `/admin` 웹 편집 페이지는 GitHub Contents API로 master의 `src/data/resume.json`에 직접 커밋한다. 데이터 구조를 바꾸면 `src/admin/fields.tsx`의 라벨·힌트·템플릿, `scripts/validate-resume.mjs`도 같이 고친다.
+- 방문 통계: Google Analytics(`G-KK27YSJPEJ`, 속성 minhyukWeb) — `src/layouts/Base.astro(noindex 페이지 = /admin 은 빼고)와 fortune/index.html. 예전 주소 안내 페이지(moved)에는 넣지 않음`. 광고 기능(Google 신호·광고 맞춤) 끔. 자동 시험 브라우저(`navigator.webdriver`)·github.io 밖에서는 켜지 않는다(CI가 통계를 더럽히지 않게).
 
 ## 옮긴 게임 (조직 mhyoo-games)
 

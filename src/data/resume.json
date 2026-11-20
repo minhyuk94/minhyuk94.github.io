@@ -401,6 +401,33 @@
   "projects": [
     {
       "name": {
+        "ko": "저점",
+        "ja": "Jeojeom(底値レーダー)",
+        "en": "Jeojeom (Low-Point Radar)"
+      },
+      "icon": "📉",
+      "period": "2026-11",
+      "image": "",
+      "link": "",
+      "summary": {
+        "ko": "국내·미국 주식 약 900개가 지금 자기 최저점에 얼마나 가까운지, 언제 가장 크게 떨어지고 올랐는지를 한눈에 보고, \"그때 넣었다면\"과 자본금 나누기 후보를 계산하는 개인용 주가 분석 사이트",
+        "ja": "国内・米国の約 900 銘柄が今どれだけ自身の最安値に近いか、いつ最も大きく下落・上昇したかを一目で確認し、「あの時投資していたら」と資金配分の候補を計算する個人用の株価分析サイト",
+        "en": "A personal stock-analysis site that shows, for about 900 Korean and US stocks, how close each one is to its own lowest price and when it fell or rose the most, and calculates \"what if I had invested then\" along with candidate splits for my capital"
+      },
+      "why": {
+        "ko": "증권 앱은 보기는 편하지만, 제가 가장 보고 싶은 \"어떤 종목이 지금 자기 최저점에 가까운지\", \"언제 가장 크게 떨어지고 올랐는지\"를 한 화면에 모아 주지 않았습니다. 그래서 상용화가 아닌 제가 쓰기 위한 도구로 직접 만들었습니다.",
+        "ja": "証券アプリは見やすいものの、自分が一番知りたい「どの銘柄が今、自身の最安値に近いか」「いつ最も大きく下落・上昇したか」を一つの画面にまとめてはくれませんでした。そこで商用ではなく、自分が使うためのツールとして自作しました。",
+        "en": "Brokerage apps are easy to browse, but none of them put what I most wanted to see on one screen: which stocks are near their own lows right now, and when each fell or rose the most. So I built my own tool, for personal use rather than as a product."
+      },
+      "features": {
+        "ko": "저점 레이더: 코스피200·코스닥 시총 상위·S&P 500·나스닥 100·대표 ETF·관심 종목을 1·3·5년·전체 최저가에 가까운 순으로, 역대 고점 대비·가장 크게 떨어진/오른 때까지 한 표에\n종목 화면: 직접 그린 SVG 그래프에 가장 크게 떨어진 구간·오른 구간·최고·최저를 표시, 회복까지 걸린 기간, 하루·한 달 최대 변동, 해마다 수익률\n그때 넣었다면: 그래프에서 날짜를 눌러 한 번에·다달이 넣은 결과를 원화로 계산(미국 주식은 그날 환율, 배당 다시 넣기)\n자본금 나누기: 성향별 점수(최저점 가까움·고점 대비 하락·긴 기간 오름·변동성·흐름)를 계산식 그대로 보여 주고, ETF·국내/미국 비중과 한 종목 최대 비중으로 후보·주식 수를 계산. GitHub Actions가 하루 두 번 시세를 모아 비공개 저장소에 두고, 화면은 내 토큰으로만 읽음",
+        "ja": "底値レーダー:KOSPI200・KOSDAQ 時価総額上位・S&P 500・Nasdaq-100・代表的な ETF・ウォッチ銘柄を、1・3・5 年・全期間の最安値に近い順に並べ、過去最高値比や最大の下落・上昇時期まで一つの表に\n銘柄画面:自作の SVG グラフに最大の下落区間・上昇区間・最高値・最安値を表示、回復までの期間、1 日・1 か月の最大変動、年ごとの騰落率\nあの時投資していたら:グラフで日付をクリックし、一括・毎月積立の結果をウォン建てで計算(米国株はその日の為替レート、配当再投資)\n資金配分:スタイル別スコア(最安値への近さ・高値からの下落・長期の上昇・変動性・トレンド)を計算式のまま示し、ETF・国内/米国比率と 1 銘柄の上限から候補と株数を算出。GitHub Actions が 1 日 2 回株価を集めて非公開リポジトリに保存し、画面は自分のトークンでのみ読み込む",
+        "en": "Low-point radar: KOSPI 200, top KOSDAQ stocks by market cap, the S&P 500, the Nasdaq-100, major ETFs and my watchlist, sorted by closeness to their 1-, 3-, 5-year or all-time low, with the drop from the all-time high and the biggest falls and rises in one table\nStock view: a hand-built SVG chart marking the biggest drawdown and run-up, the high and the low, how long recovery took, the largest one-day and one-month moves, and yearly returns\nWhat if I had invested then: click a date on the chart to calculate a lump-sum or monthly investment in won (US stocks at that day's exchange rate, with dividends reinvested)\nCapital split: style-based scores (closeness to the low, drop from the high, long-term growth, volatility, trend) shown with their formulas, then candidates and share counts within ETF, Korea/US and per-stock limits. GitHub Actions collects prices twice a day into a private repository, and the site reads them only with my own token"
+      },
+      "tags": "React, TypeScript, SVG, GitHub Actions, GitHub API, IndexedDB, Node.js, Playwright, GitHub Pages"
+    },
+    {
+      "name": {
         "ko": "PageNest",
         "ja": "PageNest",
         "en": "PageNest"

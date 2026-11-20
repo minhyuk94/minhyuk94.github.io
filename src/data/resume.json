@@ -401,6 +401,33 @@
   "projects": [
     {
       "name": {
+        "ko": "PageNest",
+        "ja": "PageNest",
+        "en": "PageNest"
+      },
+      "icon": "🗂️",
+      "period": "2026-11",
+      "image": "",
+      "link": "https://minhyuk94.github.io/pagenest/",
+      "summary": {
+        "ko": "페이지 안에 페이지를 만들고 블록으로 글·표·코드·흐름도·칸반을 쓰는 개인용 문서·업무 노트 — 서버 없이 브라우저에 저장하고, 내 GitHub 비공개 저장소로 PC·휴대폰을 동기화",
+        "ja": "ページの中にページを作り、ブロックで文章・表・コード・フローチャート・カンバンを書く個人用のドキュメント・業務ノート — サーバーなしでブラウザに保存し、自分の GitHub プライベートリポジトリで PC とスマートフォンを同期",
+        "en": "A personal docs and work-notes app with nested pages and blocks for text, tables, code, flowcharts and kanban boards — stored in the browser with no server, and synced between PC and phone through your own private GitHub repository"
+      },
+      "why": {
+        "ko": "쓰던 문서·노트 앱은 쓸 만한 기능이 유료인 경우가 많고, 필요한 기능이 다 있지도 않았습니다. 그래서 제가 날마다 쓸 수 있는 앱을 직접 만들어, 기본 기능을 탄탄하게 갖추고 업무에 필요한 기능을 하나씩 늘려 가고 있습니다.",
+        "ja": "使っていたドキュメント・ノートアプリは、便利な機能の多くが有料で、必要な機能もそろっていませんでした。そこで自分が毎日使えるアプリを自作し、基本機能をしっかり固めたうえで、業務に必要な機能を少しずつ増やしています。",
+        "en": "The docs and note apps I used kept their useful features behind paid plans and still lacked things I needed. So I built one I can use every day: solid basics first, then work features added one at a time."
+      },
+      "features": {
+        "ko": "블록 편집기를 직접 구현: / 메뉴(한글·초성으로 찾기), 마크다운 단축키, 들여쓰기·끌어서 옮기기, 서식 도구, [[ 로 다른 페이지 언급과 백링크, 코드 색 입히기·수식(KaTeX)·표·그림, 되돌리기 — 한글 입력이 끊기지 않게 조합 중 키를 따로 처리\n흐름도를 직접 그리는 SVG 편집기(Tab으로 다음 단계, 가장자리를 끌어 잇기, 자동 정리, PNG·SVG·Mermaid로 내보내기), 글로 쓰는 차트(시퀀스·간트 등), 칸반 보드, 목차\n업무용: 회의록·주간 보고·프로젝트 계획 등 템플릿, 오늘 업무 일지, 모든 페이지의 할 일을 마감일 순으로 모아 보기(글 속 날짜를 읽음)\n서버 없이 IndexedDB에 저장하고 오프라인에서도 열림. 내 GitHub 저장소와 Git Data API로 바뀐 파일만 한 커밋에 동기화(기기·마지막 동기화·저장소를 세 갈래로 비교하고, 충돌은 버전 기록에 남김). 버전 기록·휴지통·백업·마크다운 내보내기, 화면 시험 70여 단계를 CI에서 자동 확인",
+        "ja": "ブロックエディターを自作:/ メニュー(ハングルや初声でも検索)、Markdown ショートカット、インデント・ドラッグ移動、書式ツール、[[ でほかのページに言及してバックリンク、コードのハイライト・数式(KaTeX)・表・画像、元に戻す — ハングル入力が途切れないよう変換中のキーを別に処理\nフローチャートを描ける SVG エディター(Tab で次のステップ、端をドラッグして接続、自動整列、PNG・SVG・Mermaid に書き出し)、テキストで書くチャート(シーケンス・ガントなど)、カンバンボード、目次\n業務向け:議事録・週報・プロジェクト計画などのテンプレート、今日の業務日誌、全ページの ToDo を期限順にまとめて表示(本文中の日付を読み取る)\nサーバーなしで IndexedDB に保存し、オフラインでも利用可能。自分の GitHub リポジトリと Git Data API で変更ファイルだけを 1 コミットで同期(端末・前回の同期・リポジトリの 3 つを比較し、競合はバージョン履歴に保存)。バージョン履歴・ゴミ箱・バックアップ・Markdown 書き出し、70 段階ほどの画面テストを CI で自動確認",
+        "en": "Hand-built block editor: slash menu (searchable in Korean, even by initial consonants), Markdown shortcuts, indenting and drag-to-move, formatting toolbar, [[ page mentions with backlinks, code highlighting, math (KaTeX), tables, images and undo — keys are handled separately during IME composition so Korean typing never breaks\nAn SVG flowchart editor (Tab adds the next step, drag from an edge to connect, auto layout, export to PNG, SVG or Mermaid), text-based charts (sequence, Gantt and more), kanban boards and a table of contents\nFor work: templates such as meeting notes, weekly reports and project plans, a one-click daily work log, and every to-do across all pages gathered by due date (dates are read from the text)\nNo server: stored in IndexedDB and usable offline. Syncs with your own GitHub repository through the Git Data API, sending only changed files in one commit (a three-way comparison of device, last sync and repository; conflicts are kept in version history). Version history, trash, backups, Markdown export, and about 70 UI test steps checked automatically in CI"
+      },
+      "tags": "React, TypeScript, IndexedDB, GitHub Git Data API, SVG, Mermaid, KaTeX, Service Worker, Playwright, GitHub Actions, GitHub Pages"
+    },
+    {
+      "name": {
         "ko": "약 시간표",
         "ja": "おくすり時間表",
         "en": "Medicine Timetable"

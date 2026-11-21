@@ -401,6 +401,33 @@
   "projects": [
     {
       "name": {
+        "ko": "단타",
+        "ja": "Danta(短期売買ボット)",
+        "en": "Danta (Crypto Scalping Bot)"
+      },
+      "icon": "⚡",
+      "period": "2026-11",
+      "image": "",
+      "link": "",
+      "summary": {
+        "ko": "업비트 API로 지금 변동성이 큰 코인을 실시간으로 찾아 정해 둔 규칙대로 짧게 사고파는 개인용 자동매매 프로그램. 시드 기준 하루 평균 손익을 지난 시세로 예측해 보여 줌",
+        "ja": "Upbit API で今ボラティリティの大きい暗号資産をリアルタイムに探し、決めたルールで短期売買する個人用の自動売買プログラム。過去の相場から元手あたりの1日平均損益を予測して表示",
+        "en": "A personal auto-trading program that uses the Upbit API to find the most volatile coins in real time and trade them short-term by fixed rules, showing a forecast of the average daily profit or loss for the seed amount based on past prices"
+      },
+      "why": {
+        "ko": "변동성이 큰 코인을 실시간으로 찾아 단타 매매를 자동으로 하고, 투자금(시드)을 기준으로 하루 평균 얼마쯤 벌거나 잃을지 미리 알고 싶어서 만들었습니다.",
+        "ja": "ボラティリティの大きい暗号資産をリアルタイムに見つけて短期売買を自動化し、元手に対して1日平均どれくらいの損益になりそうかを事前に知りたくて作りました。",
+        "en": "I wanted to automate short-term trading of the most volatile coins found in real time, and to know in advance roughly how much I might gain or lose per day relative to my seed amount."
+      },
+      "features": {
+        "ko": "실시간 후보: 초마다 원화 마켓 전체 현재가로 1분 봉을 만들고, 거래 대금 조건을 넘는 코인을 흔들림 순으로 보여 줌\n두 가지 단타 규칙(급등 따라 타기·급락 반등 노리기)과 이익 실현·손절·최대 보유 시간, 시드·한 번 금액·동시 개수 등 금액 한도\n모의 매매로 먼저 돌리고, 화면에서 확인 문구를 적어야 실거래 주문(업비트 JWT 인증, 등록 IP), 모의·실거래 기록을 따로\n하루 손익 예측: 지난 며칠의 1분 봉으로 두 규칙을 같은 설정으로 돌려 하루 평균·보통 범위·번 날 비율·수수료를 나란히 비교\n집 PC Docker로 실행, 가짜 업비트 서버로 주문 흐름까지 자동 시험",
+        "ja": "リアルタイム候補:毎秒ウォン市場全体の現在値から1分足を作り、売買代金の条件を満たす銘柄を値動きの大きい順に表示\n2つの短期売買ルール(急騰追随・急落反発狙い)と利確・損切り・最大保有時間、元手・1回の金額・同時保有数などの金額上限\nまずペーパートレードで動かし、画面で確認語を入力したときだけ実取引の注文(Upbit JWT 認証・登録 IP)、記録は別管理\n1日損益の予測:過去数日の1分足で2つのルールを同じ設定で検証し、1日平均・通常の範囲・勝ち日の割合・手数料を並べて比較\n自宅 PC の Docker で実行し、模擬 Upbit サーバーで注文の流れまで自動テスト",
+        "en": "Real-time candidates: builds 1-minute bars from every second's prices across the KRW market and lists coins that meet a trading-value threshold, ranked by volatility\nTwo short-term rules (follow surges, buy rebounds after sharp drops) with take-profit, stop-loss and maximum holding time, plus limits on seed, order size and number of positions\nRuns as paper trading first; real orders only after typing a confirmation on screen (Upbit JWT auth, registered IP), with separate records for paper and live\nDaily P/L forecast: replays the past days of 1-minute bars with both rules and the same settings, comparing daily average, usual range, share of winning days and fees side by side\nRuns in Docker on a home PC, with automated tests of the full order flow against a fake Upbit server"
+      },
+      "tags": "TypeScript, Node.js, React, Upbit API, Docker, Playwright, GitHub Actions"
+    },
+    {
+      "name": {
         "ko": "저점",
         "ja": "Jeojeom(底値レーダー)",
         "en": "Jeojeom (Low-Point Radar)"
